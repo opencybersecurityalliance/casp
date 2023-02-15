@@ -20,18 +20,7 @@ General questions about OASIS Open Projects may be directed to OASIS staff at pr
 # Other assets
 
 In addition to this GitHub organization, this project also makes use of other assets. 
-
-- The [Open Project name] website is at [url to website]. The website contains news, announcements, and other information of interest about the project. 
-
-- [General purpose mailing list](url for list archive). To subscribe, send an empty email message to [subscription email]. Anyone interested is welcome to subscribe and send email to the list. The list maintains an [archive](url to archive).
-
-- [Project Governing Board mailing list](url for list archive). This is the discussion list for use by the members of the PGB. To subscribe, send an empty email message to [subscription email]. Anyone interested is welcome to subscribe read-only. The list maintains an [archive](url to archive).
-
-- [Technical Steering Committee mailing list](url for list archive). This is the discussion list for use by the members of the TSC. To subscribe, send an empty email message to [subscription email]. Anyone interested is welcome to subscribe read-only. The list maintains an [archive](url to archive).
-
-[descriptions and links to any other resources we or they may set up such as a Slack channel].
-
-[note that we may want to allow the project to list project repositories here as Ethereum has done.]
+As a subproject of OCA, CASP operates under OCA Governance, PGB, and TSC.
 
 # Contributing
 
