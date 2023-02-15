@@ -1,8 +1,17 @@
 # OCA CASP Sub-project
+The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/) 
+Cybersecurity Automation SubProject (CASP) is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
 
-[Open Project name] is an [OASIS Open Project](https://oasis-open-projects.org/) [purpose statement goes here.]
+It is a forum where products from all vendors, researchers, and software publishers can freely exchange information, insights, and reference implementations via commonly developed code and tooling, using mutually agreed upon technologies, specifications, and procedures.
 
-For more information on [Open Project short name], see the project's website at [url].
+OCA is an [OASIS Open Project](https://oasis-open-projects.org/). 
+For more information on OCA, 
+see [https://opencybersecurityalliance.org/](https://opencybersecurityalliance.org/).
+
+For more information on CASP, see:
+- CASP's OCA page at [https://opencybersecurityalliance.org/CASP](https://opencybersecurityalliance.org/CASP),
+- CASP's onramps and adoption website at {a TBD URL},
+- CASP's organizational page at https://lists.oasis-open-projects.org/g/oca-casp which includes mailing list archives and how to join the mailing list.
 
 For more information on the goals of this effort, see the [project charter](./CHARTER.md). 
 
