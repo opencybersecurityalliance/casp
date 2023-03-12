@@ -28,7 +28,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details how to join the proje
 
 # Governance
 
-[Open Project name] operates under the terms of the [Open Project Rules](https://www.oasis-open.org/policies-guidelines/open-projects-process) and the applicable license(s) specified in [LICENSE.md](LICENSE.md). Further details can be found in [GOVERNANCE.md](GOVERNANCE.md).
+OCA (and therefore CASP) operates under the terms of the [Open Project Rules](https://www.oasis-open.org/policies-guidelines/open-projects-process) and the applicable license(s) specified in [LICENSE.md](LICENSE.md). Further details can be found in [GOVERNANCE.md](GOVERNANCE.md).
 
 # CLA & Non-assert signatures required
 
