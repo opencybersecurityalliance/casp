@@ -157,7 +157,7 @@ being added.
 Another example is threat hunting triggered by detection of
 an intruder in the system.
 
-### 1.3. TTPs (tactics, techniques, and procedures)
+### 1.4. TTPs (tactics, techniques, and procedures)
 Most use cases won't focus on any particular TTP's, but any that do will be listed in section 4.
 
 ### 1.5. Demos
