@@ -202,6 +202,9 @@ CACAO can be used together to create an integrated and efficient
 cybersecurity workflow for detecting, responding to, and
 mitigating a cyber threat, such as a ransomware attack.
 
+![CASP Ransomware Use Case](CASP_Ransomeware_Use_Case.png)
+
+
 *Command Orchestration using CACAO Playbooks:* To streamline and
 automate cybersecurity processes, the organization implements a
 number of CACAO playbooks specifically designed for various
