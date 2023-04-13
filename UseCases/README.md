@@ -197,13 +197,15 @@ Section 2 describes ransomware use cases
 
 #### 2.1.1 Ransomware Detection and Response with CACAO, Kestrel & OpenC2
 
-In this CASP use case, we will explore how Kestrel, OpenC2, and
-CACAO can be used together to create an integrated and efficient
+In this CASP use case, we will explore how
+[Kestrel](https://github.com/opencybersecurityalliance/kestrel-lang),
+[OpenC2](https://openc2.org/), and
+[CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao)
+can be used together to create an integrated and efficient
 cybersecurity workflow for detecting, responding to, and
 mitigating a cyber threat, such as a ransomware attack.
 
 ![CASP Ransomware Use Case](CASP_Ransomeware_Use_Case.png)
-
 
 *Command Orchestration using CACAO Playbooks:* To streamline and
 automate cybersecurity processes, the organization implements a
