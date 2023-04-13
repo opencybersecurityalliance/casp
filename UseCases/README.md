@@ -215,33 +215,35 @@ automated actions and decision points and in our use case, will
 invoke each other one after another, and use their respective
 findings to inform cyber threat response functions. CACAO
 orchestration in this example will make extensive use of OpenC2
-commands for standardized, implementation- agnostic commands that
+commands for standardized, implementation-agnostic commands that
 can perform critical Command and Control functions.
 
 *Threat Detection using Kestrel:* The organization implements
-tools for scanning and anomaly detection, including Kestrel-based
-software and libraries of hunting books, specifically designed to
-analyze the system anomaly behavior and detect and classify
-anomalous behavior. Kestrel commands can enable the execution of
-threat detection and hunting that can retrieve, join, and analyze
-data as part of an orchestration flow. For our use case,
-anomalous behavior may constitute elevated processor use or
-suspicious network traffic. In the event of anomalous behavior,
-the scanning tools will notify a security team and, at the same
-time, invoke Kestrel. This will initiate Kestrel threat hunting
-using OpenC2 commands to Kestrel’s STIX-shifter interface. Threat
-hunting commands will use the Threat Hunting Actuator Profile (in
-development) for OpenC2 to investigate threats with a threat
-hunting book and analyze threat related data from various
-sources, such as log files, network traffic data, and external
-threat feeds. Kestrel's powerful pattern matching and correlation
-capabilities enable the identification of indicators of
-compromise (IoCs) associated with a known ransomware family, such
-as specific file hashes, IP addresses, or domain names. 
+tools for scanning and anomaly detection, along with
+Kestrel-based software and libraries of hunt books, specifically
+designed to analyze the system anomaly behavior, and detect and
+classify anomalous behavior. Kestrel commands can enable the
+execution of threat detection and hunting that can retrieve,
+join, and analyze data as part of an orchestration flow. For our
+use case, anomalous behavior may constitute elevated processor
+use or suspicious network traffic. In the event of anomalous
+behavior, the scanning tools will notify a security team and, at
+the same time, invoke Kestrel. This will initiate Kestrel threat
+hunting using OpenC2 commands to Kestrel’s
+[STIX-shifter](https://github.com/opencybersecurityalliance/stix-shifter)
+interface. Threat hunting commands will use the [Threat Hunting
+Actuator Profile](https://github.com/oasis-tcs/openc2-ap-hunt)
+(in development) for OpenC2 to investigate threats with a hunt
+book, and analyze threat related data from various sources, such
+as log files, network traffic data, and external threat feeds.
+Kestrel's powerful pattern matching and correlation capabilities
+enable the identification of indicators of compromise (IoCs)
+associated with a known ransomware family, such as specific file
+hashes, IP addresses, or domain names. 
 
 Thus Kestrel will:
   1. Detect a threat that is impacting the system.
-  2. Identify the threat as ransomware attack that has encrypted
+  2. Identify the threat as a ransomware attack that has encrypted
      critical files on a server.
   3. Generate an alert and send it to the security team.
 
@@ -256,7 +258,8 @@ The response may include:
    ransomware's command and control servers.
  - Updating intrusion detection systems and endpoint protection
  platforms with the latest IoCs to detect and prevent further
- infections. -Initiating network segmentation to isolate affected
+ infections.
+ - Initiating network segmentation to isolate affected
  systems and prevent the ransomware from spreading.
 
 Due to the nature of the threat found, the Response playbook may also initiate further CACAO workflow steps to automatically remediate the affected system.
@@ -276,10 +279,10 @@ Actions and decision points outlined in this playbook may include:
     for conducting root cause analysis to identify the infection
     vector and prevent future incidents.
   - Recovering encrypted data from secure backups and restoring
-    affected systems to a known good state.
+    affected systems to a known-good state.
   - Sharing information about the ransomware attack, including
     IoCs and mitigation strategies, with industry partners or
-    collaborative platforms like ISACs.
+    collaborative platforms like [ISACs](https://www.nationalisacs.org/).
 
 *Continuous Improvement:* After the ransomware incident has been
 successfully resolved, the organization uses insights from the
