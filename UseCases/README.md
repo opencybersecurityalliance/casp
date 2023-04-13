@@ -180,7 +180,7 @@ That use case has it's own use case page
 in Section 2 (risks), subsection 2.1 (ransomware).
 It is also in the list in Secton 3 (interfaces), subsection 3.1 (SITX).
 
-## 2. Risks
+ ## 2. Risks
 This section tries to take the broadest view
 and look at the risks from the enterprise's viewpoint.
 The enterprise/organization may be a 
@@ -194,7 +194,104 @@ described in the following paragraphs.
 
 ### 2.1 Ransomware
 Section 2 describes ransomware use cases
-blah blah to be filled in
+
+#### 2.1.1 Ransomware Detection and Response with CACAO, Kestrel & OpenC2
+
+In this CASP use case, we will explore how Kestrel, OpenC2, and
+CACAO can be used together to create an integrated and efficient
+cybersecurity workflow for detecting, responding to, and
+mitigating a cyber threat, such as a ransomware attack.
+
+*Command Orchestration using CACAO Playbooks:* To streamline and
+automate cybersecurity processes, the organization implements a
+number of CACAO playbooks specifically designed for various
+atomic functions. These playbooks interface with a suite of
+automated actions and decision points and in our use case, will
+invoke each other one after another, and use their respective
+findings to inform cyber threat response functions. CACAO
+orchestration in this example will make extensive use of OpenC2
+commands for standardized, implementation- agnostic commands that
+can perform critical Command and Control functions.
+
+*Threat Detection using Kestrel:* The organization implements
+tools for scanning and anomaly detection, including Kestrel-based
+software and libraries of hunting books, specifically designed to
+analyze the system anomaly behavior and detect and classify
+anomalous behavior. Kestrel commands can enable the execution of
+threat detection and hunting that can retrieve, join, and analyze
+data as part of an orchestration flow. For our use case,
+anomalous behavior may constitute elevated processor use or
+suspicious network traffic. In the event of anomalous behavior,
+the scanning tools will notify a security team and, at the same
+time, invoke Kestrel. This will initiate Kestrel threat hunting
+using OpenC2 commands to Kestrel’s STIX-shifter interface. Threat
+hunting commands will use the Threat Hunting Actuator Profile (in
+development) for OpenC2 to investigate threats with a threat
+hunting book and analyze threat related data from various
+sources, such as log files, network traffic data, and external
+threat feeds. Kestrel's powerful pattern matching and correlation
+capabilities enable the identification of indicators of
+compromise (IoCs) associated with a known ransomware family, such
+as specific file hashes, IP addresses, or domain names. 
+
+Thus Kestrel will:
+  1. Detect a threat that is impacting the system.
+  2. Identify the threat as ransomware attack that has encrypted
+     critical files on a server.
+  3. Generate an alert and send it to the security team.
+
+Due to the nature of the threat detected, the Detection playbook
+may initiate a CACAO workflow to automatically respond to the
+threat that has been detected if there is such a response
+prepared. 
+
+The response may include:
+
+ - Blocking the IP addresses or domains associated with the
+   ransomware's command and control servers.
+ - Updating intrusion detection systems and endpoint protection
+ platforms with the latest IoCs to detect and prevent further
+ infections. -Initiating network segmentation to isolate affected
+ systems and prevent the ransomware from spreading.
+
+Due to the nature of the threat found, the Response playbook may also initiate further CACAO workflow steps to automatically remediate the affected system.
+
+*Threat Mitigation using CACAO Playbook:* To further streamline
+and automate the ransomware response process, the organization
+implements a CACAO playbook specifically designed for ransomware
+attacks. 
+
+Actions and decision points outlined in this playbook may include:
+
+  - Detecting ransomware infections based on specific IoCs or
+    behavioral patterns.
+  - Containing the infection by isolating affected systems and
+    disabling network shares.
+  - Gathering forensic evidence to be used by the security team
+    for conducting root cause analysis to identify the infection
+    vector and prevent future incidents.
+  - Recovering encrypted data from secure backups and restoring
+    affected systems to a known good state.
+  - Sharing information about the ransomware attack, including
+    IoCs and mitigation strategies, with industry partners or
+    collaborative platforms like ISACs.
+
+*Continuous Improvement:* After the ransomware incident has been
+successfully resolved, the organization uses insights from the
+Kestrel analysis, OpenC2 response actions, and CACAO playbook
+execution to continuously improve its security posture. This may
+include updating security policies, enhancing security awareness
+training, or implementing additional security controls to prevent
+future ransomware attacks.
+
+In conclusion, the combined use of Kestrel, OpenC2, and CACAO
+creates a powerful and integrated cybersecurity workflow that
+enables organizations to quickly detect, respond to, and mitigate
+cyber threats, such as ransomware attacks. By leveraging these
+technologies, organizations can improve their overall security
+posture and better defend against the evolving cyber threat
+landscape.
+
 
 ### 2.2 Theft
 Section 3 describes threat use cases
