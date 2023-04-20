@@ -105,7 +105,7 @@ blah blah to be filled in
 blah blah to be filled in
 
 ### 1.2.9 OCA/kestrel
-blah blah to be filled in
+* [Threat Hunting](ThreatHunting)
 
 ### 1.2.10 OpenC2
 blah blah to be filled in
