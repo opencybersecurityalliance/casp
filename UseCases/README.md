@@ -1,11 +1,11 @@
 # Use Cases and Scenarios
 ## 1. Introduction
 This topic is organized considering multiple dimensions:
-- risks
-- the interfaces involved
-- lifecycle/timing
-- TTPs (tactics, techniques, and procedures)
-- what is demonstratable
+- [2 Risks](#2-risks)
+- [3 Interfaces](#3-interfaces)
+- [4 Lifecycle/Timing](#4-lifecycletiming)
+- [5 TTPs](#5-ttps-tactics-techniques-and-procedures) (tactics, techniques, and procedures)
+- [6 Demos](#6-demos): what is demonstratable
 
 Any use case or scenario (synonyms for this document)
 involves aspects from many/all dimensions.
