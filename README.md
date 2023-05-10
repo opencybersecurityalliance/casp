@@ -1,3 +1,5 @@
+![logo](./Images/Casp-landscape3.png)
+
 # OCA CASP Sub-project
 The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/) 
 Cybersecurity Automation SubProject (CASP) is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
