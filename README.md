@@ -1,5 +1,13 @@
 ![logo](./Images/Casp-landscape3.png)
 
+---
+# Announcement
+The next CASP event will be held June 13th, 2023 at USC and hybrid.
+For more details, 
+see the NextPlugFest subdirectory
+and participate in the CASP mailing list.
+---
+
 # OCA CASP Sub-project
 The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/) 
 Cybersecurity Automation SubProject (CASP) is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
