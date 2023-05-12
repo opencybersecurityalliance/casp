@@ -1,11 +1,14 @@
 ![logo](./Images/Casp-landscape3.png)
 
 ---
+
 # Announcement
+
 The next CASP event will be held June 13th, 2023 at USC and hybrid.
 For more details, 
 see the NextPlugFest subdirectory
 and participate in the CASP mailing list.
+
 ---
 
 # OCA CASP Sub-project
