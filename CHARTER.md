@@ -99,7 +99,7 @@ Some potential specification topics are included in
 [ExampleSpecTopics.md](./ExampleSpecTopics.md)
 
 ## 4. Organization Benefits
-By it's nature, CASP shares many of the benefits of OCA overall.
+By its nature, CASP shares many of the benefits of OCA overall.
 As shown by the JHU/APL research (add ref),
 automation reduces the dwell time of attackers
 by several orders of magnitude (hours instead of weeks),
@@ -125,7 +125,7 @@ to other parts of the product pipeline, enabling higher value functionality
 to be developed in the products.
 
 ## 5. Relationship to Other Projects
-By it's nature, CASP has relationships with many other
+By its nature, CASP has relationships with many other
 projects, including the other 4 OCA subprojects and
 many OASIS Technical Committees
 as well as other organizations.
