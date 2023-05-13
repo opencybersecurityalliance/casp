@@ -1,1 +1,5 @@
-need to create and include ref to OCA governance, PGB, TSC
+# Governance
+CASP operates under 
+[OCA Governance](https://github.com/opencybersecurityalliance/oasis-open-project/blob/main/GOVERNANCE.md)
+which itself oeprates under
+[OASIS Open Project Governance Policy](https://github.com/oasis-open-projects/documentation/blob/main/policy/project-governance.md).
