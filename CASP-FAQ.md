@@ -149,4 +149,4 @@ https://www.whitehouse.gov/briefing-room/statements-releases/2023/05/04/fact-she
 CASP ...
 
 ## When will the next CASP event be?
-See [Next Plugfest](./Plugfests/NextPlugfest/README.md)
+See [Next Plugfest](./Plugfests/NextPlugfest/README.md).

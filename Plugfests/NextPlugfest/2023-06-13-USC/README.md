@@ -1,4 +1,4 @@
-![logo](./Images/Casp-landscape3.png)
+![logo](../../../Images/Casp-landscape3.png)
 
 ---
 
@@ -11,13 +11,85 @@ The next CASP event will be held June 13th, 2023 at USC and hybrid.
 
 # Workshop / Plugfest / Hackathon
 
+# Objective
+The Open Cybersecurity Alliance (OCA) Cybersecurity Automation SubProject (CASP) is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
+
+It is a forum where products from all vendors, researchers, and software publishers can freely exchange information, insights, and reference implementations via commonly developed code and tooling, using mutually agreed upon technologies, specifications, and procedures.
+
+This event is for sharing information, prototyping, testing, 
+and specifying interoperability among cybersecurity automation technologies.
+
+Information on previous events can be found at
+[PastPlugfests](../../PastPlugfests/).
+
+# Technologies / Standards / Open Source Projects Involved
+This is a tenative list of technologies hoped to be interworked
+in CASP usecases at this plugfest:
+
+![technologies](../../../Images/CASP_technologies.png)
+
+# Organizations
+This is a tenative list of organizations it is hoped will participate
+with sweat equity.
+
+![orgs](../../../Images/CASP_orgs.png)
+
+It was created from participation at previous events and/or interest
+expressed at CASP meetings.
+This will be finalized as registration is figured out and
+[sweat equity](./SweatEquity/README.md) is populated.
+
+Each organization is encouraged to create a <3-min video about
+what they will be providing. 
+See [sweat equity](./SweatEquity/README.md)
+for more details.
+See [Video List](./SweatEquity/video_list.md) for videos created by 
+participants.
+
+# Results
+After the event, the results will be found in [results](./Results/README.md).
+The intent will be summarize here with a replacement for
+
+![results](../../../Images/BigPictureConnections.png)
+
+with an acutal graph mapping interacting technologies 
+and organizations involved (ie the graphs from the 2 previous sections)
+as mapped by use cases demonstrated at the event.
+
+See [results](./Results/README.md) for examples of how this will be done.
+
 # To Participate
-To participate, join the CASP mailing list.
+To participate,
+[participate in the CASP mailing list, and attend the CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp).
+
+The event will be hybrid.
+It is likely we will be space-limited 
+at the physical event at USC.
+USC has kindly allowed us the use of a classroom
+(seats appx ??).
+Should more people register
+(see ??? for registration details)
+than fit, we will be using "sweat equity"
+to determine physical attendance
+(see ?? sweat equity).
+
+Note the CASP event is the day before, 
+and in the same venue as, 
+the CISA SBOMarama.
+For more information on the CISA SBOMarama 
+see {add link to Federal Register annoucement} 
+and {add link to cisa.gov/sbom/whatever}.
+
+
+
+
 See 
 For more details, 
 see the [2023-06-13-USC subdirectory](./2023-06-13-USC/README.md)
 and [participate in the CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
 # Frequently Asked Questions (FAQ)
-See the [SBOMarama CASP FAQ](./FAQ/README.md) for questions specific to workshop. 
-See the [overall CASP FAQ](../../CASP-FAQ.md) for questions about CASP overall.
+See the [SBOMarama CASP FAQ](faq.md) for questions 
+specific to this event. 
+See the [overall CASP FAQ](../../CASP-FAQ.md) for questions 
+about CASP, or cybersecurity automation, overall.
