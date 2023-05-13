@@ -6,21 +6,28 @@ See the
 for questions 
 about CASP, or cybersecurity automation, overall.
 
-## What are logistics of attending virtually?
-See [logistics](./logistics.md)
-
 ## Are there any restrictions on attending?
 The event is open to all if they agree to 
 register and they agree to abide by the 
 [Code of Conduct](../../../../CODE-OF-CONDUCT.md)
 which TL;DR is "don't be a jerk".
 
+There is no cost for attending.
+
 Anyone may attend virtually.
 Because of limited space
 (unless someone volunteers to pay for a larger space),
 physical attendance may be limited.
-See {add link to other question} on process for 
+See {add link to other question} 
+[how-will-physical-attendance-be-determined](./faq.md#how-will-physical-attendance-be-determined)
+for process on 
 determining physical attendance.
+
+## What are logistics of attending virtually?
+See [logistics](./logistics.md)
+
+## What are logistics of attending physically?
+See [logistics](./logistics.md)
 
 ## How will physical attendance be determined?
 Assuming space limitations prevent everyone from fitting,
@@ -40,6 +47,7 @@ but may also consider a combination of:
 * keynote speakers
 * contributions to CASP-related projects (Kestrel, PACE, IoB, OpenC2, STIX, CSAF/VEX, ... ).
 
-
+## Can I contribute a video about my company contribution?
+Yes, it is encouraged. See [videos](./SweatEquity/video_list.md)
 
 

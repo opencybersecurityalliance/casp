@@ -1,5 +1,6 @@
 # Logistics
 The event is open to all.
+Free.
 
 ### Virtual Attendance
 
@@ -8,6 +9,8 @@ register and they
 agree to abide by the 
 [Code of Conduct](../../../../CODE-OF-CONDUCT.md)
 which TL;DR is "don't be a jerk".
+
+A zoom link will be provided to registrants.
 
 ### Physical Attendance
 
@@ -24,3 +27,11 @@ need to fill in
 CASP is day before 
 CISA SBOMarama
 at same campus
+
+## COVID
+fill in
+
+## Agenda
+9-4 pacific
+* apologies to other timezones
+see [agenda.md]
