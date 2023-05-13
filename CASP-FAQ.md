@@ -136,3 +136,17 @@ has a VEX profile for automated creation/consumption of VEX information. See pre
 ## How does NIEM relate to the Cybersecurity Automation SubProject?
 
 ## How does OCSF relate to the Cybersecurity Automation SubProject?
+
+## How does CASP relate to US National Cybersecurity Strategy?
+The US National Cybersecurity Strategy can be found in 
+https://www.whitehouse.gov/briefing-room/statements-releases/2023/03/02/fact-sheet-biden-harris-administration-announces-national-cybersecurity-strategy/ .
+CASP ....
+
+## How does CASP relate to US National Standards Strategy for Critical and Emerging Technology?
+The US National Standards Strategy for Critical and Emerging Technology
+can be found in
+https://www.whitehouse.gov/briefing-room/statements-releases/2023/05/04/fact-sheet-biden-harris-administration-announces-national-standards-strategy-for-critical-and-emerging-technology/ .
+CASP ...
+
+## When will the next CASP event be?
+See [Next Plugfest](./Plugfests/NextPlugfest/README.md)
