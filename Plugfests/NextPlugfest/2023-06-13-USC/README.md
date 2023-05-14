@@ -68,10 +68,12 @@ at the physical event at USC.
 USC has kindly allowed us the use of a classroom
 (seats appx ??).
 Should more people register
-(see ??? for registration details)
-than fit, we will be using "sweat equity"
+[logistics](./logistics.md)
+for registration details.
+than fit, we will be using 
+[sweat equity](./faq.md#what-is-sweat-equity)
 to determine physical attendance
-(see ?? sweat equity).
+(see [attendance eligibility](./faq.md#how-will-physical-attendance-be-determined)).
 
 Note the CASP event is the day before, 
 and in the same venue as, 
@@ -80,12 +82,8 @@ For more information on the CISA SBOMarama
 see {add link to Federal Register annoucement} 
 and {add link to cisa.gov/sbom/whatever}.
 
-
-
-
 See 
-For more details, 
-see the [2023-06-13-USC subdirectory](./2023-06-13-USC/README.md)
+For more details, attend CASP meetings
 and [participate in the CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
 # Frequently Asked Questions (FAQ)
