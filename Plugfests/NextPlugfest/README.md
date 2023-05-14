@@ -15,6 +15,6 @@ see the [2023-06-13-USC subdirectory](./2023-06-13-USC/README.md)
 and [participate in the CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
 # Frequently Asked Questions (FAQ)
-See the [SBOMarama CASP FAQ](./2023-06-13-USC/FAQ/README.md) for questions specific
+See the [SBOMarama CASP FAQ](./2023-06-13-USC/faq.md) for questions specific
 this event. 
 See the [overall CASP FAQ](../../CASP-FAQ.md) for questions 
