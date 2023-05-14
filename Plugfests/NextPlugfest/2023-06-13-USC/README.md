@@ -56,7 +56,7 @@ with an acutal graph mapping interacting technologies
 and organizations involved (ie the graphs from the 2 previous sections)
 as mapped by use cases demonstrated at the event.
 
-See [results](./Results/README.md) for examples of how this will be done.
+See [graphing](./SweatEquity/graphing_results.md) for examples of how this will be done.
 
 # To Participate
 To participate,
