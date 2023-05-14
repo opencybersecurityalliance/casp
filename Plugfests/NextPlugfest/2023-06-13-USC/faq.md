@@ -32,14 +32,29 @@ See [logistics](./logistics.md)
 ## How will physical attendance be determined?
 Assuming space limitations prevent everyone from fitting,
 attendance will be determined by 
-one person per organization and then by sweat equity.
+highest priority to amount of relevant sweat equity.
+If space is limited, it would be preferred to limit organizations to
+one person per organization. 
+Notable exceptions might be if an organization had different SME's
+for different demoable technologies (e.g. one for STIX Shifter and one for Kestrel).
 
-Governance will be via CASP governance procedures.
+Governance will be via [CASP governance procedures](../../../GOVERNANCE.md).
 
 ## What is "sweat equity"?
 Sweat equity in this context (ie for determining physical attendance) is mainly:
-* working software as part of demoable CASP use cases
-but may also consider a combination of:
+* working software as part of demoable CASP use cases that interface with other organizations using CASP standard interfaces (i.e. the "technologies").
+
+Consideration will also be given to 
+working software as part of demoable CASP use cases 
+that people from other organizations can interface with. 
+E.g. a person at the plugfest can use 
+a demo copy of a vendor product 
+even though the product doesn't have CASP standard interfaces. 
+This assumes the vendor makes 
+at least hand-waving, non-binding comments 
+about the potential of having CASP standard interfaces in the future. 
+
+Consideration will also be given to a combination of:
 * attendance at CASP meetings
 * contributions via CASP mailing list
 * contributions to CASP github (ie this repo)
@@ -50,4 +65,10 @@ but may also consider a combination of:
 ## Can I contribute a video about my company contribution?
 Yes, it is encouraged. See [videos](./SweatEquity/video_list.md)
 
+## How do I document the sweat equity our organization will provide?
+Ideally with a github pull request against https://github.com/opencybersecurityalliance/casp/tree/main/Plugfests/NextPlugfest/2023-06-13-USC/SweatEquity to:
+- create a subdirectory with your organization name
+- create a readme in that subdir explaining your contributions, adding/linking other files as required.
 
+If you are github-challenged, you can send email to the CASP mailing list 
+and others will assist you.
