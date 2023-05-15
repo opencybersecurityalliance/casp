@@ -13,7 +13,7 @@ The overall graph will be created by combining results from
 individual use cases based on 
 ![technologies](../../../../Images/CASP_technologies.png)
 and
-![orgs](../../../../Images/CASP_orgs.png)
+![orgs](../../../../Images/CASP_orgs2.png)
 with some annotations:
 ![annotations](../../../../Images/annotations.png)
 using hypothetical (although hopefully will be actual) examples from the next section.
