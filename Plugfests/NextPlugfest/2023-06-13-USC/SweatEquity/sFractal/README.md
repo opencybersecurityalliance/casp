@@ -1,4 +1,4 @@
-# Sweat Equity
+# sFractal Sweat Equity
 
 ## 1. Attendance
 sFractal intends to have one participant (Duncan Sparrell)
