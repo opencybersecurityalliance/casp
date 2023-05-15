@@ -38,10 +38,15 @@ need to add process to add subdir with readme with your sweat equity
 
 
 ## Organizations
+* [CISA](./CISA/README.md)
 * [HII](./HII/README.md)
 * [IBM](./IBM/README.md)
 * [NSA](./NSA/README.md)
+* [OnePlanet](./OnePlanet/README.md)
+* [Podii](./Podii/README.md)
+* [RIT](./RIT/README.md)
 * [sFractal](./sFractal/README.md)
+* [USC](./USC/README.md)
 * add in alphabetical order linked to subdirs
 * add in alphabetical order linked to subdirs
 
