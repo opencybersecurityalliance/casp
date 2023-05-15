@@ -58,6 +58,13 @@ as mapped by use cases demonstrated at the event.
 
 See [graphing](./SweatEquity/graphing_results.md) for examples of how this will be done.
 
+We'd also like to include something on participation 
+like the following from the 28-Oct-2021 plugfest which had 
+40 participants from 7 countries on 5 continents:
+![results](../../../Images/7_countries.png)
+The 16-May-2022 plugfest in DC had ~70 participants (~30 in-person)
+but we never made a fancy country picture like in 2021.
+
 # To Participate
 To participate,
 [participate in the CASP mailing list, and attend the CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp).
