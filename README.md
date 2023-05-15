@@ -30,7 +30,7 @@ see [https://opencybersecurityalliance.org/](https://opencybersecurityalliance.o
 
 For more information on CASP, see:
 - CASP's OCA page at [https://opencybersecurityalliance.org/CASP](https://opencybersecurityalliance.org/CASP),
-- CASP's onramps and adoption website at {a TBD URL},
+- CASP's [Cybersecurity Automation Village](https://www.cybersecurityautomationvillage.org/),
 - CASP's organizational page at https://lists.oasis-open-projects.org/g/oca-casp which includes mailing list archives and how to join the mailing list.
 
 For more information on the goals of this effort, see the [project charter](./CHARTER.md). 

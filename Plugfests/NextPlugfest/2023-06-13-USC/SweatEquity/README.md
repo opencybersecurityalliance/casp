@@ -31,14 +31,13 @@ in a ransomware use case,
 then we can put text/links in OpenC2 and Ransomware
 reflecting that.
 
-
-need to add stuff in this file
-
-need to add process to add subdir with readme with your sweat equity
-
+See [FAQ on documenting sweat equity](../faq.md#how-do-i-document-the-sweat-equity-our-organization-will-provide)
+for process of documenting your sweat equity.
 
 ## Organizations
 * [CISA](./CISA/README.md)
+* [CTIN](./CTIN/README.md)
+* [Cybeats](./Cybeats/README.md)
 * [HII](./HII/README.md)
 * [IBM](./IBM/README.md)
 * [NSA](./NSA/README.md)
