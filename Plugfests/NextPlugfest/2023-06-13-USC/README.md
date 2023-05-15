@@ -32,7 +32,7 @@ in CASP usecases at this plugfest:
 This is a tenative list of organizations it is hoped will participate
 with sweat equity.
 
-![orgs](../../../Images/CASP_orgs.png)
+![orgs](../../../Images/CASP_orgs2.png)
 
 It was created from participation at previous events and/or interest
 expressed at CASP meetings.
