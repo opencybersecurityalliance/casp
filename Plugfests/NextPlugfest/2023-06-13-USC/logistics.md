@@ -17,8 +17,9 @@ A zoom link will be provided to registrants.
 Because of limited space
 (unless someone volunteers to pay for a larger space),
 physical attendance may be limited.
-See {add to other question} on process for 
-determining attendance.
+See [FAQ on physical attendance eligiblity](./faq.md#how-will-physical-attendance-be-determined) 
+for how sweat equity 
+affects physical attendance eligiblility.
 
 ## Registration
 need to fill in
@@ -32,6 +33,6 @@ at same campus
 fill in
 
 ## Agenda
-9-4 pacific
+10:30-4 pacific
 * apologies to other timezones
 see [agenda.md]
