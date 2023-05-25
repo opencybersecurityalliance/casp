@@ -22,12 +22,16 @@ for how sweat equity
 affects physical attendance eligiblility.
 
 ## Registration
-need to fill in
+Register at https://www.eventbrite.com/e/cybersecurity-automation-village-tickets-642167238497.
+Note if you attending physically, you will also be provided with a virtual link.
+Please only register once.
 
 ## SBOMarama
 CASP is day before 
 CISA SBOMarama
-at same campus
+at same campus. 
+See [Federal Register annoucement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)
+or [CISA website](https://www.cisa.gov/sbom) (about halfway down page) for more info on CISA SBOMarama.
 
 ## COVID
 fill in

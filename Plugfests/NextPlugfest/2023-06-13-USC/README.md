@@ -73,10 +73,10 @@ The event will be hybrid.
 It is likely we will be space-limited 
 at the physical event at USC.
 USC has kindly allowed us the use of a classroom
-(seats appx ??).
-Should more people register
-[logistics](./logistics.md)
+(seats appx 30).
+See [logistics](./logistics.md)
 for registration details.
+Should more people register
 than fit, we will be using 
 [sweat equity](./faq.md#what-is-sweat-equity)
 to determine physical attendance
