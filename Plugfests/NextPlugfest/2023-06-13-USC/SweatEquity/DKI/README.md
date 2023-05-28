@@ -1,5 +1,5 @@
 # DKI Sweat Equity
-David Kemp, participating as individual contributor.
+David Kemp, individual contributor.
 
 ## 1. Attendance
 One virtual  
