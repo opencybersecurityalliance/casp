@@ -23,11 +23,15 @@ def make_oc2_response(cmd: dict) -> dict:
             'to': [cmd['headers']['from']]
         },
         'body': {
-            'status': 200,
-            'status_text': "Got it, boss",
-            'results': {
-                'ap': {
-                    'encabulator_flux': 395
+            'openc2': {
+                'response': {
+                    'status': 200,
+                    'status_text': "Got it, boss",
+                    'results': {
+                        'ap': {
+                            'encabulator_flux': 395
+                        }
+                    }
                 }
             }
         }
