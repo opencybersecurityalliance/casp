@@ -28,7 +28,7 @@ def make_oc2_response(cmd: dict) -> dict:
                     'status': 200,
                     'status_text': "Got it, boss",
                     'results': {
-                        'ap': {
+                        'enc': {
                             'encabulator_flux': 395
                         }
                     }
