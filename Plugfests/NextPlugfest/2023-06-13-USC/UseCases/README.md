@@ -77,7 +77,7 @@ transmits that to the lead agency, CISA,for transmission to the
 SLTT.
 
 ### Day 5 - Law Enforcement
-Law enforcement was envolved thorughout and 
+Law enforcement was involved thorughout and 
 prepared multiple NIEM Message Exchange Packages (MEP)
 for entry in the Law Enforcement National Data Exchange (N-DEx),
 and for exchanges with the Royal Canadian Mounted Police (RCMP),
