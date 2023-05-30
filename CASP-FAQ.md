@@ -1,13 +1,15 @@
 # Frequently Asked Questions about the Cybersecurity Automation
 
 ## How does the Cybersecurity Automation relate to the OCA?
-Cybersecurity Automation is proposed to be a OCA subproject
+Cybersecurity Automation is an OCA subproject
 similar to stixshifter, Kestrel, PACE, and IoB.
+See https://opencybersecurityalliance.org/casp/.
 
 ## What will be the work products of Cybersecurity Automation SubProject?
 The initial focus of the Cybersecurity Automation SubProject (CASP)
-will be the Cybersecurity Automation Workshops.
-Cybersecurity Automation Workshops are
+will be the Cybersecurity Automation Village.
+Cybersecurity Automation Village evolved from
+the Cybersecurity Automation Workshops and are
 a series of events to prototype and test
 interoperability among cybersecurity automation technologies.
 CASP will maintain this website as well as may produce documentation
@@ -17,15 +19,18 @@ CASP will attempt to use existing specifications/standards
 wherever possible,
 but may create specifications/standards if necessary.
 
-## When will be the next Cybersecurity Automation Workshop?
-Intent is late 1QCY23 or early 2QCY23 but venue/dates are yet to be decided.
-First step is to make CASP an OCA supproject so that decisions can be made
-as part of the open project.
+## When will be the next Cybersecurity Automation Village?
+The next Cybersecurity Automation Village is
+13-June-2023 hybrid at USC.
+See 
+[next Village](./Plugfests/NextPlugfest/2023-06-13-USC/README.md)
+for more details.
 
 ## When was the last Cybersecurity Automation Workshop?
 The most recent Cybersecurity Automation Workshop was 2-June-2022 at
-the AT&T Forum in Washington, DC. See {need to make archive}.
-Previous workshops were {need to make archive}.
+the AT&T Forum in Washington, DC. See 
+[Previous Villages](./Plugfests/PastPlugfests/) for this and previous
+Villages/Workshops/Plugfests.
 
 ## How does PACE relate to the Cybersecurity Automation SubProject?
 [Posture Attribute Collection & Evaluation (PACE)](https://opencybersecurityalliance.org/pace/)
@@ -126,16 +131,22 @@ The [Common Security Advisory Framework (CSAF)](https://docs.oasis-open.org/csaf
 has a VEX profile for automated creation/consumption of VEX information. See previous question.
 
 ## How does STIX relate to the Cybersecurity Automation SubProject?
+add STIX/CASP text here
 
 ## How does JADN relate to the Cybersecurity Automation SubProject?
+add JADN/CASP text here
 
 ## How does VSMI relate to the Cybersecurity Automation SubProject?
+add VSMI/CASP text here
 
 ## How does CSAF relate to the Cybersecurity Automation SubProject?
+add CSAF/CASP text here
 
 ## How does NIEM relate to the Cybersecurity Automation SubProject?
+add NIEM/CASP text here
 
 ## How does OCSF relate to the Cybersecurity Automation SubProject?
+add OCSF/CASP text here
 
 ## How does CASP relate to US National Cybersecurity Strategy?
 The US National Cybersecurity Strategy can be found in 
@@ -150,3 +161,23 @@ CASP ...
 
 ## When will the next CASP event be?
 See [Next Plugfest](./Plugfests/NextPlugfest/README.md).
+
+## What is the "handwaving lycan"?
+Interworking involves interfaces from one system interworking with 
+interfaces from another system 
+using one of the standard interfaces of the workshop.
+Ideally the systems implement the standard interfaces
+If not, an open source “lycan” or “shifter” (see footnote below) 
+may be used to convert back and forth 
+between the vendor interface and the standard interface.
+For the purpose of demonstrating use cases, 
+the “hand waving lycan” can be used when actual lycan has not yet been coded.
+Hackathon activities may focus on creating a real lycan from a hand waving lycan.
+Example hand waving lycans can be 
+seen {Link here to blinky pace sfractal use cases designed to explain this}
+
+Footnote - Both OpenC2 and Stixshifter use
+werewolf/lycanthrope/shapeshifter terminology.
+Instead of transforming between wolf and human,
+these shims transform between vendor and standard interfaces.
+Stix uses “shifter” and OpenC2 uses “lycan”.
