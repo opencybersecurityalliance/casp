@@ -79,37 +79,90 @@ SLTT.
 ## Interface/Technology -Centric views of these use cases
 ### STIX
 STIX bundles were used ....
+
+For examples of the bundles used, see:
+- add links
+-  
+
 ### CACAO
 CACAO playbooks were used ...
+
+For examples of the playbooks used, see:
+- add links
+-  
+
 ### Kestrel
 Kestrel ....
+
+For examples of the huntbooks used, see:
+- add links
+-  
+
 ### OpenC2
 OpenC2 commands ...
+
+For examples of the bundles used, see:
+- add links
+-  
+
 ### IoB
 Indicators of Behavior (IoB) where included in the STIX bundle ...
+
+For examples of IoB in the bundles used, see:
+- add links
+-  
+
 ### TAC
 Threat Actor Contex (TAC) was included in the STIX bundle ...
+
+For examples of TAC in the bundles used, see:
+- add links
+-  
+
 ### STIX Shifter
 Stix Shifter ....
+
+For examples of what was used, see:
+- add links
+-  
+
 ### SBOM
 SBOMs were used in securty posture assessment by PACE systems in 
 Triumvirate CleanUp Inc and NSAANSA.
+
+For examples of the SBOMs used, see:
+- add links
+-  
+
 ### VEX
 VEXs were created by Murphy’s Law LLP to submit to NVD for new CVEs.
 VEXs were used in securty posture assessment by PACE systems in 
 Triumvirate CleanUp Inc and NSAANSA.
 
+For example of the VEXs used, see:
+- add links
+-  
+
+
 ## Demo-Centric views of these use cases
+
+add some pics of which systems talk to which systems (machine to machine, human, or handwaving) 
+and which steps in use cases they relate to
 
 ## Participant-Centric views of the Demos
 ### sFractal
-See {link to sFractal Sweat equity} provided end devices 
+[sFractal Sweat equity(../SweatEquity/sFractal) provided end devices 
 that could receive OpenC2 commands to
-- retrieve SBOMs as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
+- retrieve SBOMs from devices as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
 - execute security functions (eg deny ip=1.2.3.4) as part of Murphy’s Law LLP and Triumvirate CleanUp Inc mitigation actions in CACAO playbooks
+- retreive VEXs from PACE systems as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
+- blink lights so participants would actually see something happening :-). No actual value to use cases.
+
 ### NSA/HII
 See {link to ... Sweat equity} provided ...
+
 ### IBM
 See {link to ... Sweat equity} provided ... kestrel, stixshifter
+
 ### Cydarm
 See {link to ... Sweat equity} provided ... CACAO
