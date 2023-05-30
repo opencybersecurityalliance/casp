@@ -41,7 +41,7 @@ before, initiate the CACAO playbook, execute OpenC2 commands, and
 freeze out the black hat hackers that gained entry into their
 system.
 
-### Day 4 - Triumvirate CleanUp Inc
+### Day 3 - Triumvirate CleanUp Inc
 As the unknown exploit becomes a known entity, the zero-day
 becomes an N-day.  
 Triumvirate CleanUp Inc, also a subscriber to their ISAC,
@@ -56,7 +56,7 @@ indicate they are not susceptible to those CVE’s. Triumvirate
 CleanUp then initiates automated patching to harden the remaining
 40 devices and avoids getting hacked.
 
-### Day 5 - NSAANSA
+### Day 4 - NSAANSA
 The Never Say Anything and No Such Agency (NSAANSA) in the US
 Dept of Useless Factiods has automated cybersecurity adhering to
 federal guidelines including the "comply to connect" edict which
@@ -76,41 +76,84 @@ IEP informaton packet for SLTT consumption and implementation and
 transmits that to the lead agency, CISA,for transmission to the
 SLTT.
 
+### Day 5 - Law Enforcement
+Law enforcement was envolved thorughout and 
+prepared multiple NIEM Message Exchange Packages (MEP)
+for entry in the Law Enforcement National Data Exchange (N-DEx),
+and for exchanges with the Royal Canadian Mounted Police (RCMP),
+Europol, and Interpol.
+A criminal takedown across 6 countries occurred and 23 miscreants
+were put behind bars using evidence and e-filings using NIEM MEPs.
+  
+
+### Day 6 - MilOps
+It can neither be confirmed nor denied whether
+rouge nation states were involved in this use case;
+just as it can neither be confirmed nor denied whether
+NIEM MilOps extensions were distributed among NATO allies
+and hunt forward operations bricked adersary servers behind the attack.
+Day 6 is out-of-scope for the Cybersecurity Automation Village. 
+
 ## Interface/Technology -Centric views of these use cases
 ### STIX
-STIX bundles were used ....
+STIX bundles were used:
+* Day 1 by Murphy’s Law LLP and by the ISA
+* Day 2 by On Deck Holdings
+* Day 3 by Triumvirate CleanUp 
+* Day 4 by NSAANSA
+* STIX was not used per se on Days 5&6 but many of the NIEM Cyber Domain objects were from the Cyber Domain STIX adapter. 
 
-For examples of the bundles used, see:
-- add links
--  
+For sweat equity / village interworking demo's of STIX for these use cases, see:
+- tbd (eg link to IBM sweat equity)
+
+For example STIX bundles used above, see:
+- tbd
 
 ### CACAO
-CACAO playbooks were used ...
+CACAO playbooks were used:
+* Day 1 by Murphy’s Law LLP 
+* Day 2 by On Deck Holdings
+* Day 3 by Triumvirate CleanUp
+* Day 4 by NSAANSA
 
-For examples of the playbooks used, see:
-- add links
--  
+For sweat equity / village interworking demo's of CACAO for these use cases, see:
+- tbd (eg link to Cydsarn sweat equity)
+
+For example CACAO playbooks used above, see:
+- tbd
 
 ### Kestrel
-Kestrel ....
+Kestrel huntbooks were used:
+* Day 1 by Murphy’s Law LLP
+* Day 2 by On Deck Holdings
 
-For examples of the huntbooks used, see:
-- add links
--  
+For sweat equity / village interworking demo's of Kestrel huntbooks for these use cases, see:
+- tbd (eg link to IBM sweat equity)
+
+For example Kestrel huntbooks used above, see:
+- tbd
 
 ### OpenC2
-OpenC2 commands ...
+OpenC2 commands were used:
+* Day 1 by Murphy’s Law LLP 
+* Day 2 by On Deck Holdings
+* Day 3 by Triumvirate CleanUp
+* Day 4 by NSAANSA
 
-For examples of the bundles used, see:
-- add links
--  
+For sweat equity / village interworking demo's of OpenC2 for these use cases, see:
+- tbd (eg link to sFratal, HII sweat equity)
+
+For example OpenC2 commands used above, see:
+- tbd
 
 ### IoB
 Indicators of Behavior (IoB) where included in the STIX bundle ...
 
-For examples of IoB in the bundles used, see:
-- add links
--  
+For sweat equity / village interworking demo's used for these use cases, see:
+- tbd 
+
+For example IoB used above, see:
+- tbd
 
 ### TAC
 Threat Actor Contex (TAC) was included in the STIX bundle ...
@@ -127,21 +170,39 @@ For examples of what was used, see:
 -  
 
 ### SBOM
-SBOMs were used in securty posture assessment by PACE systems in 
-Triumvirate CleanUp Inc and NSAANSA.
+SBOMs were used:
+* Day 3 by Triumvirate CleanUp
+* Day 4 by NSAANSA
 
-For examples of the SBOMs used, see:
-- add links
--  
+For sweat equity / village interworking demo's used for these use cases, see:
+- tbd 
+
+For example SBOMs used above, see:
+- tbd
 
 ### VEX
-VEXs were created by Murphy’s Law LLP to submit to NVD for new CVEs.
-VEXs were used in securty posture assessment by PACE systems in 
-Triumvirate CleanUp Inc and NSAANSA.
+VEXs were used:
+* Day 3 by Triumvirate CleanUp
+* Day 4 by NSAANSA
 
-For example of the VEXs used, see:
-- add links
--  
+For sweat equity / village interworking demo's used for these use cases, see:
+- tbd 
+
+For example Vexs used above, see:
+- tbd
+
+### NIEM
+NIEM Message Exchange Packages (MEPs) were used:
+* Day 1 by Murphy’s Law LLP and law enforcement
+* Day 2 by On Deck Holdings and law enforcement
+* Day 5 by law enforcement and the courts
+* Day 6 by the military
+
+For sweat equity / village interworking demo's used for these use cases, see:
+- tbd 
+
+For example NIEM MEPs used above, see:
+- tbd
 
 
 ## Demo-Centric views of these use cases
