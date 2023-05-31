@@ -1,7 +1,7 @@
 # Cydarm Sweat Equity
 
 ## 1. About Cydarm
-add a paragraph or two (keep it short) about Cydarm and what it does.
+Cydarm's Cyber Response Management platform provides a whole-of-business approach to security operations. Designed to support a constantly changing landscape, Cydarm provides capabilities that cover a comprehensive set of needs for security operations teams. These include case management, data enrichment, integrations, editable playbooks, reporting, collaboration, and response time SLAs.
 
 ## 2. Attendance
 Cydarm intends to have ?N? participant(s): 
