@@ -1,7 +1,8 @@
 # sFractal Sweat Equity
 
 ## 1. About sFractal
-add a paragraph or two (keep it short) about ?OrgName? and what it does.
+sFractal Consulting is a boutique consultancy assiting boards
+with including cybersecurity risk in the business decision analytics. 
 
 ## 2. Attendance
 sFractral intends to have 1 participant: 

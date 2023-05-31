@@ -1,7 +1,10 @@
 # PODII Sweat Equity
 
 ## 1. About PODII
-add a paragraph or two (keep it short) about PODII and what it does.
+Podii is "software done right". 
+Podii is a software consulting company extending modern 
+software, mobile, and web application development. 
+Podii provides divergent professional services and bring brilliant digital ideas to the table.
 
 ## 2. Attendance
 PODII intends to have ?N? participant(s): 
