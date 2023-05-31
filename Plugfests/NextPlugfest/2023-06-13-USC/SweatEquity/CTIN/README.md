@@ -1,11 +1,42 @@
-CTIN to fill in
 # CTIN Sweat Equity
 
-## 1. Attendance
-put how many people and whether physical or virtual
+## 1. About CTIN
+add a paragraph or two (keep it short) about ?OrgName? and what it does.
 
-put 'participating country(ies)': USA
+## 2. Attendance
+CTIN intends to have 1 participant: 
+* 1 attending physically
+* 0 attending virtually
 
-## 2. Contributions
-put what contributing and how it applies
-e.g. helping create and execute use cases
+For 'participating countries': USA
+
+## 3. Use Case Sweat Equity Metric
+CTIN will be scribing the event,
+as well as participating in both use case development
+and demo execution.
+Jane - could you provide some example STIX bundles
+and/or some additonal use cases (or details to existing)?
+
+* Day 1 - STIX
+  - Machine Interface (see {add link for example STIX bundles}), 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 2  - STIX
+  - Machine Interface (see {add link for example STIX bundles}), 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 3 - STIX - STIX
+  - Machine Interface (see {add link for example STIX bundles}), 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 4 - STIX
+  - Machine Interface (see {add link for example STIX bundles}), 
+  - Human Interface, 
+  - Hand-waving Lycan
+
+
+## 4. Contributions
+CTIN will be scribing the event,
+as well as participating in both use case development
+and demo execution.
+
