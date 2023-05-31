@@ -97,7 +97,7 @@ Day 6 is out-of-scope for the Cybersecurity Automation Village.
 ## Interface/Technology -Centric views of these use cases
 ### STIX
 STIX bundles were used:
-* Day 1 by Murphy’s Law LLP and by the ISA
+* Day 1 by Murphy’s Law LLP and by the ISAC
 * Day 2 by On Deck Holdings
 * Day 3 by Triumvirate CleanUp 
 * Day 4 by NSAANSA
@@ -167,7 +167,11 @@ Stix Shifter ....
 
 For examples of what was used, see:
 - add links
--  
+
+### PACE
+PACE systems were used:
+* Day 3 by Triumvirate CleanUp
+* Day 4 by NSAANSA
 
 ### SBOM
 SBOMs were used:
@@ -182,6 +186,7 @@ For example SBOMs used above, see:
 
 ### VEX
 VEXs were used:
+* Day 1 by Murphy’s Law LLP 
 * Day 3 by Triumvirate CleanUp
 * Day 4 by NSAANSA
 

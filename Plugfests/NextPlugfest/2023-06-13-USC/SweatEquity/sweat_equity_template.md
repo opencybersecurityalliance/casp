@@ -1,14 +1,14 @@
-# Cydarm Sweat Equity
+# ?OrgName? Sweat Equity
 
-## 1. About Cydarm
-add a paragraph or two (keep it short) about Cydarm and what it does.
+## 1. About ?OrgName?
+add a paragraph or two (keep it short) about ?OrgName? and what it does.
 
 ## 2. Attendance
-Cydarm intends to have ?N? participant(s): 
+?OrgName" intends to have ?N? participant(s): 
 * ?x? attending physically
 * ?y? attending virtual-only
 
-For 'participating countries': Australia
+For 'participating countries': ?USA?
 
 ## 3. Use Case Sweat Equity Metric
 See [Use Case Sweat Equity](../UseCases/use_case_tech.md) for explanation
@@ -19,17 +19,30 @@ the [use case](../UseCases/README.md).
 Leave/Augment those of the following that apply 
 to what your organizaiton brings as sweat equity,
 delete those that don't:
-* Day 1 - CACAO
-  - Machine Interface, Human Interface
-* Day 1 - OpenC2
+* Day 1 - CACAO, Kestrel, OpenC2, STIX, STIX Shifter, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
   - Hand-waving Lycan
-* Day 2 - ditto day 1
-* Day 3 - ditto day 1
-* Day 4 - ditto day 1
-* Day 5 - NIEM Open
-  - Hand-waving Lycan (add Austrailia gov agency to use case)
-* Day 6 - NIEM Open
-  - Hand-waving Lycan (add Austrailia gov agency to use case)
+* Day 2 - CACAO, Kestrel, OpenC2, STIX, STIX Shifter, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 3 - CACAO, CSAF, OpenC2, PACE, SBOM, STIX, VEX, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 4 - CACAO, CSAF, OpenC2, PACE, SBOM, STIX, VEX, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 5 - NIEM Open, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
+  - Hand-waving Lycan
+* Day 6 - NIEM Open, others as appropriate
+  - Machine Interface, 
+  - Human Interface, 
+  - Hand-waving Lycan
 
 ## 4. Contributions
 Describe the sweat equity.
@@ -44,6 +57,9 @@ OpenC2 commands, etc.
 ## 5. Planned Use Cases (optional)
 Describe how works into demonstrating the [use case](../UseCases/README.md)
 and/or provide other use cases.
+
+Frequently this section will just say "see section 3", 
+but more detail can be provided here if desired.
 
 ## 6. Planned Interactions (optional)
 Ideally sketch out how your contributions can interact with the sweat equity
