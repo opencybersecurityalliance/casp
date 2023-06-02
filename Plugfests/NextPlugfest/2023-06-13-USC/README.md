@@ -29,7 +29,7 @@ in CASP usecases at this plugfest:
 ![technologies](../../../Images/CASP_technologies.png)
 
 For more information on how the technologies/... will be demonstrated,
-see [Demo Use Case](./UseCases/README.md) and [Use Case Tech]
+see [Demo Use Case](./UseCases/README.md)
 and [Demo Use Case tech](./UseCases/use_case_tech.md).
 
 # Organizations

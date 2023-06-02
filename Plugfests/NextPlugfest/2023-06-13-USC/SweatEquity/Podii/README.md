@@ -1,15 +1,16 @@
-# PODII Sweat Equity
+# Podii Sweat Equity
 
-## 1. About PODII
-Podii is "software done right". 
-Podii is a software consulting company extending modern 
-software, mobile, and web application development. 
-Podii provides divergent professional services and bring brilliant digital ideas to the table.
+## 1. About Podii
+At Podii, we are a software consulting company dedicated to providing tailor-made digital solutions that cater to the unique needs of small and medium-sized businesses and startups. Our mission is to empower our clients by offering accessible and affordable technology solutions, removing the complexities associated with technology implementation and management.
+
+We understand the challenges faced by SMEs and startups, and our goal is to enable them to thrive in today's digital landscape. 
+
+For more information, see [Podii website](https://podiihq.com/).
 
 ## 2. Attendance
-PODII intends to have ?N? participant(s): 
+Podii intends to have 1 participant: 
 * 0 attending physically
-* ?y? attending virtual-only
+* 1 attending virtual-only
 
 For 'participating countries': Kenya
 
