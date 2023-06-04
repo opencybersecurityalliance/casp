@@ -96,139 +96,15 @@ Day 6 is out-of-scope for the Cybersecurity Automation Village.
 
 ## Interface/Technology -Centric views of these use cases
 ### STIX
-STIX bundles were used:
-* Day 1 by Murphy’s Law LLP and by the ISAC
-* Day 2 by On Deck Holdings
-* Day 3 by Triumvirate CleanUp 
-* Day 4 by NSAANSA
-* STIX was not used per se on Days 5&6 but many of the NIEM Cyber Domain objects were from the Cyber Domain STIX adapter. 
-
-For sweat equity / village interworking demo's of STIX for these use cases, see:
-- tbd (eg link to IBM sweat equity)
-
-For example STIX bundles used above, see:
-- tbd
-
-### CACAO
-CACAO playbooks were used:
-* Day 1 by Murphy’s Law LLP 
-* Day 2 by On Deck Holdings
-* Day 3 by Triumvirate CleanUp
-* Day 4 by NSAANSA
-
-For sweat equity / village interworking demo's of CACAO for these use cases, see:
-- tbd (eg link to Cydsarn sweat equity)
-
-For example CACAO playbooks used above, see:
-- tbd
-
-### Kestrel
-Kestrel huntbooks were used:
-* Day 1 by Murphy’s Law LLP
-* Day 2 by On Deck Holdings
-
-For sweat equity / village interworking demo's of Kestrel huntbooks for these use cases, see:
-- tbd (eg link to IBM sweat equity)
-
-For example Kestrel huntbooks used above, see:
-- tbd
-
-### OpenC2
-OpenC2 commands were used:
-* Day 1 by Murphy’s Law LLP 
-* Day 2 by On Deck Holdings
-* Day 3 by Triumvirate CleanUp
-* Day 4 by NSAANSA
-
-For sweat equity / village interworking demo's of OpenC2 for these use cases, see:
-- tbd (eg link to sFratal, HII sweat equity)
-
-For example OpenC2 commands used above, see:
-- tbd
-
-### IoB
-Indicators of Behavior (IoB) where included in the STIX bundle ...
-
-For sweat equity / village interworking demo's used for these use cases, see:
-- tbd 
-
-For example IoB used above, see:
-- tbd
-
-### TAC
-Threat Actor Contex (TAC) was included in the STIX bundle ...
-
-For examples of TAC in the bundles used, see:
-- add links
--  
-
-### STIX Shifter
-Stix Shifter ....
-
-For examples of what was used, see:
-- add links
-
-### PACE
-PACE systems were used:
-* Day 3 by Triumvirate CleanUp
-* Day 4 by NSAANSA
-
-### SBOM
-SBOMs were used:
-* Day 3 by Triumvirate CleanUp
-* Day 4 by NSAANSA
-
-For sweat equity / village interworking demo's used for these use cases, see:
-- tbd 
-
-For example SBOMs used above, see:
-- tbd
-
-### VEX
-VEXs were used:
-* Day 1 by Murphy’s Law LLP 
-* Day 3 by Triumvirate CleanUp
-* Day 4 by NSAANSA
-
-For sweat equity / village interworking demo's used for these use cases, see:
-- tbd 
-
-For example Vexs used above, see:
-- tbd
-
-### NIEM
-NIEM Message Exchange Packages (MEPs) were used:
-* Day 1 by Murphy’s Law LLP and law enforcement
-* Day 2 by On Deck Holdings and law enforcement
-* Day 5 by law enforcement and the courts
-* Day 6 by the military
-
-For sweat equity / village interworking demo's used for these use cases, see:
-- tbd 
-
-For example NIEM MEPs used above, see:
-- tbd
-
+See [Use Case Tech](./use_case_tech.md) for the project-centric (e.g. OpenC2)
+view of these use cases.
 
 ## Demo-Centric views of these use cases
 
-add some pics of which systems talk to which systems (machine to machine, human, or handwaving) 
+See [Use Case Demos](./use_case_demos.md) for
+some pics of which systems talk to which systems (machine to machine, human, or handwaving) 
 and which steps in use cases they relate to
 
 ## Participant-Centric views of the Demos
-### sFractal
-[sFractal Sweat equity(../SweatEquity/sFractal) provided end devices 
-that could receive OpenC2 commands to
-- retrieve SBOMs from devices as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
-- execute security functions (eg deny ip=1.2.3.4) as part of Murphy’s Law LLP and Triumvirate CleanUp Inc mitigation actions in CACAO playbooks
-- retreive VEXs from PACE systems as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
-- blink lights so participants would actually see something happening :-). No actual value to use cases.
-
-### NSA/HII
-See {link to ... Sweat equity} provided ...
-
-### IBM
-See {link to ... Sweat equity} provided ... kestrel, stixshifter
-
-### Cydarm
-See {link to ... Sweat equity} provided ... CACAO
+see [Use Case Participants](./use_case_participants.md) for
+how each participants sweat equity fits into the use cases.
