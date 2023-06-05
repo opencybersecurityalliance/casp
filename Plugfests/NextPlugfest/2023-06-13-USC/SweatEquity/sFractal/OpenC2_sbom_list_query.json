@@ -1,0 +1,4 @@
+{
+    "action": "query",
+    "target": "sbom_list"
+}

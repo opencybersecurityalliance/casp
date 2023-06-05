@@ -61,6 +61,7 @@ Add here for STIX, IoB, TAC, etc.
 * [CTIN](./CTIN/README.md)
 * [Cybeats](./Cybeats/README.md)
 * [Cydarm](./Cydarm/README.md)
+* [DKI](./DKI/README.md)
 * [HII](./HII/README.md)
 * [IBM](./IBM/README.md)
 * [NSA](./NSA/README.md)
@@ -71,6 +72,7 @@ Add here for STIX, IoB, TAC, etc.
 * [USC](./USC/README.md)
 * add in alphabetical order linked to subdirs
 * add in alphabetical order linked to subdirs
+  * use [sweat equity template](./sweat_equity_template.md) as a template for subdir README.md
 
 ## Technologies
 * CACAO

@@ -18,6 +18,7 @@ It is a forum where products from all vendors, researchers, and software publish
 
 This event is for sharing information, prototyping, testing, 
 and specifying interoperability among cybersecurity automation technologies.
+The focus of this event will be [this usecase](./UseCases/README.md).
 
 Information on previous events can be found at
 [PastPlugfests](../../PastPlugfests/).
@@ -27,6 +28,10 @@ This is a tenative list of technologies hoped to be interworked
 in CASP usecases at this plugfest:
 
 ![technologies](../../../Images/CASP_technologies.png)
+
+For more information on how the technologies/... will be demonstrated,
+see [Demo Use Case](./UseCases/README.md)
+and [Demo Use Case tech](./UseCases/use_case_tech.md).
 
 # Organizations
 This is a tenative list of organizations it is hoped will participate
@@ -73,10 +78,10 @@ The event will be hybrid.
 It is likely we will be space-limited 
 at the physical event at USC.
 USC has kindly allowed us the use of a classroom
-(seats appx ??).
-Should more people register
-[logistics](./logistics.md)
+(seats appx 30).
+See [logistics](./logistics.md)
 for registration details.
+Should more people register
 than fit, we will be using 
 [sweat equity](./faq.md#what-is-sweat-equity)
 to determine physical attendance

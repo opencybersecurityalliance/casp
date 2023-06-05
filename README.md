@@ -12,9 +12,9 @@ and participate in the [CASP mailing list](https://lists.oasis-open-projects.org
 
 Note the CASP event is the day before, and in the same venue as, 
 the CISA SBOMarama.
-For more information on the CISA SBOMarama
-see {add link to Federal Register annoucement}
-and {add link to cisa.gov/sbom/whatever}.
+For more information on the CISA SBOMarama see
+[Federal Register annoucement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)
+or [CISA website](https://www.cisa.gov/sbom) (about halfway down page).
 
 ---
 

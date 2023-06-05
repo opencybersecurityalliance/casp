@@ -7,9 +7,8 @@ and info on use cases
 NSA keynoting?
 
 ## 1. Attendance
-put how many people and whether physical or virtual
-
-put 'participating country(ies)': USA
+One in person  
+One virtual  
+Participating country: USA
 
 ## 2. Contributions
-put what contributing and how it applies

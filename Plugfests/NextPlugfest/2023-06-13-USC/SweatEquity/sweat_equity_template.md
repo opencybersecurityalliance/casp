@@ -1,14 +1,14 @@
-# One Planet Education Network (OPEN) Sweat Equity
+# ?OrgName? Sweat Equity
 
-## 1. About OPEN
-At One Planet Education Network, our mission is to promote scientific literacy along with cross-cultural understanding, and to inspire a passion for lifelong learning. We not only want to prepare the global community of learners for the 21st-century workplace, but also to better prepare them to work together to effectively contend with the major challenges confronting our civilization.
+## 1. About ?OrgName?
+add a paragraph or two (keep it short) about ?OrgName? and what it does.
 
 ## 2. Attendance
-OPEN intends to have ?N? participant(s): 
+?OrgName" intends to have ?N? participant(s): 
 * ?x? attending physically
 * ?y? attending virtual-only
 
-For 'participating countries': USA
+For 'participating countries': ?USA?
 
 ## 3. Use Case Sweat Equity Metric
 See [Use Case Sweat Equity](../UseCases/use_case_tech.md) for explanation

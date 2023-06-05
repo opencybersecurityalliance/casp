@@ -14,17 +14,19 @@ which TL;DR is "don't be a jerk".
 
 There is no cost for attending.
 
-Anyone may attend virtually.
+Anyone may attend virtually and no sweat equity is required.
+
 Because of limited space
 (unless someone volunteers to pay for a larger space),
 physical attendance may be limited.
-See {add link to other question} 
+See 
 [how-will-physical-attendance-be-determined](./faq.md#how-will-physical-attendance-be-determined)
 for process on 
-determining physical attendance.
+determining physical attendance if we do need to limit.
+At the moment, looks like everyone will fit.
 
 ## What are logistics of attending virtually?
-See [logistics](./logistics.md)
+See [logistics](./logistics.md) - no sweat equity required!
 
 ## What are logistics of attending physically?
 See [logistics](./logistics.md)
@@ -41,8 +43,11 @@ for different demoable technologies (e.g. one for STIX Shifter and one for Kestr
 Governance will be via [CASP governance procedures](../../../GOVERNANCE.md).
 
 ## What is "sweat equity"?
-Sweat equity in this context (ie for determining physical attendance) is mainly:
-* working software as part of demoable CASP use cases that interface with other organizations using CASP standard interfaces (i.e. the "technologies").
+Sweat equity in this context (ie for determining physical attendance) is mainly
+just a willingness to participate and not just be an observer.
+How much "sweat" is a function of how much effort is being provided.
+
+Obviously it is a lot of effort to have working software as part of demoable CASP use cases that interface with other organizations using CASP standard interfaces (i.e. the "technologies"). So those organizations have the most sweat equity.
 
 Consideration will also be given to 
 working software as part of demoable CASP use cases 
@@ -62,8 +67,11 @@ Consideration will also be given to a combination of:
 * keynote speakers
 * contributions to CASP-related projects (Kestrel, PACE, IoB, OpenC2, STIX, CSAF/VEX, ... ).
 
+And last, and most important, is sweat equity includes contributing to use cases.
+I.e. what are your problems you'd like cybersecurity automation to solve?
+
 ## Can I contribute a video about my company contribution?
-Yes, it is encouraged. See [videos](./SweatEquity/video_list.md)
+Yes, it is encouraged. See [videos](./SweatEquity/video_list.md). 
 
 ## How do I document the sweat equity our organization will provide?
 Ideally with a github pull request against https://github.com/opencybersecurityalliance/casp/tree/main/Plugfests/NextPlugfest/2023-06-13-USC/SweatEquity to:

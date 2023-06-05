@@ -4,7 +4,10 @@
 
 # Announcement
 
-The next CASP event will be held June 13th, 2023 at USC and hybrid.
+The next CASP event will be a Cybersecurity Automation Village
+held June 13th, 2023 at USC and hybrid.
+For more information, see [USC plugfest](./2023-06-13-USC/README.md)
+and/or [Registration](./2023-06-13-USC/logistics.md#registration).
 
 ---
 

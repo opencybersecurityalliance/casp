@@ -41,7 +41,7 @@ before, initiate the CACAO playbook, execute OpenC2 commands, and
 freeze out the black hat hackers that gained entry into their
 system.
 
-### Day 4 - Triumvirate CleanUp Inc
+### Day 3 - Triumvirate CleanUp Inc
 As the unknown exploit becomes a known entity, the zero-day
 becomes an N-day.  
 Triumvirate CleanUp Inc, also a subscriber to their ISAC,
@@ -56,7 +56,7 @@ indicate they are not susceptible to those CVE’s. Triumvirate
 CleanUp then initiates automated patching to harden the remaining
 40 devices and avoids getting hacked.
 
-### Day 5 - NSAANSA
+### Day 4 - NSAANSA
 The Never Say Anything and No Such Agency (NSAANSA) in the US
 Dept of Useless Factiods has automated cybersecurity adhering to
 federal guidelines including the "comply to connect" edict which
@@ -76,40 +76,35 @@ IEP informaton packet for SLTT consumption and implementation and
 transmits that to the lead agency, CISA,for transmission to the
 SLTT.
 
+### Day 5 - Law Enforcement
+Law enforcement was involved thorughout and 
+prepared multiple NIEM Message Exchange Packages (MEP)
+for entry in the Law Enforcement National Data Exchange (N-DEx),
+and for exchanges with the Royal Canadian Mounted Police (RCMP),
+Europol, and Interpol.
+A criminal takedown across 6 countries occurred and 23 miscreants
+were put behind bars using evidence and e-filings using NIEM MEPs.
+  
+
+### Day 6 - MilOps
+It can neither be confirmed nor denied whether
+rouge nation states were involved in this use case;
+just as it can neither be confirmed nor denied whether
+NIEM MilOps extensions were distributed among NATO allies
+and hunt forward operations bricked adersary servers behind the attack.
+Day 6 is out-of-scope for the Cybersecurity Automation Village. 
+
 ## Interface/Technology -Centric views of these use cases
 ### STIX
-STIX bundles were used ....
-### CACAO
-CACAO playbooks were used ...
-### Kestrel
-Kestrel ....
-### OpenC2
-OpenC2 commands ...
-### IoB
-Indicators of Behavior (IoB) where included in the STIX bundle ...
-### TAC
-Threat Actor Contex (TAC) was included in the STIX bundle ...
-### STIX Shifter
-Stix Shifter ....
-### SBOM
-SBOMs were used in securty posture assessment by PACE systems in 
-Triumvirate CleanUp Inc and NSAANSA.
-### VEX
-VEXs were created by Murphy’s Law LLP to submit to NVD for new CVEs.
-VEXs were used in securty posture assessment by PACE systems in 
-Triumvirate CleanUp Inc and NSAANSA.
+See [Use Case Tech](./use_case_tech.md) for the project-centric (e.g. OpenC2)
+view of these use cases.
 
 ## Demo-Centric views of these use cases
 
+See [Use Case Demos](./use_case_demos.md) for
+some pics of which systems talk to which systems (machine to machine, human, or handwaving) 
+and which steps in use cases they relate to
+
 ## Participant-Centric views of the Demos
-### sFractal
-See {link to sFractal Sweat equity} provided end devices 
-that could receive OpenC2 commands to
-- retrieve SBOMs as part of Triumvirate CleanUp Inc and NSAANSA PACE posture assessment
-- execute security functions (eg deny ip=1.2.3.4) as part of Murphy’s Law LLP and Triumvirate CleanUp Inc mitigation actions in CACAO playbooks
-### NSA/HII
-See {link to ... Sweat equity} provided ...
-### IBM
-See {link to ... Sweat equity} provided ... kestrel, stixshifter
-### Cydarm
-See {link to ... Sweat equity} provided ... CACAO
+see [Use Case Participants](./use_case_participants.md) for
+how each participants sweat equity fits into the use cases.
