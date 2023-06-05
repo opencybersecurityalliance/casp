@@ -18,6 +18,7 @@ It is a forum where products from all vendors, researchers, and software publish
 
 This event is for sharing information, prototyping, testing, 
 and specifying interoperability among cybersecurity automation technologies.
+The focus of this event will be [this usecase](./UseCases/README.md).
 
 Information on previous events can be found at
 [PastPlugfests](../../PastPlugfests/).
