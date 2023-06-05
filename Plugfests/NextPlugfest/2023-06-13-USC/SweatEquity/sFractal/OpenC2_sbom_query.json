@@ -1,0 +1,8 @@
+{
+    "action": "query",
+    "target": {
+      "sbom": {
+          "sbom_name": "binky_maha"
+      }
+    }
+  }
