@@ -14,11 +14,11 @@ the following fictious set of use cases.
 ### Day 1 - Murphy’s Law LLP
 During the vows at a daughter’s wedding, midway through an
 emergency root canal, at 8 a.m. on Christmas morning the CEO of
-Murphy’s Law LLP receives a most unwelcome message—a brand new
+Murphy’s Law LLP receives a most unwelcome message: a brand new
 exploit has made its world-wide zero-day debut in the company’s
 system. Fortunately, Murphy’s Law LLP had the foresight to adopt
-cybersecurity automation protocols. An immediate kestrel threat
-hunt finds the exploited systems, kicks the attackers out of the
+cybersecurity automation protocols. An immediate Kestrel threat
+hunt finds the exploited systems, and the automation kicks the attackers out of the
 system using CACAO playbooks with OpenC2 commands, alerts law
 enforcement, and analyzes the tactics and exploited
 vulnerabilities. Recognizing this as a zero-day, STIX bundles are
@@ -33,9 +33,9 @@ NVD API for the purpose of creating new CVE's.
 ### Day 2 - On Deck Holdings
 Panic begins anew at On Deck Holdings as a stark uptick in server
 activity signals that yesterday’s exploits at Murphy’s Law LLP
-has spread to new haunts. Fortunately, On Deck Holdings
+have spread to new haunts. Fortunately, On Deck Holdings
 previously received STIX information from their ISAC. Being
-similarly automated, On Deck Holdings’ cybersecurity system. They
+similarly automated, On Deck Holdings’ cybersecurity systems 
 soon match their problem with the STIX object generated the day
 before, initiate the CACAO playbook, execute OpenC2 commands, and
 freeze out the black hat hackers that gained entry into their
@@ -43,36 +43,37 @@ system.
 
 ### Day 3 - Triumvirate CleanUp Inc
 As the unknown exploit becomes a known entity, the zero-day
-becomes an N-day.  
+becomes an N-day. 
+
 Triumvirate CleanUp Inc, also a subscriber to their ISAC,
 analyzes the STIX bundle and decides to use their PACE system to
 analyze their environment and see if they are vulnerable to the
 same attack that targeted Murphy’s Law and On Deck. Using their
 PACE system, they analyze their SBOMs and discover they do have
-70 devices with components that have the CVE’s reported in the
+70 devices with components that have the CVEs reported in the
 STIX bundle. Further analysis with PACE shows that 30 of those
-potentially affected devices have VEX’s from their suppliers that
-indicate they are not susceptible to those CVE’s. Triumvirate
+potentially affected devices have VEXes from their suppliers that
+indicate they are not susceptible to those CVEs. Triumvirate
 CleanUp then initiates automated patching to harden the remaining
 40 devices and avoids getting hacked.
 
 ### Day 4 - NSAANSA
 The Never Say Anything and No Such Agency (NSAANSA) in the US
-Dept of Useless Factiods has automated cybersecurity adhering to
-federal guidelines including the "comply to connect" edict which
+Dept of Useless Factoids has automated cybersecurity adhering to
+federal guidelines including the "comply to connect" edict, which
 requires any new devices connecting to a network to have an
 acceptable security posture. NSAANSA's ISAC feed receives the
 STIX bundle and their systems automagically convert that
 informaton into new rules for calculating security posture in
 their PACE system. When a new device attempts to connect to the
 NSAANSA environment, their security posture assessment includes
-the PACE system examining device SBOMs and VEXs including looking
-for impact of the WhitchyWashy CVE's.
+the PACE system examining device SBOMs and VEXes including looking
+for impact of the WhitchyWashy CVEs.
 
 Although NSAANSA is not the lead agency for sharing
 comply-to-connect policies with the
 State/Local/Tribal-Terriorities (SLTT), NSAANSA creates a NIEM
-IEP informaton packet for SLTT consumption and implementation and
+IEP information packet for SLTT consumption and implementation and
 transmits that to the lead agency, CISA,for transmission to the
 SLTT.
 
@@ -88,7 +89,7 @@ were put behind bars using evidence and e-filings using NIEM MEPs.
 
 ### Day 6 - MilOps
 It can neither be confirmed nor denied whether
-rouge nation states were involved in this use case;
+rogue nation states were involved in this use case;
 just as it can neither be confirmed nor denied whether
 NIEM MilOps extensions were distributed among NATO allies
 and hunt forward operations bricked adersary servers behind the attack.
