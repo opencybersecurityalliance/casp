@@ -13,13 +13,15 @@ Our systems engineering and software team supports government customers with cyb
 
 ## 2. Attendance
 
-Five personnel plan to attend (all virtual)
+Five personnel plan to attend (all virtual):
 
- * Larry Feldman (systems engineer)
- * Matt Roberts (software team lead)
- * Kevin Cressman (software developer)
- * Kaitlyn Hsu (software developer)
- * Kouloum Abidji (software developer)
+| **Name** | **Role** | **Company** |
+|---|---|---|
+| Larry Feldman | systems engineer | HII-MT |
+| Matt Roberts | software team lead | Bestgate Engineering |
+| Kevin Cressman | software developer | Praxis Engineering |
+|  Kaitlyn Hsu | software developer | Bestgate Engineering | 
+| Kouloum Abidji | software developer | HII-MT |
 
 Team is based in Maryland, USA
 
@@ -31,7 +33,7 @@ HII's team plans to contribute the following:
 * [OIF-Device](https://github.com/oasis-open/openc2-oif-device) -- JSON schema-driven OpenC2 Consumer, supporting transfers over HTTPS and MQTT 
 * [Yuuki](https://github.com/oasis-open/openc2-yuuki) -- OpenC2 Consumer implemented in Python
 
-We have been working on the development of an OpenC2 [Actuator Profile](https://docs.oasis-open.org/openc2/oc2arch/v1.0/cs01/oc2arch-v1.0-cs01.html#e1-application-of-actuator-profiles-and-transfer-specifications) for [Threat Hunting](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/ap-hunt-v1.0.md) (link to work-in-progress draft document and schema) in concert with the OCA [Kestrel](https://github.com/opencybersecurityalliance/kestrel-lang) team, and will demonstrate the use of OpenC2 to;
+We have been working on the development of an OpenC2 [Actuator Profile](https://docs.oasis-open.org/openc2/oc2arch/v1.0/cs01/oc2arch-v1.0-cs01.html#e1-application-of-actuator-profiles-and-transfer-specifications) for [Threat Hunting (TH)](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/ap-hunt-v1.0.md) (link is to work-in-progress draft document and schema) in concert with the OCA [Kestrel](https://github.com/opencybersecurityalliance/kestrel-lang) team, and will demonstrate the use of OpenC2 to:
 
  * query a TH Consumer regarding available huntbooks and data sources
  * initiate a hunt using a specified huntbook, data source(s), and hunt arguments
