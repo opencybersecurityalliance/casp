@@ -23,19 +23,6 @@ delete those that don't:
   - Machine Interface, Human Interface
 
 ## 4. Contributions
-Describe the sweat equity.
-If there are multiple items involved, summarize here
-and go into more detail in subsections
+* BPMN to CACAO converter
+* Demo UI to display CACAO playbooks
 
-### 4.1 Contribution Subsection (optional)
-provide more detail in subsections, ideally with links to supporting data
-e.g. example STIX bundles, CACAO playbooks, Kestrel hunt books,
-OpenC2 commands, etc.
-
-## 5. Planned Use Cases (optional)
-Describe how works into demonstrating the [use case](../UseCases/README.md)
-and/or provide other use cases.
-
-## 6. Planned Interactions (optional)
-Ideally sketch out how your contributions can interact with the sweat equity
-from other orgs (or other projects of yours).
