@@ -51,3 +51,7 @@ The capability to invoke threat hunting via OpenC2 is an extension of the origin
 ### 3.3 CACAO Playbook Example
 
 We also plan to show a [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook keyed to the events of the CASP [Ransomware use case](https://github.com/opencybersecurityalliance/casp/tree/main/UseCases#21-ransomware).
+
+### 3.4 Interoperability
+
+To send an OpenC2 Command to one of our devices and demonstrate interoperability, please see the [DKI Sweat Equity page](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/NextPlugfest/2023-06-13-USC/SweatEquity/DKI/README.md)
