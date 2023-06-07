@@ -4,9 +4,9 @@
 Cydarm's Cyber Response Management platform provides a whole-of-business approach to security operations. Designed to support a constantly changing landscape, Cydarm provides capabilities that cover a comprehensive set of needs for security operations teams. These include case management, data enrichment, integrations, editable playbooks, reporting, collaboration, and response time SLAs.
 
 ## 2. Attendance
-Cydarm intends to have ?N? participant(s): 
-* ?x? attending physically
-* ?y? attending virtual-only
+Cydarm intends to have 1 participant(s): 
+* 1 attending physically
+* 0 attending virtual-only
 
 For 'participating countries': Australia
 
@@ -21,15 +21,6 @@ to what your organizaiton brings as sweat equity,
 delete those that don't:
 * Day 1 - CACAO
   - Machine Interface, Human Interface
-* Day 1 - OpenC2
-  - Hand-waving Lycan
-* Day 2 - ditto day 1
-* Day 3 - ditto day 1
-* Day 4 - ditto day 1
-* Day 5 - NIEM Open
-  - Hand-waving Lycan (add Austrailia gov agency to use case)
-* Day 6 - NIEM Open
-  - Hand-waving Lycan (add Austrailia gov agency to use case)
 
 ## 4. Contributions
 Describe the sweat equity.
