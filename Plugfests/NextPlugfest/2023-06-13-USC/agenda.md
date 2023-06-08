@@ -8,31 +8,32 @@ Note all times are approximate and subject to change
 based on the consensus of those present.
 
 | Time(PDT) | Event | Wrangler |
-|10:30|Set up, kick off| Duncan Sparrell|
-|10:45|Strategic Objectives|Bret Jordan|
-|11:00|Use Case Overview and Project Review|Duncan Sparrell|
-|12:00|Lunch|All|
-|1:00|OpenC2 - JADN - Kestrel - STIX Shifter||
-||* HII-MT||
-||* IBM ||
-||* NSA||
-||* sFractal||
-|1:30|Collaborative Automated Course of Action Operations (CACAO)|Bret Jordan|
-||* Cydarm||
-||* Sekoia||
-||* Univ of Oslo||
-|2:00|Threat Actor Context (TAC)|Ryan Hohimer|
-||* Univ of Oslo||
-||* CTIN||
-|2:30|Break|All|
-|2:40|Indicators of Behavior (IoB)|Charles Frick|
-||* MITRE||
-|3:10|PACE/SBOM|Duncan Sparrell|
-||* HII-MT||
-||* NSA||
-||* sFractal||
-|3:30|Review, Next Steps|Duncan Sparrell, Bret Jordan|
-|3:55|Clean up, Leave|All|
+| --- | --- | --- |
+| 10:30 | Set up, kick off | Duncan Sparrell |
+| 10:45 | Strategic Objectives | Bret Jordan |
+| 11:00 | Use Case Overview and Project Review | Duncan Sparrell |
+| 12:00 | Lunch | All |
+| 1:00 | OpenC2 - JADN - Kestrel - STIX Shifter | |
+| | * HII-MT | |
+| | * IBM | |
+| | * NSA | |
+| | * sFractal | |
+| 1:30 | Collaborative Automated Course of Action Operations (CACAO) | Bret Jordan |
+| | * Cydarm | |
+| | * Sekoia | |
+| | * Univ of Oslo | |
+| 2:00 | Threat Actor Context (TAC) | Ryan Hohimer |
+| | * Univ of Oslo| |
+| | * CTIN| |
+| 2:30 | Break | All |
+| 2:40 | Indicators of Behavior (IoB) | Charles Frick |
+| | * MITRE | |
+| 3:10 | PACE/SBOM | Duncan Sparrell |
+| | * HII-MT | |
+| | * NSA| |
+| | * sFractal | |
+| 3:30 | Review, Next Steps | Duncan Sparrell, Bret Jordan |
+| 3:55 | Clean up, Leave | All |
 
 10:30-4 pacific
 
