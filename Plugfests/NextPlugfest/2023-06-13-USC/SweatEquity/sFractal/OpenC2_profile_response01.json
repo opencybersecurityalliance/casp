@@ -2,6 +2,6 @@
     "status": 200,
     "results": {
         "versions": ["1.0"],
-        "profiles": ["sbom", "slpf", "x-sfractal-blinky"]
+        "profiles": ["sbom", "slpf", "blinky"]
     }
 }
