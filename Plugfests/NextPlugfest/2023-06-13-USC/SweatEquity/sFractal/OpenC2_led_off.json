@@ -1,6 +1,8 @@
 {
     "action": "set",
     "target": {
-        "x-sfractal-blinky:led": ["off"]
+        "blinky": {
+            "led": ["off"]
+        }
     }
 }
