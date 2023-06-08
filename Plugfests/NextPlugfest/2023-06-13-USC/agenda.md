@@ -13,7 +13,7 @@ based on the consensus of those present.
 | 10:45 | Strategic Objectives | Bret Jordan |
 | 11:00 | Use Case Overview and Project Review | Duncan Sparrell |
 | 12:00 | Lunch | All |
-| 1:00 | OpenC2 - JADN - Kestrel - STIX Shifter | |
+| 1:00 | OpenC2 - JADN - Kestrel - STIX Shifter | Dave Kemp |
 | | * HII-MT | |
 | | * IBM | |
 | | * NSA | |
