@@ -12,6 +12,13 @@ which TL;DR is "don't be a jerk".
 
 A zoom link will be provided to registrants.
 
+### Virtual Plugfest
+Prior to and during the Plugfest event, participants may connect their devices over the Internet
+for debugging and interoperability demonstration using these resources:
+* [OpenC2 over MQTT](SweatEquity/openc2-mqtt-topics.md)
+* [STIX over TAXII]
+* [IOB]
+
 ### Physical Attendance
 
 Because of limited space
