@@ -19,7 +19,7 @@ returns a response to the producer, then waits for the next command.
 ## OpenC2 Use Case
 Pub/sub supports symmetric relationships between devices where each can publish and/or subscribe.
 OpenC2 (Open Command and Control) establishes an asymmetric client/server relationship where the
-producer (client) originates actions and the consumer (server) reacts to them by performing
+producer (client) initiates actions and the consumer (server) reacts to them by performing
 the requested actions and returning responses to the producer. A single device may act in both
 producer and consumer roles, but in each role it is either the initiator or the responder.
 
