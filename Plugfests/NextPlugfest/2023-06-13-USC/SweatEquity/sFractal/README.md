@@ -98,6 +98,7 @@ from the OpenC2 test server.
   - QuadBlockQuiz
 * [OpenC2_profile_response01](./OpenC2_profile_response01.json) is an example OpenC2 response to query BlinkyMaHa profile
 * [OpenC2_profile_response02](./OpenC2_profile_response02.json) is an example OpenC2 response to query TwinklyMaHa profile
+   - note it's similar but different from blinky. It has the sbom profile (for responding to the software it is running itself) AND the pac profile (for responding with SBOM from other devices ie blinky since twinkly is blinky's digital twin). Note it does not have full pac capabilities - just some rudimentary to show this distinction.
 * [OpenC2_led_off](./OpenC2_led_off.json) is an example OpenC2 command to shut the LED's off in any of:
   - blinkyMaHa
   - blinkyHaHa
