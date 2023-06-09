@@ -27,8 +27,8 @@ playbooks for prevention/detection/response (CACAO, OpenC2). The
 STIX information is shared with their ISAC for distribution to
 others in their industry. Because the attacks exploited
 previously unknown vulnernabilities in both commerical and open
-source software, Murphy's Law LLP submits new VEX's to the new
-NVD API for the purpose of creating new CVE's.
+source software, Murphy's Law LLP submits new VEXes to the new
+NVD API for the purpose of creating new CVEs.
 
 ### Day 2 - On Deck Holdings
 Panic begins anew at On Deck Holdings as a stark uptick in server
@@ -49,7 +49,7 @@ Triumvirate CleanUp Inc, also a subscriber to their ISAC,
 analyzes the STIX bundle and decides to use their PACE system to
 analyze their environment and see if they are vulnerable to the
 same attack that targeted Murphy’s Law and On Deck. Using their
-PACE system, they analyze their SBOMs and discover they do have
+PACE system, they analyze their SBOM's and discover they do have
 70 devices with components that have the CVEs reported in the
 STIX bundle. Further analysis with PACE shows that 30 of those
 potentially affected devices have VEXes from their suppliers that
@@ -78,13 +78,13 @@ transmits that to the lead agency, CISA,for transmission to the
 SLTT.
 
 ### Day 5 - Law Enforcement
-Law enforcement was involved thorughout and 
-prepared multiple NIEM Message Exchange Packages (MEP)
-for entry in the Law Enforcement National Data Exchange (N-DEx),
+Initially brought into the loop and involved throughout, law enforcement 
+prepares multiple NIEM Message Exchange Packages (MEP)
+for entry in the Law Enforcement National Data Exchange (N-DEx)
 and for exchanges with the Royal Canadian Mounted Police (RCMP),
 Europol, and Interpol.
-A criminal takedown across 6 countries occurred and 23 miscreants
-were put behind bars using evidence and e-filings using NIEM MEPs.
+A criminal takedown across 6 countries occurs and 23 miscreants
+are put behind bars using evidence and e-filings built from NIEM MEPs.
   
 
 ### Day 6 - MilOps
@@ -92,7 +92,7 @@ It can neither be confirmed nor denied whether
 rogue nation states were involved in this use case;
 just as it can neither be confirmed nor denied whether
 NIEM MilOps extensions were distributed among NATO allies
-and hunt forward operations bricked adersary servers behind the attack.
+and hunt forward operations bricked adversary servers behind the attack.
 Day 6 is out-of-scope for the Cybersecurity Automation Village. 
 
 ## Interface/Technology -Centric views of these use cases
