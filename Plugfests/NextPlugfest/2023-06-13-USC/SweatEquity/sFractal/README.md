@@ -88,6 +88,39 @@ It will initially be configured for the Mosquito test broker.
 sFractal - sFractal tests can be run by controlling BLinkyMaHa
 from the OpenC2 test server.
 
+#### 4.1.1 BlinkyMaHa Support Files
+* [OpenC2_profile_query](./OpenC2_profile_query.json) is an example OpenC2 command to query profile to any of:
+  - blinkyMaHa
+  - blinkyHaHa
+  - twinklyHaHa
+  - twinklyMaHa
+  - OpenC2_Test
+  - QuadBlockQuiz
+* [OpenC2_profile_response01](./OpenC2_profile_response01.json) is an example OpenC2 response to query BlinkyMaHa profile
+* [OpenC2_profile_response02](./OpenC2_profile_response02.json) is an example OpenC2 response to query TwinklyMaHa profile
+   - note it's similar but different from blinky. It has the sbom profile (for responding to the software it is running itself) AND the pac profile (for responding with SBOM from other devices ie blinky since twinkly is blinky's digital twin). Note it does not have full pac capabilities - just some rudimentary to show this distinction.
+* [OpenC2_led_off](./OpenC2_led_off.json) is an example OpenC2 command to shut the LED's off in any of:
+  - blinkyMaHa
+  - blinkyHaHa
+  - twinklyHaHa
+  - twinklyMaHa
+* [OpenC2_ok](./OpenC2_ok.json) is the response to the previous command and any other command that doesn't return data
+* [OpenC2_led_on01](./OpenC2_led_on01.json) is an example OpenC2 command to turn the LED's red in any of:
+  - blinkyMaHa
+  - blinkyHaHa
+  - twinklyHaHa
+  - twinklyMaHa
+* [OpenC2_sbom_list_query](./OpenC2_sbom_list_query.json) is an example OpenC2 command to query sbom_list to any of:
+  - blinkyMaHa
+  - blinkyHaHa
+  - twinklyHaHa
+  - twinklyMaHa
+  - OpenC2_Test
+  - QuadBlockQuiz
+*  [OpenC2_sbom_list_response01](./OpenC2_sbom_list_response01.json) is an example OpenC2 response to query BlinkyMaHa sbom_list
+*  [OpenC2_sbom_query](./OpenC2_sbom_query.json) is an example command to query for an sbom from blinky_maha
+*  [OpenC2_sbom_response](./OpenC2_sbom_response.json) is an example blinky_maha sbom response
+
 ### 4.2 BlinkyHaHa
 Ditto BlinkyMaHa except using HTTP API (ie https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html)
 

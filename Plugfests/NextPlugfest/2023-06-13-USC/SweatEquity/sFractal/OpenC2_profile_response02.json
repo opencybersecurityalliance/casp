@@ -1,0 +1,7 @@
+{
+    "status": 200,
+    "results": {
+        "versions": ["1.0"],
+        "profiles": ["pac", "sbom", "slpf", "blinky"]
+    }
+}
