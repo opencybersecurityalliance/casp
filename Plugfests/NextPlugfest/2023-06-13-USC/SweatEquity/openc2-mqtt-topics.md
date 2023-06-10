@@ -6,7 +6,7 @@ for producing and consuming devices:
 
 ## Brokers
 The following message brokers are being used for testing OpenC2-based interoperability:
-* [**Mosquito**](https://test.mosquitto.org/) - Eclipse foundation public test server at
+* [**Mosquitto**](https://test.mosquitto.org/) - Eclipse foundation public test server at
 `mqtt://test.mosquitto.org:xxxx` - see documentation for port options
 * [**ActiveMQ**](https://activemq.apache.org/components/classic/) - MQTT v3.1 at
 `mqtt+ssl://b-faad036d-e951-4aae-bf64-a171b0a16629-1.mq.us-east-1.amazonaws.com:8883`
@@ -43,6 +43,9 @@ Schema and example messages sent between Producers and Devices for each actuator
 software bill of materials retrieval operations (included in multi-profile
 [blinky/twinkly](sFractal/README.md) devices)
 * [pac](https://github.com/oasis-open/openc2-jadn-software/tree/master/Test/device-pac) -
-security posture assessment and evaluation (PACE) operations
+security posture attribute collection and evaluation (PACE) operations
 * [slpf](https://github.com/oasis-open/openc2-jadn-software/tree/master/Test/device-slpf) -
 stateless packet filtering operations
+
+Note that the example messages are bare OpenC2 content. Producers and consumers must wrap that content
+in an OpenC2-Message structure if "to" and "from" headers are needed and are not passed as MQTT v5 properties.
