@@ -19,11 +19,11 @@ One of the best ways to communicate with the rest of the project contributors is
 
 ### Discussions and announcements
 
-Longer discussions can be taken up via GitHub Discussions or the
-[CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp),
-the biweekly
-[CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp/calendar),
-or the #casp channel on [OCA Slack](https://app.slack.com).
+Longer discussions can be taken up via:
+* GitHub Discussions,
+* the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp),
+* the biweekly [CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp/calendar),
+* or the #casp channel on [OCA Slack](https://app.slack.com).
 
 Discussions are a relatively new feature in GitHub that function like a chat service.
 You can find the Discussions link next to the link for Pull Requests. 
