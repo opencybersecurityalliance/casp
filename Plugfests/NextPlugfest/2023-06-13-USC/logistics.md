@@ -79,4 +79,4 @@ The campus resources page is located at https://coronavirus.usc.edu/.
 ## Agenda
 10:30-4 pacific
 * apologies to other timezones
-see [agenda.md]
+see [agenda.md](./agenda.md)
