@@ -77,8 +77,11 @@ The 16-May-2022 plugfest in DC had ~70 participants (~30 in-person)
 but we never made a fancy country picture like in 2021.
 
 # To Participate
-To participate,
-[participate in the CASP mailing list, and attend the CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp).
+To participate, subscribe to the
+[CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp),
+attend the biweekly
+[CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp/calendar),
+and join the #casp channel on [OCA Slack](https://app.slack.com).
 
 The event will be hybrid.
 It is likely we will be space-limited 
@@ -93,16 +96,11 @@ than fit, we will be using
 to determine physical attendance
 (see [attendance eligibility](./faq.md#how-will-physical-attendance-be-determined)).
 
-Note the CASP event is the day before, 
-and in the same venue as, 
-the CISA SBOMarama.
-For more information on the CISA SBOMarama 
-see {add link to Federal Register annoucement} 
-and {add link to cisa.gov/sbom/whatever}.
-
-See 
-For more details, attend CASP meetings
-and [participate in the CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
+Note the CASP event is the day before, and in the same venue as, 
+the [CISA SBOMarama](https://www.cisa.gov/news-events/events/sbom-rama).
+For more information see the
+[Federal Register announcement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)} 
+and the CISA [SBOM](https://www.cisa.gov/sbom) page.
 
 # Frequently Asked Questions (FAQ)
 See the [SBOMarama CASP FAQ](faq.md) for questions 
