@@ -29,9 +29,9 @@ that supports members in creating TC work products.
 The repo contains schemas, example messages to be validated against the schemas, and property tables
 generated from the schemas to be used in OpenC2 actuator profile documents.
 
-OpenC2 device developers may view existing schemas and test messages,
-and may also submit custom actuator schemas and test messages. The test server is an Open resource,
-OASIS membership is not required before submitting a custom actuator profile.
-The server includes a
+Anyone may view existing schemas and test messages or submit new ones; OASIS membership is not required.
+Developers may submit custom actuator profiles reflecting their C2 use cases,
+and schemas for their OpenC2 producer or consumer devices using existing or new profiles.
+The repo includes a
 [Python script](https://github.com/oasis-open/openc2-jadn-software/blob/master/test-poc.py)
-that allows anyone to run device tests, with data either stored locally or fetched directly from the GitHub repo.
+to run device tests, with data either stored locally or fetched directly from the GitHub repo.

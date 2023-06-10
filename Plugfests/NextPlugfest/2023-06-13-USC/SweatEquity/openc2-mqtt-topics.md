@@ -39,7 +39,7 @@ Topic: `oc2/rsp/[producer_id]`
 
 ## Schemas and Actuator Profiles
 Schema and example messages sent between Producer and Consumer devices are available on the OpenC2
-[Actuator Profile Test Server](https://github.com/oasis-open/openc2-jadn-software).  Examples include:
+[Actuator Profile Test Repo](DKI/README.md#23-openc2-actuator-profile-testing).  Examples include:
 * [blinky](https://github.com/oasis-open/openc2-jadn-software/tree/master/Test/device-blinky) -
 "Hello World" example LED controller
 * [sbom](https://github.com/oasis-open/openc2-jadn-software/tree/master/Test/device-blinky)
