@@ -2,14 +2,14 @@
 
 ## What about broader questions about cybersecurity automation?
 See the 
-[overall CASP FAQ](../../CASP-FAQ.md)
+[overall CASP FAQ](../../../CASP-FAQ.md)
 for questions 
 about CASP, or cybersecurity automation, overall.
 
 ## Are there any restrictions on attending?
 The event is open to all if they agree to 
 register and they agree to abide by the 
-[Code of Conduct](../../../../CODE-OF-CONDUCT.md)
+[Code of Conduct](../../../CODE-OF-CONDUCT.md)
 which TL;DR is "don't be a jerk".
 
 There is no cost for attending.

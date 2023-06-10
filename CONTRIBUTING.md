@@ -19,14 +19,17 @@ One of the best ways to communicate with the rest of the project contributors is
 
 ### Discussions and announcements
 
-Longer discussions can be taken up on the GitHub Discussions list or via the [mailing list](url to general mailing list). 
+Longer discussions can be taken up via GitHub Discussions or the
+[CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp),
+the biweekly
+[CASP meetings](https://lists.oasis-open-projects.org/g/oca-casp/calendar),
+or the #casp channel on [OCA Slack](https://app.slack.com).
 
-Discussions are a relatively new feature in GitHub that function like a chat service. You can find the Discussions link next to the link for Pull Requests. 
+Discussions are a relatively new feature in GitHub that function like a chat service.
+You can find the Discussions link next to the link for Pull Requests. 
 
 The general mailing list requires that you subscribe before you can send. 
-
-General announcements are posted to the general mailing list and may be posted to other communications channels as well. 
-
+OCA Slack requires an invitation, which you can request at a meeting or by email.
 
 ### About the CLA Bot
 
