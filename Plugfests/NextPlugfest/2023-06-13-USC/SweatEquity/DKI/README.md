@@ -17,7 +17,21 @@ event and remotely during the event.
 [Participants](../openc2-mqtt-topics.md) lists the available MQTT brokers and the publish and subscribe
 topics used by plugfest participants.
 
-### 2.2 Python Example Code
+### 2.2 Python Example MQTT Clients
 Python example producer and consumer code is available in the [MQTT_Broker](MQTT_Broker)
 directory, and a broker is online now to facilitate testing. Access details are available
 to plugfest participants on request.
+
+### 2.3 OpenC2 Actuator Profile Testing
+The OpenC2 Technical Committee maintains an
+[Actuator Profile Test Repository](https://github.com/oasis-open/openc2-jadn-software)
+that supports members in creating TC work products.
+The repo contains schemas, example messages to be validated against the schemas, and property tables
+generated from the schemas to be used in OpenC2 actuator profile documents.
+
+OpenC2 device developers may view existing schemas and test messages,
+and may also submit custom actuator schemas and test messages. The test server is an Open resource,
+OASIS membership is not required before submitting a custom actuator profile.
+The server includes a
+[Python script](https://github.com/oasis-open/openc2-jadn-software/blob/master/test-poc.py)
+that allows anyone to run device tests, with data either stored locally or fetched directly from the GitHub repo.
