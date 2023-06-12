@@ -7,9 +7,9 @@
 The next CASP event will be a Cybersecurity Automation Village
 held June 13th, 2023 at USC and hybrid.
 For more information, read the rest of this page and/or see:
-* [Registration](./2023-06-13-USC/logistics.md#registration)
 * [Scenario](./UseCases/README.md)
 * [Logistics](./logistics.md)
+* Registration - see Logistics
 
 ---
 
