@@ -46,16 +46,13 @@ See [Federal Register annoucement](https://www.federalregister.gov/documents/202
 or [CISA website](https://www.cisa.gov/sbom) (about halfway down page) for more info on CISA SBOMarama.
 
 ## Catering
-We are seeking a sponsor(s) to help cover the catering costs. 
-If you are interested in sponsoring, 
-please contact Jane Harnad, jharnad@oasis-open.org.
+OASIS-Open has graciously volunteered to sponsor lunch for the 
+on-site participants who registered at least 2 days in advance.
 
-If we can't secure a sponsor -- below are our options:
-
-On-campus: https://hospitality.usc.edu/quick-service-restaurants-upc/  /  map: https://hospitality.usc.edu/dining-map/
+Participants may still choose to leave the room:
+* On-campus: https://hospitality.usc.edu/quick-service-restaurants-upc/  /  map: https://hospitality.usc.edu/dining-map/
 Most on-campus dining locations make use of Kiosk stations. Attendees will order through the Kiosk and wait for your order to be called out.
-
-USC Village: https://uscvillage.com/shops/?category=dining
+* USC Village: https://uscvillage.com/shops/?category=dining
 The village is located across the street from campus and has a variety of dining options (~10min walk).
 
 ## Accommodations
