@@ -36,7 +36,7 @@ Topic: `oc2/rsp/[producer_id]`
 | [DKI](DKI/MQTT_Broker) | p01         | N/A                     |      |        | 8883 | Python example producer |
 | [DKI](DKI/MQTT_Broker) | p02         | blinky                  |      |        | 8883 | led controller          |
 | [HII](HII)             |             | blinky, sbom, pac, slpf |      |        |      |                         |
-| [sFractal](sFractal)   |  ? | blinky, sbom |  1883  |  |  | write-only |
+| [sFractal](sFractal)   |  ? | blinky, sbom |  1883  |  |  | write-only https://openc-c2-test-q353uyxfhq-uk.a.run.app/run_script |
 
 ## Schemas and Actuator Profiles
 Schema and example messages sent between Producer and Consumer devices are available on the OpenC2
