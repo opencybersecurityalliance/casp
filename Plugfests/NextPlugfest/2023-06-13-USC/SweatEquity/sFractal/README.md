@@ -51,21 +51,68 @@ delete those that don't:
 
 ## 4. Contributions
 Besides herding cats organizing,
-sFractal intends to bring the following working implementations:
+sFractal brought the following working (if you count hand-waving) implementations:
+* OpenC2_Test
+* twinklyMaHa
 * blinkyMaHa
 * blinkyHaHa
 * twinklyHaHa
-* twinklyMaHa
-* OpenC2_Test
 * QuadBlockQuiz
 
-### 4.1 BlinkyMaHa
+### 4.1 OpenC2_Test
+This webserver is used to test the other OpenC2 devices
+(and eventually other people's if desired).
+It consists of a server that a human can control
+(via the web interface) what OpenC2 commands are
+sent to which devices (and see what comes back).
+
+For today's event, it is in it's simplest form:
+* https://openc-c2-test-q353uyxfhq-uk.a.run.app/run_script
+* no authorization - anyone can run it
+* the only protocol is MQTTv3 (ie no MQTTv5, no HTTP/s)
+* the only device to control is TwinklyMaha
+* the only broker is the Mosquito Test Server
+* responses are not shown (although you can see LEDs change on Twinkly)
+* Note there is only one Twinkly (see below) so if multiple people use OpenC2_Test, it will get very confusing.
+
+### 4.2 TwinklyMaHa
+* "Twinkly" - this is the digital twin of Blinky (see below) ie hello world of IoT ie blinking lights but done on a webpage.
+* MaHa - same as BlinkyMaHa (ie hello world of OpenC2 to blink lights)
+
+Basically this is the digital twin of BlinkyMaHa. 
+
+For this event, the working TwinklyMaHa is at https://twinklymaha-staging-q353uyxfhq-uk.a.run.app/twinkly
+
+Note there is only one TwinklyMaHa MQTT server at the above address,
+yet there are as many independent LED displays as people who access the page.
+So things get funky if more than one person plays with MQTT (via OpenC2_Test).
+
+Eg if two people go to Twinkly, they can independently turn on/off/color the lights
+on their browser by using the button you see on the browser.
+But if someone goes to OpenC2_Test and sends MQTT turn led off command,
+it goes to everyone's display.
+
+Note we are using Fire & Forget mode of MQTT, so if command is lost then it is lost.
+This is not theorectical as Mosquito test server goes up and down a really lot.
+
+See BlinkyMaha below for commands supported (too lazy to copy) 
+if directly interfacing MQTTv3.
+
+Message Headers not implemented.
+
+An older version is available at https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/ 
+but it is talking to a defunct MQTT server.
+However you can play with the LEDs on this one with the browser button.
+Ie use this one to play around so as to not interfere with anyone using OpenC2_test
+
+
+### 4.3 BlinkyMaHa
 * "Blinky" - hello world of IoT ie blinking lights
 * "MaHa"
   - MA - Mqtt API - ie impliments [OpenC2 MQTT Transfer Spec](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/transf-mqtt-v1.0.html)
   - HA - "Hello World Actuator" - ie implements a trivial OpenC2 "hello world" actuator profile. Actually does slightly more than that since it allows OpenC2 to blink lights as well as implementing SBOM Actuator Profile and can even fake it for [packet filtering actuator profile](http://docs.oasis-open.org/openc2/oc2slpf/v1.0/oc2slpf-v1.0.html)
   
-BlinkyMaHa is a physical device that will be brought to USC. 
+BlinkyMaHa is a physical device that brought to the classroom at USC. 
 It is a raspberry pi, running the Nerves operating system,
 that implements a custom OpenC2 Actuator profile interfacing over the
 MQTT OpenC2 transfer specification.
@@ -83,12 +130,10 @@ The repo can be found at https://github.com/sFractal-Podii/BlinkyMaha.
 
 The intent is for BlinkyMaHa to communicate with 
 anything that will talk MQTT with it. 
-It will initially be configured for the Mosquito test broker.
+It is configured for the Mosquito test broker, but not working correctly.
+So handwaving is involved.
 
-sFractal - sFractal tests can be run by controlling BLinkyMaHa
-from the OpenC2 test server.
-
-#### 4.1.1 BlinkyMaHa Support Files
+#### 4.3.1 BlinkyMaHa Support Files
 * [OpenC2_profile_query](./OpenC2_profile_query.json) is an example OpenC2 command to query profile to any of:
   - blinkyMaHa
   - blinkyHaHa
@@ -121,37 +166,30 @@ from the OpenC2 test server.
 *  [OpenC2_sbom_query](./OpenC2_sbom_query.json) is an example command to query for an sbom from blinky_maha
 *  [OpenC2_sbom_response](./OpenC2_sbom_response.json) is an example blinky_maha sbom response
 
-### 4.2 BlinkyHaHa
-Ditto BlinkyMaHa except using HTTP API (ie https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html)
+### 4.4 BlinkyHaHa
+Ditto BlinkyMaHa except using HTTP API (ie https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html).
+sFractal was OBE so a physical BlinkyHaHa was not brought to USC.
+Note this worked 3 villages ago several years back.
+It will be brought out of mothball for a future village.
+For now, use handwaving.
 
-### 4.3 TwinklyMaHa
-* "Twinkly" - this is the digital twin of Blink ie hello world of IoT ie blinking lights but done on a webpage.
-* MaHa - same as BlinkyMaHa
-
-Basically this is the digital twin of BlinkyMaHa. 
-
-An older version is available at https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/ but will be updated prior to event.
-
-
-### 4.4 TwinklyHaHa
+### 4.5 TwinklyHaHa
 ditto TwinklyMaHa but HTTP (ie it's digital twin of BlinkyHaHa).
-
-### 4.5 OpenC2_Test
-The webserver is used to test the other sFractal devices
-(and other people's if desired).
-It consists of a server that a human can control
-(via the web interface) what OpenC2 commands are
-sent to which devices (and see what comes back).
+TwinklyHaHa is in a similar state to BlinkyHaHa.
 
 ### 4.6 QuadBlockQuiz
 QuadBlockQuiz is a 'falling blocks' game combined with a trivia quiz
 and designed to teach supply chain security concepts
 and all the stuff associated with CASP. 
-A special CASP version will be available for the event.
+A special CASP version was to be available for the event,
+but sFractal got OBE.
 Note the SBOM is available for QBQ and the website itself 
 can be a node for for interworking (besides being fun to play).
-Older copy is at https://quadquiz-q353uyxfhq-uk.a.run.app/ 
-and will be updated by event
+The copy is still at https://quadquiz-q353uyxfhq-uk.a.run.app/ 
+and will be updated or future events.
+
+Other projects are welcome to each have their own 'category' of quiz questions.
+Please submit suggestions to sFractal.
 
 ## 5. Planned Use Cases
 See Section 3.
