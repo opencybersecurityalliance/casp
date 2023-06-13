@@ -25,6 +25,7 @@ Topic: `oc2/cmd/device/[device_id]`
 |------------------------|-----------|-------------------------|:----:|:------:|:----:|-------------------------|
 | [DKI](DKI/MQTT_Broker) | c01       | N/A                     |      |        | 8883 | Python example consumer |
 | [HII](HII)             |           | blinky, sbom, pac, slpf |      |        |      |                         |
+| [sFractal](sFractal) | t01 | blinky, sbom, pac, slpf | 1883 |    |    |  https://twinklymaha-staging-q353uyxfhq-uk.a.run.app/twinkly |
 | [sFractal](sFractal)   |           | blinky, sbom, pac, slpf |      |        |      |                         |
 
 ## Producers
@@ -35,7 +36,7 @@ Topic: `oc2/rsp/[producer_id]`
 | [DKI](DKI/MQTT_Broker) | p01         | N/A                     |      |        | 8883 | Python example producer |
 | [DKI](DKI/MQTT_Broker) | p02         | blinky                  |      |        | 8883 | led controller          |
 | [HII](HII)             |             | blinky, sbom, pac, slpf |      |        |      |                         |
-| [sFractal](sFractal)   |             | blinky, sbom, pac, slpf |      |        |      |                         |
+| [sFractal](sFractal)   |  ? | blinky, sbom |  1883  |  |  | write-only |
 
 ## Schemas and Actuator Profiles
 Schema and example messages sent between Producer and Consumer devices are available on the OpenC2
