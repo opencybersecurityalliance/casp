@@ -24,18 +24,17 @@ Agenda:
 | ------------- | ------------- | ------------- |
 | 10:30  | Set-up, Kick-off  | Duncan Sparrell  |
 | 10:45  | Strategic Objectives  | Bret Jordan  |
-
-
-| 11:00 | Use Case Overview, Project Review | Duncan Sparrell |
-| 12:00	| Break for Lunch | |
-| 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter | David Kemp |
+| 11:00  | Use Case Overview, Project Review  | Duncan Sparrell  |
+| 12:00  | Lunch  | All  |
+| 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter  | David Kemp |
 | 1:30	| CACAO | Bret Jordan |
 | 2:00	| TAC  | Ryan Hohimer |
+
 | 2:30	| Break | |
 | 2:40	| OCA IOB | Charlie Frick |
 | 3:10	| PACE / SBOM / VEX	| Duncan Sparrell |
-| 3:30	| Review & Next Steps | Duncan Sparrell |
-| 3:55	| Clean-up & Leave Room	| All |
+| 3:30	| Review, Next Steps | Duncan Sparrell |
+| 3:55	| Clean-up, Leave Room	| All |
 
 ## Set-up & Kick-off
 Duncan Sparrell (sFractal Consulting) 
