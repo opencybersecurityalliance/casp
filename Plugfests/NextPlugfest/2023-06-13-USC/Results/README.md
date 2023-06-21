@@ -8,12 +8,10 @@ The attendees represented 24 organizations from 5 countries on 4 continents.
 See [Use Case Results](./use_case_results.md) for results wrt the use case.
 This is probably the view of results that will be most useful to 
 cybersecurity practioners looking to understand the value of these projects.
-Although practioners may also find the next view useful to understand
+Although practioners may also find the project view useful to understand
 the alphabet soup.
 
 <img src="../Images/alphabetSoup.png" alt="soup" width="300" />
-
-![soup](../Images/alphabetSoup.png)
 
 See [Project Results](./project_results.md) for results by project.
 This is probably the view of results that will be most useful to 

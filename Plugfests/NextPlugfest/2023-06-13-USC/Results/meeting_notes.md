@@ -12,12 +12,13 @@ for kindly sponsoring lunch.
  
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
 (strict attendance was not taken and we may have missed some attendees).
-The attendees represented 24 organizations from 5 countries on 4 continennts.
+The attendees represented 24 organizations from 5 countries on 4 continents.
 
 Attendance was significantly less than previous events - attributed to the short
 notice in planning and announcing the event.
 
 Agenda:
+
 | 10:30	| Set-up & Kick-off | Duncan Sparrell |
 | 10:45	| Strategic Objectives | Bret Jordan |
 | 11:00 | Use Case Overview & Project Review | Duncan Sparrell |
