@@ -29,8 +29,8 @@ The focus of this event will be [this usecase](./UseCases/README.md).
 Information on previous events can be found at
 [PastPlugfests](../../PastPlugfests/).
 
-# Technologies / Standards / Open Source Projects Involved
-This is a tenative list of technologies hoped to be interworked
+# Projects Involved
+This is a tenative list of the projects (technologies, standards, open source) hoped to be interworked
 in CASP usecases at this plugfest:
 
 ![technologies](../../../Images/CASP_technologies.png)
