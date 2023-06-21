@@ -22,12 +22,11 @@ Agenda:
 
 | Time  | Topic | Wrangler |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
+| 10:30  | Set-up, Kick-off  | Duncan Sparrell  |
+| 10:45  | Strategic Objectives  | Bret Jordan  |
 
-| 10:30	| Set-up & Kick-off | Duncan Sparrell |
-| 10:45	| Strategic Objectives | Bret Jordan |
-| 11:00 | Use Case Overview & Project Review | Duncan Sparrell |
+
+| 11:00 | Use Case Overview, Project Review | Duncan Sparrell |
 | 12:00	| Break for Lunch | |
 | 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter | David Kemp |
 | 1:30	| CACAO | Bret Jordan |
