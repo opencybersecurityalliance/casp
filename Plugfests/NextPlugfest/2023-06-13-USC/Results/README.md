@@ -1,17 +1,18 @@
-
-
-thank hosts and oasis as food sponsor
+The attendees thank the hosts, RIT and USC, for providing world-class facilities 
+for the village. They physical attendees are grateful to OASIS for sponsoring lunch.
 
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
 (strict attendance was not taken and we may have missed some attendees).
 The attendees represented 24 organizations from 5 countries on 4 continents.
-
 
 See [Use Case Results](./use_case_results.md) for results wrt the use case.
 This is probably the view of results that will be most useful to 
 cybersecurity practioners looking to understand the value of these projects.
 Although practioners may also find the next view useful to understand
 the alphabet soup.
+
+<img src="../Images/alphabetSoup.png" alt="soup" width="300" />
+
 ![soup](../Images/alphabetSoup.png)
 
 See [Project Results](./project_results.md) for results by project.
