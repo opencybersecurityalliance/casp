@@ -46,6 +46,9 @@ The purpose here today is to explore the interoperability of many of these initi
 Duncan went over logistics and started the meeting recording -
 which can be found at {fill in later}.
 
+Duncan Sparrell presented visual overview of the standards included in the Village:
+![projects](../Images/CASP_projects.png)
+
 ## Strategic Objectives
 
 Bret Joran (Afero) gave some background on the security standards that have been developed 
@@ -55,11 +58,6 @@ Some standards are going to the ITU (e.g., STIX 2.1) and some to ISO (e.g. CSAF)
 •	Efforts can only be effective if there is interoperability among and between the standards and the various open-source implementations and vendor products 
 
 ## Use Case Overview & Project Review
-Duncan Sparrell presented visual overview of the standards included in the Village:
-
-		 
-
-Neal Ziring's keynote at CASP in 2022 on VEX. https://www.youtube.com/watch?v=cWL8wiSi-Rs 
 
 Use Case Overview - Duncan Sparrell 
 		
@@ -120,6 +118,15 @@ DEMONSTRATES
 DAY 6 – Military Operations
 It can neither be confirmed nor denied whether rogue nation states were involved in this use case; just as it can neither be confirmed nor denied whether NIEM MilOps extensions were distributed among NATO allies and hunt forward operations bricked adversary servers behind the attack. Day 6 is out-of-scope for the Cybersecurity Automation Village.
 DEMONSTRATES
+
+### Q&A and Chat
+When asked when people thought these projects would be implemented, the answers varied. 
+The CISA SBOM-a-rama the next day at USC was 
+referenced (including that was why Village was today);
+Neal Ziring's keynote at CASP in 2022 was mentioned predicting CASP referenced in
+Federal procurements by FY2024. 
+See https://www.youtube.com/watch?v=cWL8wiSi-Rs 
+
  
 Lunch Break
 
