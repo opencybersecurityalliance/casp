@@ -12,24 +12,28 @@ for kindly sponsoring lunch.
  
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
 (strict attendance was not taken and we may have missed some attendees).
-The attendees represented 24 organizations from 5 countries on 4 continennts.
+The attendees represented 24 organizations from 5 countries on 4 continents.
 
 Attendance was significantly less than previous events - attributed to the short
 notice in planning and announcing the event.
 
 Agenda:
-| 10:30	| Set-up & Kick-off | Duncan Sparrell |
-| 10:45	| Strategic Objectives | Bret Jordan |
-| 11:00 | Use Case Overview & Project Review | Duncan Sparrell |
-| 12:00	| Break for Lunch | |
-| 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter | David Kemp |
+
+
+| Time  | Topic | Wrangler |
+| ------------- | ------------- | ------------- |
+| 10:30  | Set-up, Kick-off  | Duncan Sparrell  |
+| 10:45  | Strategic Objectives  | Bret Jordan  |
+| 11:00  | Use Case Overview, Project Review  | Duncan Sparrell  |
+| 12:00  | Lunch  | All  |
+| 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter  | David Kemp |
 | 1:30	| CACAO | Bret Jordan |
 | 2:00	| TAC  | Ryan Hohimer |
-| 2:30	| Break | |
+| 2:30	| Break | All |
 | 2:40	| OCA IOB | Charlie Frick |
 | 3:10	| PACE / SBOM / VEX	| Duncan Sparrell |
-| 3:30	| Review & Next Steps | Duncan Sparrell |
-| 3:55	| Clean-up & Leave Room	| All |
+| 3:30	| Review, Next Steps | Duncan Sparrell |
+| 3:55	| Clean-up, Leave Room	| All |
 
 ## Set-up & Kick-off
 Duncan Sparrell (sFractal Consulting) 
@@ -42,6 +46,9 @@ The purpose here today is to explore the interoperability of many of these initi
 Duncan went over logistics and started the meeting recording -
 which can be found at {fill in later}.
 
+Duncan Sparrell presented visual overview of the standards included in the Village:
+![projects](../Images/CASP_projects.png)
+
 ## Strategic Objectives
 
 Bret Joran (Afero) gave some background on the security standards that have been developed 
@@ -51,11 +58,6 @@ Some standards are going to the ITU (e.g., STIX 2.1) and some to ISO (e.g. CSAF)
 •	Efforts can only be effective if there is interoperability among and between the standards and the various open-source implementations and vendor products 
 
 ## Use Case Overview & Project Review
-Duncan Sparrell presented visual overview of the standards included in the Village:
-
-		 
-
-Neal Ziring's keynote at CASP in 2022 on VEX. https://www.youtube.com/watch?v=cWL8wiSi-Rs 
 
 Use Case Overview - Duncan Sparrell 
 		
@@ -116,6 +118,15 @@ DEMONSTRATES
 DAY 6 – Military Operations
 It can neither be confirmed nor denied whether rogue nation states were involved in this use case; just as it can neither be confirmed nor denied whether NIEM MilOps extensions were distributed among NATO allies and hunt forward operations bricked adversary servers behind the attack. Day 6 is out-of-scope for the Cybersecurity Automation Village.
 DEMONSTRATES
+
+### Q&A and Chat
+When asked when people thought these projects would be implemented, the answers varied. 
+The CISA SBOM-a-rama the next day at USC was 
+referenced (including that was why Village was today);
+Neal Ziring's keynote at CASP in 2022 was mentioned predicting CASP referenced in
+Federal procurements by FY2024. 
+See https://www.youtube.com/watch?v=cWL8wiSi-Rs 
+
  
 Lunch Break
 
