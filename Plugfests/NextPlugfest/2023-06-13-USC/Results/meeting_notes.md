@@ -29,8 +29,7 @@ Agenda:
 | 1:00	| OpenC2 - JADN - Kestrel - STIX Shifter  | David Kemp |
 | 1:30	| CACAO | Bret Jordan |
 | 2:00	| TAC  | Ryan Hohimer |
-
-| 2:30	| Break | |
+| 2:30	| Break | All |
 | 2:40	| OCA IOB | Charlie Frick |
 | 3:10	| PACE / SBOM / VEX	| Duncan Sparrell |
 | 3:30	| Review, Next Steps | Duncan Sparrell |
