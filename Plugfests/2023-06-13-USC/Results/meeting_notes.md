@@ -1,5 +1,11 @@
 # Meeting Notes for Cybersecurity Automation Village 13-June-2023
 
+![logo](../../../Images/automation_village_plus_logo.png)
+
+<img src="../../../Images/automation_village_plus_logo.png" alt="logo" width="500" />
+
+<img src="../../../Images/automation_village_plus_logo.png" alt="logo" width="400" />
+
 The [Cybersecurity Automation Village]()
 was organized by the 
 [Open Cybersecurity Alliance (OCA)]()
@@ -7,7 +13,7 @@ was organized by the
 and kindly hosted by RIT and USC at USC Campus in LA,CA.
 
 Thank you to
-[OASIS-Open]()
+[OASIS-Open](https://www.oasis-open.org/)
 for kindly sponsoring lunch.
  
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
