@@ -22,7 +22,7 @@ the [agenda](../agenda.md):
 | 0:50:50 | OpenC2 - JADN - Kestrel - STIX Shifter | https://youtu.be/Qzv3j-HYlVU?t=3050 |
 | 1:28:03 | Collaborative Automated Course of Action Operations (CACAO) | https://youtu.be/Qzv3j-HYlVU?t=5283 |
 | 2:02:48 | Threat Actor Context (TAC) | https://youtu.be/Qzv3j-HYlVU?t=7368 |
-| 2:33:53 | Break | https://youtu.be/Qzv3j-HYlVU?t=9233 |
+| 2:33:53 | Break | https://youtu.be/Qzv3j-HYlVU?t=9233 apologies for leaving running|
 | 2:46:32 | Indicators of Behavior (IoB) | https://youtu.be/Qzv3j-HYlVU?t=9992 |
 | 3:11:17 | PACE/SBOM | https://youtu.be/Qzv3j-HYlVU?t=11477 |
 | 3:29:22 | Review, Next Steps | https://youtu.be/Qzv3j-HYlVU?t=12562 |
@@ -42,6 +42,8 @@ See [Project Results](./project_results.md) for results by project.
 This is probably the view of results that will be most useful to 
 participants in a given project to see how their project provided value,
 and which orgs provided demonstations.
+
+<img src="../Images/CASP_projects.png" alt="projects" width="400" />
 
 ## 5. Org Results
 See [Org Results](./org_results.md) for results by organizations
