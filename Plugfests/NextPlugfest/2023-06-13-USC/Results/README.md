@@ -17,7 +17,7 @@ the [agenda](../agenda.md):
 | --- | --- | --- |
 | 0:00:00 | Set up, kick off | https://youtu.be/Qzv3j-HYlVU |
 | 0:00:23 | Strategic Objectives | https://youtu.be/Qzv3j-HYlVU?t=23 |
-| 0:06:26 | Use Case Overview and Project Review | [Duncan Sparrell](https://youtu.be/Qzv3j-HYlVU?t=386) |
+| 0:06:26 | Use Case Overview and Project Review | https://youtu.be/Qzv3j-HYlVU?t=386 |
 | 0:47:56 | Lunch | https://youtu.be/Qzv3j-HYlVU?t=2876 (sorry - should have hit pause earlier|
 | 0:50:50 | OpenC2 - JADN - Kestrel - STIX Shifter | https://youtu.be/Qzv3j-HYlVU?t=3050 |
 | 1:28:03 | Collaborative Automated Course of Action Operations (CACAO) | https://youtu.be/Qzv3j-HYlVU?t=5283 |
