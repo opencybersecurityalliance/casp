@@ -3,8 +3,11 @@
 
 # Announcement
 
-The next CASP event will be a Cybersecurity Automation Village
-held June 13th, 2023 at USC and hybrid.
+The 
+[Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/)
+[Cybersecurity Automation SubProject (CASP)](https://opencybersecurityalliance.org/casp/)
+organized a Cybersecurity Automation Village
+which was held June 13th, 2023 at USC and hybrid.
 For more information, read the rest of this page and/or see:
 * [Scenario](./UseCases/README.md)
 * [Logistics](./logistics.md)
@@ -13,10 +16,12 @@ For more information, read the rest of this page and/or see:
 ---
 
 
-# Workshop / Plugfest / Hackathon
+# Village = Workshop / Plugfest / Hackathon
 
 # Objective
-The Open Cybersecurity Alliance (OCA) Cybersecurity Automation SubProject (CASP) is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
+The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/)
+[Cybersecurity Automation SubProject (CASP)](https://opencybersecurityalliance.org/casp/)
+is comprised of global like-minded cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
 
 It is a forum where products from all vendors, researchers, and software publishers can freely exchange information, insights, and reference implementations via commonly developed code and tooling, using mutually agreed upon technologies, specifications, and procedures.
 
