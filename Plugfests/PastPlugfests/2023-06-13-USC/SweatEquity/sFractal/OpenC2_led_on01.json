@@ -1,0 +1,8 @@
+{
+    "action": "set",
+    "target": {
+        "blinky": {
+            "led": ["red"]
+        }
+    }
+}
