@@ -2,7 +2,7 @@
 The OpenC2 MQTT Transfer Specification establishes the following naming guidelines
 for producing and consuming devices:
 
-![OpenC2-MQTT-Topics](../../../../Images/openc2-mqtt-topics-s.png)
+![OpenC2-MQTT-Topics](../../../Images/openc2-mqtt-topics-s.png)
 
 ## Brokers
 The following message brokers are being used for testing OpenC2-based interoperability:
@@ -14,7 +14,7 @@ The following message brokers are being used for testing OpenC2-based interopera
 `mqtt+ssl://3271a3ddd2eb43caa7c4b195c7d6cabd.s2.eu.hivemq.cloud:8883`
 
 The ActiveMQ and HiveMQ brokers use TLS session encryption and require basic (username/password)
-authentication. Participants should request authentication info (see [contributing](../../../../CONTRIBUTING.md)
+authentication. Participants should request authentication info (see [contributing](../../../CONTRIBUTING.md)
 and provide device IDs (any name you wish) to be included in the topic lists to allow other participants to
 communicate with you.
 

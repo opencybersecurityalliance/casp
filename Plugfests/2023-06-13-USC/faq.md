@@ -2,14 +2,14 @@
 
 ## What about broader questions about cybersecurity automation?
 See the 
-[overall CASP FAQ](../../../CASP-FAQ.md)
+[overall CASP FAQ](../../CASP-FAQ.md)
 for questions 
 about CASP, or cybersecurity automation, overall.
 
 ## Are there any restrictions on attending?
 The event is open to all if they agree to 
 register and they agree to abide by the 
-[Code of Conduct](../../../CODE-OF-CONDUCT.md)
+[Code of Conduct](../../CODE-OF-CONDUCT.md)
 which TL;DR is "don't be a jerk".
 
 There is no cost for attending.
@@ -40,7 +40,7 @@ one person per organization.
 Notable exceptions might be if an organization had different SME's
 for different demoable technologies (e.g. one for STIX Shifter and one for Kestrel).
 
-Governance will be via [CASP governance procedures](../../../GOVERNANCE.md).
+Governance will be via [CASP governance procedures](../../GOVERNANCE.md).
 
 ## What is "sweat equity"?
 Sweat equity in this context (ie for determining physical attendance) is mainly
@@ -80,7 +80,7 @@ Ideally with a github pull request against https://github.com/opencybersecuritya
   -  explaining your contributions, 
      -  adding/linking other files as required.
   -  Please include whether you will attend physically or virtual-only
-  -  Please include what country participants are from (for purpose of making fancy x people from y countries on z continents pic like [7countries](../../../Images/7_countries.png))
+  -  Please include what country participants are from (for purpose of making fancy x people from y countries on z continents pic like [7countries](../../Images/7_countries.png))
 
 If you are github-challenged, you can send email to the CASP mailing list 
 and others will assist you.

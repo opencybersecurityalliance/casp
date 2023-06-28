@@ -5,9 +5,6 @@ See [FAQ on Sweat Equity](../faq.md#what-is-sweat-equity) for how we are definin
 See [FAQ on physical attendance eligiblity](../faq.md#how-will-physical-attendance-be-determined) for how sweat equity 
 affects physical attendance eligiblility.
 
-For examples of visualization of sweat equity interactions, see 
-[graphing results](./graphing_results.md).
-
 The intent of this sweat equity page is for organizations
 to announce prior to the meeting
 what resources they will be bringing to the meeting.

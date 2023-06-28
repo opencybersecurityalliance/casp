@@ -12,7 +12,7 @@ Free.
 Anyone may attend virtually if they 
 register and they
 agree to abide by the 
-[Code of Conduct](../../../CODE-OF-CONDUCT.md)
+[Code of Conduct](../../CODE-OF-CONDUCT.md)
 which TL;DR is "don't be a jerk".
 
 A zoom link will be provided to registrants.
