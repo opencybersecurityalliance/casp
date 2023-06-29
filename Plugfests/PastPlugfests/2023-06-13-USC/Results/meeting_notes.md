@@ -151,28 +151,16 @@ Larry Feldman
 	Described Cybersecurity Automation Use Case – 
 We want to show how OpenC2 & CACAO work together
 
-Abidji Kouloum 
 
+Kevin Cressman
 	Verbally described how CACAO Orchestrates the OpenC2 Threat Hunt Actuator Profile as seen on the following figures.  
- 
 
- 
 
-OpenC2 Live Orchestrator Demo by Matt Cressman & Kaitlyn Hun
+OpenC2 Live Orchestrator Demo by Matt Roberts, Kaitlyn Hsu, and Kouloum Abidji
 	Used MQTT & JSON
 		Used Yuuki Device
 
-
-Kaitlyn Hun
-
-	 
-
-
 Demo’ed Kestrel Hunt – Switched from Orchestrator to Logs to demonstrate
-
- 
-
-Kevin Cressman
 
 Demo’ed Relay Command – Details follow
 
@@ -449,9 +437,9 @@ Earlier today we did a Demo that illustrated the OpenC2 Test using MQTT on the T
 
  
 ### SBOM / VEX 
-Duncan replayed the TwinklyMaha demo for new attendees. Below is a split screen image that shows the commands on the left side and the TwindlyMaHa on the right side of the screen.
+Duncan replayed the TwinklyMaha OpenC2 demo for new attendees. Below is a split screen image that shows the commands on the left side and the TwindlyMaHa on the right side of the screen.
 
- 
+
 
 Matt Roberts did a remote demo of the Twinkly Maha link
 

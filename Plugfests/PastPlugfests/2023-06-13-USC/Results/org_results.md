@@ -18,7 +18,6 @@ Five personnel attended (all virtual):
 | Kaitlyn Hsu | software developer | Bestgate Engineering | 
 | Kouloum Abidji | software developer | HII-MT |
 
-Team is based in Maryland, USA
 
 HII's team contributed the following for interoperability and as part of their demonstration:
 
@@ -34,7 +33,7 @@ We have been working on the development of an OpenC2 [Actuator Profile](https://
 
 The capability to invoke threat hunting via OpenC2 is an extension of the original [Kestral Black Hat USA 2022 demonstration](https://github.com/opencybersecurityalliance/black-hat-us-2022) using OpenC2 mechanisms based on OASIS specifciations. 
 
-We also planned to show a [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook keyed to the events of the CASP [Ransomware use case](https://github.com/opencybersecurityalliance/casp/tree/main/UseCases#21-ransomware), and provided logic to indicate the proposed playbook's functions.
+We also planned to show a [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) playbook keyed to the events of the CASP [Ransomware use case](https://github.com/opencybersecurityalliance/casp/tree/main/UseCases#21-ransomware), but did not get it completed in time for the event, so we provided logic to indicate the proposed playbook's functions instead.
 
 To send an OpenC2 Command to one of our devices and demonstrate interoperability, please see the [DKI Sweat Equity page](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/NextPlugfest/2023-06-13-USC/SweatEquity/DKI/README.md)
 

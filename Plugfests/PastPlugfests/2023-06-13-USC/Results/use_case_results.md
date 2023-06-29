@@ -24,7 +24,6 @@ The text will be repeated here to show where the demos fit in.
 > source software, Murphy's Law LLP submits new VEXes to the new
 > NVD API for the purpose of creating new CVEs.
 
-* Demo 1 HII
 ### Day 2 - On Deck Holdings
 > Panic begins anew at On Deck Holdings as a stark uptick in server
 > activity signals that yesterday’s exploits at Murphy’s Law LLP
@@ -90,4 +89,8 @@ The text will be repeated here to show where the demos fit in.
 > and hunt forward operations bricked adversary servers behind the attack.
 > Day 6 is out-of-scope for the Cybersecurity Automation Village. 
 
-
+### OpenC2 Ransomware Use Case
+See [Ransomware Use Case](https://github.com/ScreamBun/casp/blob/main/UseCases/CASP_Ransomeware_Use_Case.png)
+for the use case used for this demo.
+The Screaming Bunny Team demonstrated a mock implementation using Yuuki in place of an ER Scanner, an OIF Device with a Threat Hunting actuator to implement Kestrel hunts, and proto-CACAO logic to show logical orchestration steps.
+We were successful in demonstrating a multi- device implementation using OpenC2 commands over the MQTT broker provided by Dave Kemp. We provided broker connection info and topics for interworking. We hope to have time to interface with a CACAO implementation, or an IBM Kestrel or other Threat Hunting actuator in the future.
