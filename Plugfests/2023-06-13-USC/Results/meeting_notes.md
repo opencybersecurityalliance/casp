@@ -417,15 +417,6 @@ o	Automation & Vendor Products
 o	Network Defenders
 o	Threat Intelligence Analysts
 
-
-
-
-
-
-
-
- 
-
  
 
 Below is a graph representation of an indicator of behavior as expressed in Neo4j
@@ -436,9 +427,8 @@ Demonstrated the underlying code for the Kestrel Huntbook (To be changed to Hunt
 
 For more IOB information:
 
-•	IOB Project page: https://opencybersecurityalliance.org/iob/ 
- 
-•	IOB GitHub for documentation, use cases, reference implementation
+ * IOB Project page: https://opencybersecurityalliance.org/iob/ 
+ * IOB GitHub for documentation, use cases, reference implementation
 https://github.com/opencybersecurityalliance/oca-iob  
 
 IOB Summary
@@ -465,11 +455,11 @@ Utilizing command and control methodology with existing payload formats, PACE ad
 
 Real-time structural analysis executed at a microscopic level gives individuals and organizations a priceless opportunity to prepare for or address potentially crippling cybersecurity attacks. What follows are some resources:
 
-•	https://opencybersecurityalliance.org/pace/
-•	https://github.com/opencybersecurityalliance/PACE/tree/main/docs/UseCases/Pace_Sbom_Vex_Flags_Prioritization
-•	https://securityattributes.org/By_Example/ 
-•	Commercial Vendors
-•	Gartner Application Security Posture Management
+ * https://opencybersecurityalliance.org/pace/
+ * https://github.com/opencybersecurityalliance/PACE/tree/main/docs/UseCases/Pace_Sbom_Vex_Flags_Prioritization
+ * https://securityattributes.org/By_Example/ 
+ * Commercial Vendors
+ * Gartner Application Security Posture Management
 
 Earlier today we did a Demo that illustrated the OpenC2 Test using MQTT on the Twinkly MaHa tool.  
 
