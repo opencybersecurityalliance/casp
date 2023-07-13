@@ -480,10 +480,10 @@ BROKER = 'test.mosquitto.org' PORT = 1883
 	
 	Links to resources:
 
-•	https://www.cisa.gov/sbom
-•	https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/.well-known/sbom
-•	https://quadquiz-q353uyxfhq-uk.a.run.app/.well-known/sbom 
-•	SBOMarama tomorrow
+ * https://www.cisa.gov/sbom
+ * https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/.well-known/sbom
+ * https://quadquiz-q353uyxfhq-uk.a.run.app/.well-known/sbom 
+ * SBOMarama tomorrow
 
 
 Question about SBOM
