@@ -66,14 +66,16 @@ Some standards are going to the ITU (e.g., STIX 2.1) and some to ISO (e.g. CSAF)
 Duncan Sparrell presented an overview of the scenario to be used.
 		
 The [WhitchyWashy Ransomware Use Case](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/NextPlugfest/2023-06-13-USC/UseCases/README.md):
-●	Day 1 - Murphy’s Law LLP
-●	Day 2 - On Deck Holdings
-●	Day 3 - Triumvirate CleanUp Inc
-●	Day 4 - NSAANSA
-●	Day 5 - Law Enforcement
-●	Day 6 – MilOps
+
+ * Day 1 - Murphy’s Law LLP
+ * Day 2 - On Deck Holdings
+ * Day 3 - Triumvirate CleanUp Inc
+ * Day 4 - NSAANSA
+ * Day 5 - Law Enforcement
+ * Day 6 – MilOps
 
 The objective is to use as many  projects on as many days as possible using:
+
 * Machine-to-Machine API’s (ideally between different orgs)
 * Humans (ideally humans "on the loop" as opposed to "in the loop")
 * Handwaving (when something doesn't work, wave your hands and describe how it should work, or how it will work in the future)
