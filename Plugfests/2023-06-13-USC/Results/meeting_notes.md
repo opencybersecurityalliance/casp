@@ -164,7 +164,7 @@ Demo Proceeds – Some screenshots follow
 
  
 
-SBOM Demo
+### SBOM Demo
 
 Larry Feldman
 	Described Cybersecurity Automation Use Case – 
@@ -185,8 +185,30 @@ Demo’ed Relay Command – Details follow
 
 Interact w/ OpenC2 OIF:  BROKER = '3271a3ddd2eb43caa7c4b195c7d6cabd.s2.eu.hivemq.cloud' PORT = 8883 USERNAME = 'Cav01' PASSWORD = see Matt or Dave Kemp TOPIC_REQUEST = 'oc2/cmd/device/oif'  TOPIC_RESPONSE = 'oc2/rsp'
 
-// Sample JSON Command - Add a UUID for the Request ID {     "headers": {         "request_id": "07ebf23d-e492-42a9-9c6a-9a559d0b86bf",         "from": "oc2/rsp",         "to": "oc2/cmd/device/oif",         "created": 1686687573837,         "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"     },     "body": {         "openc2": {             "request": {                 "action": "investigate",                 "target": {                     "th": {                         "hunt": "./hunts/find_data_via_stixshifter.hf"                     }                 }             }         }     } }
- 
+```
+// Sample JSON Command - Add a UUID for the Request ID
+{
+  "headers": {
+    "request_id": "07ebf23d-e492-42a9-9c6a-9a559d0b86bf",
+    "from": "oc2/rsp",
+    "to": "oc2/cmd/device/oif",
+    "created": 1686687573837,
+    "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"
+  },
+  "body": {
+    "openc2": {
+      "request": {
+        "action": "investigate",
+        "target": {
+          "th": {
+            "hunt": "./hunts/find_data_via_stixshifter.hf"
+          }
+        }
+      }
+    }
+  }
+}
+``` 
 
 Duncan Sparrell
 	Did have planned to have a RaspberryPi demo – Not working now. 
