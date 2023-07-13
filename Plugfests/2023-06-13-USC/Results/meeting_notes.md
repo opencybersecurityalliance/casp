@@ -285,20 +285,6 @@ Offered some observations about what they have done to build their product.
  * Contributions welcomed!
 
 
-
-•	Goal: build software to execute CACAO playbooks
-•	Problem: no repository of CACAO examples!?!
-•	81 existing playbooks written by CISA in BPMN
-o	https://github.com/cisagov/shareable-soar-workflows
-•	Why not convert BPMN XML to CACAO JSON?
-o	https://github.com/cydarm/bpmn-to-cacao released 12 June 2023 (yesterday!)
-o	Now we have many CACAO examples!
-•	Challenges:
-o	Some control structures are not yet well handled
-o	CACAO logic uses procedural programming norms, BPMN does not, eg. “gateways” - translation compatibility issues
-o	Still need to add OpenC2 or similar to automates steps
-•	Contributions welcomed!
-
 Vasileios Mavroeidis (In Chat)
 
 You can read more about BPMN-CACAO mapping and reviewing the BPMN modeling notation to visually representing CACAO Playbooks:  https://arxiv.org/pdf/2305.18928.pdf
