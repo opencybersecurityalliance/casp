@@ -12,6 +12,29 @@ Thank you to
 [OASIS-Open](https://www.oasis-open.org/)
 for kindly sponsoring lunch.
  
+## Outline
+- [Agenda:](#agenda)
+- [Set-up \& Kick-off](#set-up--kick-off)
+- [Strategic Objectives](#strategic-objectives)
+- [Use Case Overview \& Project Review](#use-case-overview--project-review)
+	- [DAY 1 – Murphy’s Law LLP](#day-1--murphys-law-llp)
+	- [DAY 2 - On Deck Holdings](#day-2---on-deck-holdings)
+	- [DAY 3 - Triumvirate CleanUp Inc](#day-3---triumvirate-cleanup-inc)
+	- [DAY 4 – NSAANSA](#day-4--nsaansa)
+	- [DAY 5 – Law Enforcement](#day-5--law-enforcement)
+	- [DAY 6 – Military Operations](#day-6--military-operations)
+	- [Q\&A and Chat](#qa-and-chat)
+- [Lunch Break](#lunch-break)
+- [OpenC2 - JADN - Kestrel - STIX Shifter](#openc2---jadn---kestrel---stix-shifter)
+  - [OpenC2 Demo: OIF \& Yuuki, Kestrel Interface, TwinklyMaHa](#openc2-demo-oif--yuuki-kestrel-interface-twinklymaha)
+- [CACAO](#cacao)
+- [Threat Actor Context (TAC)](#threat-actor-context-tac)
+- [IOB](#iob)
+- [PACE / SBOM / VEX](#pace--sbom--vex)
+	- [Posture Attribute Collection \& Evaluation – Duncan Sparrell](#posture-attribute-collection--evaluation--duncan-sparrell)
+	- [SBOM / VEX](#sbom--vex)
+- [Review \& Next Steps](#review--next-steps)
+
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
 (strict attendance was not taken and we may have missed some attendees).
 The attendees represented 24 organizations from 5 countries on 4 continents.
@@ -19,7 +42,7 @@ The attendees represented 24 organizations from 5 countries on 4 continents.
 Attendance was significantly less than previous events - attributed to the short
 notice in planning and announcing the event.
 
-Agenda:
+## Agenda:
 
 
 | Time  | Topic | Wrangler |
