@@ -323,6 +323,17 @@ Github: https://github.com/oasis-open/tac-ontology
 
 The Threat Actor Context (TAC) ontology is a community-driven project led by the OASIS Threat Actor Context Technical Committee. The TAC ontology is a knowledge representation framework focused on comprehensively representing the context around adversaries. The project comprises a set of concept definitions and their relationships encoded in Web Ontology Language (OWL) that altogether harmonize into what we call the Threat Actor Context ontology.
 
+ * Exchange Format to Analysis Format
+   * STIX 2.1 Specification to STIX 2.1 Ontology
+     * Separates the Data from the Model
+ * STIX JSON to STIX Knowledge Graph
+ * Formal Logic
+   * New Facts from Existing Facts
+   * From Implicit Knowledge to Explicit
+ * Classifying Threat Actors Analysis 
+   * Use Case: Intel Threat Agent Library (TAL)
+
+
 •	Exchange Format to Analysis Format
 o	STIX 2.1 Specification to STIX 2.1 Ontology
 	Separates the Data from the Model
