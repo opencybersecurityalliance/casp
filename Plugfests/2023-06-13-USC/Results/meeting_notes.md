@@ -164,7 +164,7 @@ Demo Proceeds – Some screenshots follow
 
  
 
-### SBOM Demo
+### OpenC2 Demo: OIF & Yuuki, Kestrel Interface, TwinklyMaHa
 
 Larry Feldman
 	Described Cybersecurity Automation Use Case – 
