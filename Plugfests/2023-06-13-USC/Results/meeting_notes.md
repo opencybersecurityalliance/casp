@@ -334,19 +334,6 @@ The Threat Actor Context (TAC) ontology is a community-driven project led by the
    * Use Case: Intel Threat Agent Library (TAL)
 
 
-•	Exchange Format to Analysis Format
-o	STIX 2.1 Specification to STIX 2.1 Ontology
-	Separates the Data from the Model
-•	STIX JSON to STIX Knowledge Graph
-•	Formal Logic
-o	New Facts from Existing Facts
-o	From Implicit Knowledge to Explicit
-•	Classifying Threat Actors Analysis 
-o	Use Case: Intel Threat Agent Library (TAL)
-
- 
-
-
  
 
 From Chat:
