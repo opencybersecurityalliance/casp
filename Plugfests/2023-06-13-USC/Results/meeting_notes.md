@@ -12,6 +12,29 @@ Thank you to
 [OASIS-Open](https://www.oasis-open.org/)
 for kindly sponsoring lunch.
  
+## Outline
+- [Agenda:](#agenda)
+- [Set-up \& Kick-off](#set-up--kick-off)
+- [Strategic Objectives](#strategic-objectives)
+- [Use Case Overview \& Project Review](#use-case-overview--project-review)
+	- [DAY 1 – Murphy’s Law LLP](#day-1--murphys-law-llp)
+	- [DAY 2 - On Deck Holdings](#day-2---on-deck-holdings)
+	- [DAY 3 - Triumvirate CleanUp Inc](#day-3---triumvirate-cleanup-inc)
+	- [DAY 4 – NSAANSA](#day-4--nsaansa)
+	- [DAY 5 – Law Enforcement](#day-5--law-enforcement)
+	- [DAY 6 – Military Operations](#day-6--military-operations)
+	- [Q\&A and Chat](#qa-and-chat)
+- [Lunch Break](#lunch-break)
+- [OpenC2 - JADN - Kestrel - STIX Shifter](#openc2---jadn---kestrel---stix-shifter)
+  - [OpenC2 Demo: OIF \& Yuuki, Kestrel Interface, TwinklyMaHa](#openc2-demo-oif--yuuki-kestrel-interface-twinklymaha)
+- [CACAO](#cacao)
+- [Threat Actor Context (TAC)](#threat-actor-context-tac)
+- [IOB](#iob)
+- [PACE / SBOM / VEX](#pace--sbom--vex)
+	- [Posture Attribute Collection \& Evaluation – Duncan Sparrell](#posture-attribute-collection--evaluation--duncan-sparrell)
+	- [SBOM / VEX](#sbom--vex)
+- [Review \& Next Steps](#review--next-steps)
+
 There were ~16 in-person attendees and ~27 additional virtual-only attendees
 (strict attendance was not taken and we may have missed some attendees).
 The attendees represented 24 organizations from 5 countries on 4 continents.
@@ -19,7 +42,7 @@ The attendees represented 24 organizations from 5 countries on 4 continents.
 Attendance was significantly less than previous events - attributed to the short
 notice in planning and announcing the event.
 
-Agenda:
+## Agenda:
 
 
 | Time  | Topic | Wrangler |
@@ -66,14 +89,16 @@ Some standards are going to the ITU (e.g., STIX 2.1) and some to ISO (e.g. CSAF)
 Duncan Sparrell presented an overview of the scenario to be used.
 		
 The [WhitchyWashy Ransomware Use Case](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/NextPlugfest/2023-06-13-USC/UseCases/README.md):
-●	Day 1 - Murphy’s Law LLP
-●	Day 2 - On Deck Holdings
-●	Day 3 - Triumvirate CleanUp Inc
-●	Day 4 - NSAANSA
-●	Day 5 - Law Enforcement
-●	Day 6 – MilOps
+
+ * Day 1 - Murphy’s Law LLP
+ * Day 2 - On Deck Holdings
+ * Day 3 - Triumvirate CleanUp Inc
+ * Day 4 - NSAANSA
+ * Day 5 - Law Enforcement
+ * Day 6 – MilOps
 
 The objective is to use as many  projects on as many days as possible using:
+
 * Machine-to-Machine API’s (ideally between different orgs)
 * Humans (ideally humans "on the loop" as opposed to "in the loop")
 * Handwaving (when something doesn't work, wave your hands and describe how it should work, or how it will work in the future)
@@ -162,43 +187,51 @@ Demo Proceeds – Some screenshots follow
 
  
 
-SBOM Demo
-
- 
+### OpenC2 Demo: OIF & Yuuki, Kestrel Interface, TwinklyMaHa
 
 Larry Feldman
 	Described Cybersecurity Automation Use Case – 
 We want to show how OpenC2 & CACAO work together
 
-Abidji Kouloum 
 
+Kevin Cressman
 	Verbally described how CACAO Orchestrates the OpenC2 Threat Hunt Actuator Profile as seen on the following figures.  
- 
 
- 
 
-OpenC2 Live Orchestrator Demo by Matt Cressman & Kaitlyn Hun
+OpenC2 Live Orchestrator Demo by Matt Roberts, Kaitlyn Hsu, and Kouloum Abidji
 	Used MQTT & JSON
 		Used Yuuki Device
 
-
-Kaitlyn Hun
-
-	 
-
-
 Demo’ed Kestrel Hunt – Switched from Orchestrator to Logs to demonstrate
-
- 
-
-Kevin Cressman
 
 Demo’ed Relay Command – Details follow
 
 Interact w/ OpenC2 OIF:  BROKER = '3271a3ddd2eb43caa7c4b195c7d6cabd.s2.eu.hivemq.cloud' PORT = 8883 USERNAME = 'Cav01' PASSWORD = see Matt or Dave Kemp TOPIC_REQUEST = 'oc2/cmd/device/oif'  TOPIC_RESPONSE = 'oc2/rsp'
 
-// Sample JSON Command - Add a UUID for the Request ID {     "headers": {         "request_id": "07ebf23d-e492-42a9-9c6a-9a559d0b86bf",         "from": "oc2/rsp",         "to": "oc2/cmd/device/oif",         "created": 1686687573837,         "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"     },     "body": {         "openc2": {             "request": {                 "action": "investigate",                 "target": {                     "th": {                         "hunt": "./hunts/find_data_via_stixshifter.hf"                     }                 }             }         }     } }
- 
+```
+// Sample JSON Command - Add a UUID for the Request ID
+{
+  "headers": {
+    "request_id": "07ebf23d-e492-42a9-9c6a-9a559d0b86bf",
+    "from": "oc2/rsp",
+    "to": "oc2/cmd/device/oif",
+    "created": 1686687573837,
+    "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"
+  },
+  "body": {
+    "openc2": {
+      "request": {
+        "action": "investigate",
+        "target": {
+          "th": {
+            "hunt": "./hunts/find_data_via_stixshifter.hf"
+          }
+        }
+      }
+    }
+  }
+}
+``` 
 
 Duncan Sparrell
 	Did have planned to have a RaspberryPi demo – Not working now. 
@@ -261,20 +294,19 @@ CACAO Implementation Demo - Vaughn Shanks
 
 Offered some observations about what they have done to build their product.
 
- 
+ * Goal: build software to execute CACAO playbooks
+ * Problem: no repository of CACAO examples!?!
+ * 81 existing playbooks written by CISA in BPMN
+   * https://github.com/cisagov/shareable-soar-workflows
+ * Why not convert BPMN XML to CACAO JSON?
+   * https://github.com/cydarm/bpmn-to-cacao released 12 June 2023 (yesterday!)
+ * Now we have many CACAO examples!
+ * Challenges:
+   * Some control structures are not yet well handled
+   * CACAO logic uses procedural programming norms, BPMN does not, eg. “gateways” - translation compatibility issues
+   * Still need to add OpenC2 or similar to automates steps
+ * Contributions welcomed!
 
-•	Goal: build software to execute CACAO playbooks
-•	Problem: no repository of CACAO examples!?!
-•	81 existing playbooks written by CISA in BPMN
-o	https://github.com/cisagov/shareable-soar-workflows
-•	Why not convert BPMN XML to CACAO JSON?
-o	https://github.com/cydarm/bpmn-to-cacao released 12 June 2023 (yesterday!)
-o	Now we have many CACAO examples!
-•	Challenges:
-o	Some control structures are not yet well handled
-o	CACAO logic uses procedural programming norms, BPMN does not, eg. “gateways” - translation compatibility issues
-o	Still need to add OpenC2 or similar to automates steps
-•	Contributions welcomed!
 
 Vasileios Mavroeidis (In Chat)
 
@@ -314,17 +346,15 @@ Github: https://github.com/oasis-open/tac-ontology
 
 The Threat Actor Context (TAC) ontology is a community-driven project led by the OASIS Threat Actor Context Technical Committee. The TAC ontology is a knowledge representation framework focused on comprehensively representing the context around adversaries. The project comprises a set of concept definitions and their relationships encoded in Web Ontology Language (OWL) that altogether harmonize into what we call the Threat Actor Context ontology.
 
-•	Exchange Format to Analysis Format
-o	STIX 2.1 Specification to STIX 2.1 Ontology
-	Separates the Data from the Model
-•	STIX JSON to STIX Knowledge Graph
-•	Formal Logic
-o	New Facts from Existing Facts
-o	From Implicit Knowledge to Explicit
-•	Classifying Threat Actors Analysis 
-o	Use Case: Intel Threat Agent Library (TAL)
-
- 
+ * Exchange Format to Analysis Format
+   * STIX 2.1 Specification to STIX 2.1 Ontology
+     * Separates the Data from the Model
+ * STIX JSON to STIX Knowledge Graph
+ * Formal Logic
+   * New Facts from Existing Facts
+   * From Implicit Knowledge to Explicit
+ * Classifying Threat Actors Analysis 
+   * Use Case: Intel Threat Agent Library (TAL)
 
 
  
@@ -410,15 +440,6 @@ o	Automation & Vendor Products
 o	Network Defenders
 o	Threat Intelligence Analysts
 
-
-
-
-
-
-
-
- 
-
  
 
 Below is a graph representation of an indicator of behavior as expressed in Neo4j
@@ -429,9 +450,8 @@ Demonstrated the underlying code for the Kestrel Huntbook (To be changed to Hunt
 
 For more IOB information:
 
-•	IOB Project page: https://opencybersecurityalliance.org/iob/ 
- 
-•	IOB GitHub for documentation, use cases, reference implementation
+ * IOB Project page: https://opencybersecurityalliance.org/iob/ 
+ * IOB GitHub for documentation, use cases, reference implementation
 https://github.com/opencybersecurityalliance/oca-iob  
 
 IOB Summary
@@ -458,11 +478,11 @@ Utilizing command and control methodology with existing payload formats, PACE ad
 
 Real-time structural analysis executed at a microscopic level gives individuals and organizations a priceless opportunity to prepare for or address potentially crippling cybersecurity attacks. What follows are some resources:
 
-•	https://opencybersecurityalliance.org/pace/
-•	https://github.com/opencybersecurityalliance/PACE/tree/main/docs/UseCases/Pace_Sbom_Vex_Flags_Prioritization
-•	https://securityattributes.org/By_Example/ 
-•	Commercial Vendors
-•	Gartner Application Security Posture Management
+ * https://opencybersecurityalliance.org/pace/
+ * https://github.com/opencybersecurityalliance/PACE/tree/main/docs/UseCases/Pace_Sbom_Vex_Flags_Prioritization
+ * https://securityattributes.org/By_Example/ 
+ * Commercial Vendors
+ * Gartner Application Security Posture Management
 
 Earlier today we did a Demo that illustrated the OpenC2 Test using MQTT on the Twinkly MaHa tool.  
 
@@ -483,10 +503,10 @@ BROKER = 'test.mosquitto.org' PORT = 1883
 	
 	Links to resources:
 
-•	https://www.cisa.gov/sbom
-•	https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/.well-known/sbom
-•	https://quadquiz-q353uyxfhq-uk.a.run.app/.well-known/sbom 
-•	SBOMarama tomorrow
+ * https://www.cisa.gov/sbom
+ * https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/.well-known/sbom
+ * https://quadquiz-q353uyxfhq-uk.a.run.app/.well-known/sbom 
+ * SBOMarama tomorrow
 
 
 Question about SBOM

@@ -68,10 +68,14 @@ the language they are written in or the function they are designed to fulfill.
 
 For more info, see [https://openc2.org/](https://openc2.org/)
 
-### How did OpenC2 fit in the use case
-### Which Orgs demonstrated OpenC2
-### How did OpenC2 relate to other projects
-### What next for OpenC2 for the next Village
+### How did OpenC2 fit in the use case?
+Our team developed a use case centered around a ransomware scenario listed [here](https://github.com/ScreamBun/casp/blob/main/UseCases/CASP_Ransomeware_Use_Case.png). This scenario involves CACAO playbook orchestration of OpenC2 commands to the Threat Hunting AP to initiate a Kestrel Hunt on provided STIX data.
+### Which Orgs demonstrated OpenC2?
+The ScreamingBunny OC2 team, with members from Praxis Engineering, HII, and Bestgate Engineering provided the OC2 use case as well as an interoperable demonstration. We used the MQTT message broker provided by Dave Kemp, and were able to send commands with OC2 action-target syntax to sFractal devices. 
+### How did OpenC2 relate to other projects?
+OpenC2 commands passed STIX data to a Kestrel runtime, performed threat hunting operations on that data, and demonstrated that these commands can be initiated by an outside orchestration, such as CACAO.
+### What's next for OpenC2 for the next Village?
+We are hopeful that in the lead up to the next interworking opportunity we may have the opportunity to improve the demonstration of the existing use case, using actual CACAO instead of pseudo-CACAO logic, as well as commands in an official release of the Endpoint Response AP. With time between now and the nxt plugfest, we would like to spend time discussing how Kestrel, CACAO, or other implementations in related areas may interface with OIF and the commands it sends, implementing an OC2 Profile function, such as Threat Hunting.
 
 ## 8. OXA
 ### What is OXA
