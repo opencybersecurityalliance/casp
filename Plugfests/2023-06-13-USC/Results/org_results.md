@@ -41,7 +41,7 @@ To send an OpenC2 Command to one of our devices and demonstrate interoperability
 ## sFractal
 One participant (Duncan Sparrell) attended physically.
 
-### sFractal contributed a working (mostly) 
+### sFractal TwinklyMaha
 sFractal contributed a working TwinklyMaha
 * code at [TwinklyMaHa](https://github.com/sFractal-Podii/TwinklyMaHa)
 * instantiated at [TwinklyMaHa](https://twinklymaha-staging-q353uyxfhq-uk.a.run.app/twinkly)
@@ -54,19 +54,19 @@ TwinklyMaha was part of Days 1,2,3 demonstrating:
 * caused "virtual" leds to blink via OpenC2 commands - simulated cybersecurity commands as part of use case
 * retreived SBOMs via OpenC2 commands as part of use case
 * hand-waved retreived VEXs via OpenC2 commands as part of use case
-### OpenC2 Test
+### sFractal OpenC2 Test
 sFractal contributed a working (mostly) working website to be the 
 OpenC2 producer to talk MQTT to OpenC2 consumers like 
 TwinklyMaha, BlinkyMaHa, OIF, Yukki.
 There were issues that sFractal stuff only worked with the Mosquito MQTT3.1 test
 broker and not the AWS MQTT3.1 or the HiveMQ MQTT5 text brokers.
 But it did work for sFractal TwinklyMaHa and HII TwinklyMaHa as well.
-### BlinkyMaHa
+### sFractal BlinkyMaHa
 sFractal contributed a working (mostly) Raspberry Pi running 
 [BlinkyMaHa](oops - need to commit new version from local) demonstrating:
 * ditto TwinklyMaHa with exception that blinking lights was direct from laptop, not via test MQTT brokers due to networking issues.
 
-### Other
+### sFractal Other
 Unfortunately sFractal did not get TwinklyHaHa or BlinkyHaHa operational 
 for this event. Next time.
 QuadBlockQuiz was operational but not optimized for this event 
