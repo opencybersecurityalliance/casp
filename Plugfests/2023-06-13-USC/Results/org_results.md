@@ -4,7 +4,7 @@
 
 ## Cydarm
 
-## DKS
+## DK
 
 ## HII Mission Technologies
 
@@ -39,3 +39,36 @@ To send an OpenC2 Command to one of our devices and demonstrate interoperability
 
 
 ## sFractal
+One participant (Duncan Sparrell) attended physically.
+
+### sFractal contributed a working (mostly) 
+sFractal contributed a working TwinklyMaha
+* code at [TwinklyMaHa](https://github.com/sFractal-Podii/TwinklyMaHa)
+* instantiated at [TwinklyMaHa](https://twinklymaha-staging-q353uyxfhq-uk.a.run.app/twinkly)
+   - note it intantiates when accessed, so give it a couple of minutes when you first access in a session
+
+TwinklyMaha was part of Days 1,2,3 demonstrating:
+* SBOM as part of build, and used in use case  as part of PACE security posture
+* VEX demonstrating CSAF/VEX and used in use case as part of PACE security posture
+* working OpenC2 code (note different programming language than HII with which it was interoperable - sort of) over MQTT
+* caused "virtual" leds to blink via OpenC2 commands - simulated cybersecurity commands as part of use case
+* retreived SBOMs via OpenC2 commands as part of use case
+* hand-waved retreived VEXs via OpenC2 commands as part of use case
+### OpenC2 Test
+sFractal contributed a working (mostly) working website to be the 
+OpenC2 producer to talk MQTT to OpenC2 consumers like 
+TwinklyMaha, BlinkyMaHa, OIF, Yukki.
+There were issues that sFractal stuff only worked with the Mosquito MQTT3.1 test
+broker and not the AWS MQTT3.1 or the HiveMQ MQTT5 text brokers.
+But it did work for sFractal TwinklyMaHa and HII TwinklyMaHa as well.
+### BlinkyMaHa
+sFractal contributed a working (mostly) Raspberry Pi running 
+[BlinkyMaHa](oops - need to commit new version from local) demonstrating:
+* ditto TwinklyMaHa with exception that blinking lights was direct from laptop, not via test MQTT brokers due to networking issues.
+
+### Other
+Unfortunately sFractal did not get TwinklyHaHa or BlinkyHaHa operational 
+for this event. Next time.
+QuadBlockQuiz was operational but not optimized for this event 
+and we didn't have time to play the game or have a contest. Next time.
+
