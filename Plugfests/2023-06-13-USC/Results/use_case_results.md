@@ -25,6 +25,8 @@ The text will be repeated here to show where the demos fit in.
 > NVD API for the purpose of creating new CVEs.
 
 * Demo 1 HII
+* Demo 3 sFractal
+* Handwave/Demo 5 sFractal
 ### Day 2 - On Deck Holdings
 > Panic begins anew at On Deck Holdings as a stark uptick in server
 > activity signals that yesterday’s exploits at Murphy’s Law LLP
@@ -35,6 +37,9 @@ The text will be repeated here to show where the demos fit in.
 > before, initiate the CACAO playbook, execute OpenC2 commands, and
 > freeze out the black hat hackers that gained entry into their
 > system.
+
+* Demo3 sFractal (execute OpenC2 commands)
+* Handwave sFractal (STIX, CACAO)
 
 ### Day 3 - Triumvirate CleanUp Inc
 > As the unknown exploit becomes a known entity, the zero-day
@@ -52,6 +57,7 @@ The text will be repeated here to show where the demos fit in.
 > CleanUp then initiates automated patching to harden the remaining
 > 40 devices and avoids getting hacked.
 
+* sFractal (retrieve SBOMs, VEXs for PACE security posture)
 ### Day 4 - NSAANSA
 > The Never Say Anything and No Such Agency (NSAANSA) in the US
 > Dept of Useless Factoids has automated cybersecurity adhering to
@@ -72,6 +78,7 @@ The text will be repeated here to show where the demos fit in.
 > transmits that to the lead agency, CISA,for transmission to the
 > SLTT.
 
+* sFractal handwaved the NIEM MSP/IEP
 ### Day 5 - Law Enforcement
 > Initially brought into the loop and involved throughout, law enforcement 
 > prepares multiple NIEM Message Exchange Packages (MEP)
@@ -81,7 +88,7 @@ The text will be repeated here to show where the demos fit in.
 > A criminal takedown across 6 countries occurs and 23 miscreants
 > are put behind bars using evidence and e-filings built from NIEM MEPs.
   
-
+* sFractal handwaved the NIEM MSP/IEP and associated CACAO playbooks
 ### Day 6 - MilOps
 > It can neither be confirmed nor denied whether
 > rogue nation states were involved in this use case;
@@ -90,7 +97,7 @@ The text will be repeated here to show where the demos fit in.
 > and hunt forward operations bricked adversary servers behind the attack.
 > Day 6 is out-of-scope for the Cybersecurity Automation Village. 
 
-
+* sFractal handwaved the NIEM MSP/IEP and associated CACAO playbooks
 ### OpenC2 Ransomware Use Case
 See [Ransomware Use Case](https://github.com/ScreamBun/casp/blob/main/UseCases/CASP_Ransomeware_Use_Case.png)
 for the use case used for this demo.
