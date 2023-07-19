@@ -35,7 +35,7 @@ The main goal of the IOB effort is to create a standard way to represent cyber a
   - Murphy’s Law LLP threat intel analysts created this IOB STIX bundle to share with their ISAC 
   - ISAC TAXII server has IOB bundle available to automation for other community members
   - On Deck Holdings pull the IOB STIX bundle from the ISAC TAXII server to process with their automation
--Day 2: On Deck Holdings
+- Day 2: On Deck Holdings
   - Execution of shared Kestrel Huntbook allows for On Deck to detect and correlate similar threat activity on their network
 
 ### Which Orgs demonstrated IoB
