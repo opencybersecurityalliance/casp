@@ -22,10 +22,30 @@ They are listed alphabetically.
 
 ## 3. IoB
 ### What is IoB
+[Indicators of Behavior](https://opencybersecurityalliance.org/iob/) (IoB) is a sub-project within the Open Cybersecurity Alliance. It is focused on extending STIX to represent sequences of cyber adversary behavior tied to detections, correlations, and response. 
+
+The main goal of the IOB effort is to create a standard way to represent cyber adversary behaviors to make it easier to:
+
+- Share repeatable sets of observed adversary behaviors spanning multiple campaigns,
+- Share the analytics to detect those behaviors, and
+- Create and share playbooks/workflows to correlate those detections.
+
 ### How did IoB fit in the use case
+- Day 1: Murphy’s Law LLP
+  - Murphy’s Law LLP threat intel analysts created this IOB STIX bundle to share with their ISAC 
+  - ISAC TAXII server has IOB bundle available to automation for other community members
+  - On Deck Holdings pull the IOB STIX bundle from the ISAC TAXII server to process with their automation
+- Day 2: On Deck Holdings
+  - Execution of shared Kestrel Huntbook allows for On Deck to detect and correlate similar threat activity on their network
+
 ### Which Orgs demonstrated IoB
+Johns Hopkins University Applied Physics Laboratory demonstrated IOB with help from CASP project members who provided cloud virtual machines for the demo and from University of Oslo / Cyentific AS who shared best practices to represent CACAO playbooks within STIX.
+
 ### How did IoB relate to other projects
+The IoB sample used in this Village used **Stix-Shifter** searches for the shared detections, **Kestrel** huntbooks for correlation, **CACAO** playbooks for response, **STIX** for the packaging of the IoB sample, and **TAXII** to share the IoB sample.
+
 ### What next for IoB for the next Village
+IoB would like to incorporate repreesntations of detectors at the next village and better integrate with the **OpenC2** orchestrator to automatically extract the elements from the IoB bundle to automate processing further.
 
 ## 4. Kestrel
 ### 4.1 What is Kestrel
