@@ -6,7 +6,7 @@
 
 The next CASP event will be held March 2024 in Reston, VA.  A virtual Plugfest to prepare
 for the event will be held on Thursday, November 30. For more details, 
-see the [NextPlugFest subdirectory](./Plugfests/NextPlugfest/2023-06-13-USC/README.md)
+see the [Next PlugFest subdirectory](Plugfests/2024-03-NorthernVirginia/README.md)
 and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
 ### Test Planning
