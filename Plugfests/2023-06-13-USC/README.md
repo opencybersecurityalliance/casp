@@ -13,6 +13,11 @@ For more information, read the rest of this page and/or see:
 * [Logistics](./logistics.md)
 * Registration - see Logistics
 
+Note the CASP event was the day before, and in the same venue as, the CISA SBOMarama.
+For more information on the CISA SBOMarama see
+[Federal Register annoucement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)
+or [CISA website](https://www.cisa.gov/sbom).
+
 ---
 
 

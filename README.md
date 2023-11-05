@@ -4,17 +4,17 @@
 
 # Announcement
 
-The next CASP event will be held June 13th, 2023 at USC and hybrid.
-
-For more details, 
+The next CASP event will be held March 2024 in Reston, VA.  A virtual Plugfest to prepare
+for the event will be held on Thursday, November 30. For more details, 
 see the [NextPlugFest subdirectory](./Plugfests/NextPlugfest/2023-06-13-USC/README.md)
 and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
-Note the CASP event is the day before, and in the same venue as, 
-the CISA SBOMarama.
-For more information on the CISA SBOMarama see
-[Federal Register annoucement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)
-or [CISA website](https://www.cisa.gov/sbom) (about halfway down page).
+### Test Planning
+Because plugfests exercise interworking among independent implementations, it's helpful for
+participants to register interest in testing specific protocols with other participants.
+If you are considering participating, please use the CASP mailing list or GitHub issue to request
+to be added to the [test matrix](Plugfests/2024-03-NorthernVirginia/test-matrix-2024-03.md),
+or edit it directly and submit a GitHub pull request.
 
 ---
 
