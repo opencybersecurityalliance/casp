@@ -16,6 +16,8 @@ Desire to have MQTT5 by 30-Nov but stretch (need to redo dependencies - am looki
 
 As of 5-Nov, only has older CDX and SPDX versions. Unlikely to fix by 30-Nov but plan to fix by Prep2
 
+As of 5-Nov, doesn't have a vex (although capable). Hope to have log4j/no-component VEX by 30-Nov.
+
 
 ## Intent for Prep2 in Feb-2024
 Hoping to have everything ready for Village in March. 
