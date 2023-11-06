@@ -12,7 +12,9 @@ As of 5-Nov only has MQTT 3 for OpenC2 API.
 As of 5-Nov has outdated SBOM queries.
 Hope is to have updated queries by 30-Nov for interworking with other projects.
 
-Desire to have MTQQ5 by 30-Nov but stretch (need to redo dependencies - am looking at two alternative libraries from one currently used).
+Desire to have MQTT5 by 30-Nov but stretch (need to redo dependencies - am looking at two alternative libraries from one currently used).
+
+As of 5-Nov, only has older CDX and SPDX versions. Unlikely to fix by 30-Nov but plan to fix by Prep2
 
 
 ## Intent for Prep2 in Feb-2024
