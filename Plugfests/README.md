@@ -7,7 +7,7 @@ The most recent Cybersecurity Automation Village was:
 
 Future planned events include:
 * a 2-day village in March, 2024 in Reston, VA
-   - see [2024-1Q](./2024-1Q)
+   - see [2024-03-NorthernVirginia](./2024-03-NorthernVirginia)
 * a Virtual PlugFest to be held in two 2-hour sessions on Thursday, November 30th
    - Preparatory for 2024 2-day event  
 
