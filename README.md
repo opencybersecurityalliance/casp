@@ -4,10 +4,14 @@
 
 # Announcement
 
-The next CASP event will be held March 2024 in Reston, VA.  A virtual Plugfest to prepare
-for the event will be held on Thursday, November 30. For more details, 
-see the [Next PlugFest subdirectory](Plugfests/2024-03-NorthernVirginia/README.md)
+The next CASP event will be 
+a 2-day Cybersecurity Automation Village in Virginia in March,2024.
+For more info, see [Next Village](./Plugfests/2024-1Q/README.md)
 and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
+
+The most recent plugfest was held at USC in June, 2023. 
+See [USC Plugfest](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/2023-06-13-USC/README.md)
+for more details.
 
 ### Test Planning
 Because plugfests exercise interworking among independent implementations, it's helpful for
@@ -15,7 +19,6 @@ participants to register interest in testing specific protocols with other parti
 If you are considering participating, please use the CASP mailing list or GitHub issue to request
 to be added to the [test matrix](Plugfests/2024-03-NorthernVirginia/test-matrix-2024-03.md),
 or edit it directly and submit a GitHub pull request.
-
 ---
 
 # OCA CASP Sub-project
