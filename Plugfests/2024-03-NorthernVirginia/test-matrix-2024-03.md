@@ -17,7 +17,49 @@ Each object defined by a data standard may be **Produced** or **Consumed** by an
 The test matrix includes a Role column to indicate which data role(s) the participant intends
 to test.
 
-### CACAO
+### [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [CSAF](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=csaf)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [CycloneDX](https://cyclonedx.org/specification/overview/)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [OpenC2 Content](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [SPDX](https://spdx.dev/)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [STIX](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [VEX](https://github.com/openvex/spec)
 
 | Participant | Role | Notes |
 |-------------|------|-------|
@@ -30,19 +72,19 @@ Each protocol may support **Initiator** (Client/Producer), **Responder** (Server
 or **Symmetric** interaction roles.  The test matrix includes a Role column to indicate
 which interaction role(s) the participant intends to test.
 
-### STIX/TAXII
+### [TAXII](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti)
 
 | Participant | Role | Notes |
 |-------------|------|-------|
 |             |      |       |
 |             |      |       |
 
-### OpenC2
+### [OpenC2 Message](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2)
 
-| Participant                                | Role | Notes               |
-|--------------------------------------------|------|---------------------|
-| [sFractal](SweatEquity/sFractal/README.md) | I/R  | Blinky - HTTP, MQTT |
-| [sFractal](SweatEquity/sFractal/README.md) | I/R  | SBOM - MQTT         |
+| Participant     | Role | Notes               |
+|-----------------|------|---------------------|
+| [sFractal](SweatEquity/sFractal/README.md) | I,R  | Blinky - HTTP, MQTT |
+| [sFractal](SweatEquity/sFractal/README.md) | I,R  | SBOM - MQTT         |
 
 ## Protocol Support
 
