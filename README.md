@@ -4,17 +4,14 @@
 
 # Announcement
 
-The next CASP event will be held June 13th, 2023 at USC and hybrid.
-
-For more details, 
-see the [NextPlugFest subdirectory](./Plugfests/NextPlugfest/2023-06-13-USC/README.md)
+The next CASP event will be 
+a 2-day Cybersecurity Automation Village in Virginia in March,2024.
+For more info, see [Next Village](./Plugfests/2024-1Q/README.md)
 and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
-Note the CASP event is the day before, and in the same venue as, 
-the CISA SBOMarama.
-For more information on the CISA SBOMarama see
-[Federal Register annoucement](https://www.federalregister.gov/documents/2023/05/22/2023-10825/2023-cisa-sbom-a-rama)
-or [CISA website](https://www.cisa.gov/sbom) (about halfway down page).
+The most recent plugfest was held at USC in June, 2023. 
+See [USC Plugfest](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/2023-06-13-USC/README.md)
+for more details.
 
 ---
 
