@@ -15,6 +15,6 @@ Future events include:
 Previous events include:
 * [2022-05-16-DC](./2022-05-16-DC/) in Washington, DC / Hybrid, hosted by AT&T
 * [2021-06-22-BorderlessCyber](./2021-06-22-BorderlessCyber) virtual as part of Borderless Cyber
-* find previous plugfest at dreamport
+* [2020-01-27-CyberCom/UMBC](https://github.com/oasis-tcs/openc2-usecases/tree/main/PlugFests/2020.01.27-CyberCom-Plugfest)
 * add in CTI plugfests
 * find other previous plugfests
