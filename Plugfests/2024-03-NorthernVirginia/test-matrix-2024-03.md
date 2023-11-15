@@ -38,7 +38,15 @@ to test.
 |             |      |       |
 |             |      |       |
 
+### [OCSF](https://github.com/ocsf/)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
 ### [OpenC2 Content](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2)
+Actions supporting CM/AV/SBOM/Security Posture, SIEM, SOAR/ER/XDR, Threat Hunting, ...
 
 | Participant | Role | Notes |
 |-------------|------|-------|
