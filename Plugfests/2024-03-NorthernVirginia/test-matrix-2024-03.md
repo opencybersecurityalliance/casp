@@ -38,6 +38,13 @@ to test.
 |             |      |       |
 |             |      |       |
 
+### [Indicators of Behavior - IOB](https://opencybersecurityalliance.org/iob/)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
 ### [OCSF](https://github.com/ocsf/)
 
 | Participant | Role | Notes |
@@ -46,7 +53,24 @@ to test.
 |             |      |       |
 
 ### [OpenC2 Content](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=openc2)
-Actions supporting CM/AV/SBOM/Security Posture, SIEM, SOAR/ER/XDR, Threat Hunting, ...
+Actions supporting automated:
+* Protection: Configuration Management, Anti-virus, SBOM, Security Assessment and Approval
+* Sensing: SIEM, Threat Hunting
+* Defense: SOAR, XDR
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [Open Security Controls Assessment Language - OSCAL](https://pages.nist.gov/OSCAL/)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [Open XDR Architecture - OXA](https://github.com/opencybersecurityalliance/oxa)
 
 | Participant | Role | Notes |
 |-------------|------|-------|
@@ -61,6 +85,13 @@ Actions supporting CM/AV/SBOM/Security Posture, SIEM, SOAR/ER/XDR, Threat Huntin
 |             |      |       |
 
 ### [STIX](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|             |      |       |
+|             |      |       |
+
+### [Threat Actor Context - TAC](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tac)
 
 | Participant | Role | Notes |
 |-------------|------|-------|
