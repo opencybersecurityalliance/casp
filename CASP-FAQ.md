@@ -20,17 +20,24 @@ wherever possible,
 but may create specifications/standards if necessary.
 
 ## When will be the next Cybersecurity Automation Village?
-The next Cybersecurity Automation Village is
+The next Cybersecurity Automation Village will be
+a two-day plugfest/workshop/hackathon/contest on March 14-15, 2024.
+It will be hosted by Peraton at their office at:
+* 1875 Explorer St, Reston, VA 20190
+
+## When were previous Cybersecurity Automation Workshops?
+The most recent  Cybersecurity Automation Village was
 13-June-2023 hybrid at USC.
 See 
-[next Village](./Plugfests/NextPlugfest/2023-06-13-USC/README.md)
+[USC Village](./Plugfests/2023-06-13-USC/)
 for more details.
 
-## When was the last Cybersecurity Automation Workshop?
-The most recent Cybersecurity Automation Workshop was 2-June-2022 at
+Prior to that, the most recent event was 2-June-2022 at
 the AT&T Forum in Washington, DC. See 
-[Previous Villages](./Plugfests/PastPlugfests/) for this and previous
-Villages/Workshops/Plugfests.
+[ATT-DC](./Plugfests/2022-05-16-DC/) 
+for more details.
+
+For even more events, see [plugests](./Plugfests/).
 
 ## How does PACE relate to the Cybersecurity Automation SubProject?
 [Posture Attribute Collection & Evaluation (PACE)](https://opencybersecurityalliance.org/pace/)
