@@ -124,6 +124,7 @@ which interaction role(s) the participant intends to test.
 |-----------------|------|---------------------|
 | [sFractal](SweatEquity/sFractal/README.md) | I,R  | Blinky - HTTP, MQTT |
 | [sFractal](SweatEquity/sFractal/README.md) | I,R  | SBOM - MQTT         |
+| [HII](SweatEquity/HII/README.md) | R  | OIF-Device: OC2 Language, Hunting AP - MQTT v3, v5 & HTTP |
 
 ## Protocol Support
 
