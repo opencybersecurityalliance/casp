@@ -126,6 +126,22 @@ which interaction role(s) the participant intends to test.
 | [sFractal](SweatEquity/sFractal/README.md) | I,R  | SBOM - MQTT         |
 | [HII](SweatEquity/HII/README.md) | R  | OIF-Device: OC2 Language, Hunting AP - MQTT v3, v5 & HTTP |
 
+OpenC2 has published specifications for message transfer over [MQTT
+v5.0](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/transf-mqtt-v1.0.html) and
+[HTTPS](https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html).
+MQTT is preferred to avoid the need to open inbound paths to a local enclave if
+testing across the Internet.  The HTTPS Transfer Specification supports a
+[Testing mode](https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html#421-testing-target-conformance-requirements)
+that drops the requirement for TLS authentication and its associated certificate
+management challenges.
+
+For assistance applying these OpenC2 specifications use the [CASP mail
+list](mailto:oca-casp@lists.oasis-open-projects.org) or open an issue in the
+associated GitHub repository
+([MQTT](https://github.com/oasis-tcs/openc2-transf-mqtt/issues) /
+[HTTPS](https://github.com/oasis-tcs/openc2-impl-https/issues)).
+
+
 ## Protocol Support
 
 The following message brokers are being used for testing OpenC2-based interoperability:
