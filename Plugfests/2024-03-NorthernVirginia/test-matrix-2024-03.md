@@ -28,13 +28,14 @@ to test.
 
 | Participant | Role | Notes |
 |-------------|------|-------|
-|             |      |       |
+|  sFractal  |   P   |  CASR/Vex available on web and via OpenC2  |
 |             |      |       |
 
 ### [CycloneDX](https://cyclonedx.org/specification/overview/)
 
 | Participant | Role | Notes |
 |-------------|------|-------|
+|  sFractal  |   P   |  CDX SBOM available on web and via OpenC2  |
 |             |      |       |
 |             |      |       |
 
@@ -60,6 +61,7 @@ Actions supporting automated:
 
 | Participant | Role | Notes |
 |-------------|------|-------|
+|  sFractal  |   C   |   put link to longer explanation  |
 |             |      |       |
 |             |      |       |
 
@@ -81,6 +83,7 @@ Actions supporting automated:
 
 | Participant | Role | Notes |
 |-------------|------|-------|
+|  sFractal  |   P   |  CDX SBOM available on web and via OpenC2  |
 |             |      |       |
 |             |      |       |
 
@@ -102,6 +105,7 @@ Actions supporting automated:
 
 | Participant | Role | Notes |
 |-------------|------|-------|
+|  sFractal  |   P   |  CASR/Vex available on web and via OpenC2  |
 |             |      |       |
 |             |      |       |
 
