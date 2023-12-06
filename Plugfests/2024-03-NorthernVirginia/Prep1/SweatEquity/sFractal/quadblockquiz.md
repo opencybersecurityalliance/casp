@@ -18,7 +18,7 @@
 * mapping powers to QnA needs work once QnA filled out
 * intent to have ready for prep2
 ### PACE/SBOMs
-* SBOMs made as part of build and avaialable on game website
+* SBOMs made as part of build and available on game website
 * token VEX available
 * OpenC2 MQTTv5 API not avaialable
    - hope to have for March
