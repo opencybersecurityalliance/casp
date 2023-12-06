@@ -1,34 +1,29 @@
 # TwinklyMaHa
+TwinklyMaHa is blah blah
 
-## Intent for 30-Nov-2023
-Dev and [production](https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/twinkly)
-mqtt twinklies are working as of 5-Nov-23 
-but on quirky domains. 
-Intent to have the twinkly domain by Prep2. 
-Prep1 in Nov will still be on quirky domains.
+It is tested (1) by interfacing with sFractal's "OpenC2Test" and (2) interfacing with other organizations stuff
 
-Current (Nov2023) twinkly (v0.11.2) has [SBOMs](https://twinklymaha-prod-q353uyxfhq-uk.a.run.app/.well-known/sbom).
-As of 5-Nov only has MQTT 3 for OpenC2 API.
-As of 5-Nov has outdated SBOM queries.
-Hope is to have updated queries by 30-Nov for interworking with other projects.
-
-Desire to have MQTT5 by 30-Nov but stretch (need to redo dependencies - am looking at two alternative libraries from one currently used).
-
-As of 5-Nov, only has older CDX and SPDX versions. Unlikely to fix by 30-Nov but plan to fix by Prep2
-
-As of 5-Nov, doesn't have a vex (although capable). Hope to have log4j/no-component VEX by 30-Nov.
-
+## Status for 6-Dec-2023
+### Production
+* still on MQTTv3 and June plugfest code (ie "old" OpenC2)
+* still be on quirky domain
+* intent for Prep2 to be on production domain, MQTTv5, new OpenC2 code, ready to test with other
+### Dev
+* MQTTv5 working (as of hours ago) on both Dev twinklymaha and dev OpenC2 test vm which talks to twinklymaha
+* new OpenC2 code avaialable but not integrated with MQTTv5 code yet
+* still on quirky domain
+### PACE/SBOMs
+* SBOMs made as part of build and available on twinkly website
+* token VEX available
+* older SPDX/CDX versions which need updating by prep2
+* OpenC2 MQTTv5 API not available
+   - will have for March
+* SBOMs not in commercial PACE vendor with OpenC2 MQTTv5 APIs 
+   - hope to have for March for at least 1, maybe more, vendor(s)
 
 ## Intent for Prep2 in Feb-2024
 Hoping to have everything ready for Village in March. 
 Will update nearer to Feb if not the case.
 
-Current (Nov2023) QBQ is MQTT 3. 
-Plan to have MQTT 5 by Feb.
-
-Current (Nov2023) QBQ isn't yet updated with all the categories of Village.
-Plan to have MQTT 5 by Feb.
-
-
 ## Intent for Cybersecurity Automation Village in Mar-202
-fill in
+nirvana
