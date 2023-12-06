@@ -79,6 +79,13 @@ Actions supporting automated:
 |             |      |       |
 |             |      |       |
 
+### [PACE](https://github.com/opencybersecurityalliance/pace)
+
+| Participant | Role | Notes |
+|-------------|------|-------|
+|  sFractal   | P,C  | add link |
+|             |      |       |
+
 ### [SPDX](https://spdx.dev/)
 
 | Participant | Role | Notes |
@@ -127,6 +134,7 @@ which interaction role(s) the participant intends to test.
 | Participant     | Role | Notes               |
 |-----------------|------|---------------------|
 | [sFractal](SweatEquity/sFractal/README.md) | I,R  | Blinky - HTTP, MQTT |
+| [sFractal](SweatEquity/sFractal/README.md) | I,R  | Twinkly - HTTP, MQTT |
 | [sFractal](SweatEquity/sFractal/README.md) | I,R  | SBOM - MQTT         |
 | [HII](SweatEquity/HII/README.md) | R  | OIF-Device: OC2 Language, Hunting AP - MQTT v3, v5 & HTTP |
 
