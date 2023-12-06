@@ -6,13 +6,16 @@ sFractal plans to bring the following items:
   - a supply chain game combining a tetris-like dropping blocks game with a quiz. Both are intended to increase your knowlege of supply chain
   - quiz will have sections for each of the CASP projects
   - no intent to have contest for Nov, but intent is to have contest with prizes for March
-  - Nov will have
   - see [QuadBlockQuiz](./quadblockquiz.md)
 * TwinklyMaHa
+  - a website that is digital twin to BlinkyMaHa
+  - OpenC2 MQTTv5 API
   - see [TwinklyMaHa](./twinklymaha.md)
-* BlinkyHaHa
-  - blah blah
 * BlinkyMaHa
+  - blah blah
+  - for prep1, same state as June Plugfest ie MQTTv3 with old OpenC2
+  - intent to have MQTTv5 with new OpenC2 by prep2
+* BlinkyHaHa
   - blah blah
 * TwinklyHaHa
   - blah blah
