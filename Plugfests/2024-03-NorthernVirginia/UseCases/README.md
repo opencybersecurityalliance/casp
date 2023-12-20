@@ -10,12 +10,12 @@ The use cases are divided into 3 layers
 ## Value Propositions
 blah blah explaining why this layer and then list ones we have with links
 
-* Wishywashy Ransomware 
-* Invoice hijack
-* Payroll hijack
-* Accounts payable hijack
-* BEC
-* Lepus Sun Gust Supply Chain Attack
+* [WitchyWashy Ransomware](./ValuePropositions/WitchyWashy)
+* [StarMal Invoice Hijack](./ValuePropositions/StarMal) 
+* [JesseJames Payroll Hack](./ValuePropositions/JesseJames)
+* [Montana Billing Hijack](./ValuePropositions/Montana)   
+* [You've Got Mail BEC](./ValuePropositions/YouveGotMail)
+* [Moon Zephyr](./ValuePropositions/Moonzephyr)
 
 ## Practioner Playbooks and Sequence Diagrams
 playbooks, sequence diagrams, the use cases practioners tend to operate at 

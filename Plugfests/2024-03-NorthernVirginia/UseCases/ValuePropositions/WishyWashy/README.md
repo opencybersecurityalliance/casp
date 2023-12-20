@@ -1,4 +1,4 @@
-# Use Cases for the Plugfest
+# WitchyWashy Zero Day 
 See [overall CASP Usecases](../../../../UseCases/README.md) 
 and interface-specific usecases
 (fill in with links to PACE, STIX, CACAO, OpenC2...) 
@@ -9,7 +9,7 @@ Cybersecurity Automation Village.
 Eventually we'll add links to show where specific parts of this
 tie in practioner use cases, which in turn tie into the demos/interfaces/data.
 
-## The WhitchyWashy Zero Day
+## The WitchyWashy Zero Day
 ### Day 1 - Murphy’s Law LLP
 During the vows at a daughter’s wedding, midway through an
 emergency root canal, at 8 a.m. on Christmas morning the CEO of
@@ -55,6 +55,12 @@ potentially affected devices have VEXes from their suppliers that
 indicate they are not susceptible to those CVEs. Triumvirate
 CleanUp then initiates automated patching to harden the remaining
 40 devices and avoids getting hacked.
+
+### Day 3 - Cheap-O Umbrella Company
+
+Unfortunately, Cheap-O Umbrella Corp chose not to adhere to any form of meaningful 
+cybersecurity automation and a true rainy day scenario occurs. 
+Ransomware bricks their IT systems and a material cybersecurity incident occurs.
 
 ### Day 4 - NSAANSA
 The Never Say Anything and No Such Agency (NSAANSA) in the US
