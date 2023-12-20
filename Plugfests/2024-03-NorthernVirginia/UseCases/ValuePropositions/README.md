@@ -5,7 +5,7 @@ In this context, we will provide value propositions oriented towards business st
 
 blah blah explaining why this layer and then list ones we have with links
 
-  * [Wishywashy Ransomware](./WishyWashy)
+  * [WitchyWashy Ransomware](./WitchyWashy)
   * [StarMal Invoice Hijack](./StarMal) 
   * [JesseJames Payroll Hack](./JesseJames)
   * [Montana Billing Hijack](./Montana)   
