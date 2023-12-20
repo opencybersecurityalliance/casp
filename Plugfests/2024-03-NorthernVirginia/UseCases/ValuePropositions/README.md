@@ -5,7 +5,7 @@ In this context, we will provide value propositions oriented towards business st
 
 blah blah explaining why this layer and then list ones we have with links
 
-  * Wishywashy Ransomware
+  * [Wishywashy Ransomware](./WishyWashy)
   * Invoice hijack
     The administration staff at Carter Branch Hospital pride
     themselves on offering medical services that are a cut above.
