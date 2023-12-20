@@ -56,6 +56,12 @@ indicate they are not susceptible to those CVEs. Triumvirate
 CleanUp then initiates automated patching to harden the remaining
 40 devices and avoids getting hacked.
 
+### Day 3 - Cheap-O Umbrella Company
+
+Unfortunately, Cheap-O Umbrella Corp chose not to adhere to any form of meaningful 
+cybersecurity automation and a true rainy day scenario occurs. 
+Ransomware bricks their IT systems and a material cybersecurity incident occurs.
+
 ### Day 4 - NSAANSA
 The Never Say Anything and No Such Agency (NSAANSA) in the US
 Dept of Useless Factoids has automated cybersecurity adhering to
