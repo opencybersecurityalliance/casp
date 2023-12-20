@@ -9,16 +9,8 @@ blah blah explaining why this layer and then list ones we have with links
   * [StarMal Invoice Hijack](./StarMal) 
   * [JesseJames Payroll Hack](./JesseJames)
   * [Montana Billing Hijack](./Montana)   
-    There was a script somewhere that somebody missed. Something unforseen and
-    deeply unfortunate burrowed its way into the AllHome billing system. The guys in
-    IT only figured it out after a record number of policies lapsed in a ninety day period.
-    Rates had gone up, sure, but not to the point that one hundred percent of those who
-    were due to renew their policies should have left AllHome. Especially not with the cutesy
-    ads with that actor from that TV show that the company had spent beaucoup bucks on. Exit
-    surveys were definitive: 100% of those who had allowed their policy to lapse thought they had
-    paid and were still policy holders with AllHome. Whoops. Some financial forensics made IT's stomach
-    drop. These customers had, indeed, paid someone. Just not AllHome. 
-
+  * [You've Got Mail BEC](./YouveGotMail)
+  * [Moon Zephyr](./Moonzephyr)
   * BEC
      BUSINESS EMAIL COMPROMISE
     Bert Transome had more than just an MBA from a school most would give their eye teeth to attent.
