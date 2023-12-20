@@ -1,4 +1,4 @@
-# WishyWashy Zero Day 
+# WitchyWashy Zero Day 
 See [overall CASP Usecases](../../../../UseCases/README.md) 
 and interface-specific usecases
 (fill in with links to PACE, STIX, CACAO, OpenC2...) 
@@ -9,7 +9,7 @@ Cybersecurity Automation Village.
 Eventually we'll add links to show where specific parts of this
 tie in practioner use cases, which in turn tie into the demos/interfaces/data.
 
-## The WhitchyWashy Zero Day
+## The WitchyWashy Zero Day
 ### Day 1 - Murphy’s Law LLP
 During the vows at a daughter’s wedding, midway through an
 emergency root canal, at 8 a.m. on Christmas morning the CEO of
