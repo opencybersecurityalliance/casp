@@ -1,4 +1,4 @@
-# Use Cases for the Plugfest
+# WishyWashy Zero Day 
 See [overall CASP Usecases](../../../../UseCases/README.md) 
 and interface-specific usecases
 (fill in with links to PACE, STIX, CACAO, OpenC2...) 
