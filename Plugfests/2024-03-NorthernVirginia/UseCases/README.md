@@ -11,6 +11,7 @@ The use cases are divided into 3 layers
 blah blah explaining why this layer and then list ones we have with links
 
 * [WitchyWashy Ransomware](./ValuePropositions/WitchyWashy)
+* [OlympicDestroyer](./ValuePropositions/OlympicDestroyer.md)
 * [StarMal Invoice Hijack](./ValuePropositions/StarMal) 
 * [JesseJames Payroll Hack](./ValuePropositions/JesseJames)
 * [Montana Billing Hijack](./ValuePropositions/Montana)   
