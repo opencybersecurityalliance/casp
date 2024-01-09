@@ -1,9 +1,12 @@
-# CASP - OXA Ransomware Use Case
+# Orchestrated Hunt Use Case
 In this CASP -  OXA ([Open XDR
 Architecture](https://github.com/opencybersecurityalliance/oxa)) use case, we
 will explore how CACAO, Kestrel, and OpenC2 can be used together to create an
 integrated and efficient cybersecurity workflow for detecting, responding to,
-and mitigating a cyber threat, such as a ransomware attack.
+and mitigating a cyber threat, such as a ransomware attack. 
+
+![Use Case Flow Diagram](./OrchestratedHunt.drawio.png)
+
 
 Our use case starts with Command Orchestration, using CACAO Playbooks. To
 streamline and automate cybersecurity processes, the organization implements
@@ -20,19 +23,20 @@ The organization implements tools for scanning and anomaly detection, as well as
 Kestrel-based software and libraries of hunting books, specifically designed to
 analyze the organization’s systems to detect and classify anomalous behavior.
 Kestrel commands can enable the execution of threat hunting that can retrieve,
-join, and analyze data as part of an orchestration flow. For our use case,
-anomalous behavior may constitute elevated processor use or suspicious network
-traffic. In the event of anomalous behavior, or as the result of a periodic
-scan, the CACAO integrated scanning tools will notify a security team and, at
-the same time, invoke Kestrel. This will initiate Kestrel threat hunting by
-OpenC2 command to Kestrel’s STIX-shifter interface. Threat hunting commands will
-use the Threat Hunting Actuator Profile (TH AP) for OpenC2 to investigate
-threats with a Kestrel huntflow and analyze threat related data from various
-sources, such as log files, network traffic data, and external threat feeds.
-Kestrel's powerful pattern matching and correlation capabilities enable the
-identification of indicators of compromise (IoCs) or/and indicators of behavior
-(IoBs) associated with a known ransomware family, such as specific file hashes,
-IP addresses, or domain names. 
+join, and analyze data as part of an orchestration flow. 
+
+For our use case, anomalous behavior may constitute elevated processor use or
+suspicious network traffic. In the event of anomalous behavior, or as the result
+of a periodic scan, the CACAO integrated scanning tools will notify a security
+team and, at the same time, invoke Kestrel. This will initiate Kestrel threat
+hunting by OpenC2 command to Kestrel’s STIX-shifter interface. Threat hunting
+commands will use the Threat Hunting Actuator Profile (TH AP) for OpenC2 to
+investigate threats with a Kestrel huntflow and analyze threat related data from
+various sources, such as log files, network traffic data, and external threat
+feeds. Kestrel's powerful pattern matching and correlation capabilities enable
+the identification of indicators of compromise (IoCs) or/and indicators of
+behavior (IoBs) associated with a known ransomware family, such as specific file
+hashes, IP addresses, or domain names. 
 
 Thus the CACAO orchestrated detection system will:
 
