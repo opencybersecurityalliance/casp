@@ -21,7 +21,7 @@ blah blah explaining why this layer and then list ones we have with links
 ## Practioner Playbooks and Sequence Diagrams
 playbooks, sequence diagrams, the use cases practioners tend to operate at 
 
-* fill in
+* [Orchestrated Threat Hunting](./PractitionerUseCases/OrchestratedHunt)
 
 ## Demos, Interfaces, and Data
 * fill in
