@@ -52,28 +52,34 @@ Prep 2 will be ---add date and times ----
    + Lead: Vaughan Shanks
    + IRL: #?
    + Virtual: #?
+   + logo permission: Yes
 - HII
    + Lead: who?
    + IRL: #?
    + Virtual: #?
    + [Sweat](../SweatEquity/HII/README.md)
+   + logo permission: ?
 - JHU/APL
    + Lead: who?
    + IRL: #?
    + Virtual: #?
    + link to sweat equity
+   + logo permission: No
 - NSA
    + Lead: who?
    + IRL: #?
    + Virtual: #?
    + link to sweat equity
+   + logo permission: ?
 - Peraton
    + Lead: who?
    + IRL: #?
    + Virtual: #?
    + link to sweat equity
+   + logo permission: ?
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
    + Virtual: 0
    + [Sweat](../SweatEquity/sFractal/README.md)
+   + logo permission: Yes
