@@ -29,7 +29,7 @@ Prep 2 will be ---add date and times ----
       * NSA
       * sFractal
 - PACE
-   + Lead: 
+   + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
       * sFractal
 - Roaster
@@ -37,7 +37,7 @@ Prep 2 will be ---add date and times ----
    + Sweat Equity Orgs:
       * sFractal
 - SBOM
-   + Lead: 
+   + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
       * sFractal
 - STIX
@@ -46,6 +46,16 @@ Prep 2 will be ---add date and times ----
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
+- TAC
+   + Lead: 
+   + Sweat Equity Orgs:
+- VEX
+   + Lead: Duncan Sparrell
+   + Sweat Equity Orgs:
+      * sFractal
+
+
+Should we include NIEMOpen, OHDF, OXZ, SARIF, VSMI, others?
 
 ## Finalize Orgs Participating
 - Cydarm
