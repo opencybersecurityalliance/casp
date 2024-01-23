@@ -55,7 +55,7 @@ Prep 2 will be ---add date and times ----
       * sFractal
 
 
-Should we include NIEMOpen, OHDF, OXZ, SARIF, VSMI, others?
+Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
 
 ## Finalize Orgs Participating
 - Cydarm
