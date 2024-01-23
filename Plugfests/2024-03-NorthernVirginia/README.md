@@ -12,12 +12,12 @@
 
 # Projects Participating
 Make new version of 
-![orgs](../../Images/CASP_orgs2.png)
+![projects](../../Images/CASP_technologies.png)
 
 See [Prep2](./Prep2/README.md#1-finalize-projects-participating) for current list.
 
 # Companies Participating
 Make new version of 
-![orgs](../../Images/CASP_technologies.png)
+![orgs](../../Images/CASP_orgs2.png)
 
 See [Prep2](./Prep2/README.md#finalize-orgs-participating) for current list.
