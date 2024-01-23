@@ -28,6 +28,7 @@ Prep 2 will be ---add date and times ----
       * HII
       * NSA
       * sFractal
+      * Peraton
 - PACE
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -43,6 +44,7 @@ Prep 2 will be ---add date and times ----
 - STIX
    + Lead: 
    + Sweat Equity Orgs:
+      * Peraton
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
@@ -82,11 +84,11 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + link to sweat equity
    + logo permission: ?
 - Peraton
-   + Lead: who?
-   + IRL: #?
-   + Virtual: #?
+   + Lead: Steve Relitz
+   + IRL: #3 
+   + Virtual: # TBD
    + link to sweat equity
-   + logo permission: ?
+   + logo permission: TBD
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
