@@ -7,6 +7,7 @@
   - in-person with hybrid access
   - part of event might be vendor "show & grill" ie vendors show what they have and participants grill them about availability of vendor-agnostic standard interfaces (SBOM, VEX, STIX, OpenC2, ....).
   - 1/2 day setup on April 10 for sweat equity participants with something to setup
+  - [Registration](https://www.eventbrite.com/e/cybersecurity-automation-village-registration-796037719247)
 * [Prep1](Prep1/README.md) was held virtually on December 6 as part of getting ready
 * [Prep2](Prep2/README.md) will be held virtually in February, 2024 as part of getting ready
 
