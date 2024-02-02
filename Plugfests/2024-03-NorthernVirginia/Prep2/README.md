@@ -5,6 +5,7 @@ Prep 2 will be ---add date and times ----
    + Lead: 
    + Sweat Equity Orgs:
       * Cydarm
+      * sekoia
       * sFractal
 - CSAF
    + Lead: 
@@ -27,7 +28,12 @@ Prep 2 will be ---add date and times ----
    + Sweat Equity Orgs:
       * HII
       * NSA
+      * sekoia
       * sFractal
+- OXA
+   + Lead: David Bizeul
+   + Sweat Equity Orgs:
+      * sekoia
 - PACE
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -35,6 +41,7 @@ Prep 2 will be ---add date and times ----
 - Roaster
    + Lead: 
    + Sweat Equity Orgs:
+      * sekoia
       * sFractal
 - SBOM
    + Lead: Duncan Sparrell
@@ -43,6 +50,7 @@ Prep 2 will be ---add date and times ----
 - STIX
    + Lead: 
    + Sweat Equity Orgs:
+      * sekoia
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
@@ -87,6 +95,12 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Virtual: #?
    + link to sweat equity
    + logo permission: ?
+- sekoia
+   + Lead: Georges Bossert
+   + IRL: 1
+   + Virtual: 2
+   + [Sweat](../SweatEquity/sekoia/README.md)
+   + logo permission: yes
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
