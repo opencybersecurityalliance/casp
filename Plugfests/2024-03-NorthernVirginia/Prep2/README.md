@@ -70,6 +70,13 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Lead: Vaughan Shanks
    + IRL: #?
    + Virtual: #?
+   + link to sweat equity
+   + logo permission: Yes
+- Cyware
+   + Lead: Jason Keirstead
+   + IRL: #?
+   + Virtual: #?
+   + link to sweat equity
    + logo permission: Yes
 - HII
    + Lead: who?
@@ -77,6 +84,12 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Virtual: #?
    + [Sweat](../SweatEquity/HII/README.md)
    + logo permission: ?
+- IBM
+   + Lead: who?
+   + IRL: #?
+   + Virtual: #?
+   + link to sweat equity
+   + logo permission: yes
 - JHU/APL
    + Lead: who?
    + IRL: #?
@@ -94,7 +107,7 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + IRL: #?
    + Virtual: #?
    + link to sweat equity
-   + logo permission: ?
+   + logo permission: yes
 - sekoia
    + Lead: Georges Bossert
    + IRL: 1
