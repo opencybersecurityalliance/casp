@@ -3,11 +3,7 @@
 - Providing CTI and OpenC2 interoperability demonstration and data to use case
 
 
-sFractal Sweat Equity
-
-## Thingies
-sFractal plans to bring the following items:
-* QuadBlockQuiz
+Peraton plans to bring the following items:
   - IMX 
   	* TAXII Server
   	* IMX Client
