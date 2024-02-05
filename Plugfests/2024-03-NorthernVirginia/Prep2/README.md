@@ -30,10 +30,14 @@ Prep 2 will be ---add date and times ----
       * NSA
       * sekoia
       * sFractal
+<<<<<<< HEAD
+      * Peraton
+=======
 - OXA
    + Lead: David Bizeul
    + Sweat Equity Orgs:
       * sekoia
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - PACE
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -50,7 +54,11 @@ Prep 2 will be ---add date and times ----
 - STIX
    + Lead: 
    + Sweat Equity Orgs:
+<<<<<<< HEAD
+      * Peraton
+=======
       * sekoia
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
@@ -103,10 +111,13 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + link to sweat equity
    + logo permission: ?
 - Peraton
-   + Lead: who?
-   + IRL: #?
-   + Virtual: #?
+   + Lead: Steve Relitz
+   + IRL: #3 
+   + Virtual: # TBD
    + link to sweat equity
+<<<<<<< HEAD
+   + logo permission: TBD
+=======
    + logo permission: yes
 - sekoia
    + Lead: Georges Bossert
@@ -114,6 +125,7 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Virtual: 2
    + [Sweat](../SweatEquity/sekoia/README.md)
    + logo permission: yes
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
