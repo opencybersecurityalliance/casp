@@ -5,6 +5,7 @@ Prep 2 will be ---add date and times ----
    + Lead: 
    + Sweat Equity Orgs:
       * Cydarm
+      * sekoia
       * sFractal
 - CSAF
    + Lead: 
@@ -27,8 +28,16 @@ Prep 2 will be ---add date and times ----
    + Sweat Equity Orgs:
       * HII
       * NSA
+      * sekoia
       * sFractal
+<<<<<<< HEAD
       * Peraton
+=======
+- OXA
+   + Lead: David Bizeul
+   + Sweat Equity Orgs:
+      * sekoia
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - PACE
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -36,6 +45,7 @@ Prep 2 will be ---add date and times ----
 - Roaster
    + Lead: 
    + Sweat Equity Orgs:
+      * sekoia
       * sFractal
 - SBOM
    + Lead: Duncan Sparrell
@@ -44,7 +54,11 @@ Prep 2 will be ---add date and times ----
 - STIX
    + Lead: 
    + Sweat Equity Orgs:
+<<<<<<< HEAD
       * Peraton
+=======
+      * sekoia
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
@@ -64,6 +78,13 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Lead: Vaughan Shanks
    + IRL: #?
    + Virtual: #?
+   + link to sweat equity
+   + logo permission: Yes
+- Cyware
+   + Lead: Jason Keirstead
+   + IRL: #?
+   + Virtual: #?
+   + link to sweat equity
    + logo permission: Yes
 - HII
    + Lead: who?
@@ -71,6 +92,12 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Virtual: #?
    + [Sweat](../SweatEquity/HII/README.md)
    + logo permission: ?
+- IBM
+   + Lead: who?
+   + IRL: #?
+   + Virtual: #?
+   + link to sweat equity
+   + logo permission: yes
 - JHU/APL
    + Lead: who?
    + IRL: #?
@@ -88,7 +115,17 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + IRL: #3 
    + Virtual: # TBD
    + link to sweat equity
+<<<<<<< HEAD
    + logo permission: TBD
+=======
+   + logo permission: yes
+- sekoia
+   + Lead: Georges Bossert
+   + IRL: 1
+   + Virtual: 2
+   + [Sweat](../SweatEquity/sekoia/README.md)
+   + logo permission: yes
+>>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
