@@ -9,7 +9,7 @@
   - 1/2 day setup on April 10 for sweat equity participants with something to setup
   - [Registration](https://www.eventbrite.com/e/cybersecurity-automation-village-registration-796037719247)
 * [Prep1](Prep1/README.md) was held virtually on December 6 as part of getting ready
-* [Prep2](Prep2/README.md) will be held virtually in March, 2024 as part of getting ready
+* [Prep2](Prep2/README.md) will be held virtually 5-April-2024 as part of getting ready. Two sessions to accomadate timezones around the world
 
 # Projects Participating
 Make new version of 
