@@ -1,4 +1,8 @@
-Prep 2 will be ---add date and times ----
+Prep 2 will be 5-March-2023:
+- Session 1 11AM-1PM Eastern
+- Session 2 8PM-10PM Eastern
+
+Two sessions are required to accomadate differing timezones including Austrailia, US, UK, EU.
 
 ## 1. Finalize Projects Participating
 - CACAO
