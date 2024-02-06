@@ -2,7 +2,7 @@ Prep 2 will be ---add date and times ----
 
 ## 1. Finalize Projects Participating
 - CACAO
-   + Lead: 
+   + Lead: Bret Jordan
    + Sweat Equity Orgs:
       * Cydarm
       * sekoia
@@ -19,25 +19,22 @@ Prep 2 will be ---add date and times ----
    + Sweat Equity Orgs:
       * JHU/APL
 - JADN
-   + Lead: 
+   + Lead: Dave Kemp
    + Sweat Equity Orgs:
       * NSA
       * sFractal
 - OpenC2
-   + Lead: 
+   + Lead: Mike Rosa
    + Sweat Equity Orgs:
       * HII
       * NSA
       * sekoia
       * sFractal
-<<<<<<< HEAD
       * Peraton
-=======
 - OXA
    + Lead: David Bizeul
    + Sweat Equity Orgs:
       * sekoia
->>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - PACE
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -54,11 +51,10 @@ Prep 2 will be ---add date and times ----
 - STIX
    + Lead: 
    + Sweat Equity Orgs:
-<<<<<<< HEAD
+      * Cydarm
+      * Cyware
       * Peraton
-=======
       * sekoia
->>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
@@ -71,20 +67,20 @@ Prep 2 will be ---add date and times ----
       * sFractal
 
 
-Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
+Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
 
 ## Finalize Orgs Participating
 - Cydarm
    + Lead: Vaughan Shanks
    + IRL: #?
    + Virtual: #?
-   + link to sweat equity
+   + [sweat equity](../SweatEquity/Cydarm/README.md)
    + logo permission: Yes
 - Cyware
    + Lead: Jason Keirstead
    + IRL: #?
    + Virtual: #?
-   + link to sweat equity
+   + [sweat equity](../SweatEquity/Cyware/README.md)
    + logo permission: Yes
 - HII
    + Lead: who?
@@ -96,28 +92,25 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Lead: who?
    + IRL: #?
    + Virtual: #?
-   + link to sweat equity
+   + [sweat equity](../SweatEquity/IBM/README.md)
    + logo permission: yes
 - JHU/APL
-   + Lead: who?
+   + Lead: Charlie Frick
    + IRL: #?
    + Virtual: #?
-   + link to sweat equity
+   + [sweat equity](../SweatEquity/JHUAPL/README.md)
    + logo permission: No
 - NSA
    + Lead: who?
    + IRL: #?
    + Virtual: #?
-   + link to sweat equity
+   + [sweat equity](../SweatEquity/NSA/README.md)
    + logo permission: ?
 - Peraton
    + Lead: Steve Relitz
    + IRL: #3 
    + Virtual: # TBD
-   + link to sweat equity
-<<<<<<< HEAD
-   + logo permission: TBD
-=======
+   + [sweat equity](../SweatEquity/Peraton/README.md)
    + logo permission: yes
 - sekoia
    + Lead: Georges Bossert
@@ -125,7 +118,6 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Virtual: 2
    + [Sweat](../SweatEquity/sekoia/README.md)
    + logo permission: yes
->>>>>>> 238d47b68a502eba794fab20cee486280456d9a8
 - sFractal
    + Lead: Duncan Sparrell
    + IRL: 1
