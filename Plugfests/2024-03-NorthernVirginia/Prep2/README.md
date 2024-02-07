@@ -11,6 +11,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
       * Cydarm
       * sekoia
       * sFractal
+      * University of Oslo
 - CSAF
    + Lead: 
    + Sweat Equity Orgs:
@@ -35,6 +36,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
       * sekoia
       * sFractal
       * Peraton
+      * University of Oslo
 - OXA
    + Lead: David Bizeul
    + Sweat Equity Orgs:
@@ -44,10 +46,12 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Sweat Equity Orgs:
       * sFractal
 - Roaster
-   + Lead: 
+   + Lead: Vasileios Mavroeidis
    + Sweat Equity Orgs:
+      * Cyentific
       * sekoia
       * sFractal
+      * University of Oslo
 - SBOM
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -59,12 +63,14 @@ Two sessions are required to accomadate differing timezones including Austrailia
       * Cyware
       * Peraton
       * sekoia
+      * University of Oslo
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
 - TAC
    + Lead: 
    + Sweat Equity Orgs:
+      * University of Oslo
 - VEX
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
@@ -75,6 +81,18 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
 
 ## Finalize Orgs Participating
 - Cydarm
+   + Lead: Vaughan Shanks
+   + IRL: #?
+   + Virtual: #?
+   + [sweat equity](../SweatEquity/Cydarm/README.md)
+   + logo permission: Yes
+- - Cydarm
+   + Lead: ?
+   + IRL: #?
+   + Virtual: #?
+   + [sweat equity](../SweatEquity/Cyentific/README.md)
+   + logo permission: Yes
+
    + Lead: Vaughan Shanks
    + IRL: #?
    + Virtual: #?
@@ -112,8 +130,8 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + logo permission: ?
 - Peraton
    + Lead: Steve Relitz
-   + IRL: #3 
-   + Virtual: # TBD
+   + IRL: #? 
+   + Virtual: #?
    + [sweat equity](../SweatEquity/Peraton/README.md)
    + logo permission: yes
 - sekoia
@@ -128,3 +146,10 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + Virtual: 0
    + [Sweat](../SweatEquity/sFractal/README.md)
    + logo permission: Yes
+- University of Oslo
+   + Lead: Vasileios Mavroeidis
+   + IRL: #?
+   + Virtual: #?
+   + [Sweat](../SweatEquity/UiO/README.md)
+   + logo permission: Yes
+
