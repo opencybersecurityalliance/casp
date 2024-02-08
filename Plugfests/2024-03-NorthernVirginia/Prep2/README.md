@@ -67,8 +67,9 @@ Two sessions are required to accomadate differing timezones including Austrailia
 - STIX Shifter
    + Lead: 
    + Sweat Equity Orgs:
+      * 
 - TAC
-   + Lead: 
+   + Lead: Ryan Hohimer
    + Sweat Equity Orgs:
       * University of Oslo
 - VEX
