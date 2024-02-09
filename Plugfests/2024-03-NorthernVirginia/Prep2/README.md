@@ -121,17 +121,11 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + Virtual: #?
    + [sweat equity](../SweatEquity/Cydarm/README.md)
    + logo permission: Yes
-- Cydarm
+- Cyentific
    + Lead: ?
    + IRL: #?
    + Virtual: #?
    + [sweat equity](../SweatEquity/Cyentific/README.md)
-   + logo permission: Yes
-
-   + Lead: Vaughan Shanks
-   + IRL: #?
-   + Virtual: #?
-   + [sweat equity](../SweatEquity/Cydarm/README.md)
    + logo permission: Yes
 - Cyware
    + Lead: Jason Keirstead
