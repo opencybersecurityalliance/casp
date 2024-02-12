@@ -166,7 +166,7 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
 - sekoia
    + Lead: Georges Bossert
    + IRL: 1
-   + Virtual: 2
+   + Virtual: 1-2
    + [sweat equity](../SweatEquity/sekoia/README.md)
    + logo permission: yes
 - sFractal
