@@ -7,6 +7,7 @@ Prep 2 will be ---add date and times ----
       * Cydarm
       * sekoia
       * sFractal
+      * Peraton
 - CSAF
    + Lead: 
    + Sweat Equity Orgs:
@@ -47,12 +48,13 @@ Prep 2 will be ---add date and times ----
    + Sweat Equity Orgs:
       * sekoia
       * sFractal
+      * Peraton
 - SBOM
    + Lead: Duncan Sparrell
    + Sweat Equity Orgs:
       * sFractal
 - STIX
-   + Lead: 
+   + Lead: Peraton (TBD name)
    + Sweat Equity Orgs:
 <<<<<<< HEAD
       * Peraton
@@ -114,11 +116,9 @@ Should we include DAD-CDM, EoX, OHDF, OXA, NIEMOpen, SARIF, VSMI, others?
    + Lead: Steve Relitz
    + IRL: #3 
    + Virtual: # TBD
-   + link to sweat equity
-<<<<<<< HEAD
+   + [Sweat](../SweatEquity/Peraton/README.md)
    + logo permission: TBD
 =======
-   + logo permission: yes
 - sekoia
    + Lead: Georges Bossert
    + IRL: 1
