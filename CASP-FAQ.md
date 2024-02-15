@@ -85,6 +85,9 @@ and technological solutions.
 Much of the automation demonstrated at Cybersecurity Automation Workshops
 can be shared using CACAO playbooks.
 
+## How does CACAO Roaster relate to the Cybersecurity Automation SubProject?
+[CACAO Roaster](https://github.com/opencybersecurityalliance/cacao-roaster) is an open-source project that can be used to design, generate, modify, store, digitally sign and verify CACAO security playbooks. It provides users with a no-code approach to rapidly populate machine-processable and automatable CACAO JSON playbooks. It can be integrated with other tools in support of cybersecurity automation and support different operational roles, including incident response, adversary emulation, threat hunting, and more.
+
 ## How does TAC relate to the Cybersecurity Automation SubProject?
 [Threat Actor Context](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tac)
 seeks to resolve ambiguity across different sources and solutions
