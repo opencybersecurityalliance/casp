@@ -9,9 +9,11 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Lead: Bret Jordan
    + Participating Orgs:
       * Cydarm
+      * Cyentific
       * sekoia
       * sFractal
       * University of Oslo
+      
 - CSAF
    + Lead: 
    + Participating Orgs:
@@ -24,6 +26,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Lead: Charlie Frick
    + Participating Orgs:
       * JHU/APL
+      * University of Oslo
 - Interoperability Village:
    + Lead: Patrick Maroney
    + Participating Orgs:
@@ -37,6 +40,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Lead: Patrick Maroney
    + Participating Orgs
       * AT&T (tied in with STIX, OpenCTI, TAC)
+      * University of Oslo
 - NIEMOpen
    + Lead: 
    + Participating Orgs
@@ -45,6 +49,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
 - OpenC2
    + Lead: Mike Rosa
    + Participating Orgs:
+      * Cyentific
       * HII
       * NSA
       * sekoia
@@ -55,15 +60,17 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Lead: Patrick Maroney
    + Participating Orgs
       * AT&T (tied in with STIX, MISP, TAC)
+      * University of Oslo
 - OXA
    + Lead: David Bizeul
    + Participating Orgs:
       * sekoia
+      * University of Oslo
 - PACE
    + Lead: Duncan Sparrell
    + Participating Orgs:
       * sFractal
-- Roaster
+- CACAO Roaster
    + Lead: Vasileios Mavroeidis
    + Participating Orgs:
       * Cyentific
@@ -80,6 +87,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Participating Orgs:
       * AT&T (tied in with MISP, OpenCTI, TAC)
       * Cydarm
+      * Cyentific
       * Cyware
       * Peraton
       * sekoia
@@ -122,9 +130,9 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + [sweat equity](../SweatEquity/Cydarm/README.md)
    + logo permission: Yes
 - Cyentific
-   + Lead: ?
-   + IRL: #?
-   + Virtual: #?
+   + Lead: Mateusz Zych
+   + IRL: 1
+   + Virtual: 0
    + [sweat equity](../SweatEquity/Cyentific/README.md)
    + logo permission: Yes
 - Cyware
@@ -177,8 +185,8 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + logo permission: Yes
 - University of Oslo
    + Lead: Vasileios Mavroeidis
-   + IRL: #?
-   + Virtual: #?
+   + IRL: 1
+   + Virtual: 0
    + [sweat equity](../SweatEquity/UiO/README.md)
    + logo permission: Yes
 
