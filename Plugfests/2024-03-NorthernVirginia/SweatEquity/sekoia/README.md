@@ -1,11 +1,9 @@
 # Sekoia
 
-
 ## STIX example
 Sekoia CTI database is based on STIX.
 We can bring several STIX bundles on CTI related Usecases.
 A direct ingestion in OpenCTI can also be presented.
-
 
 ## Project-centric Interfaces
 ### OXA
@@ -20,4 +18,5 @@ A direct ingestion in OpenCTI can also be presented.
 
 
 ## Use Case Support
+
 - Support the OlympicDestroyer usecase by providing STIX bundles that can describe CTI objects
