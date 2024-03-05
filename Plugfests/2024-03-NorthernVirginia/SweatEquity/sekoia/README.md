@@ -18,4 +18,5 @@ A direct ingestion in OpenCTI can also be presented.
 
 
 ## Use Case Support
-- Support the OlympicDestroyer usecase by providing STIX bundles that can describes CTI objects
+
+- Support the OlympicDestroyer usecase by providing STIX bundles that can describe CTI objects
