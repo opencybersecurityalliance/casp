@@ -10,6 +10,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Participating Orgs:
       * Cydarm
       * Cyentific
+      * Peraton
       * sekoia
       * sFractal
       * University of Oslo
@@ -52,9 +53,9 @@ Two sessions are required to accomadate differing timezones including Austrailia
       * Cyentific
       * HII
       * NSA
+      * Peraton
       * sekoia
       * sFractal
-      * Peraton
       * University of Oslo
 - OpenCTI
    + Lead: Patrick Maroney
@@ -74,6 +75,7 @@ Two sessions are required to accomadate differing timezones including Austrailia
    + Lead: Vasileios Mavroeidis
    + Participating Orgs:
       * Cyentific
+      * Peraton
       * sekoia
       * sFractal
       * University of Oslo
@@ -160,15 +162,15 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + [sweat equity](../SweatEquity/JHUAPL/README.md)
    + logo permission: No
 - NSA
-   + Lead: who?
-   + IRL: #?
+   + Lead: Mike Rosa
+   + IRL: 1
    + Virtual: #?
    + [sweat equity](../SweatEquity/NSA/README.md)
    + logo permission: ?
 - Peraton
    + Lead: Steve Relitz
-   + IRL: #? 
-   + Virtual: #?
+   + IRL: 3 
+   + Virtual: 2
    + [sweat equity](../SweatEquity/Peraton/README.md)
    + logo permission: yes
 - sekoia
