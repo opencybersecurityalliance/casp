@@ -5,13 +5,13 @@ HII plans to bring the following OpenC2 producer (mock a message from a CACAO pl
 * [OIF-Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator), supporting
   - OpenC2 Language [required queries](https://docs.oasis-open.org/openc2/oc2ls/v1.0/cs02/oc2ls-v1.0-cs02.html#4-mandatory-commandsresponses)
   - OpenC2 Threat Hunting Actuator Profile (Schema) ([working version](https://github.com/dlemire60/openc2-ap-hunt/blob/working/ap-hunt-v1.0.md))
-  - [MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#22-default-topic-structure) (v5.0)
+  - [MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#appendix-e-examples) (v5.0)
   - [HTTPs Transfer Specification](https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html)
 
 ## Consumers
 * HII depends on another organization to standup a consumer to then consume OpenC2 Commands.  Here are the communication requirements needed:
 * Connect to an MQTTv5 capable Broker, see connect info
-* Process OpenC2 commands dropped on the Broker's Topic according to the OpenC2 MQTT Transfer Specification
+* Process OpenC2 commands dropped on the Broker's Topic according to the [OpenC2 MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#22-default-topic-structure) 
 * Respond by dropping an OpenC2 Reponse message on the Broker's Response Topic
 * See command and response examples below
 
