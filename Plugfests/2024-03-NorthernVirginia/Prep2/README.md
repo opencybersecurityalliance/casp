@@ -1,4 +1,4 @@
-Prep 2 will be 5-March-2023:
+Prep 2 was held 5-March-2023:
 - Session 1 11AM-1PM Eastern
 - Session 2 8PM-10PM Eastern
 
@@ -113,6 +113,12 @@ Two sessions are required to accomadate differing timezones including Austrailia
 Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
 
 ## Finalize Orgs Participating
+- Anchore
+   + Lead: ?
+   + IRL: #?
+   + Virtual: #?
+   + [sweat equity](../SweatEquity/Anchore/README.md)
+   + logo permission: yes
 - AT&T
    + Lead: Patrick Maroney
    + IRL: #?
@@ -125,6 +131,12 @@ Should we include DAD-CDM, EoX, OHDF, NIEMOpen, SARIF, VSMI, others?
    + Virtual: #?
    + [sweat equity](../SweatEquity/CISA/README.md)
    + logo permission: presumed
+- Cybeats
+   + Lead: Dmitry Raidman
+   + IRL: #?
+   + Virtual: #?
+   + [sweat equity](../SweatEquity/Cybeats/README.md)
+   + logo permission: yes
 - Cydarm
    + Lead: Vaughan Shanks
    + IRL: #?
