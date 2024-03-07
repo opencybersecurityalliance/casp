@@ -17,12 +17,24 @@ HII plans to bring the following OpenC2 producer (mock a message from a CACAO pl
 
 ## MQTT Connection Info
 ### Note about the Broker: 
-* We would prefer to use Dave Kemp's HiveMQ, but we're unable to connect at the moment.  For now, we can use the "test.mosquitto.org"  until we get the HiveMQ connects resolved.
+* We are using Dave Kemp's HiveMQ, see connection info below.  If issues popup we can jump to "test.mosquitto.org" as a backup option.
 
 ### Notes aobut topics:
 * oc2/cmd/device/<your-device-id> (and no, we've never spec'd a format for device ID)
 * oc2/cmd/ap/<topic for every profile the consumer supports>
 
+MQTT Broker:
+```
+broker = "3271a3ddd2eb43caa7c4b195c7d6cabd.s2.eu.hivemq.cloud" 
+port = 8883
+transport = "tcp"
+username = 'Cav01'
+password = 'Tango01Village'
+listen_topics = ["oc2/cmd/all","oc2/cmd/ap/hunt","oc2/cmd/ap/slpf","oc2/cmd/device/<your-device-id>"]
+resp_topics = ["oc2/rsp"]
+```
+
+Backup MQTT Broker:
 ```
 broker = "test.mosquitto.org" 
 port = 1883
