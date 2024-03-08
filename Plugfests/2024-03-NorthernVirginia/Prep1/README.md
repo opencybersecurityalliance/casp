@@ -1,2 +1,2 @@
-# Plugfest prepping for March-2024
-need to add stuff here
+# Plugfest prepping for April-2024
+occurred. notes on mailing list

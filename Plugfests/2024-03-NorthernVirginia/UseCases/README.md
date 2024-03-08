@@ -1,4 +1,4 @@
-# Use Cases for Cybersecurity Automation Village March-2024
+# Use Cases for Cybersecurity Automation Village April-2024
 The use cases are divided into 3 layers
 * Value Propositions
    - eg Wishywashy Ransomware shows value of village projects to business types
@@ -10,17 +10,18 @@ The use cases are divided into 3 layers
 ## Value Propositions
 blah blah explaining why this layer and then list ones we have with links
 
-* Wishywashy Ransomware 
-* Invoice hijack
-* Payroll hijack
-* Accounts payable hijack
-* BEC
-* Lepus Sun Gust Supply Chain Attack
+* [WitchyWashy Ransomware](./ValuePropositions/WitchyWashy)
+* [OlympicDestroyer](./ValuePropositions/OlympicDestroyer.md)
+* [StarMal Invoice Hijack](./ValuePropositions/StarMal) 
+* [JesseJames Payroll Hack](./ValuePropositions/JesseJames)
+* [Montana Billing Hijack](./ValuePropositions/Montana)   
+* [You've Got Mail BEC](./ValuePropositions/YouveGotMail)
+* [Moon Zephyr](./ValuePropositions/Moonzephyr)
 
 ## Practioner Playbooks and Sequence Diagrams
 playbooks, sequence diagrams, the use cases practioners tend to operate at 
 
-* fill in
+* [Orchestrated Threat Hunting](./PractitionerUseCases/OrchestratedHunt)
 
 ## Demos, Interfaces, and Data
 * fill in

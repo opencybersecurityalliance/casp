@@ -6,7 +6,7 @@ The most recent Cybersecurity Automation Village was:
 *  [2023-06-13-USC](./2023-06-13-USC/README.md) hosted by RIT & USC at USC
 
 Future events include:
-* Plugfest: 13-15 March, 2024 in Reston, VA
+* Plugfest: 11-12 April, 2024 in Reston, VA
   - see [2024-03-NorthernVirginia](./2024-03-NorthernVirginia)
 * Prep1: two virtual sessions Wednesday December 6, 11:00am - 1:00pm and 8:00pm - 10:00pm US EST
 * Prep2: virtual session(s) sometime in late January / early February 2024

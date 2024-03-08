@@ -21,7 +21,7 @@ but may create specifications/standards if necessary.
 
 ## When will be the next Cybersecurity Automation Village?
 The next Cybersecurity Automation Village will be
-a two-day plugfest/workshop/hackathon/contest on March 14-15, 2024.
+a two-day plugfest/workshop/hackathon/contest on April 11-12, 2024.
 It will be hosted by Peraton at their office at:
 * 1875 Explorer St, Reston, VA 20190
 
@@ -84,6 +84,9 @@ in a structured and standardized way across organizational boundaries
 and technological solutions.
 Much of the automation demonstrated at Cybersecurity Automation Workshops
 can be shared using CACAO playbooks.
+
+## How does CACAO Roaster relate to the Cybersecurity Automation SubProject?
+[CACAO Roaster](https://github.com/opencybersecurityalliance/cacao-roaster) is an open-source project that can be used to design, generate, modify, store, digitally sign and verify CACAO security playbooks. It provides users with a no-code approach to rapidly populate machine-processable and automatable CACAO JSON playbooks. It can be integrated with other tools in support of cybersecurity automation and support different operational roles, including incident response, adversary emulation, threat hunting, and more.
 
 ## How does TAC relate to the Cybersecurity Automation SubProject?
 [Threat Actor Context](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tac)
