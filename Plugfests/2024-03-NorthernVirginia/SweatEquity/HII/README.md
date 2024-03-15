@@ -9,7 +9,7 @@ HII plans to bring the following OpenC2 producer (mock a message from a CACAO pl
   - [HTTPs Transfer Specification](https://docs.oasis-open.org/openc2/open-impl-https/v1.1/cs01/open-impl-https-v1.1-cs01.html)
 
 ## Consumers
-* HII depends on another organization to standup a consumer to then consume OpenC2 Commands.  Here are the communication requirements needed:
+* HII depends on other organizations to stand up consumers to then consume OpenC2 Commands.  Here are the communication requirements needed:
 * Connect to an MQTTv5 capable Broker, see connect info
 * Process OpenC2 commands dropped on the Broker's Topic according to the [OpenC2 MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#22-default-topic-structure) 
 * Respond by dropping an OpenC2 Reponse message on the Broker's Response Topic
@@ -17,7 +17,7 @@ HII plans to bring the following OpenC2 producer (mock a message from a CACAO pl
 
 ## MQTT Connection Info
 ### Note about the Broker: 
-* We are using Dave Kemp's HiveMQ, see connection info below.  If issues popup we can jump to "test.mosquitto.org" as a backup option.
+* We are using Dave Kemp's HiveMQ, see connection info below.  If issues pop up we can jump to "test.mosquitto.org" as a backup option
 
 ### Notes aobut topics:
 * oc2/cmd/device/<your-device-id> (and no, we've never spec'd a format for device ID)
@@ -43,9 +43,12 @@ listen_topics = ["oc2/cmd/all","oc2/cmd/ap/hunt","oc2/cmd/ap/slpf","oc2/cmd/devi
 resp_topics = ["oc2/rsp"]
 ```
 
-## Threat Hunt Command Message Example
-### Note about message properties:
-* Actuator_id is optional.  Only needed internally for the OIF Orchestrator.
+### Notes about message creation
+* The OpenC2 Integration Framework is schema-driven, and uses this JSON conversion of the 
+ [Threathunting Profile draft](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/schemas/resolved%20schemas/resolved-hunt.json).
+
+* Message Property Actuator_id is optional.  Only needed internally for the OIF Orchestrator.
+ ## Threat Hunt Command Message Example
 
 ```
 {
@@ -107,9 +110,11 @@ Need help setting up a device and connecting an MQTT or HTTP endpoint?  No probl
 
 ## Project-centric Interfaces
 ### OpenC2
-* HII intends on interfacing with any other organization's device that is listening to Threat Hunt Commands from HII on the MQTT Topics related to this effort. 
-* In addition, HII intends to interface with Threat Hunt responses dropped on the provided MQTT Reposnse Topic.
+* HII intends to interface with any other organization's device that is listening to Threat Hunt Commands from HII on the MQTT Topics related to this effort. 
+* In addition, HII intends to interface with Threat Hunt responses dropped on the provided MQTT Response Topic.
 
 ## High Level Use Case Illustration
+* We plan to show the following implementation of the [OrchestratedHunt](https://github.com/ScreamBun/casp/tree/main/Plugfests/2024-03-NorthernVirginia/UseCases/PractitionerUseCases/OrchestratedHunt) Practicioner Use Case, focused on steps 3 and 4. 
+
 ![OC2 & Kestrel HL UC](https://github.com/ScreamBun/openc2-oif-device/blob/master/assets/oc2_kestrel_use_case.png)
 
