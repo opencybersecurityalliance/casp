@@ -1,0 +1,18 @@
+# path: /ttp/T1562.004/001
+# uuid: 9c0efe38-2e44-4d1c-8fec-9c54072a5f0c
+# tags: T1562, firewall, disable
+# params:
+# returns:
+#   - disablefw (process)
+#   - hosts (x-oca-asset)
+
+disablefw = GET process FROM stixshifter://casp2024-edr
+            WHERE (name = 'ufw' AND command_line LIKE '%disable%')
+               OR (name = 'sudo' AND command_line LIKE '%ufw disable%')
+               OR (name IN ('netsh', 'netsh.exe') AND command_line LIKE '%advfirewall%off%')
+            LAST 30 DAYS
+            
+hosts = FIND x-oca-asset LINKED disablefw LAST 30 DAYS
+
+SAVE disablefw TO disablefw.json
+SAVE hosts TO hosts.json
