@@ -46,8 +46,6 @@ resp_topics = ["oc2/rsp"]
 ### Notes about message creation
 * The OpenC2 Integration Framework is schema-driven, and uses this JSON conversion of the 
  [Threathunting Profile draft](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/schemas/resolved%20schemas/resolved-hunt.json).
-
-* Message Property Actuator_id is optional.  Only needed internally for the OIF Orchestrator.
  ## Threat Hunt Command Message Example
 
 ```
@@ -56,8 +54,7 @@ resp_topics = ["oc2/rsp"]
         'request_id': '40eac796-43c2-4f3e-8ab1-a51e37380e0e',
         'from': 'oif-orch',
         'to': 'oc2/cmd/ap/hunt',
-        'created' : 1709671071578,
-        'actuator_id' : '8144acd3-f5d6-4bda-b1bd-a964f4a19677'
+        'created' : 1709671071578
     },
     'body': {
         'openc2': {
@@ -82,20 +79,30 @@ resp_topics = ["oc2/rsp"]
     "created": 1709671082933,
     "from": "oif-device-9baf5863-fe55-4bc5-9537-eb9282a08a50",
     "to": "oc2/rsp"
-    "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"
   },
   "body": {
     "openc2": {
       "response": {
         "status": 200,
         "results": {
-          "x_unique_id": "MYORGIDX-01aac66c-00000820-00000000-1d70c280e79cd04",
-          "name": "compattelrunner.exe",
-          "pid": 2080,
-          "id": "process--69e78267-5a16-513a-b4e5-ecd8577dae1b",
-          "command_line": null,
-          "created": null,
-          "binary_ref.name": "compattelrunner.exe"
+          "th": {
+            "inv_returns": [{
+                "stix_sco": [{
+                    "Process": {
+                      "type": "process",
+                      "id": "process-one",
+                      "pid": 11111
+                    }
+                  }, {
+                    "Process": {
+                      "type": "process",
+                      "id": "process-two",
+                      "pid": 2222222
+                    }
+                  }, ""],
+                "string_returns": ["so foul and fair a day i have not seen", "now is the winter of our discontent"]
+              }]
+          }
         }
       }
     }
