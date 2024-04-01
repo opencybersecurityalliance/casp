@@ -1,20 +1,17 @@
+# Cybersecurity Automation SubProject (CASP)
+
 The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/)
-[Cybersecurity Automation SubProject (CASP)](https://opencybersecurityalliance.org/casp/)
-organizes Cybersecurity Automation Villages.
+Cybersecurity Automation SubProject (CASP) 
+is comprised of global like-minded cybersecurity vendors, end users, 
+thought leaders and individuals who are interested in cybersecurity automation.
 
-The most recent Cybersecurity Automation Village was:
-*  [2023-06-13-USC](./2023-06-13-USC/README.md) hosted by RIT & USC at USC
+It is a forum where products from all vendors, researchers, and software publishers can freely exchange information, insights, and reference implementations via commonly developed code and tooling, using mutually agreed upon technologies, specifications, and procedures.
 
-Future events include:
-* Plugfest: 11-12 April, 2024 in Reston, VA
-  - see [2024-03-NorthernVirginia](./2024-03-NorthernVirginia)
-* Prep1: two virtual sessions Wednesday December 6, 11:00am - 1:00pm and 8:00pm - 10:00pm US EST
-* Prep2: virtual session(s) sometime in late January / early February 2024
-  - see [Update on Upcoming Plugfests](https://lists.oasis-open-projects.org/g/oca-casp/topic/update_on_upcoming_plugfests/102431619)
+CASP is co-chaired by Bret Jordan and Duncan Sparrell. 
+Jane Ginn is the CASP secretary.
 
-Previous events include:
-* [2022-05-16-DC](./2022-05-16-DC/) in Washington, DC / Hybrid, hosted by AT&T
-* [2021-06-22-BorderlessCyber](./2021-06-22-BorderlessCyber) virtual as part of Borderless Cyber
-* [2020-01-27-CyberCom/UMBC](https://github.com/oasis-tcs/openc2-usecases/tree/main/PlugFests/2020.01.27-CyberCom-Plugfest)
-* add in CTI plugfests
-* find other previous plugfests
+See the [CASP Home Page](https://lists.oasis-open-projects.org/g/oca-casp)
+for the mailing list, calendar, etc.
+See [Events](./Events.md) for events organized by CASP.
+
+
