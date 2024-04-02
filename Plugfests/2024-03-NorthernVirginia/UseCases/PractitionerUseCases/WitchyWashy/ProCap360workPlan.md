@@ -30,8 +30,8 @@ By adopting NeuStratos® ProCap360™, organizations can proactively address sec
  
 ### 3 RBOM Description:  
 As each application meets or exceeds user defined vulnerability thresholds, the application release candidate (RC) will be built into the designated environment. Using Infrastructure as Code (IaC) designs the build provisioning completes and then adds the RC application code onto the build components. ProCap360™ then captures all the release components as each application is built in a Continuous Integration (CI) pipeline. ProCap360™ has a patent pending Release Bill of Materials (RBOM) that follows the OWASP format.  Terraform and Ansible Scripts, network, compute and storage components are captured in each application environment release. Cloud (AWS, Azure and Google) components resource identifiers, services, and status date stamped and hashed. On Premise components can also be captured.
+![RBOMView](https://github.com/Johncavanaugh-IIS/casp-IIS/assets/135875251/b7480b91-1afd-433b-93bb-f79ef8d839f6)
 
-![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/8807b2b5-a215-4316-90e0-1f09ed17ea93)
 
 ### 4 Compliance Description:
 Compliance Scoring (Blue Circle) is performed with user selected risk management frameworks such as:
