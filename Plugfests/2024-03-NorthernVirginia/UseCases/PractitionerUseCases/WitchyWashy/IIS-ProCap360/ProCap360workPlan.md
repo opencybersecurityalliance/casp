@@ -24,19 +24,21 @@ By adopting NeuStratos® ProCap360™, organizations can proactively address sec
   
 - Each Application (version, date stamp, score and hash value) will be displayed. ProCap360™ is packaged with the Open Source Vulnerability (OSV) database and can optionally add other databases such as Sonatype NexusIQ for additional vulnerability enrichment.
   
-![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/ffeeca27-ae92-4e75-a2f1-3884d49a0470)
+![ProCap 360 SBOM](./images/SBOM.png)
+
 
  
 ### 3 RBOM Description:  
 As each application meets or exceeds user defined vulnerability thresholds, the application release candidate (RC) will be built into the designated environment. Using Infrastructure as Code (IaC) designs the build provisioning completes and then adds the RC application code onto the build components. ProCap360™ then captures all the release components as each application is built in a Continuous Integration (CI) pipeline. ProCap360™ has a patent pending Release Bill of Materials (RBOM) that follows the OWASP format.  Terraform and Ansible Scripts, network, compute and storage components are captured in each application environment release. Cloud (AWS, Azure and Google) components resource identifiers, services, and status date stamped and hashed. On Premise components can also be captured.
-![RBOMView](https://github.com/Johncavanaugh-IIS/casp-IIS/assets/135875251/b7480b91-1afd-433b-93bb-f79ef8d839f6)
+
+![ProCap 360 RBOM](./images/RBOMView.png)
 
 
 ### 4 Compliance Description:
 Compliance Scoring (Blue Circle) is performed with user selected risk management frameworks such as:
 - Cloud native (Azure Defender, AWS Security Hub) plus user selected RMF such as NIST 800-53 Rev5 low, moderate or high control levels.
   
- ![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/edb3aee4-6e42-413e-ba94-4e65153bc2c3)
+![ProCap 360 Compliance Score](./images/ComplianceScore.png)
 
 ### 5 Business Process Multiple Application SBOM and RBOM Scoring:
 
@@ -44,15 +46,14 @@ Compliance Scoring (Blue Circle) is performed with user selected risk management
   
 - The Business Process multiple application portfolio will have a Security Score automatically calculated as the sum of all 16 applications.
   
- ![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/ad66eb34-7e38-46cf-bc9e-a2d5d18a7978)
 
+![ProCap 360 Process Score with 16 Applications](./images/Process16Apps.png)
 
 ### 6 Vulnerability Priority Plane View:
 
 Displays one or all of the process application(s) vulnerabilities in a selected environment by all or selected criticality. In this example, a single application is selected and when hovering over a specific vulnerability the details are displayed.  With a second mouse click actions can be assigned to a work queue or work group or individual.
 
-![PriorityPlaneView-vuln-assign](https://github.com/ProCap360/Cyber-Village/assets/135875251/490bbba0-58b3-4887-85f1-b66e5343bbb8)
-
+![ProCap 360 Priority Plane View ](./images/PriorityPlaneView-vuln-assign.png)
 
 ### 7 Scenarios have many dimensions:
 ProCap360™-alone or ProCap360™ in collaboration with others
