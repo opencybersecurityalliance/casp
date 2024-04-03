@@ -18,7 +18,7 @@ Comprehensive SBOM Generation: As each application is compiled, ProCap360™ gen
 By adopting NeuStratos® ProCap360™, organizations can proactively address security risks, enhance compliance, and contribute to the broader industry efforts aimed at securing software supply chains.
 
  ![ProCap 360 Proactive Secure by Design](https://github.com/ProCap360/Cyber-Village/assets/135875251/24ea1f88-7095-48a0-8505-9f964aa7ffee)
-
+![[ProCap 360 Proactive Secure by Design](./a)
 
 ### 2 SBOM Description:
 - The SBOM components are written on the ProCap360™ Knowledge Graph and measured against NVD Common Vulnerability Exposure (CVE) supporting the Continuous Integration (CI)pipeline. CVE CVSS scores are used in user selectable formulas to calculate the application security score.
