@@ -1,0 +1,1112 @@
+{
+    "spec_version": "2.1",
+    "id": "bundle--415b86c9-cb92-4fb1-889f-c1f52cd85454",
+    "type": "bundle",
+    "objects": [
+        {
+            "id": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "type": "identity",
+            "spec_version": "2.1",
+            "created": "2017-06-01T00:00:00.000Z",
+            "modified": "2022-04-25T14:00:00.188Z",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "The MITRE Corporation",
+            "identity_class": "organization"
+        },
+        {
+            "id": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "type": "identity",
+            "spec_version": "2.1",
+            "created": "2022-03-31T13:00:00.000Z",
+            "modified": "2023-05-23T10:09:00.000Z",
+            "name": "OCA"
+        },
+        {
+            "modified": "2023-09-06T14:08:51.616Z",
+            "name": "Spearphishing Link",
+            "description": "Adversaries may send spearphishing emails with a malicious link in an attempt to gain access to victim systems. Spearphishing with a link is a specific variant of spearphishing. It is different from other forms of spearphishing in that it employs the use of links to download malware contained in email, instead of attaching malicious files to the email itself, to avoid defenses that may inspect email attachments. Spearphishing may also involve social engineering techniques, such as posing as a trusted source.\n\nAll forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this case, the malicious emails contain links. Generally, the links will be accompanied by social engineering text and require the user to actively click or copy and paste a URL into a browser, leveraging [User Execution](https://attack.mitre.org/techniques/T1204). The visited website may compromise the web browser using an exploit, or the user will be prompted to download applications, documents, zip files, or even executables depending on the pretext for the email in the first place.\n\nAdversaries may also include links that are intended to interact directly with an email reader, including embedded images intended to exploit the end system directly. Additionally, adversaries may use seemingly benign links that abuse special characters to mimic legitimate websites (known as an \"IDN homograph attack\").(Citation: CISA IDN ST05-016) URLs may also be obfuscated by taking advantage of quirks in the URL schema, such as the acceptance of integer- or hexadecimal-based hostname formats and the automatic discarding of text before an \u201c@\u201d symbol: for example, `hxxp://google.com@1157586937`.(Citation: Mandiant URL Obfuscation 2023)\n\nAdversaries may also utilize links to perform consent phishing, typically with OAuth 2.0 request URLs that when accepted by the user provide permissions/access for malicious applications, allowing adversaries to  [Steal Application Access Token](https://attack.mitre.org/techniques/T1528)s.(Citation: Trend Micro Pawn Storm OAuth 2017) These stolen access tokens allow the adversary to perform various actions on behalf of the user via API calls. (Citation: Microsoft OAuth 2.0 Consent Phishing 2021)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "x_mitre_contributors": [
+                "Philip Winther",
+                "Shailesh Tiwary (Indian Army)",
+                "Mark Wee",
+                "Jeff Sakowicz, Microsoft Identity Developer Platform Services (IDPM Services)",
+                "Saisha Agrawal, Microsoft Threat Intelligent Center (MSTIC)",
+                "Kobi Haimovich, CardinalOps",
+                "Menachem Goldstein"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "URL inspection within email (including expanding shortened links) can help detect links leading to known malicious sites as well as links redirecting to adversary infrastructure based by upon suspicious OAuth patterns with unusual TLDs.(Citation: Microsoft OAuth 2.0 Consent Phishing 2021). Detonation chambers can be used to detect these links and either automatically go to these sites to determine if they're potentially malicious, or wait and capture the content if a user visits the link.\n\nFiltering based on DKIM+SPF or header analysis can help detect when the email sender is spoofed.(Citation: Microsoft Anti Spoofing)(Citation: ACSC Email Spoofing)\n\nBecause this technique usually involves user interaction on the endpoint, many of the possible detections take place once [User Execution](https://attack.mitre.org/techniques/T1204) occurs.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Office 365",
+                "SaaS",
+                "Google Workspace"
+            ],
+            "x_mitre_version": "2.5",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Flow",
+                "Application Log: Application Log Content",
+                "Network Traffic: Network Traffic Content"
+            ],
+            "type": "attack-pattern",
+            "id": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "created": "2020-03-02T19:15:44.182Z",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1566/002",
+                    "external_id": "T1566.002"
+                },
+                {
+                    "source_name": "ACSC Email Spoofing",
+                    "description": "Australian Cyber Security Centre. (2012, December). Mitigating Spoofed Emails Using Sender Policy Framework. Retrieved October 19, 2020.",
+                    "url": "https://www.cyber.gov.au/sites/default/files/2019-03/spoof_email_sender_policy_framework.pdf"
+                },
+                {
+                    "source_name": "CISA IDN ST05-016",
+                    "description": "CISA. (2019, September 27). Security Tip (ST05-016): Understanding Internationalized Domain Names. Retrieved October 20, 2020.",
+                    "url": "https://us-cert.cisa.gov/ncas/tips/ST05-016"
+                },
+                {
+                    "source_name": "Trend Micro Pawn Storm OAuth 2017",
+                    "description": "Hacquebord, F.. (2017, April 25). Pawn Storm Abuses Open Authentication in Advanced Social Engineering Attacks. Retrieved October 4, 2019.",
+                    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-abuses-open-authentication-advanced-social-engineering-attacks"
+                },
+                {
+                    "source_name": "Microsoft OAuth 2.0 Consent Phishing 2021",
+                    "description": "Microsoft 365 Defender Threat Intelligence Team. (2021, June 14). Microsoft delivers comprehensive solution to battle rise in consent phishing emails. Retrieved December 13, 2021.",
+                    "url": "https://www.microsoft.com/security/blog/2021/07/14/microsoft-delivers-comprehensive-solution-to-battle-rise-in-consent-phishing-emails/"
+                },
+                {
+                    "source_name": "Microsoft Anti Spoofing",
+                    "description": "Microsoft. (2020, October 13). Anti-spoofing protection in EOP. Retrieved October 19, 2020.",
+                    "url": "https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide"
+                },
+                {
+                    "source_name": "Mandiant URL Obfuscation 2023",
+                    "description": "Nick Simonian. (2023, May 22). Don't @ Me: URL Obfuscation Through Schema Abuse. Retrieved August 4, 2023.",
+                    "url": "https://www.mandiant.com/resources/blog/url-obfuscation-schema-abuse"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.1.0",
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "spec_version": "2.1"
+        },
+        {
+            "id": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-03-09T13:48:55.078Z",
+            "modified": "2023-05-09T14:00:00.188Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059/001",
+                    "external_id": "T1059.001"
+                },
+                {
+                    "source_name": "Microsoft PSfromCsharp APR 2014",
+                    "description": "Babinec, K. (2014, April 28). Executing PowerShell scripts from C#. Retrieved April 22, 2019.",
+                    "url": "https://blogs.msdn.microsoft.com/kebab/2014/04/28/executing-powershell-scripts-from-c/"
+                },
+                {
+                    "source_name": "SilentBreak Offensive PS Dec 2015",
+                    "description": "Christensen, L.. (2015, December 28). The Evolution of Offensive PowerShell Invocation. Retrieved December 8, 2018.",
+                    "url": "https://web.archive.org/web/20190508170150/https://silentbreaksecurity.com/powershell-jobs-without-powershell-exe/"
+                },
+                {
+                    "source_name": "FireEye PowerShell Logging 2016",
+                    "description": "Dunwoody, M. (2016, February 11). GREATER VISIBILITY THROUGH POWERSHELL LOGGING. Retrieved February 16, 2016.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html"
+                },
+                {
+                    "source_name": "Github PSAttack",
+                    "description": "Haight, J. (2016, April 21). PS>Attack. Retrieved June 1, 2016.",
+                    "url": "https://github.com/jaredhaight/PSAttack"
+                },
+                {
+                    "source_name": "inv_ps_attacks",
+                    "description": "Hastings, M. (2014, July 16). Investigating PowerShell Attacks. Retrieved December 1, 2021.",
+                    "url": "https://powershellmagazine.com/2014/07/16/investigating-powershell-attacks/"
+                },
+                {
+                    "source_name": "Malware Archaeology PowerShell Cheat Sheet",
+                    "description": "Malware Archaeology. (2016, June). WINDOWS POWERSHELL LOGGING CHEAT SHEET - Win 7/Win 2008 or later. Retrieved June 24, 2016.",
+                    "url": "http://www.malwarearchaeology.com/s/Windows-PowerShell-Logging-Cheat-Sheet-ver-June-2016-v2.pdf"
+                },
+                {
+                    "source_name": "TechNet PowerShell",
+                    "description": "Microsoft. (n.d.). Windows PowerShell Scripting. Retrieved April 28, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx"
+                },
+                {
+                    "source_name": "Sixdub PowerPick Jan 2016",
+                    "description": "Warner, J.. (2015, January 6). Inexorable PowerShell \u2013 A Red Teamer\u2019s Tale of Overcoming Simple AppLocker Policies. Retrieved December 8, 2018.",
+                    "url": "https://web.archive.org/web/20160327101330/http://www.sixdub.net/?p=367"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "PowerShell",
+            "description": "Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system.(Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).\n\nPowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.\n\nA number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)\n\nPowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--86850eff-2729-40c3-b85e-c4af26da4a2d",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-18T16:39:06.289Z",
+            "modified": "2023-09-29T21:08:45.174Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1134/001",
+                    "external_id": "T1134.001"
+                },
+                {
+                    "source_name": "Microsoft Command-line Logging",
+                    "description": "Mathers, B. (2017, March 7). Command line process auditing. Retrieved April 21, 2017.",
+                    "url": "https://technet.microsoft.com/en-us/windows-server-docs/identity/ad-ds/manage/component-updates/command-line-process-auditing"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Token Impersonation/Theft",
+            "description": "Adversaries may duplicate then impersonate another user's existing token to escalate privileges and bypass access controls. For example, an adversary can duplicate an existing token using `DuplicateToken` or `DuplicateTokenEx`. The token can then be used with `ImpersonateLoggedOnUser` to allow the calling thread to impersonate a logged on user's security context, or with `SetThreadToken` to assign the impersonated token to a thread.\n\nAn adversary may perform [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) when they have a specific, existing process they want to assign the duplicated token to. For example, this may be useful for when the target user has a non-network logon session on the system.\n\nWhen an adversary would instead use a duplicated token to create a new process rather than attaching to an existing process, they can additionally [Create Process with Token](https://attack.mitre.org/techniques/T1134/002) using `CreateProcessWithTokenW` or `CreateProcessAsUserW`. [Token Impersonation/Theft](https://attack.mitre.org/techniques/T1134/001) is also distinct from [Make and Impersonate Token](https://attack.mitre.org/techniques/T1134/003) in that it refers to duplicating an existing token, rather than creating a new one.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--3731fbcd-0e43-47ae-ae6c-d15e510f0d42",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-11T19:05:45.829Z",
+            "modified": "2022-04-25T14:00:00.188Z",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": "T1556.002",
+                    "url": "https://attack.mitre.org/techniques/T1556/002"
+                },
+                {
+                    "url": "http://carnal0wnage.attackresearch.com/2013/09/stealing-passwords-every-time-they.html",
+                    "description": "Fuller, R. (2013, September 11). Stealing passwords every time they change. Retrieved November 21, 2017.",
+                    "source_name": "Carnal Ownage Password Filters Sept 2013"
+                },
+                {
+                    "url": "https://clymb3r.wordpress.com/2013/09/15/intercepting-password-changes-with-function-hooking/",
+                    "description": "Bialek, J. (2013, September 15). Intercepting Password Changes With Function Hooking. Retrieved November 21, 2017.",
+                    "source_name": "Clymb3r Function Hook Passwords Sept 2013"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Password Filter DLL",
+            "description": "Adversaries may register malicious password filter dynamic link libraries (DLLs) into the authentication process to acquire user credentials as they are validated. \n\nWindows password filters are password policy enforcement mechanisms for both domain and local accounts. Filters are implemented as DLLs containing a method to validate potential passwords against password policies. Filter DLLs can be positioned on local computers for local accounts and/or domain controllers for domain accounts. Before registering new passwords in the Security Accounts Manager (SAM), the Local Security Authority (LSA) requests validation from each registered filter. Any potential changes cannot take effect until every registered filter acknowledges validation. \n\nAdversaries can register malicious password filters to harvest credentials from local computers and/or entire domains. To perform proper validation, filters must receive plain-text credentials from the LSA. A malicious password filter would receive these plain-text credentials every time a password request is made.(Citation: Carnal Ownage Password Filters Sept 2013)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--d45a3d09-b3cf-48f4-9f0f-f521ee5cb05c",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2019-03-14T18:47:17.701Z",
+            "modified": "2023-10-03T17:30:32.192Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1485",
+                    "external_id": "T1485"
+                },
+                {
+                    "source_name": "DOJ  - Cisco Insider",
+                    "description": "DOJ. (2020, August 26). San Jose Man Pleads Guilty To Damaging Cisco\u2019s Network. Retrieved December 15, 2020.",
+                    "url": "https://www.justice.gov/usao-ndca/pr/san-jose-man-pleads-guilty-damaging-cisco-s-network"
+                },
+                {
+                    "source_name": "Unit 42 Shamoon3 2018",
+                    "description": "Falcone, R. (2018, December 13). Shamoon 3 Targets Oil and Gas Organization. Retrieved March 14, 2019.",
+                    "url": "https://unit42.paloaltonetworks.com/shamoon-3-targets-oil-gas-organization/"
+                },
+                {
+                    "source_name": "Palo Alto Shamoon Nov 2016",
+                    "description": "Falcone, R.. (2016, November 30). Shamoon 2: Return of the Disttrack Wiper. Retrieved January 11, 2017.",
+                    "url": "http://researchcenter.paloaltonetworks.com/2016/11/unit42-shamoon-2-return-disttrack-wiper/"
+                },
+                {
+                    "source_name": "FireEye Shamoon Nov 2016",
+                    "description": "FireEye. (2016, November 30). FireEye Responds to Wave of Destructive Cyber Attacks in Gulf Region. Retrieved January 11, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2016/11/fireeye_respondsto.html"
+                },
+                {
+                    "source_name": "Kaspersky StoneDrill 2017",
+                    "description": "Kaspersky Lab. (2017, March 7). From Shamoon to StoneDrill: Wipers attacking Saudi organizations and beyond. Retrieved March 14, 2019.",
+                    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/07180722/Report_Shamoon_StoneDrill_final.pdf"
+                },
+                {
+                    "source_name": "Talos Olympic Destroyer 2018",
+                    "description": "Mercer, W. and Rascagneres, P. (2018, February 12). Olympic Destroyer Takes Aim At Winter Olympics. Retrieved March 14, 2019.",
+                    "url": "https://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
+                },
+                {
+                    "source_name": "Data Destruction - Threat Post",
+                    "description": "Mimoso, M.. (2014, June 18). Hacker Puts Hosting Service Code Spaces Out of Business. Retrieved December 15, 2020.",
+                    "url": "https://threatpost.com/hacker-puts-hosting-service-code-spaces-out-of-business/106761/"
+                },
+                {
+                    "source_name": "Symantec Shamoon 2012",
+                    "description": "Symantec. (2012, August 16). The Shamoon Attacks. Retrieved March 14, 2019.",
+                    "url": "https://www.symantec.com/connect/blogs/shamoon-attacks"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Data Destruction",
+            "description": "Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources. Data destruction is likely to render stored data irrecoverable by forensic techniques through overwriting files or data on local and remote drives.(Citation: Symantec Shamoon 2012)(Citation: FireEye Shamoon Nov 2016)(Citation: Palo Alto Shamoon Nov 2016)(Citation: Kaspersky StoneDrill 2017)(Citation: Unit 42 Shamoon3 2018)(Citation: Talos Olympic Destroyer 2018) Common operating system file deletion commands such as <code>del</code> and <code>rm</code> often only remove pointers to files without wiping the contents of the files themselves, making the files recoverable by proper forensic methodology. This behavior is distinct from [Disk Content Wipe](https://attack.mitre.org/techniques/T1561/001) and [Disk Structure Wipe](https://attack.mitre.org/techniques/T1561/002) because individual files are destroyed rather than sections of a storage disk or the disk's logical structure.\n\nAdversaries may attempt to overwrite files and directories with randomly generated data to make it irrecoverable.(Citation: Kaspersky StoneDrill 2017)(Citation: Unit 42 Shamoon3 2018) In some cases politically oriented image files have been used to overwrite data.(Citation: FireEye Shamoon Nov 2016)(Citation: Palo Alto Shamoon Nov 2016)(Citation: Kaspersky StoneDrill 2017)\n\nTo maximize impact on the target organization in operations where network-wide availability interruption is the goal, malware designed for destroying data may have worm-like features to propagate across a network by leveraging additional techniques like [Valid Accounts](https://attack.mitre.org/techniques/T1078), [OS Credential Dumping](https://attack.mitre.org/techniques/T1003), and [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002).(Citation: Symantec Shamoon 2012)(Citation: FireEye Shamoon Nov 2016)(Citation: Palo Alto Shamoon Nov 2016)(Citation: Kaspersky StoneDrill 2017)(Citation: Talos Olympic Destroyer 2018).\n\nIn cloud environments, adversaries may leverage access to delete cloud storage, cloud storage accounts, machine images, and other infrastructure crucial to operations to damage an organization or their customers.(Citation: Data Destruction - Threat Post)(Citation: DOJ  - Cisco Insider)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "impact"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--3d333250-30e4-4a82-9edc-756c68afc529",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-21T20:22:13.470Z",
+            "modified": "2023-10-20T16:43:53.391Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1562",
+                    "external_id": "T1562"
+                },
+                {
+                    "source_name": "Emotet shutdown",
+                    "description": "The DFIR Report. (2022, November 8). Emotet Strikes Again \u2013 LNK File Leads to Domain Wide Ransomware. Retrieved March 6, 2023.",
+                    "url": "https://thedfirreport.com/2022/11/28/emotet-strikes-again-lnk-file-leads-to-domain-wide-ransomware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Impair Defenses",
+            "description": "Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.\n\nAdversaries may also impair routine operations that contribute to defensive hygiene, such as blocking users from logging out of a computer or stopping it from being shut down. These restrictions can further enable malicious operations as well as the continued propagation of incidents.(Citation: Emotet shutdown)\n\nAdversaries could also target event aggregation and analysis mechanisms, or otherwise disrupt these procedures by altering other system components.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:30:41.804Z",
+            "modified": "2023-05-09T14:00:00.188Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1041",
+                    "external_id": "T1041"
+                },
+                {
+                    "source_name": "University of Birmingham C2",
+                    "description": "Gardiner, J.,  Cova, M., Nagaraja, S. (2014, February). Command & Control Understanding, Denying and Detecting. Retrieved April 20, 2016.",
+                    "url": "https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "Exfiltration Over C2 Channel",
+            "description": "Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "exfiltration"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--ff73aa03-0090-4464-83ac-f89e233c02bc",
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2019-10-04T20:42:28.541Z",
+            "modified": "2023-05-09T14:00:00.188Z",
+            "revoked": false,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1529",
+                    "external_id": "T1529"
+                },
+                {
+                    "source_name": "Talos Nyetya June 2017",
+                    "description": "Chiu, A. (2016, June 27). New Ransomware Variant \"Nyetya\" Compromises Systems Worldwide. Retrieved March 26, 2019.",
+                    "url": "https://blog.talosintelligence.com/2017/06/worldwide-ransomware-variant.html"
+                },
+                {
+                    "source_name": "alert_TA18_106A",
+                    "description": "CISA. (2018, April 20). Russian State-Sponsored Cyber Actors Targeting Network Infrastructure Devices. Retrieved February 14, 2022.",
+                    "url": "https://www.cisa.gov/uscert/ncas/alerts/TA18-106A"
+                },
+                {
+                    "source_name": "Talos Olympic Destroyer 2018",
+                    "description": "Mercer, W. and Rascagneres, P. (2018, February 12). Olympic Destroyer Takes Aim At Winter Olympics. Retrieved March 14, 2019.",
+                    "url": "https://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
+                },
+                {
+                    "source_name": "Microsoft Shutdown Oct 2017",
+                    "description": "Microsoft. (2017, October 15). Shutdown. Retrieved October 4, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "name": "System Shutdown/Reboot",
+            "description": "Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems. Operating systems may contain commands to initiate a shutdown/reboot of a machine or network device. In some cases, these commands may also be used to initiate a shutdown/reboot of a remote computer or network device via [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) (e.g. <code>reload</code>).(Citation: Microsoft Shutdown Oct 2017)(Citation: alert_TA18_106A)\n\nShutting down or rebooting systems may disrupt access to computer resources for legitimate users while also impeding incident response/recovery.\n\nAdversaries may attempt to shutdown/reboot a system after impacting it in other ways, such as [Disk Structure Wipe](https://attack.mitre.org/techniques/T1561/002) or [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490), to hasten the intended effects on system availability.(Citation: Talos Nyetya June 2017)(Citation: Talos Olympic Destroyer 2018)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "impact"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2022-03-31T13:00:00.000Z",
+            "modified": "2022-03-31T13:00:00.000Z",
+            "name": "Office Macro executing commands",
+            "description": "An Office Macro is executing commands. This may be malicious code being executed.",
+            "behavior_class": "anomalous",
+            "tactic": "EXECUTION",
+            "technique": "T1059.001 Command/Script execution - VBA",
+            "first_seen": "2022-03-31T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2022-03-31T13:00:00.000Z",
+            "modified": "2022-03-31T13:00:00.000Z",
+            "name": "Secondary Payload Privilege Escalation Behavior",
+            "description": "A privilege escalation has occurred which may indicate adversary activity.",
+            "behavior_class": "anomalous",
+            "tactic": "Privilege Escalation",
+            "technique": "T1134.001 - Access token manipulation - Token impersonation",
+            "first_seen": "2022-03-31T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2022-03-31T13:00:00.000Z",
+            "modified": "2022-03-31T13:00:00.000Z",
+            "name": "Exfiltration Behavior via Beacon",
+            "description": "Adversary exfiltrates data from the target network.",
+            "behavior_class": "anomalous",
+            "tactic": "Exfiltration",
+            "technique": "T1041 - Exfiltration over C2 Channel",
+            "first_seen": "2022-03-31T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-detection--f27cb358-d747-47ba-a6c4-e5b8debab157",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "name": "Privilege Escalation Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCmF1dGhvcjogZGVtbwpkYXRlOiAyMDIyLzAzLzA0CmRlc2NyaXB0aW9uOiBEZXRlY3RzIGxvY2FsIHVzZXIgc3Bhd25pbmcgYSBwcm9jZXNzIGFzIFNZU1RFTQpkZXRlY3Rpb246CiAgY29uZGl0aW9uOiBzZWxlY3Rpb24xIGFuZCBub3Qgc2VsZWN0aW9uMgogIHNlbGVjdGlvbjE6CiAgICB1c2VyfGNvbnRhaW5zOiAiJCIKICAgIEV2ZW50Q29kZTogNDY4OAogIHNlbGVjdGlvbjI6CiAgICBzcmNfdXNlcnxjb250YWluczogIiQiCmZhbHNlcG9zaXRpdmVzOgogIC0gTG93CmlkOiB1c2VydG9zeXN0ZW1wcm9jcHJpdmVzYwpsZXZlbDogaGlnaApsb2dzb3VyY2U6CiAgY2F0ZWdvcnk6IHByb2Nlc3NfZXZlbnQKICBpbmRleDogbWFpbgogIHByb2R1Y3Q6IHdpbmRvd3MKc3RhdHVzOiBleHBlcmltZW50YWwKdGFnczoKICAtIGF0dGFjay5wcml2aWxlZ2UtZXNjYWxhdGlvbgogIC0gYXR0YWNrLlQxMTM0LjAwMQp0aXRsZTogdXNlciB0byBzeXN0ZW0gcHJvY2VzcyBwcml2aWxlZ2UgZXNjYWxhdGlvbgo="
+            }
+        },
+        {
+            "id": "x-oca-detection--66aa9c25-8b56-4121-8630-dbe457393b27",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "name": "Data Exfiltration Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCmF1dGhvcjogZGVtbwpkYXRlOiAyMDIyLzAzLzA0CmRlc2NyaXB0aW9uOiBEZXRlY3RzIGEgZG93bmxvYWQgZnJvbSBhIHNlbnNpdGl2ZSBtb25pdG9yZWQgZGlyZWN0b3J5CmlkOiA5MmEyMWJlZi00MTM4LTQwYjYtYTk1NS00OTdiMGNlMDUxNTAKc3RhdHVzOiBleHBlcmltZW50YWwKdGFnczoKICAtIGF0dGFjay5leGZpbHRyYXRpb24KICAtIGF0dGFjay50MTA0MQpsb2dzb3VyY2U6IAogIHByb2R1Y3Q6IHplZWsKICBpbmRleDogbWFpbgogIGNhdGVnb3J5OiBmaWxlcwpkZXRlY3Rpb246CiAgc2VsZWN0aW9uOiAKICAgIHNvdXJjZXR5cGU6IHplZWsKICAgIHNvdXJjZTogL25zbS96ZWVrL2xvZ3MvY3VycmVudC9maWxlcy5sb2cKICAgIGZpbGVuYW1lfGNvbnRhaW5zOiAiU2Vuc2l0aXZlIERhdGEiCiAgY29uZGl0aW9uOiBzZWxlY3Rpb24KZmFsc2Vwb3NpdGl2ZXM6CiAgLSBBcHByb3ZlZCBBY2Nlc3NvcnMKbGV2ZWw6IGhpZ2gK"
+            }
+        },
+        {
+            "id": "x-oca-detection--58834c29-4ceb-42a1-a218-336103021000",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "name": "Macro Execution Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCnRpdGxlOiBFeGVjdXRpb24KaWQ6IGV4ZWN1dGlvbgpzdGF0dXM6IGV4cGVyaW1lbnRhbApkZXNjcmlwdGlvbjogRGV0ZWN0cyBPZmZpY2UgbWFjcm8gZXhlY3V0aW9uCnRhZ3M6Ci0gYXR0YWNrLmV4ZWN1dGlvbgotIGF0dGFjay50MTA1OQphdXRob3I6IGRlbW8KZGF0ZTogMjAyMS8wNi8wNwpsb2dzb3VyY2U6CiAgcHJvZHVjdDogd2luZG93cwogIGluZGV4OiBtYWluCiAgY2F0ZWdvcnk6IHByb2Nlc3NfZXZlbnQKZGV0ZWN0aW9uOgogIGNvbmRpdGlvbjogcnVuX21hY3JvIGFuZCAobm90IGZhbHNlX3Bvc2l0aXZlKQogIHJ1bl9tYWNybzoKICAgIENyZWF0b3JfUHJvY2Vzc19OYW1lfGNvbnRhaW5zOgogICAgLSB3b3JkCiAgICAtIHBvd2VycG9pbnQKICAgIC0gZXhjZWwKICAgIE5ld19Qcm9jZXNzX05hbWV8ZW5kc3dpdGg6CiAgICAtICIuZXhlIgogICAgLSAiLmRsbCIKICAgIEV2ZW50Q29kZTogJzQ2ODgnCiAgZmFsc2VfcG9zaXRpdmU6CiAgICBOZXdfUHJvY2Vzc19OYW1lfGNvbnRhaW5zOgogICAgLSBzcGx3b3c2NApmYWxzZXBvc2l0aXZlczoKLSBMb3cKbGV2ZWw6IGhpZ2g="
+            }
+        },
+        {
+            "id": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-19T09:00:00.000Z",
+            "modified": "2024-02-19T09:00:00.000Z",
+            "name": "Correlate Alerts",
+            "description": "Correlate Alerts "
+        },
+        {
+            "id": "x-oca-playbook--f3700517-14c4-485e-8469-788c27e7264d",
+            "type": "x-oca-playbook",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-19T09:00:00.000Z",
+            "modified": "2024-02-19T09:00:00.000Z",
+            "revoked": false,
+            "name": "Correlate Alerts",
+            "description": "Correlate Alerts",
+            "playbook_id": "675C9092-433E-4CD0-8BFA-B72E22423877",
+            "playbook_format": "Kestrel",
+            "playbook_type": [
+                "Detection"
+            ],
+            "playbook_bin": "ewogImNlbGxzIjogWwogIHsKICAgImNlbGxfdHlwZSI6ICJtYXJrZG93biIsCiAgICJpZCI6ICJlOGZhYzhkMiIsCiAgICJtZXRhZGF0YSI6IHt9LAogICAic291cmNlIjogWwogICAgIiMgQ0FTUCAyMDI0OiBIdW50IGFuIEVudGlyZSBUaHJlYXQgZnJvbSBhbiBJbmRpY2F0b3Igb2YgQmVoYXZpb3IiCiAgIF0KICB9LAogIHsKICAgImNlbGxfdHlwZSI6ICJtYXJrZG93biIsCiAgICJpZCI6ICIyMmU5MGZiMCIsCiAgICJtZXRhZGF0YSI6IHt9LAogICAic291cmNlIjogWwogICAgIkxldCdzIHN0YXJ0IGZyb20gVDE1NjIuMDA0ICpJbXBhaXIgRGVmZW5zZXM6IERpc2FibGUgb3IgTW9kaWZ5IFN5c3RlbSBGaXJld2FsbCpcbiIsCiAgICAiXG4iLAogICAgIk9uIHRoZSBbTUlUUkUgcGFnZSBvZiB0aGUgVFRQXShodHRwczovL2F0dGFjay5taXRyZS5vcmcvdGVjaG5pcXVlcy9UMTU2Mi8wMDQvKSwgdGhlcmUgaXMgYSAqRGV0ZWN0aW9uKiBzZWN0aW9uIGxpc3RpbmcgZGlmZmVyZW50IHdheXMgdG8gZGV0ZWN0IGl0LiBUaGUgZmlyc3QgaXMgdXNpbmcgY29tbWFuZCBleGVjdXRpb24uIExldCdzIHdyaXRlIGFuIElvQiBmb3IgdGhpcyAqRGlzYWJsZSBvciBNb2RpZnkgU3lzdGVtIEZpcmV3YWxsKiBiZWhhdmlvci4iCiAgIF0KICB9LAogIHsKICAgImNlbGxfdHlwZSI6ICJjb2RlIiwKICAgImV4ZWN1dGlvbl9jb3VudCI6IDEsCiAgICJpZCI6ICIzY2M1ZmMxOCIsCiAgICJtZXRhZGF0YSI6IHt9LAogICAib3V0cHV0cyI6IFsKICAgIHsKICAgICAibmFtZSI6ICJzdGRlcnIiLAogICAgICJvdXRwdXRfdHlwZSI6ICJzdHJlYW0iLAogICAgICJ0ZXh0IjogW10KICAgIH0sCiAgICB7CiAgICAgImRhdGEiOiB7CiAgICAgICJ0ZXh0L2h0bWwiOiBbCiAgICAgICAiPGRpdj48aDQ+QmxvY2sgRXhlY3V0ZWQgaW4gNiBzZWNvbmRzPC9oND48dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5WQVJJQUJMRTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5UWVBFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoRU5USVRJRVMpPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoUkVDT1JEUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZGlyZWN0b3J5KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5maWxlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY0LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjYtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bWFjLWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnByb2Nlc3MqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnNvZnR3YXJlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD51c2VyLWFjY291bnQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWFzc2V0KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD54LW9jYS1ldmVudCo8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPmRpc2FibGVmdzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5wcm9jZXNzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD41PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90Ym9keT5cbiIsCiAgICAgICAiPC90YWJsZT48cD4qTnVtYmVyIG9mIHJlbGF0ZWQgcmVjb3JkcyBjYWNoZWQuPC9wPjwvZGl2PiIKICAgICAgXQogICAgIH0sCiAgICAgIm1ldGFkYXRhIjoge30sCiAgICAgIm91dHB1dF90eXBlIjogImRpc3BsYXlfZGF0YSIKICAgIH0KICAgXSwKICAgInNvdXJjZSI6IFsKICAgICIjIElvQjogVDE1NjIuMDA0XG4iLAogICAgImRpc2FibGVmdyA9IEdFVCBwcm9jZXNzIEZST00gc3RpeHNoaWZ0ZXI6Ly9jYXNwMjAyNC1lZHJcbiIsCiAgICAiICAgICAgICAgICAgV0hFUkUgKG5hbWUgPSAndWZ3JyBBTkQgY29tbWFuZF9saW5lIExJS0UgJyVkaXNhYmxlJScpXG4iLAogICAgIiAgICAgICAgICAgICAgIE9SIChuYW1lID0gJ3N1ZG8nIEFORCBjb21tYW5kX2xpbmUgTElLRSAnJXVmdyBkaXNhYmxlJScpXG4iLAogICAgIiAgICAgICAgICAgICAgIE9SIChuYW1lIElOICgnbmV0c2gnLCAnbmV0c2guZXhlJykgQU5EIGNvbW1hbmRfbGluZSBMSUtFICclYWR2ZmlyZXdhbGwlb2ZmJScpXG4iLAogICAgIiAgICAgICAgICAgIExBU1QgMzAgREFZUyIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogImNvZGUiLAogICAiZXhlY3V0aW9uX2NvdW50IjogMiwKICAgImlkIjogImI3ZjM4YjI3IiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJvdXRwdXRzIjogWwogICAgewogICAgICJuYW1lIjogInN0ZGVyciIsCiAgICAgIm91dHB1dF90eXBlIjogInN0cmVhbSIsCiAgICAgInRleHQiOiBbXQogICAgfSwKICAgIHsKICAgICAiZGF0YSI6IHsKICAgICAgInRleHQvaHRtbCI6IFsKICAgICAgICI8dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5waWQ8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bmFtZTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5jb21tYW5kX2xpbmU8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPjEyMjMyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPm5ldHNoLmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5uZXRzaCAgYWR2ZmlyZXdhbGwgc2V0IGFsbHByb2ZpbGVzIHN0YXRlIG9mZjwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+IgogICAgICBdCiAgICAgfSwKICAgICAibWV0YWRhdGEiOiB7fSwKICAgICAib3V0cHV0X3R5cGUiOiAiZGlzcGxheV9kYXRhIgogICAgfQogICBdLAogICAic291cmNlIjogWwogICAgIiMgd2UgZ2V0IHNvbWV0aGluZywgd2hhdCBpcyBpdD9cbiIsCiAgICAiXG4iLAogICAgIkRJU1AgZGlzYWJsZWZ3IEFUVFIgcGlkLCBuYW1lLCBjb21tYW5kX2xpbmUiCiAgIF0KICB9LAogIHsKICAgImNlbGxfdHlwZSI6ICJjb2RlIiwKICAgImV4ZWN1dGlvbl9jb3VudCI6IDMsCiAgICJpZCI6ICJmOTJjZWYyMiIsCiAgICJtZXRhZGF0YSI6IHt9LAogICAib3V0cHV0cyI6IFsKICAgIHsKICAgICAibmFtZSI6ICJzdGRlcnIiLAogICAgICJvdXRwdXRfdHlwZSI6ICJzdHJlYW0iLAogICAgICJ0ZXh0IjogW10KICAgIH0sCiAgICB7CiAgICAgImRhdGEiOiB7CiAgICAgICJ0ZXh0L2h0bWwiOiBbCiAgICAgICAiPHRhYmxlIGJvcmRlcj1cIjFcIiBjbGFzcz1cImRhdGFmcmFtZVwiPlxuIiwKICAgICAgICIgIDx0aGVhZD5cbiIsCiAgICAgICAiICAgIDx0ciBzdHlsZT1cInRleHQtYWxpZ246IHJpZ2h0O1wiPlxuIiwKICAgICAgICIgICAgICA8dGg+cGlkPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5hbWU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+Y29tbWFuZF9saW5lPC90aD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90aGVhZD5cbiIsCiAgICAgICAiICA8dGJvZHk+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD41MjY4PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPmNtZC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y21kLmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+XG4iLAogICAgICAgIjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPnBpZDwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5uYW1lPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmNvbW1hbmRfbGluZTwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzA5NjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5iYWRpZGVhLmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5cIkM6XFxVc2Vyc1xcUHVibGljXFxiYWRpZGVhLmV4ZVwiPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90Ym9keT5cbiIsCiAgICAgICAiPC90YWJsZT5cbiIsCiAgICAgICAiPGRpdj48aDQ+QmxvY2sgRXhlY3V0ZWQgaW4gNiBzZWNvbmRzPC9oND48dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5WQVJJQUJMRTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5UWVBFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoRU5USVRJRVMpPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoUkVDT1JEUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZGlyZWN0b3J5KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kb21haW4tbmFtZSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZmlsZSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+aXB2NC1hZGRyKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY2LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm1hYy1hZGRyKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5uZXR3b3JrLXRyYWZmaWMqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnByb2Nlc3MqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnNvZnR3YXJlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD51c2VyLWFjY291bnQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWFzc2V0KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD54LW9jYS1ldmVudCo8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPnBwcm9jPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPnByb2Nlc3M8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD42PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE2PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTI8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTI8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xOTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yMDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xMjwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+cDJwcm9jPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPnByb2Nlc3M8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD42PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjEzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+OTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD45PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+OTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD45PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjk8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPnAzcHJvYzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5wcm9jZXNzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+PHA+Kk51bWJlciBvZiByZWxhdGVkIHJlY29yZHMgY2FjaGVkLjwvcD48L2Rpdj4iCiAgICAgIF0KICAgICB9LAogICAgICJtZXRhZGF0YSI6IHt9LAogICAgICJvdXRwdXRfdHlwZSI6ICJkaXNwbGF5X2RhdGEiCiAgICB9CiAgIF0sCiAgICJzb3VyY2UiOiBbCiAgICAiIyBhbmNlc3RyeSB1cCB0byAzIGxldmVsc1xuIiwKICAgICJcbiIsCiAgICAicHByb2MgPSBGSU5EIHByb2Nlc3MgQ1JFQVRFRCBkaXNhYmxlZncgTEFTVCAzMCBEQVlTXG4iLAogICAgIkRJU1AgcHByb2MgQVRUUiBwaWQsIG5hbWUsIGNvbW1hbmRfbGluZVxuIiwKICAgICJcbiIsCiAgICAicDJwcm9jID0gRklORCBwcm9jZXNzIENSRUFURUQgcHByb2MgTEFTVCAzMCBEQVlTXG4iLAogICAgIkRJU1AgcDJwcm9jIEFUVFIgcGlkLCBuYW1lLCBjb21tYW5kX2xpbmVcbiIsCiAgICAiXG4iLAogICAgInAzcHJvYyA9IEZJTkQgcHJvY2VzcyBDUkVBVEVEIHAycHJvYyBMQVNUIDMwIERBWVNcbiIsCiAgICAiRElTUCBwM3Byb2MgQVRUUiBwaWQsIG5hbWUsIGNvbW1hbmRfbGluZSIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogImNvZGUiLAogICAiZXhlY3V0aW9uX2NvdW50IjogNCwKICAgImlkIjogIjRhNGI4NzIyIiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJvdXRwdXRzIjogWwogICAgewogICAgICJuYW1lIjogInN0ZGVyciIsCiAgICAgIm91dHB1dF90eXBlIjogInN0cmVhbSIsCiAgICAgInRleHQiOiBbXQogICAgfSwKICAgIHsKICAgICAiZGF0YSI6IHsKICAgICAgInRleHQvaHRtbCI6IFsKICAgICAgICI8ZGl2PjxoND5CbG9jayBFeGVjdXRlZCBpbiAxIHNlY29uZHM8L2g0Pjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPlZBUklBQkxFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPlRZUEU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhFTlRJVElFUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhSRUNPUkRTKTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kaXJlY3RvcnkqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRvbWFpbi1uYW1lKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5maWxlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY0LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjYtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bWFjLWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5ldHdvcmstdHJhZmZpYyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+cHJvY2Vzcyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+c29mdHdhcmUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnVzZXItYWNjb3VudCo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+eC1vY2EtYXNzZXQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWV2ZW50KjwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+YWxscHJvYzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5wcm9jZXNzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTc8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3Rib2R5PlxuIiwKICAgICAgICI8L3RhYmxlPjxwPipOdW1iZXIgb2YgcmVsYXRlZCByZWNvcmRzIGNhY2hlZC48L3A+PC9kaXY+IgogICAgICBdCiAgICAgfSwKICAgICAibWV0YWRhdGEiOiB7fSwKICAgICAib3V0cHV0X3R5cGUiOiAiZGlzcGxheV9kYXRhIgogICAgfQogICBdLAogICAic291cmNlIjogWwogICAgImFsbHByb2MgPSBkaXNhYmxlZncgKyBwcHJvYyArIHAycHJvYyArIHAzcHJvYyIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogImNvZGUiLAogICAiZXhlY3V0aW9uX2NvdW50IjogNSwKICAgImlkIjogIjg0MWIxZmRmIiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJvdXRwdXRzIjogWwogICAgewogICAgICJuYW1lIjogInN0ZGVyciIsCiAgICAgIm91dHB1dF90eXBlIjogInN0cmVhbSIsCiAgICAgInRleHQiOiBbXQogICAgfSwKICAgIHsKICAgICAiZGF0YSI6IHsKICAgICAgInRleHQvaHRtbCI6IFsKICAgICAgICI8dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5waWQ8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bmFtZTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5jb21tYW5kX2xpbmU8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPjIzNjQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y29uaG9zdC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+XFw/P1xcQzpcXFdJTkRPV1NcXHN5c3RlbTMyXFxjb25ob3N0LmV4ZSAweGZmZmZmZmZmIC1Gb3JjZVYxPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD41MjY4PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPmNtZC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y21kLmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTMxNDQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+c2h1dGRvd24uZXhlPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPlwiQzpcXFdJTkRPV1NcXHN5c3RlbTMyXFxzaHV0ZG93bi5leGVcIiAtciAtZiAtdCAwMDwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTEwOTY8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y29uaG9zdC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+XFw/P1xcQzpcXFdJTkRPV1NcXHN5c3RlbTMyXFxjb25ob3N0LmV4ZSAweGZmZmZmZmZmIC1Gb3JjZVYxPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xMjIzMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5uZXRzaC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+bmV0c2ggIGFkdmZpcmV3YWxsIHNldCBhbGxwcm9maWxlcyBzdGF0ZSBvZmY8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3Rib2R5PlxuIiwKICAgICAgICI8L3RhYmxlPlxuIiwKICAgICAgICI8ZGl2PjxoND5CbG9jayBFeGVjdXRlZCBpbiAzIHNlY29uZHM8L2g0Pjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPlZBUklBQkxFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPlRZUEU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhFTlRJVElFUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhSRUNPUkRTKTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kaXJlY3RvcnkqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRvbWFpbi1uYW1lKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5maWxlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY0LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjYtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bWFjLWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5ldHdvcmstdHJhZmZpYyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+cHJvY2Vzcyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+c29mdHdhcmUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnVzZXItYWNjb3VudCo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+eC1vY2EtYXNzZXQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWV2ZW50KjwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y2hpbGRfcHJvYzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5wcm9jZXNzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjY8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Mjk8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zNTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yMzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjMwPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM1PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIyPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90Ym9keT5cbiIsCiAgICAgICAiPC90YWJsZT48cD4qTnVtYmVyIG9mIHJlbGF0ZWQgcmVjb3JkcyBjYWNoZWQuPC9wPjwvZGl2PiIKICAgICAgXQogICAgIH0sCiAgICAgIm1ldGFkYXRhIjoge30sCiAgICAgIm91dHB1dF90eXBlIjogImRpc3BsYXlfZGF0YSIKICAgIH0KICAgXSwKICAgInNvdXJjZSI6IFsKICAgICIjIExldCdzIHRyYWNrIGFsbCBhY3Rpdml0aWVzIHRoZSBhdHRhY2tlciBkaWRcbiIsCiAgICAiXG4iLAogICAgImNoaWxkX3Byb2MgPSBGSU5EIHByb2Nlc3MgQ1JFQVRFRCBCWSBhbGxwcm9jIExBU1QgMzAgREFZU1xuIiwKICAgICJESVNQIGNoaWxkX3Byb2MgQVRUUiBwaWQsIG5hbWUsIGNvbW1hbmRfbGluZSIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogImNvZGUiLAogICAiZXhlY3V0aW9uX2NvdW50IjogNiwKICAgImlkIjogImJiY2VmZDY3IiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJvdXRwdXRzIjogWwogICAgewogICAgICJuYW1lIjogInN0ZGVyciIsCiAgICAgIm91dHB1dF90eXBlIjogInN0cmVhbSIsCiAgICAgInRleHQiOiBbXQogICAgfSwKICAgIHsKICAgICAiZGF0YSI6IHsKICAgICAgInRleHQvaHRtbCI6IFsKICAgICAgICI8dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5zcmNfcmVmLnZhbHVlPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnNyY19wb3J0PC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRzdF9yZWYudmFsdWU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZHN0X3BvcnQ8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPjE5Mi4xNjguMS4xMDM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NjQ1NDg8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTcyLjE2LjEuMTM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzEzMzc8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3Rib2R5PlxuIiwKICAgICAgICI8L3RhYmxlPlxuIiwKICAgICAgICI8ZGl2PjxoND5CbG9jayBFeGVjdXRlZCBpbiAxIHNlY29uZHM8L2g0Pjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPlZBUklBQkxFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPlRZUEU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhFTlRJVElFUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhSRUNPUkRTKTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kaXJlY3RvcnkqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRvbWFpbi1uYW1lKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5maWxlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY0LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjYtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bWFjLWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5ldHdvcmstdHJhZmZpYyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+cHJvY2Vzcyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+c29mdHdhcmUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnVzZXItYWNjb3VudCo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+eC1vY2EtYXNzZXQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWV2ZW50KjwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+bnQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+bmV0d29yay10cmFmZmljPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD44PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ODwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD42PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjg8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ODwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD41PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NTwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+PHA+Kk51bWJlciBvZiByZWxhdGVkIHJlY29yZHMgY2FjaGVkLjwvcD48L2Rpdj4iCiAgICAgIF0KICAgICB9LAogICAgICJtZXRhZGF0YSI6IHt9LAogICAgICJvdXRwdXRfdHlwZSI6ICJkaXNwbGF5X2RhdGEiCiAgICB9CiAgIF0sCiAgICJzb3VyY2UiOiBbCiAgICAiIyBMZXQncyB0cmFjayBhbGwgbmV0d29yayBhY3Rpdml0aWVzIHRoZSBhdHRhY2tlciBkaWRcbiIsCiAgICAiXG4iLAogICAgIm50ID0gRklORCBuZXR3b3JrLXRyYWZmaWMgQ1JFQVRFRCBCWSBhbGxwcm9jIExBU1QgMzAgREFZU1xuIiwKICAgICJESVNQIG50IEFUVFIgc3JjX3JlZi52YWx1ZSwgc3JjX3BvcnQsIGRzdF9yZWYudmFsdWUsIGRzdF9wb3J0IgogICBdCiAgfSwKICB7CiAgICJjZWxsX3R5cGUiOiAiY29kZSIsCiAgICJleGVjdXRpb25fY291bnQiOiA3LAogICAiaWQiOiAiMTgxNGU3YTYiLAogICAibWV0YWRhdGEiOiB7fSwKICAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgIm5hbWUiOiAic3RkZXJyIiwKICAgICAib3V0cHV0X3R5cGUiOiAic3RyZWFtIiwKICAgICAidGV4dCI6IFtdCiAgICB9LAogICAgewogICAgICJkYXRhIjogewogICAgICAidGV4dC9odG1sIjogWwogICAgICAgIjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPnZhbHVlPC90aD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90aGVhZD5cbiIsCiAgICAgICAiICA8dGJvZHk+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xNzIuMTYuMS4xMzwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+XG4iLAogICAgICAgIjxkaXY+PGg0PkJsb2NrIEV4ZWN1dGVkIGluIDYgc2Vjb25kczwvaDQ+PHRhYmxlIGJvcmRlcj1cIjFcIiBjbGFzcz1cImRhdGFmcmFtZVwiPlxuIiwKICAgICAgICIgIDx0aGVhZD5cbiIsCiAgICAgICAiICAgIDx0ciBzdHlsZT1cInRleHQtYWxpZ246IHJpZ2h0O1wiPlxuIiwKICAgICAgICIgICAgICA8dGg+VkFSSUFCTEU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+VFlQRTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD4jKEVOVElUSUVTKTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD4jKFJFQ09SRFMpPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRpcmVjdG9yeSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZG9tYWluLW5hbWUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmZpbGUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjQtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+aXB2Ni1hZGRyKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5tYWMtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bmV0d29yay10cmFmZmljKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5wcm9jZXNzKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5zb2Z0d2FyZSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+dXNlci1hY2NvdW50KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD54LW9jYS1hc3NldCo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+eC1vY2EtZXZlbnQqPC90aD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90aGVhZD5cbiIsCiAgICAgICAiICA8dGJvZHk+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD5udF9mdzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5uZXR3b3JrLXRyYWZmaWM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD45PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjgxPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yNjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yNzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4wPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yNzwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+YzJfaXA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+aXB2NC1hZGRyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Mjg8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ODwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjg8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ODY8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD41PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjI4PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM1PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjg8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+NTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD41PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjMyPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90Ym9keT5cbiIsCiAgICAgICAiPC90YWJsZT48cD4qTnVtYmVyIG9mIHJlbGF0ZWQgcmVjb3JkcyBjYWNoZWQuPC9wPjwvZGl2PiIKICAgICAgXQogICAgIH0sCiAgICAgIm1ldGFkYXRhIjoge30sCiAgICAgIm91dHB1dF90eXBlIjogImRpc3BsYXlfZGF0YSIKICAgIH0KICAgXSwKICAgInNvdXJjZSI6IFsKICAgICIjIENhbiB3ZSBmaW5kIHRoZSB0cmFmZmljIGF0IHRoZSBPUE5TZW5zZS9maXJld2FsbCB0byB0YWtlIGZ1cnRoZXIgYWN0aW9uLCBlLmcuLCBhZGRpbmcgcnVsZSB0byBibG9jayB0aGUgSVBcbiIsCiAgICAiXG4iLAogICAgIiMgRGF0YSBJc3N1ZSBGb3VuZFxuIiwKICAgICIjIGZvciBzb21lIHJlYXNvbiwgdGhlIGNsb2NrIGhhcyAzMCBtaW4gZGlmZiBiZXR3ZWVuIHRoZSBob3N0IGFuZCB0aGUgZmlyZXdhbGxcbiIsCiAgICAiIyBzbyB3ZSBuZWVkIHRvIGFkZCBcIkxBU1QgMzAgREFZU1wiIHRvIG92ZXJyaWRlIEtlc3RyZWwncyBhdXRvbWF0aWMgdGltZSByYW5nZSBnZW5lcmF0aW9uXG4iLAogICAgIlxuIiwKICAgICJudF9mdyA9IEdFVCBuZXR3b3JrLXRyYWZmaWMgRlJPTSBzdGl4c2hpZnRlcjovL2Nhc3AyMDI0LW5ldGZsb3dcbiIsCiAgICAiICAgICAgICBXSEVSRSBzcmNfcG9ydCA9IG50LnNyY19wb3J0XG4iLAogICAgIiAgICAgICAgTEFTVCAzMCBEQVlTXG4iLAogICAgIiAgICAgICAgXG4iLAogICAgImMyX2lwID0gRklORCBpcHY0LWFkZHIgQUNDRVBURUQgbnRfZndcbiIsCiAgICAiRElTUCBjMl9pcCBBVFRSIHZhbHVlIgogICBdCiAgfSwKICB7CiAgICJjZWxsX3R5cGUiOiAiY29kZSIsCiAgICJleGVjdXRpb25fY291bnQiOiA4LAogICAiaWQiOiAiOWViYjcwYjAiLAogICAibWV0YWRhdGEiOiB7fSwKICAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgIm5hbWUiOiAic3RkZXJyIiwKICAgICAib3V0cHV0X3R5cGUiOiAic3RyZWFtIiwKICAgICAidGV4dCI6IFtdCiAgICB9LAogICAgewogICAgICJkYXRhIjogewogICAgICAidGV4dC9odG1sIjogWwogICAgICAgIjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPmhvc3RuYW1lPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5hbWU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZGV2aWNlX2lkPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmFyY2hpdGVjdHVyZTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pZDwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+d2luMTAtY2FzcC13czE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+d2luMTAtY2FzcC13czE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZGQ5NGNjMWEtYjY3MC00YzEwLTgyZjMtNjVmZDM5OTI5NzExPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPng4Nl82NDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD54LW9jYS1hc3NldC0tOWI2MWZiOGQtMTE0Ni01ZGFjLThjMmUtMjQxNzI2NGYzMDg2PC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgPC90Ym9keT5cbiIsCiAgICAgICAiPC90YWJsZT5cbiIsCiAgICAgICAiPGRpdj48aDQ+QmxvY2sgRXhlY3V0ZWQgaW4gMSBzZWNvbmRzPC9oND48dGFibGUgYm9yZGVyPVwiMVwiIGNsYXNzPVwiZGF0YWZyYW1lXCI+XG4iLAogICAgICAgIiAgPHRoZWFkPlxuIiwKICAgICAgICIgICAgPHRyIHN0eWxlPVwidGV4dC1hbGlnbjogcmlnaHQ7XCI+XG4iLAogICAgICAgIiAgICAgIDx0aD5WQVJJQUJMRTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5UWVBFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoRU5USVRJRVMpPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPiMoUkVDT1JEUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZGlyZWN0b3J5KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kb21haW4tbmFtZSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+ZmlsZSo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+aXB2NC1hZGRyKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY2LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm1hYy1hZGRyKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5uZXR3b3JrLXRyYWZmaWMqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnByb2Nlc3MqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnNvZnR3YXJlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD51c2VyLWFjY291bnQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWFzc2V0KjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD54LW9jYS1ldmVudCo8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPmhvc3Q8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+eC1vY2EtYXNzZXQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yMjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4yOTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjM1PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIzPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjIyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MzU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjI8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjI8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3Rib2R5PlxuIiwKICAgICAgICI8L3RhYmxlPjxwPipOdW1iZXIgb2YgcmVsYXRlZCByZWNvcmRzIGNhY2hlZC48L3A+PC9kaXY+IgogICAgICBdCiAgICAgfSwKICAgICAibWV0YWRhdGEiOiB7fSwKICAgICAib3V0cHV0X3R5cGUiOiAiZGlzcGxheV9kYXRhIgogICAgfQogICBdLAogICAic291cmNlIjogWwogICAgIiMgTGV0J3MgdHJhY2sgdGhlIGhvc3QgdGhlIGF0dGFjayBoYXBwZW5lZCB0byB0YWtlIGZ1cnRoZXIgYWN0aW9uXG4iLAogICAgIlxuIiwKICAgICJob3N0ID0gRklORCB4LW9jYS1hc3NldCBMSU5LRUQgYWxscHJvYyBMQVNUIDMwIERBWVNcbiIsCiAgICAiRElTUCBob3N0IgogICBdCiAgfSwKICB7CiAgICJjZWxsX3R5cGUiOiAiY29kZSIsCiAgICJleGVjdXRpb25fY291bnQiOiA5LAogICAiaWQiOiAiMTA2YTk2NmYiLAogICAibWV0YWRhdGEiOiB7fSwKICAgIm91dHB1dHMiOiBbCiAgICB7CiAgICAgIm5hbWUiOiAic3RkZXJyIiwKICAgICAib3V0cHV0X3R5cGUiOiAic3RyZWFtIiwKICAgICAidGV4dCI6IFtdCiAgICB9LAogICAgewogICAgICJkYXRhIjogewogICAgICAidGV4dC9odG1sIjogWwogICAgICAgIjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPm5hbWU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+aWQ8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+aGFzaGVzLidTSEEtMjU2JzwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5oYXNoZXMuTUQ1PC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnBhcmVudF9kaXJlY3RvcnlfcmVmLnBhdGg8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+cGFyZW50X2RpcmVjdG9yeV9yZWYuaWQ8L3RoPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3RoZWFkPlxuIiwKICAgICAgICIgIDx0Ym9keT5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPmJhZGlkZWEuZXhlPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPmZpbGUtLTZhNzFmNzczLTU4NzItNTkzMC04ZDUzLWEwOTZhMTU0YjI4ZjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5Ob25lPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPk5vbmU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+QzpcXFVzZXJzXFxQdWJsaWM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZGlyZWN0b3J5LS05Y2JiNTEyMS03YTQ4LTU3MTktOGYyZi0xNzA4MDk5OTJmOWI8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPmNtZC5leGU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZmlsZS0tYzI0YzlkMDctZGVmZS01YzBmLTkwZDQtMDgzZWQwOTI3ZmU1PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjI2NWI2OTAzM2NlYTdhOWY4MjE0YTM0Y2Q5YjE3OTEyOTA5YWY0NmM3YTQ3Mzk1ZGQ3YmI4OTNhMjQ1MDdlNTk8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+Y2I2Y2QwOWY2YTI1NzQ0YThmYTZlNGIzZTRkMjYwYzU8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+QzpcXFdpbmRvd3NcXFN5c3RlbTMyPC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPmRpcmVjdG9yeS0tMGE1OGQwYzEtNTllNi01YWZkLTgyNTItZGNkM2YxM2U1NjIyPC90ZD5cbiIsCiAgICAgICAiICAgIDwvdHI+XG4iLAogICAgICAgIiAgICA8dHI+XG4iLAogICAgICAgIiAgICAgIDx0ZD5jb25ob3N0LmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5maWxlLS1kNjA2Mzk2ZC05NjVmLTU3M2MtODY1NS1kODA4NTg2MDE1OTQ8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+YzQzY2Y0NjE5MmRhMDYxZGQ2MTY5ZTU1YWFjNGQyZDA4YTZjMzNjMDM5YTdkYWMwZDg4YWE4OTc2NjFjYmM4NzwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD43NDE3MDA2YWM0ZjM4ZGJlMGVmZDM2NjQ3YzNlYmFlNDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5DOlxcV2luZG93c1xcU3lzdGVtMzI8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZGlyZWN0b3J5LS0wYTU4ZDBjMS01OWU2LTVhZmQtODI1Mi1kY2QzZjEzZTU2MjI8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICAgIDx0cj5cbiIsCiAgICAgICAiICAgICAgPHRkPnNodXRkb3duLmV4ZTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5maWxlLS02OWFhNDIzNy04ZTA5LTU4NDItYmJiYS00NTZjM2FkMTFiZWM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZDRlNjhjYzljYjE5NjVkNzAxMzRjNjhiZDFhMDkwZTBhZmFlNWI4YjNkODAxOGM2YjY1NjQ4NTJhZTdiZjM5NjwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5mMmE0ZTE4ZGE3MmJiMmM1YjIxMDc2YTVkZTM4MmEyMDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD5DOlxcV2luZG93c1xcU3lzdGVtMzI8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZGlyZWN0b3J5LS0wYTU4ZDBjMS01OWU2LTVhZmQtODI1Mi1kY2QzZjEzZTU2MjI8L3RkPlxuIiwKICAgICAgICIgICAgPC90cj5cbiIsCiAgICAgICAiICA8L3Rib2R5PlxuIiwKICAgICAgICI8L3RhYmxlPlxuIiwKICAgICAgICI8ZGl2PjxoND5CbG9jayBFeGVjdXRlZCBpbiAxIHNlY29uZHM8L2g0Pjx0YWJsZSBib3JkZXI9XCIxXCIgY2xhc3M9XCJkYXRhZnJhbWVcIj5cbiIsCiAgICAgICAiICA8dGhlYWQ+XG4iLAogICAgICAgIiAgICA8dHIgc3R5bGU9XCJ0ZXh0LWFsaWduOiByaWdodDtcIj5cbiIsCiAgICAgICAiICAgICAgPHRoPlZBUklBQkxFPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPlRZUEU8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhFTlRJVElFUyk8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+IyhSRUNPUkRTKTwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5kaXJlY3RvcnkqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmRvbWFpbi1uYW1lKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5maWxlKjwvdGg+XG4iLAogICAgICAgIiAgICAgIDx0aD5pcHY0LWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPmlwdjYtYWRkcio8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+bWFjLWFkZHIqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPm5ldHdvcmstdHJhZmZpYyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+cHJvY2Vzcyo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+c29mdHdhcmUqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPnVzZXItYWNjb3VudCo8L3RoPlxuIiwKICAgICAgICIgICAgICA8dGg+eC1vY2EtYXNzZXQqPC90aD5cbiIsCiAgICAgICAiICAgICAgPHRoPngtb2NhLWV2ZW50KjwvdGg+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGhlYWQ+XG4iLAogICAgICAgIiAgPHRib2R5PlxuIiwKICAgICAgICIgICAgPHRyPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZnM8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+ZmlsZTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD40PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE4PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjI2PC90ZD5cbiIsCiAgICAgICAiICAgICAgPHRkPjE8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjY8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MjA8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTk8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTk8L3RkPlxuIiwKICAgICAgICIgICAgICA8dGQ+MTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zMDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4zMDwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xOTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xOTwvdGQ+XG4iLAogICAgICAgIiAgICAgIDx0ZD4xOTwvdGQ+XG4iLAogICAgICAgIiAgICA8L3RyPlxuIiwKICAgICAgICIgIDwvdGJvZHk+XG4iLAogICAgICAgIjwvdGFibGU+PHA+Kk51bWJlciBvZiByZWxhdGVkIHJlY29yZHMgY2FjaGVkLjwvcD48L2Rpdj4iCiAgICAgIF0KICAgICB9LAogICAgICJtZXRhZGF0YSI6IHt9LAogICAgICJvdXRwdXRfdHlwZSI6ICJkaXNwbGF5X2RhdGEiCiAgICB9CiAgIF0sCiAgICJzb3VyY2UiOiBbCiAgICAiIyBodW50aW5nIGZvciBtYWxpY2lvdXMgZmlsZXNcbiIsCiAgICAiXG4iLAogICAgImZzID0gRklORCBmaWxlIExJTktFRCBwMnByb2NcbiIsCiAgICAiRElTUCBmcyIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogIm1hcmtkb3duIiwKICAgImlkIjogImEyYzRjMzVmIiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJzb3VyY2UiOiBbCiAgICAiIyMgU3VtbWFyeVxuIiwKICAgICJcbiIsCiAgICAiMS4gV2UgZ28gZnJvbSB0aGUgZmlyZXdhbGwgZGlzYWJsaW5nIGJlaGFpdm9yIFQxNTYyLjAwNCB0byBodW50IHRoZSBlbnRpcmUgdGhyZWF0OlxuIiwKICAgICIgIC0gV2hhdCBhY3Rpdml0aWVzIGRpZCB0aGUgYXR0YWNrIHBlcmZvcm0gb24gdGhlIGhvc3RcbiIsCiAgICAiICAtIFdoYXQgZmlsZXMgZGlkIHRoZSBhdHRhY2tlciB1c2VzIG9uIHRoZSBob3N0XG4iLAogICAgIiAgLSBXaGF0IG5ldHdvcmsgdHJhZmZpYyBkaWQgdGhlIGF0dGFja2VyIGdlbmVyYXRlcyBvbiB0aGUgZ2F0ZXdheS9maXJld2FsbCAoY29yc3Mtc291cmNlIGh1bnQpXG4iLAogICAgIlxuIiwKICAgICIyLiBGdXJ0aGVyIGFjdGlvbnMgdG8gdGFrZSAoYW5vdGhlciBPcGVuQzIgY2FsbCk6XG4iLAogICAgIiAgLSBLaWxsIGEgcHJvY2Vzc1xuIiwKICAgICIgIC0gQ3V0IGFuIGV4aXN0aW5nIG5ldHdvcmsgdHJhZmZpYyBvbiBPUE5TZW5zZVxuIiwKICAgICIgIC0gQmxvY2sgdGhlIEMyIHNlcnZlciBJUCBvbiBPUE5TZW5zZVxuIiwKICAgICIgIC0gUmV0cmlldmUgbWFsaWNpb3VzIGZpbGVzIG9uIHRoZSBob3N0IGZvciBtYWx3YXJlIGFuYWx5c2lzXG4iLAogICAgIiAgXG4iLAogICAgIjMuIFBvdGVudGlhbCBpbXByb3ZlbWVudHMgb24gZGF0YTpcbiIsCiAgICAiICAtIENsb2NrIGRpZmZlcnMgaGFsZiBhbiBob3VyIGJldHdlZW4gdGhlIGhvc3QgKEVEUiBzb3VyY2UpIGFuZCB0aGUgZ2F0ZXdheSAobmV0ZmxvdyBzb3VyY2UpXG4iLAogICAgIiAgLSBUaGUgZXhlY3V0aW9uL2NyZWF0aW9uIG9mIGBiYWRpZGVhLmV4ZWAgaXMgbm90IHJlY29yZGVkXG4iLAogICAgIiAgLSBgU1RFQUxNRS50eHRgIGlzIG1pc3NpbmcgaW4gdGhlIGRhdGEgYW5kIHdlIGNvdWxkIG5vdCByZWFzb24gYWJvdXQgdGhpcyBpbXBhY3RcbiIsCiAgICAiICAtIGBiYWRpZGVhLmV4ZWAgZG9lcyBub3QgaGF2ZSBoYXNoIHJlY29yZGVkIChsb29rcyBsaWtlIGEgc3lzbW9uIGlzc3VlKSIKICAgXQogIH0sCiAgewogICAiY2VsbF90eXBlIjogImNvZGUiLAogICAiZXhlY3V0aW9uX2NvdW50IjogbnVsbCwKICAgImlkIjogIjk4OTg4N2JiIiwKICAgIm1ldGFkYXRhIjoge30sCiAgICJvdXRwdXRzIjogW10sCiAgICJzb3VyY2UiOiBbXQogIH0KIF0sCiAibWV0YWRhdGEiOiB7CiAgImtlcm5lbHNwZWMiOiB7CiAgICJkaXNwbGF5X25hbWUiOiAiS2VzdHJlbCIsCiAgICJsYW5ndWFnZSI6ICJrZXN0cmVsIiwKICAgIm5hbWUiOiAia2VzdHJlbCIKICB9LAogICJsYW5ndWFnZV9pbmZvIjogewogICAiZmlsZV9leHRlbnNpb24iOiAiLmhmIiwKICAgIm5hbWUiOiAia2VzdHJlbCIKICB9CiB9LAogIm5iZm9ybWF0IjogNCwKICJuYmZvcm1hdF9taW5vciI6IDUKfQo=",
+            "playbook_abstraction": "template",
+            "playbook_creation_time": "2024-02-19T09:00:00.000Z",
+            "playbook_modification_time": "2024-02-19T09:00:00.000Z"
+        },
+        {
+            "id": "course-of-action--6c3cfc11-efa3-48c4-ae91-0c63fd4a4914",
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-19T09:00:00.000Z",
+            "modified": "2024-02-19T09:00:00.000Z",
+            "name": "Quarantine and remediate",
+            "description": "Remediate by quarantining and performing analyst guided steps"
+        },
+        {
+            "id": "x-oca-playbook--1fcf7c76-87b9-4ee4-a33e-95e4d580bbcb",
+            "type": "x-oca-playbook",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "revoked": false,
+            "name": "Quarantine and remediate",
+            "description": "Remediate by taking the network offline and performing analyst guided steps.",
+            "playbook_id": "33624770-3AFE-4F63-8E63-F00915162F01",
+            "playbook_format": "CACAO",
+            "playbook_type": [
+                "remediation"
+            ],
+            "playbook_bin": "ewogICJ0eXBlIjogInBsYXlib29rIiwKICAic3BlY192ZXJzaW9uIjogImNhY2FvLTIuMCIsCiAgImlkIjogInBsYXlib29rLS01ODRmMjA1YS1kYWE2LTQ1MTItYTE1Yy03YzZjNTA0OTQ2N2EiLAogICJuYW1lIjogIk9seW1waWMgRGVzdHJveWVyIFJlc3BvbnNlIiwKICAiZGVzY3JpcHRpb24iOiAiUGxheWJvb2sgRGVzY3JpcHRpb24iLAogICJjcmVhdGVkX2J5IjogImlkZW50aXR5LS1mZTczZDAzMy00YjM4LTQzNjktYTUxYy03NDQ1MzdkMDFiYzEiLAogICJjcmVhdGVkIjogIjIwMjQtMDQtMDFUMTE6Mzc6MDUuMDUzWiIsCiAgIm1vZGlmaWVkIjogIjIwMjQtMDQtMDFUMTE6Mzc6MDUuMDU0WiIsCiAgInJldm9rZWQiOiBmYWxzZSwKICAiZGVyaXZlZF9mcm9tIjogWwogICAgInBsYXlib29rLS0xNDdkMzY2Yi00ZDI5LTRlYzktODk1My00NDdhNDYxN2M3MjkiCiAgXSwKICAicGxheWJvb2tfdmFyaWFibGVzIjogewogICAgIl9fYmxvY2tfc2lnbmF0dXJlc19fIjogewogICAgICAidHlwZSI6ICJib29sIiwKICAgICAgImNvbnN0YW50IjogZmFsc2UsCiAgICAgICJleHRlcm5hbCI6IGZhbHNlCiAgICB9LAogICAgIl9fYmxvY2tfaXBzX18iOiB7CiAgICAgICJ0eXBlIjogImJvb2wiLAogICAgICAiY29uc3RhbnQiOiBmYWxzZSwKICAgICAgImV4dGVybmFsIjogZmFsc2UKICAgIH0sCiAgICAiX19yZWJ1aWxkX3NlcnZlcnNfXyI6IHsKICAgICAgInR5cGUiOiAiYm9vbCIsCiAgICAgICJjb25zdGFudCI6IGZhbHNlLAogICAgICAiZXh0ZXJuYWwiOiBmYWxzZQogICAgfSwKICAgICJfX3Bhc3N3b3JkX3Jlc2V0X18iOiB7CiAgICAgICJ0eXBlIjogImJvb2wiLAogICAgICAiY29uc3RhbnQiOiBmYWxzZSwKICAgICAgImV4dGVybmFsIjogZmFsc2UKICAgIH0sCiAgICAiX19hZGRpdGlvbmFsX3Rhc2tzX18iOiB7CiAgICAgICJ0eXBlIjogImJvb2wiLAogICAgICAiY29uc3RhbnQiOiBmYWxzZSwKICAgICAgImV4dGVybmFsIjogZmFsc2UKICAgIH0sCiAgICAiX19zaGFyZV9jdGlfXyI6IHsKICAgICAgInR5cGUiOiAiYm9vbCIsCiAgICAgICJjb25zdGFudCI6IGZhbHNlLAogICAgICAiZXh0ZXJuYWwiOiBmYWxzZQogICAgfSwKICAgICJfX3RpY2tldF9pZF9fIjogewogICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAiZGVzY3JpcHRpb24iOiAiSUQgb2YgdGhlIGhlbHBkZXNrIHRpY2tldCBjcmVhdGVkIHRvIHJlc3BvbmQgdG8gdGhlIGF0dGFjayIsCiAgICAgICJjb25zdGFudCI6IGZhbHNlLAogICAgICAiZXh0ZXJuYWwiOiBmYWxzZQogICAgfSwKICAgICJfX3JlY292ZXJfZGF0YV9fIjogewogICAgICAidHlwZSI6ICJib29sIiwKICAgICAgImNvbnN0YW50IjogZmFsc2UsCiAgICAgICJleHRlcm5hbCI6IGZhbHNlCiAgICB9CiAgfSwKICAid29ya2Zsb3dfc3RhcnQiOiAic3RhcnQtLTRiOTM4MDUyLTE3MzAtNDQyNy1hYWZhLWE2OTJlODJjMWY3YSIsCiAgIndvcmtmbG93IjogewogICAgInN0YXJ0LS00YjkzODA1Mi0xNzMwLTQ0MjctYWFmYS1hNjkyZTgyYzFmN2EiOiB7CiAgICAgICJvbl9jb21wbGV0aW9uIjogImFjdGlvbi0tOWU0YWNjNDgtMTU4NS00NDlkLTg5OGQtOTVhMDZiZDdiY2UwIiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAzMCwKICAgICAgICAgICJ5IjogODAwLAogICAgICAgICAgIndpZHRoIjogNjAsCiAgICAgICAgICAiaGVpZ2h0IjogNDAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1jb21wbGV0aW9uIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDkwLAogICAgICAgICAgICAgICAgMTI1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAic3RhcnQiCiAgICB9LAogICAgImFjdGlvbi0tOWU0YWNjNDgtMTU4NS00NDlkLTg5OGQtOTVhMDZiZDdiY2UwIjogewogICAgICAibmFtZSI6ICJDcmVhdGUgVGlja2V0IiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiYWN0aW9uLS02MTRmM2Q0Ni00OTJiLTQ5NzAtODk2ZS1iN2MyMmRlNTMxOWYiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIwIjogWwogICAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiCiAgICAgICAgXSwKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxMjUsCiAgICAgICAgICAieSI6IDc5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMjc1LAogICAgICAgICAgICAgICAgMzY1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiYWN0aW9uIiwKICAgICAgImNvbW1hbmRzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hbnVhbCIsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ3JlYXRlIGEgdGlja2V0IGluIHlvdXIgdGlja2V0aW5nIHN5c3RlbSBmb3IgdGhlIGF0dGFjay4iCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX190aWNrZXRfaWRfXyIKICAgICAgXQogICAgfSwKICAgICJhY3Rpb24tLTYxNGYzZDQ2LTQ5MmItNDk3MC04OTZlLWI3YzIyZGU1MzE5ZiI6IHsKICAgICAgIm5hbWUiOiAiRW1haWwgU09DIGFuYWx5c3Qgd2l0aCB0aWNrZXQgVVJMIiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiYWN0aW9uLS0xYjNlNTQwYi1mMDc1LTQzZDgtOTIyMy1iNWE5NzVmZGYwZDQiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIwIjogWwogICAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiCiAgICAgICAgXSwKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAzNjUsCiAgICAgICAgICAieSI6IDc5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgNTE1LAogICAgICAgICAgICAgICAgNjE1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiYWN0aW9uIiwKICAgICAgImNvbW1hbmRzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hbnVhbCIsCiAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiU2VuZCBhbiBlbWFpbCB0byB0aGUgU09DIGFuYWx5c3Qgd2l0aCBhIGxpbmsgdG8gdGhlIG5ldyB0aWNrZXQuIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogInNlY3VyaXR5LWNhdGVnb3J5LS0wMzY2OTE1MC1kYWU3LTQwNmQtYjhhNS1iYjQwZTM0Nzc5NjIiLAogICAgICAiaW5fYXJncyI6IFsKICAgICAgICAiX190aWNrZXRfaWRfXyIKICAgICAgXQogICAgfSwKICAgICJwYXJhbGxlbC0tM2U3OTNiYzMtYzQ0Ni00ZTMxLWI4NmUtZjNmNTk4ZTE2ZDQ5IjogewogICAgICAibmFtZSI6ICJQYXJhbGxlbCBSZXNwb25zZSIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIjAiOiBbCiAgICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIKICAgICAgICBdLAogICAgICAgICIiOiAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIsCiAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiOiB7CiAgICAgICAgICAidHlwZSI6ICJjb29yZGluYXRlcyIsCiAgICAgICAgICAieCI6IDg3MCwKICAgICAgICAgICJ5IjogNzkwLAogICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAibmV4dC1zdGVwcyIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICA5OTAsCiAgICAgICAgICAgICAgICAxMDc1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAicGFyYWxsZWwiLAogICAgICAibmV4dF9zdGVwcyI6IFsKICAgICAgICAiYWN0aW9uLS04Mjg4NGI0OC0xNzAzLTRmZjgtYTQyNi1lMjZjOWFmMzUwMjAiLAogICAgICAgICJhY3Rpb24tLTMzODg1OTUwLWZiMjktNDIxZC1iZGUyLTc4MTc3YWVkMDY2ZiIsCiAgICAgICAgImFjdGlvbi0tNWJkYjAwNTgtNjU2Zi00YTc1LTk3ZWMtOWJlODBmZjY1NzBhIiwKICAgICAgICAiYWN0aW9uLS0xY2NjMmMxNC04NjU4LTRmMjQtYTVkYi05NGRlYTFlNzdkOTAiLAogICAgICAgICJhY3Rpb24tLTJlZTNjNTNmLTkzZjYtNDE4NC1hYWU0LTIzZDJhZWE2YmZmYSIsCiAgICAgICAgImFjdGlvbi0tN2U0NDA5OGItZmNjYS00ZWNhLTkwYTctOThhMjBhZWRiMTVmIiwKICAgICAgICAiYWN0aW9uLS1jNDZjNTUwNi0zYTk5LTRhMWMtOWNiMC0yODA1ZmMwODNmNWIiCiAgICAgIF0KICAgIH0sCiAgICAiYWN0aW9uLS1hNjc5NDRhMS0yZTM3LTQyYzYtYjlkYy0zMzFhNjJlM2NiMTYiOiB7CiAgICAgICJuYW1lIjogIkJsb2NrIG1hbGljaW91cyBmaWxlIHNpZ25hdHVyZXMiLAogICAgICAib25fY29tcGxldGlvbiI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTUwNSwKICAgICAgICAgICJ5IjogMzUwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxNjU1LAogICAgICAgICAgICAgICAgMTkyMCwKICAgICAgICAgICAgICAgIDE5MjAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMzgwLAogICAgICAgICAgICAgICAgMzgwLAogICAgICAgICAgICAgICAgNzkwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJBZGQgdGhlIG1hbGljaW91cyBmaWxlIHNpZ25hdHVyZXMgdG8geW91ciBFRFIgdG9vbC4iCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIKICAgIH0sCiAgICAiYWN0aW9uLS02YzcwMTJkOS01MTc0LTQ4MGMtOTlhNy0zMDFmM2RmZTRjZmUiOiB7CiAgICAgICJuYW1lIjogIkJsb2NrIG1hbGljaW91cyBJUHMiLAogICAgICAib25fY29tcGxldGlvbiI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTUwNSwKICAgICAgICAgICJ5IjogNTEwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxNjU1LAogICAgICAgICAgICAgICAgMTkwMCwKICAgICAgICAgICAgICAgIDE5MDAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgNTQwLAogICAgICAgICAgICAgICAgNTQwLAogICAgICAgICAgICAgICAgNzkwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDcmVhdGUgZmlyZXdhbGwgcnVsZXMgdG8gYmxvY2sgbWFsaWNpb3VzIElQcyBvYnNlcnZlZCBkdXJpbmcgdGhlIGF0dGFjay4iCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIKICAgIH0sCiAgICAiYWN0aW9uLS1jY2FhYTg2MC05ZDdmLTRkYjAtODRhZC05MjA1NDQ3ZmU1MGUiOiB7CiAgICAgICJuYW1lIjogIlJlYnVpbGQgYWZmZWN0ZWQgc2VydmVycyIsCiAgICAgICJvbl9jb21wbGV0aW9uIjogImFjdGlvbi0tYzU0NzRjNTYtY2M2OS00NWJmLThhNDEtOGExOTY2ZmZlZmY2IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxNTA1LAogICAgICAgICAgInkiOiA2NjAsCiAgICAgICAgICAid2lkdGgiOiAxNTAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1jb21wbGV0aW9uIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE2NTUsCiAgICAgICAgICAgICAgICAxODcwLAogICAgICAgICAgICAgICAgMTg3MAogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA2OTAsCiAgICAgICAgICAgICAgICA2OTAsCiAgICAgICAgICAgICAgICA3OTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAiZ3JvdXAtLTdhNjY0MTVkLTEyOGItNGFjMS05MDI0LWI3NTU1ZGNjOGI3MiIKICAgIH0sCiAgICAiYWN0aW9uLS02ZjRkY2Q2Mi00OTlkLTQ3ZmEtYjhmMC05OWJkMzIyZjFjMjQiOiB7CiAgICAgICJuYW1lIjogIlJlc2V0IHBhc3N3b3JkIGZvciBhZmZlY3RlZCB1c2VycyIsCiAgICAgICJvbl9jb21wbGV0aW9uIjogImFjdGlvbi0tYzU0NzRjNTYtY2M2OS00NWJmLThhNDEtOGExOTY2ZmZlZmY2IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxNTA1LAogICAgICAgICAgInkiOiA5MzAsCiAgICAgICAgICAid2lkdGgiOiAxNTAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1jb21wbGV0aW9uIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE2NTUsCiAgICAgICAgICAgICAgICAxODAwLAogICAgICAgICAgICAgICAgMTgwMAogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA5NjAsCiAgICAgICAgICAgICAgICA5NjAsCiAgICAgICAgICAgICAgICA4NTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIKICAgIH0sCiAgICAiYWN0aW9uLS1lZDM2Y2M3Ni0wMGMxLTQ5NDAtOTZjMi02ZDUyM2VlNWViYjYiOiB7CiAgICAgICJuYW1lIjogIlBlcmZvcm0gYWRkaXRpb25hbCB0YXNrcyIsCiAgICAgICJvbl9jb21wbGV0aW9uIjogImFjdGlvbi0tYzU0NzRjNTYtY2M2OS00NWJmLThhNDEtOGExOTY2ZmZlZmY2IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxNTA1LAogICAgICAgICAgInkiOiAxMDcwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxNjU1LAogICAgICAgICAgICAgICAgMTgyMCwKICAgICAgICAgICAgICAgIDE4MjAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMTEwMCwKICAgICAgICAgICAgICAgIDExMDAsCiAgICAgICAgICAgICAgICA4NTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAiZ3JvdXAtLTdhNjY0MTVkLTEyOGItNGFjMS05MDI0LWI3NTU1ZGNjOGI3MiIKICAgIH0sCiAgICAiaWYtY29uZGl0aW9uLS05ZTFlNDk1OC0yMmU1LTQyOGEtOTczNC0wZGJiYmM4Njc2MDAiOiB7CiAgICAgICJuYW1lIjogIkJsb2NraW5nIHNpZ25hdHVyZXMgbmVlZGVkPyIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTMzMCwKICAgICAgICAgICJ5IjogMzUwLAogICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tdHJ1ZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxNDUwLAogICAgICAgICAgICAgICAgMTUwNQogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICAzODAsCiAgICAgICAgICAgICAgICAzODAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1mYWxzZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTM5MCwKICAgICAgICAgICAgICAgIDE5MTAsCiAgICAgICAgICAgICAgICAxOTEwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDQxMCwKICAgICAgICAgICAgICAgIDQ0MCwKICAgICAgICAgICAgICAgIDQ0MCwKICAgICAgICAgICAgICAgIDc5MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiaWYtY29uZGl0aW9uIiwKICAgICAgImNvbmRpdGlvbiI6ICJfX2Jsb2NrX3NpZ25hdHVyZXNfXzp2YWx1ZSA9PSB0cnVlIiwKICAgICAgIm9uX3RydWUiOiAiYWN0aW9uLS1hNjc5NDRhMS0yZTM3LTQyYzYtYjlkYy0zMzFhNjJlM2NiMTYiLAogICAgICAib25fZmFsc2UiOiAiYWN0aW9uLS1jNTQ3NGM1Ni1jYzY5LTQ1YmYtOGE0MS04YTE5NjZmZmVmZjYiCiAgICB9LAogICAgImFjdGlvbi0tODI4ODRiNDgtMTcwMy00ZmY4LWE0MjYtZTI2YzlhZjM1MDIwIjogewogICAgICAibmFtZSI6ICJQcm9tcHQgYW5hbHlzdCBpZiBibG9ja2luZyBmaWxlIHNpZ25hdHVyZXMgaXMgbmVlZGVkIiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiaWYtY29uZGl0aW9uLS05ZTFlNDk1OC0yMmU1LTQyOGEtOTczNC0wZGJiYmM4Njc2MDAiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIiOiAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIsCiAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiOiB7CiAgICAgICAgICAidHlwZSI6ICJjb29yZGluYXRlcyIsCiAgICAgICAgICAieCI6IDEwNzUsCiAgICAgICAgICAieSI6IDM1MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTIyNSwKICAgICAgICAgICAgICAgIDEzMzAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMzgwLAogICAgICAgICAgICAgICAgMzgwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogInNlY3VyaXR5LWNhdGVnb3J5LS0wMzY2OTE1MC1kYWU3LTQwNmQtYjhhNS1iYjQwZTM0Nzc5NjIiLAogICAgICAib3V0X2FyZ3MiOiBbCiAgICAgICAgIl9fYmxvY2tfc2lnbmF0dXJlc19fIgogICAgICBdCiAgICB9LAogICAgImFjdGlvbi0tMzM4ODU5NTAtZmIyOS00MjFkLWJkZTItNzgxNzdhZWQwNjZmIjogewogICAgICAibmFtZSI6ICJQcm9tcHQgYW5hbHlzdCBpZiBibG9ja2luZyBJUCBhZGRyZXNzZXMgaXMgbmVlZGVkIiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiaWYtY29uZGl0aW9uLS03NDQxMjk4MS04OGY5LTQ0YmItYjA2MS1jOGNiNzMwMGVmY2EiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIiOiAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIsCiAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiOiB7CiAgICAgICAgICAidHlwZSI6ICJjb29yZGluYXRlcyIsCiAgICAgICAgICAieCI6IDEwNzUsCiAgICAgICAgICAieSI6IDUxMCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTIyNSwKICAgICAgICAgICAgICAgIDEzMzAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgNTQwLAogICAgICAgICAgICAgICAgNTQwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogInNlY3VyaXR5LWNhdGVnb3J5LS0wMzY2OTE1MC1kYWU3LTQwNmQtYjhhNS1iYjQwZTM0Nzc5NjIiLAogICAgICAib3V0X2FyZ3MiOiBbCiAgICAgICAgIl9fYmxvY2tfaXBzX18iCiAgICAgIF0KICAgIH0sCiAgICAiYWN0aW9uLS01YmRiMDA1OC02NTZmLTRhNzUtOTdlYy05YmU4MGZmNjU3MGEiOiB7CiAgICAgICJuYW1lIjogIlByb21wdCBhbmFseXN0IGlmIHJlYnVpbGRpbmcgc2VydmVycyBpcyBuZWVkZWQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJpZi1jb25kaXRpb24tLWUzMDk4Zjc5LWU4MDItNDViMi1iZWM3LWY4Mjg3YmUzZTI5ZCIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTA3NSwKICAgICAgICAgICJ5IjogNjYwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMjI1LAogICAgICAgICAgICAgICAgMTMzMAogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA2OTAsCiAgICAgICAgICAgICAgICA2OTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX19yZWJ1aWxkX3NlcnZlcnNfXyIKICAgICAgXQogICAgfSwKICAgICJhY3Rpb24tLTFjY2MyYzE0LTg2NTgtNGYyNC1hNWRiLTk0ZGVhMWU3N2Q5MCI6IHsKICAgICAgIm5hbWUiOiAiUHJvbXB0IGFuYWx5c3QgaWYgcGFzc3dvcmQgcmVzZXRzIGFyZSBuZWVkZWQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJpZi1jb25kaXRpb24tLWVkN2IyOWY1LWVmMGUtNDA2NS04YzdjLTIzNmZlYzUxZGQzMCIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTA3NSwKICAgICAgICAgICJ5IjogOTMwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMjI1LAogICAgICAgICAgICAgICAgMTMzMAogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA5NjAsCiAgICAgICAgICAgICAgICA5NjAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX19wYXNzd29yZF9yZXNldF9fIgogICAgICBdCiAgICB9LAogICAgImFjdGlvbi0tMmVlM2M1M2YtOTNmNi00MTg0LWFhZTQtMjNkMmFlYTZiZmZhIjogewogICAgICAibmFtZSI6ICJQcm9tcHQgYW5hbHlzdCBpZiBhZGRpdGlvbmFsIHRhc2tzIGFyZSBuZWVkZWQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJpZi1jb25kaXRpb24tLTE4ZjNmODI1LTU3MmUtNGQwNi04OWE3LWQ1ZGVlYzQxN2M0OCIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTA3NSwKICAgICAgICAgICJ5IjogMTA3MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTIyNSwKICAgICAgICAgICAgICAgIDEzMzAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMTEwMCwKICAgICAgICAgICAgICAgIDExMDAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX19hZGRpdGlvbmFsX3Rhc2tzX18iCiAgICAgIF0KICAgIH0sCiAgICAiaWYtY29uZGl0aW9uLS03NDQxMjk4MS04OGY5LTQ0YmItYjA2MS1jOGNiNzMwMGVmY2EiOiB7CiAgICAgICJuYW1lIjogIkJsb2NraW5nIElQIGFkZHJlc3NlcyBuZWVkZWQ/IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxMzMwLAogICAgICAgICAgInkiOiA1MTAsCiAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi10cnVlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE0NTAsCiAgICAgICAgICAgICAgICAxNTA1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDU0MCwKICAgICAgICAgICAgICAgIDU0MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWZhbHNlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDEzOTAsCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTg4MCwKICAgICAgICAgICAgICAgIDE4ODAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgNTcwLAogICAgICAgICAgICAgICAgNTkwLAogICAgICAgICAgICAgICAgNTkwLAogICAgICAgICAgICAgICAgNzkwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJpZi1jb25kaXRpb24iLAogICAgICAiY29uZGl0aW9uIjogIl9fYmxvY2tfaXBzX186dmFsdWUgPT0gdHJ1ZSIsCiAgICAgICJvbl90cnVlIjogImFjdGlvbi0tNmM3MDEyZDktNTE3NC00ODBjLTk5YTctMzAxZjNkZmU0Y2ZlIiwKICAgICAgIm9uX2ZhbHNlIjogImFjdGlvbi0tYzU0NzRjNTYtY2M2OS00NWJmLThhNDEtOGExOTY2ZmZlZmY2IgogICAgfSwKICAgICJpZi1jb25kaXRpb24tLWUzMDk4Zjc5LWU4MDItNDViMi1iZWM3LWY4Mjg3YmUzZTI5ZCI6IHsKICAgICAgIm5hbWUiOiAiU2VydmVyIHJlYnVpbGQgbmVlZGVkPyIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTMzMCwKICAgICAgICAgICJ5IjogNjYwLAogICAgICAgICAgIndpZHRoIjogMTIwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tdHJ1ZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxNDUwLAogICAgICAgICAgICAgICAgMTUwNQogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA2OTAsCiAgICAgICAgICAgICAgICA2OTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1mYWxzZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTM5MCwKICAgICAgICAgICAgICAgIDE4NTAsCiAgICAgICAgICAgICAgICAxODUwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDcyMCwKICAgICAgICAgICAgICAgIDc1MCwKICAgICAgICAgICAgICAgIDc1MCwKICAgICAgICAgICAgICAgIDc5MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiaWYtY29uZGl0aW9uIiwKICAgICAgImNvbmRpdGlvbiI6ICJfX3JlYnVpbGRfc2VydmVyc19fOnZhbHVlID09IHRydWUiLAogICAgICAib25fdHJ1ZSI6ICJhY3Rpb24tLWNjYWFhODYwLTlkN2YtNGRiMC04NGFkLTkyMDU0NDdmZTUwZSIsCiAgICAgICJvbl9mYWxzZSI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIKICAgIH0sCiAgICAiaWYtY29uZGl0aW9uLS1lZDdiMjlmNS1lZjBlLTQwNjUtOGM3Yy0yMzZmZWM1MWRkMzAiOiB7CiAgICAgICJuYW1lIjogIlBhc3N3b3JkIHJlc2V0cyBuZWVkZWQ/IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxMzMwLAogICAgICAgICAgInkiOiA5MzAsCiAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi10cnVlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE0NTAsCiAgICAgICAgICAgICAgICAxNTA1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDk2MCwKICAgICAgICAgICAgICAgIDk2MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWZhbHNlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDEzOTAsCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTgxMCwKICAgICAgICAgICAgICAgIDE4MTAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgOTkwLAogICAgICAgICAgICAgICAgMTAyMCwKICAgICAgICAgICAgICAgIDEwMjAsCiAgICAgICAgICAgICAgICA4NTAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImlmLWNvbmRpdGlvbiIsCiAgICAgICJjb25kaXRpb24iOiAiX19wYXNzd29yZF9yZXNldF9fOnZhbHVlID09IHRydWUiLAogICAgICAib25fdHJ1ZSI6ICJhY3Rpb24tLTZmNGRjZDYyLTQ5OWQtNDdmYS1iOGYwLTk5YmQzMjJmMWMyNCIsCiAgICAgICJvbl9mYWxzZSI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIKICAgIH0sCiAgICAiaWYtY29uZGl0aW9uLS0xOGYzZjgyNS01NzJlLTRkMDYtODlhNy1kNWRlZWM0MTdjNDgiOiB7CiAgICAgICJuYW1lIjogIkFkZGl0aW9uYWwgdGFza3MgbmVlZGVkPyIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTMzMCwKICAgICAgICAgICJ5IjogMTA3MCwKICAgICAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLXRydWUiLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTQ1MCwKICAgICAgICAgICAgICAgIDE1MDUKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMTEwMCwKICAgICAgICAgICAgICAgIDExMDAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1mYWxzZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTM5MCwKICAgICAgICAgICAgICAgIDE4NTAsCiAgICAgICAgICAgICAgICAxODUwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDExMzAsCiAgICAgICAgICAgICAgICAxMTUwLAogICAgICAgICAgICAgICAgMTE1MCwKICAgICAgICAgICAgICAgIDg1MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiaWYtY29uZGl0aW9uIiwKICAgICAgImNvbmRpdGlvbiI6ICJfX2FkZGl0aW9uYWxfdGFza3NfXzp2YWx1ZSA9PSB0cnVlIiwKICAgICAgIm9uX3RydWUiOiAiYWN0aW9uLS1lZDM2Y2M3Ni0wMGMxLTQ5NDAtOTZjMi02ZDUyM2VlNWViYjYiLAogICAgICAib25fZmFsc2UiOiAiYWN0aW9uLS1jNTQ3NGM1Ni1jYzY5LTQ1YmYtOGE0MS04YTE5NjZmZmVmZjYiCiAgICB9LAogICAgImFjdGlvbi0tMWIzZTU0MGItZjA3NS00M2Q4LTkyMjMtYjVhOTc1ZmRmMGQ0IjogewogICAgICAibmFtZSI6ICJEaXNjb25uZWN0IGFmZmVjdGVkIG5ldHdvcmsiLAogICAgICAib25fY29tcGxldGlvbiI6ICJwYXJhbGxlbC0tM2U3OTNiYzMtYzQ0Ni00ZTMxLWI4NmUtZjNmNTk4ZTE2ZDQ5IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiA2MTUsCiAgICAgICAgICAieSI6IDc5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgNzY1LAogICAgICAgICAgICAgICAgODcwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiYWN0aW9uIiwKICAgICAgImNvbW1hbmRzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hbnVhbCIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJhZ2VudCI6ICJncm91cC0tN2E2NjQxNWQtMTI4Yi00YWMxLTkwMjQtYjc1NTVkY2M4YjcyIgogICAgfSwKICAgICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiI6IHsKICAgICAgIm5hbWUiOiAiV2FpdCBmb3IgcHJldmlvdXMgc3RlcHMgdG8gZmluaXNoIiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiYWN0aW9uLS1kMTc5ODRlYS1iZTAxLTQ2NGMtYWIzMi01OWE0ZGYxMDExYjQiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIiOiBbCiAgICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIKICAgICAgICBdLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxNzc1LAogICAgICAgICAgInkiOiA3OTAsCiAgICAgICAgICAid2lkdGgiOiAxNTAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1jb21wbGV0aW9uIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE5MjUsCiAgICAgICAgICAgICAgICAyMDI1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiYWN0aW9uIiwKICAgICAgImNvbW1hbmRzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hbnVhbCIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJhZ2VudCI6ICJncm91cC0tN2E2NjQxNWQtMTI4Yi00YWMxLTkwMjQtYjc1NTVkY2M4YjcyIgogICAgfSwKICAgICJhY3Rpb24tLWQxNzk4NGVhLWJlMDEtNDY0Yy1hYjMyLTU5YTRkZjEwMTFiNCI6IHsKICAgICAgIm5hbWUiOiAiUmVzdG9yZSBuZXR3b3JrIiwKICAgICAgIm9uX2NvbXBsZXRpb24iOiAiYWN0aW9uLS0zNDQyYjEwMS1kYzc4LTQ1OGYtOWJhMS01YWE3NWYzNTNjOWQiLAogICAgICAic3RlcF9leHRlbnNpb25zIjogewogICAgICAgICIwIjogWwogICAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiCiAgICAgICAgXSwKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAyMDI1LAogICAgICAgICAgInkiOiA3OTAsCiAgICAgICAgICAid2lkdGgiOiAxNTAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1jb21wbGV0aW9uIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDIxNzUsCiAgICAgICAgICAgICAgICAyMjY1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiYWN0aW9uIiwKICAgICAgImNvbW1hbmRzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0eXBlIjogIm1hbnVhbCIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJhZ2VudCI6ICJncm91cC0tN2E2NjQxNWQtMTI4Yi00YWMxLTkwMjQtYjc1NTVkY2M4YjcyIgogICAgfSwKICAgICJhY3Rpb24tLTdlNDQwOThiLWZjY2EtNGVjYS05MGE3LTk4YTIwYWVkYjE1ZiI6IHsKICAgICAgIm5hbWUiOiAiUHJvbXB0IGFuYWx5c3QgaWYgQ1RJIHNob3VsZCBiZSBzaGFyZWQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJpZi1jb25kaXRpb24tLWIyOTc0ODhhLTM3MjQtNGM4OC05ZGFhLTZmNWUyMTQwMGIxOSIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTA3NSwKICAgICAgICAgICJ5IjogMTE5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTIyNSwKICAgICAgICAgICAgICAgIDEzMzAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMTIyMCwKICAgICAgICAgICAgICAgIDEyMjAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX19zaGFyZV9jdGlfXyIKICAgICAgXQogICAgfSwKICAgICJpZi1jb25kaXRpb24tLWIyOTc0ODhhLTM3MjQtNGM4OC05ZGFhLTZmNWUyMTQwMGIxOSI6IHsKICAgICAgIm5hbWUiOiAiU2hhcmUgQ1RJPyIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTMzMCwKICAgICAgICAgICJ5IjogMTE5MCwKICAgICAgICAgICJ3aWR0aCI6IDEyMCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLXRydWUiLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTQ1MCwKICAgICAgICAgICAgICAgIDE1MDUKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgMTIyMCwKICAgICAgICAgICAgICAgIDEyMjAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi1mYWxzZSIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTM5MCwKICAgICAgICAgICAgICAgIDE5MDAsCiAgICAgICAgICAgICAgICAxOTAwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDEyNTAsCiAgICAgICAgICAgICAgICAxMjcwLAogICAgICAgICAgICAgICAgMTI3MCwKICAgICAgICAgICAgICAgIDg1MAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfQogICAgICAgICAgXQogICAgICAgIH0KICAgICAgfSwKICAgICAgInR5cGUiOiAiaWYtY29uZGl0aW9uIiwKICAgICAgImNvbmRpdGlvbiI6ICJfX3NoYXJlX2N0aV9fOnZhbHVlID09IHRydWUiLAogICAgICAib25fdHJ1ZSI6ICJhY3Rpb24tLWUzNWM5ZDBiLTljNDktNDk4Zi1hM2VlLTYwMzA0Yzc0NjVjMiIsCiAgICAgICJvbl9mYWxzZSI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIKICAgIH0sCiAgICAiYWN0aW9uLS1lMzVjOWQwYi05YzQ5LTQ5OGYtYTNlZS02MDMwNGM3NDY1YzIiOiB7CiAgICAgICJuYW1lIjogIlNhbml0aXplIGFuZCBzaGFyZSBDVEkiLAogICAgICAib25fY29tcGxldGlvbiI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTUwNSwKICAgICAgICAgICJ5IjogMTE5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTY1NSwKICAgICAgICAgICAgICAgIDE4ODAsCiAgICAgICAgICAgICAgICAxODgwCiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDEyMjAsCiAgICAgICAgICAgICAgICAxMjIwLAogICAgICAgICAgICAgICAgODUwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogInNlY3VyaXR5LWNhdGVnb3J5LS0wMzY2OTE1MC1kYWU3LTQwNmQtYjhhNS1iYjQwZTM0Nzc5NjIiCiAgICB9LAogICAgImFjdGlvbi0tMzQ0MmIxMDEtZGM3OC00NThmLTliYTEtNWFhNzVmMzUzYzlkIjogewogICAgICAibmFtZSI6ICJDbG9zZSB0aWNrZXQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJlbmQtLWY1YTAwY2U3LWM0YWMtNDNkOS1hYmRjLTNlOWY0N2U0OTBhOSIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIjAiOiBbCiAgICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIKICAgICAgICBdLAogICAgICAgICIiOiAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiIsCiAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiOiB7CiAgICAgICAgICAidHlwZSI6ICJjb29yZGluYXRlcyIsCiAgICAgICAgICAieCI6IDIyNjUsCiAgICAgICAgICAieSI6IDc5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMjQxNSwKICAgICAgICAgICAgICAgIDI1MjAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgODIwLAogICAgICAgICAgICAgICAgODIwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogInNlY3VyaXR5LWNhdGVnb3J5LS0wMzY2OTE1MC1kYWU3LTQwNmQtYjhhNS1iYjQwZTM0Nzc5NjIiLAogICAgICAiaW5fYXJncyI6IFsKICAgICAgICAiX190aWNrZXRfaWRfXyIKICAgICAgXQogICAgfSwKICAgICJlbmQtLWY1YTAwY2U3LWM0YWMtNDNkOS1hYmRjLTNlOWY0N2U0OTBhOSI6IHsKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogWwogICAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiCiAgICAgICAgXSwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMjUyMCwKICAgICAgICAgICJ5IjogODAwLAogICAgICAgICAgIndpZHRoIjogNjAsCiAgICAgICAgICAiaGVpZ2h0IjogNDAKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImVuZCIKICAgIH0sCiAgICAiYWN0aW9uLS1jNDZjNTUwNi0zYTk5LTRhMWMtOWNiMC0yODA1ZmMwODNmNWIiOiB7CiAgICAgICJuYW1lIjogIlByb21wdCBhbmFseXN0IGlmIHJlY292ZXJpbmcgZGF0YSBpcyBuZWVkZWQiLAogICAgICAib25fY29tcGxldGlvbiI6ICJpZi1jb25kaXRpb24tLTA1Yzc3OWZiLWM0MzUtNGVkMC1iOWVmLTZlZTU2YWZhMmYyZiIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6ICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIiwKICAgICAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgICAgICJ0eXBlIjogImNvb3JkaW5hdGVzIiwKICAgICAgICAgICJ4IjogMTA3NSwKICAgICAgICAgICJ5IjogNzkwLAogICAgICAgICAgIndpZHRoIjogMTUwLAogICAgICAgICAgImhlaWdodCI6IDYwLAogICAgICAgICAgIm91dGdvaW5nX2Nvbm5lY3Rpb25zIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgInR5cGUiOiAib24tY29tcGxldGlvbiIsCiAgICAgICAgICAgICAgIngiOiBbCiAgICAgICAgICAgICAgICAxMjI1LAogICAgICAgICAgICAgICAgMTMzMAogICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAgInkiOiBbCiAgICAgICAgICAgICAgICA4MjAsCiAgICAgICAgICAgICAgICA4MjAKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0sCiAgICAgICJ0eXBlIjogImFjdGlvbiIsCiAgICAgICJjb21tYW5kcyI6IFsKICAgICAgICB7CiAgICAgICAgICAidHlwZSI6ICJtYW51YWwiCiAgICAgICAgfQogICAgICBdLAogICAgICAiYWdlbnQiOiAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiIsCiAgICAgICJvdXRfYXJncyI6IFsKICAgICAgICAiX19yZWNvdmVyX2RhdGFfXyIKICAgICAgXQogICAgfSwKICAgICJpZi1jb25kaXRpb24tLTA1Yzc3OWZiLWM0MzUtNGVkMC1iOWVmLTZlZTU2YWZhMmYyZiI6IHsKICAgICAgIm5hbWUiOiAiRGF0YSByZWNvdmVyeSBuZWVkZWQ/IiwKICAgICAgInN0ZXBfZXh0ZW5zaW9ucyI6IHsKICAgICAgICAiIjogImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiLAogICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIjogewogICAgICAgICAgInR5cGUiOiAiY29vcmRpbmF0ZXMiLAogICAgICAgICAgIngiOiAxMzMwLAogICAgICAgICAgInkiOiA3OTAsCiAgICAgICAgICAid2lkdGgiOiAxMjAsCiAgICAgICAgICAiaGVpZ2h0IjogNjAsCiAgICAgICAgICAib3V0Z29pbmdfY29ubmVjdGlvbnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAidHlwZSI6ICJvbi10cnVlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDE0NTAsCiAgICAgICAgICAgICAgICAxNTA1CiAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAieSI6IFsKICAgICAgICAgICAgICAgIDgyMCwKICAgICAgICAgICAgICAgIDgyMAogICAgICAgICAgICAgIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWZhbHNlIiwKICAgICAgICAgICAgICAieCI6IFsKICAgICAgICAgICAgICAgIDEzOTAsCiAgICAgICAgICAgICAgICAxMzkwLAogICAgICAgICAgICAgICAgMTc5MCwKICAgICAgICAgICAgICAgIDE3OTAKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgODUwLAogICAgICAgICAgICAgICAgODgwLAogICAgICAgICAgICAgICAgODgwLAogICAgICAgICAgICAgICAgODUwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJpZi1jb25kaXRpb24iLAogICAgICAiY29uZGl0aW9uIjogIl9fcmVjb3Zlcl9kYXRhX186dmFsdWUgPT0gdHJ1ZSIsCiAgICAgICJvbl90cnVlIjogImFjdGlvbi0tMmQ2MGQwOGMtOGQ2Yy00NGJkLTljN2MtZTczZmRkZTA1ZGVlIiwKICAgICAgIm9uX2ZhbHNlIjogImFjdGlvbi0tYzU0NzRjNTYtY2M2OS00NWJmLThhNDEtOGExOTY2ZmZlZmY2IgogICAgfSwKICAgICJhY3Rpb24tLTJkNjBkMDhjLThkNmMtNDRiZC05YzdjLWU3M2ZkZGUwNWRlZSI6IHsKICAgICAgIm5hbWUiOiAiUmVjb3ZlciBkYXRhIGZyb20gYmFjayB1cHMiLAogICAgICAib25fY29tcGxldGlvbiI6ICJhY3Rpb24tLWM1NDc0YzU2LWNjNjktNDViZi04YTQxLThhMTk2NmZmZWZmNiIsCiAgICAgICJzdGVwX2V4dGVuc2lvbnMiOiB7CiAgICAgICAgIiI6IFsKICAgICAgICAgICJleHRlbnNpb24tZGVmaW5pdGlvbi0tNDE4ZWUyNGMtOWNiMS00NmQ5LWFmYTUtMzA5ZTAxYWFiYzdmIgogICAgICAgIF0sCiAgICAgICAgImV4dGVuc2lvbi1kZWZpbml0aW9uLS00MThlZTI0Yy05Y2IxLTQ2ZDktYWZhNS0zMDllMDFhYWJjN2YiOiB7CiAgICAgICAgICAidHlwZSI6ICJjb29yZGluYXRlcyIsCiAgICAgICAgICAieCI6IDE1MDUsCiAgICAgICAgICAieSI6IDc5MCwKICAgICAgICAgICJ3aWR0aCI6IDE1MCwKICAgICAgICAgICJoZWlnaHQiOiA2MCwKICAgICAgICAgICJvdXRnb2luZ19jb25uZWN0aW9ucyI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJ0eXBlIjogIm9uLWNvbXBsZXRpb24iLAogICAgICAgICAgICAgICJ4IjogWwogICAgICAgICAgICAgICAgMTY1NSwKICAgICAgICAgICAgICAgIDE3NzUKICAgICAgICAgICAgICBdLAogICAgICAgICAgICAgICJ5IjogWwogICAgICAgICAgICAgICAgODIwLAogICAgICAgICAgICAgICAgODIwCiAgICAgICAgICAgICAgXQogICAgICAgICAgICB9CiAgICAgICAgICBdCiAgICAgICAgfQogICAgICB9LAogICAgICAidHlwZSI6ICJhY3Rpb24iLAogICAgICAiY29tbWFuZHMiOiBbCiAgICAgICAgewogICAgICAgICAgInR5cGUiOiAibWFudWFsIgogICAgICAgIH0KICAgICAgXSwKICAgICAgImFnZW50IjogImdyb3VwLS03YTY2NDE1ZC0xMjhiLTRhYzEtOTAyNC1iNzU1NWRjYzhiNzIiCiAgICB9CiAgfSwKICAiYWdlbnRfZGVmaW5pdGlvbnMiOiB7CiAgICAiZ3JvdXAtLTdhNjY0MTVkLTEyOGItNGFjMS05MDI0LWI3NTU1ZGNjOGI3MiI6IHsKICAgICAgInR5cGUiOiAiZ3JvdXAiLAogICAgICAibmFtZSI6ICJTT0MgVGVhbSIKICAgIH0sCiAgICAic2VjdXJpdHktY2F0ZWdvcnktLTAzNjY5MTUwLWRhZTctNDA2ZC1iOGE1LWJiNDBlMzQ3Nzk2MiI6IHsKICAgICAgInR5cGUiOiAic2VjdXJpdHktY2F0ZWdvcnkiLAogICAgICAibmFtZSI6ICJTT0FSIFBsYXRmb3JtIiwKICAgICAgImNhdGVnb3J5IjogWwogICAgICAgICJvcmNoZXN0cmF0b3IiCiAgICAgIF0KICAgIH0KICB9LAogICJleHRlbnNpb25fZGVmaW5pdGlvbnMiOiB7CiAgICAiZXh0ZW5zaW9uLWRlZmluaXRpb24tLTQxOGVlMjRjLTljYjEtNDZkOS1hZmE1LTMwOWUwMWFhYmM3ZiI6IHsKICAgICAgInR5cGUiOiAiZXh0ZW5zaW9uLWRlZmluaXRpb24iLAogICAgICAibmFtZSI6ICJjb29yZGluYXRlcyBleHRlbnNpb24iLAogICAgICAiZGVzY3JpcHRpb24iOiAiQ29vcmRpbmF0ZXMgZXh0ZW5zaW9uIGZvciBDQUNBTyBjb25zdHJ1Y3RzIGZvciB2aXN1YWxpemF0aW9uIHB1cnBvc2VzLiIsCiAgICAgICJjcmVhdGVkX2J5IjogImlkZW50aXR5LS01YWJlNjk1Yy03YmQ1LTRjMzEtODgyNC0yNTI4Njk2Y2RiZjEiLAogICAgICAic2NoZW1hIjogImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9jeWVudGlmaWMtcm5pL2NhY2FvLWNvb3JkaW5hdGVzLWV4dGVuc2lvbi9tYWluL3NjaGVtYXMvY29vcmRpbmF0ZXMuanNvbiIsCiAgICAgICJ2ZXJzaW9uIjogIjEuMC4wIgogICAgfQogIH0KfQ==",
+            "playbook_abstraction": "template",
+            "playbook_creation_time": "2024-02-19T09:00:00.000Z",
+            "playbook_modification_time": "2024-02-19T09:00:00.000Z"
+        },
+        {
+            "id": "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-19T13:00:00.000Z",
+            "modified": "2024-02-19T13:00:00.000Z",
+            "name": "Password stolen via Mimikatz",
+            "description": "Adversary uses Mimikatz to extract passowrds (LSASS and WDIGEST).",
+            "behavior_class": "anomalous",
+            "tactic": "Credential Access",
+            "technique": "T1556.002 - Password Filter DLL",
+            "first_seen": "2024-02-19T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-19T13:00:00.000Z",
+            "modified": "2024-02-19T13:00:00.000Z",
+            "name": "Windows Firewall Disabled",
+            "description": "Adversary disables windows firewall on target system",
+            "behavior_class": "anomalous",
+            "tactic": "Defense Evasion",
+            "technique": "T1562 - Impair Defenses",
+            "first_seen": "2024-02-19T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "name": "Delete Logs",
+            "description": "Adversary deletes logs on target system",
+            "behavior_class": "anomalous",
+            "tactic": "Impact",
+            "technique": "T1485 - Data Destruction",
+            "first_seen": "2024-02-19T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "id": "x-oca-behavior--AD531DAB-6915-4701-9CC9-CD70027F3AE4",
+            "type": "x-oca-behavior",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T13:00:00.000Z",
+            "modified": "2024-02-20T13:00:00.000Z",
+            "name": "System Reboots",
+            "description": "Adversary reboots system",
+            "behavior_class": "anomalous",
+            "tactic": "Impact",
+            "technique": "T1529 - System Shutdown/Reboot",
+            "first_seen": "2024-02-19T13:00:00.000Z",
+            "platforms": [
+                {
+                    "operating_system": "Microsoft Windows",
+                    "version": "10"
+                }
+            ]
+        },
+        {
+            "source_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+            "target_ref": "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:08:22.372Z",
+            "modified": "2024-02-19T14:08:22.372Z",
+            "id": "relationship--912fc532-450a-47a5-ab33-a825c43380bd"
+        },
+        {
+            "source_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+            "target_ref": "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:08:22.372Z",
+            "modified": "2024-02-19T14:08:22.372Z",
+            "id": "relationship--7fc93d91-9913-4c1b-b45d-f192eaff0207"
+        },
+        {
+            "source_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+            "target_ref": "attack-pattern--86850eff-2729-40c3-b85e-c4af26da4a2d",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:08:32.183Z",
+            "modified": "2024-02-19T14:08:32.183Z",
+            "id": "relationship--ab530baa-00cc-49eb-9670-bea6b2f93b3c"
+        },
+        {
+            "source_ref": "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+            "target_ref": "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:08:50.163Z",
+            "modified": "2024-02-19T14:08:50.163Z",
+            "id": "relationship--2bdef53a-5994-4065-8d65-3a98d9bed089"
+        },
+        {
+            "source_ref": "x-oca-detection--58834c29-4ceb-42a1-a218-336103021000",
+            "target_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-19T14:09:01.364Z",
+            "modified": "2024-02-19T14:09:01.364Z",
+            "id": "relationship--feb81f55-9731-4294-badb-0cd0eee000df"
+        },
+        {
+            "source_ref": "x-oca-detection--f27cb358-d747-47ba-a6c4-e5b8debab157",
+            "target_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-19T14:09:11.271Z",
+            "modified": "2024-02-19T14:09:11.271Z",
+            "id": "relationship--6ac9369b-6824-4c06-8427-cce2bc63ade6"
+        },
+        {
+            "source_ref": "x-oca-detection--66aa9c25-8b56-4121-8630-dbe457393b27",
+            "target_ref": "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-19T14:09:33.953Z",
+            "modified": "2024-02-19T14:09:33.953Z",
+            "id": "relationship--428decf3-bade-48b1-98e1-36dc41f80409"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--58834c29-4ceb-42a1-a218-336103021000",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:12:16.852Z",
+            "modified": "2024-02-19T14:12:16.852Z",
+            "id": "relationship--2991e212-1fd1-4937-ad5f-68222018b20d"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--f27cb358-d747-47ba-a6c4-e5b8debab157",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:12:29.553Z",
+            "modified": "2024-02-19T14:12:29.553Z",
+            "id": "relationship--f0f6aa7e-e120-41f4-b5aa-3ae33be3f64d"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--66aa9c25-8b56-4121-8630-dbe457393b27",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-19T14:12:41.663Z",
+            "modified": "2024-02-19T14:12:41.663Z",
+            "id": "relationship--7a512974-f1d2-40c8-b71c-30866c58b96f"
+        },
+        {
+            "source_ref": "x-oca-playbook--f3700517-14c4-485e-8469-788c27e7264d",
+            "target_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "relationship_type": "related-to",
+            "type": "relationship",
+            "created": "2024-02-19T14:14:34.096Z",
+            "modified": "2024-02-19T14:14:34.096Z",
+            "id": "relationship--f2acc023-3b91-4137-8954-4dbfc8a4a8f3"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "course-of-action--6c3cfc11-efa3-48c4-ae91-0c63fd4a4914",
+            "relationship_type": "triggers",
+            "type": "relationship",
+            "created": "2024-02-19T14:15:43.643Z",
+            "modified": "2024-02-19T14:15:43.643Z",
+            "id": "relationship--486301e1-9e3d-4614-86ec-86e8d1603b10"
+        },
+        {
+            "source_ref": "x-oca-playbook--1fcf7c76-87b9-4ee4-a33e-95e4d580bbcb",
+            "target_ref": "course-of-action--6c3cfc11-efa3-48c4-ae91-0c63fd4a4914",
+            "relationship_type": "related-to",
+            "type": "relationship",
+            "created": "2024-02-19T14:16:38.513Z",
+            "modified": "2024-02-19T14:16:38.513Z",
+            "id": "relationship--6add22e3-5a04-4759-9e0b-8bf03a8a8595"
+        },
+        {
+            "source_ref": "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+            "target_ref": "attack-pattern--3731fbcd-0e43-47ae-ae6c-d15e510f0d42",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:47:09.817Z",
+            "modified": "2024-02-20T12:47:09.818Z",
+            "id": "relationship--60fa6d0c-d216-41b8-9731-1562e883c129"
+        },
+        {
+            "source_ref": "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+            "target_ref": "attack-pattern--3d333250-30e4-4a82-9edc-756c68afc529",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:47:42.111Z",
+            "modified": "2024-02-20T12:47:42.111Z",
+            "id": "relationship--ef711280-3b0f-4295-91df-21ec0adf7b60"
+        },
+        {
+            "source_ref": "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+            "target_ref": "attack-pattern--d45a3d09-b3cf-48f4-9f0f-f521ee5cb05c",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:47:52.772Z",
+            "modified": "2024-02-20T12:47:52.772Z",
+            "id": "relationship--507378a5-d4ed-4136-b116-e3b5f8a75efe"
+        },
+        {
+            "source_ref": "x-oca-behavior--AD531DAB-6915-4701-9CC9-CD70027F3AE4",
+            "target_ref": "attack-pattern--ff73aa03-0090-4464-83ac-f89e233c02bc",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:48:03.322Z",
+            "modified": "2024-02-20T12:48:03.322Z",
+            "id": "relationship--b72107d8-2895-4ecb-bff9-61d54bd0cda6"
+        },
+        {
+            "source_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+            "target_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:49:02.141Z",
+            "modified": "2024-02-20T12:49:02.141Z",
+            "id": "relationship--8afa4959-2de1-407a-8c59-df0722691cdd"
+        },
+        {
+            "source_ref": "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+            "target_ref": "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:49:16.953Z",
+            "modified": "2024-02-20T12:49:16.953Z",
+            "id": "relationship--108d2b31-4f72-4089-8167-7973e6a1ddda"
+        },
+        {
+            "source_ref": "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+            "target_ref": "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:49:29.752Z",
+            "modified": "2024-02-20T12:49:29.752Z",
+            "id": "relationship--f710717c-3d8e-4136-8fda-3bff2de9f2e4"
+        },
+        {
+            "source_ref": "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+            "target_ref": "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:49:51.311Z",
+            "modified": "2024-02-20T12:49:51.313Z",
+            "id": "relationship--0f190155-1667-425f-ae9f-e30e6729daef"
+        },
+        {
+            "source_ref": "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+            "target_ref": "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:50:06.679Z",
+            "modified": "2024-02-20T12:50:06.681Z",
+            "id": "relationship--6af7a960-8dea-47d5-89fa-67c514afd6ed"
+        },
+        {
+            "source_ref": "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+            "target_ref": "x-oca-behavior--AD531DAB-6915-4701-9CC9-CD70027F3AE4",
+            "relationship_type": "occurs-before",
+            "type": "relationship",
+            "created": "2024-02-20T12:50:19.252Z",
+            "modified": "2024-02-20T12:50:19.252Z",
+            "id": "relationship--0cc59ab2-738e-46e9-a27f-c30d0b5f12df"
+        },
+        {
+            "id": "x-oca-detection--39972fd6-e13c-400e-88a6-916e2f04cd2d",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T09:00:00.000Z",
+            "modified": "2024-02-20T09:00:00.000Z",
+            "name": "Mimikatz Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCnRpdGxlOiBQYXNzd29yZCBEdW1wZXIgQWN0aXZpdHkgb24gTFNBU1MKaWQ6IGFhMTY5N2I3LWQ2MTEtNGY5YS05Y2IyLTUxMjViNGNjZmQ1YwpzdGF0dXM6IHRlc3QKZGVzY3JpcHRpb246IERldGVjdHMgcHJvY2VzcyBoYW5kbGUgb24gTFNBU1MgcHJvY2VzcyB3aXRoIGNlcnRhaW4gYWNjZXNzIG1hc2sgYW5kCiAgb2JqZWN0IHR5cGUgU0FNX0RPTUFJTgpyZWZlcmVuY2VzOgotIGh0dHBzOi8vdHdpdHRlci5jb20vamFja2NyL3N0YXR1cy84MDczODU2Njg4MzM5NjgxMjgKYXV0aG9yOiBzaWdtYQpkYXRlOiAyMDE3LzAyLzEyCm1vZGlmaWVkOiAyMDIyLzEwLzA5CnRhZ3M6Ci0gYXR0YWNrLmNyZWRlbnRpYWxfYWNjZXNzCi0gYXR0YWNrLnQxMDAzLjAwMQpsb2dzb3VyY2U6CiAgcHJvZHVjdDogd2luZG93cwogIHNlcnZpY2U6IHNlY3VyaXR5CmRldGVjdGlvbjoKICBzZWxlY3Rpb246CiAgICBFdmVudElEOiA0NjU2CiAgICBQcm9jZXNzTmFtZXxlbmRzd2l0aDogXGxzYXNzLmV4ZQogICAgQWNjZXNzTWFzazogJzB4NzA1JwogICAgT2JqZWN0VHlwZTogU0FNX0RPTUFJTgogIGNvbmRpdGlvbjogc2VsZWN0aW9uCmZhbHNlcG9zaXRpdmVzOgotIFVua25vd24K"
+            }
+        },
+        {
+            "source_ref": "x-oca-detection--39972fd6-e13c-400e-88a6-916e2f04cd2d",
+            "target_ref": "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-20T12:53:29.993Z",
+            "modified": "2024-02-20T12:53:29.993Z",
+            "id": "relationship--de0cae21-29e8-4b63-bd77-9584ae3d1655"
+        },
+        {
+            "id": "x-oca-detection--9d1b12f4-b1e4-401c-bda4-5e472ef9a76f",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T09:00:00.000Z",
+            "modified": "2024-02-20T09:00:00.000Z",
+            "name": "Host FW Change Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Stix-Shifter Query - base64 encoded text",
+                "rule": "IyBJb0I6IFQxNTYyLjAwNApkaXNhYmxlZncgPSBHRVQgcHJvY2VzcyBGUk9NIHN0aXhzaGlmdGVyOi8vY2FzcDIwMjQtZWRyCiAgICAgICAgICAgIFdIRVJFIChuYW1lID0gJ3VmdycgQU5EIGNvbW1hbmRfbGluZSBMSUtFICclZGlzYWJsZSUnKQogICAgICAgICAgICAgICBPUiAobmFtZSA9ICdzdWRvJyBBTkQgY29tbWFuZF9saW5lIExJS0UgJyV1ZncgZGlzYWJsZSUnKQogICAgICAgICAgICAgICBPUiAobmFtZSBJTiAoJ25ldHNoJywgJ25ldHNoLmV4ZScpIEFORCBjb21tYW5kX2xpbmUgTElLRSAnJWFkdmZpcmV3YWxsJW9mZiUnKQogICAgICAgICAgICBMQVNUIDMwIERBWVM="
+            }
+        },
+        {
+            "source_ref": "x-oca-detection--9d1b12f4-b1e4-401c-bda4-5e472ef9a76f",
+            "target_ref": "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-20T12:55:47.743Z",
+            "modified": "2024-02-20T12:55:47.743Z",
+            "id": "relationship--9e414f20-e2f6-42a3-9231-7164fa1d3828"
+        },
+        {
+            "id": "x-oca-detection--4b9e12a4-5d54-4374-ba92-9e15731511f2",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T09:00:00.000Z",
+            "modified": "2024-02-20T09:00:00.000Z",
+            "name": "Log Deletion Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCnRpdGxlOiBFdmVudExvZyBFVlRYIEZpbGUgRGVsZXRlZAppZDogNjNjNzc5YmEtZjYzOC00MGEwLWE1OTMtZGRkNDVlOGIxZGRjCnN0YXR1czogdGVzdApkZXNjcmlwdGlvbjogRGV0ZWN0cyB0aGUgZGVsZXRpb24gb2YgdGhlIGV2ZW50IGxvZyBmaWxlcyB3aGljaCBtYXkgaW5kaWNhdGUgYW4gYXR0ZW1wdAogIHRvIGRlc3Ryb3kgZm9yZW5zaWMgZXZpZGVuY2UKcmVmZXJlbmNlczoKLSBJbnRlcm5hbCBSZXNlYXJjaAphdXRob3I6IE5hc3JlZGRpbmUgQmVuY2hlcmNoYWxpIChOZXh0cm9uIFN5c3RlbXMpCmRhdGU6IDIwMjMvMDIvMTUKdGFnczoKLSBhdHRhY2suZGVmZW5zZV9ldmFzaW9uCi0gYXR0YWNrLnQxMDcwCmxvZ3NvdXJjZToKICBjYXRlZ29yeTogZmlsZV9kZWxldGUKICBwcm9kdWN0OiB3aW5kb3dzCmRldGVjdGlvbjoKICBzZWxlY3Rpb246CiAgICBUYXJnZXRGaWxlbmFtZXxzdGFydHN3aXRoOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHdpbmV2dFxMb2dzXAogICAgVGFyZ2V0RmlsZW5hbWV8ZW5kc3dpdGg6IC5ldnR4CiAgY29uZGl0aW9uOiBzZWxlY3Rpb24KZmFsc2Vwb3NpdGl2ZXM6Ci0gVW5rbm93bgpsZXZlbDogbWVkaXVt"
+            }
+        },
+        {
+            "source_ref": "x-oca-detection--4b9e12a4-5d54-4374-ba92-9e15731511f2",
+            "target_ref": "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-20T12:56:42.171Z",
+            "modified": "2024-02-20T12:56:42.172Z",
+            "id": "relationship--6a9540d1-4b56-461e-bb44-d72037862dd6"
+        },
+        {
+            "id": "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+            "type": "x-oca-detection",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--b085a68a-bf48-4316-9667-37af78cba894",
+            "created": "2024-02-20T09:00:00.000Z",
+            "modified": "2024-02-20T09:00:00.000Z",
+            "name": "System Reboot Detection",
+            "data_sources": [
+                {}
+            ],
+            "analytic": {
+                "type": "Sigma Rule - base64 encoded text",
+                "rule": "LS0tCnRpdGxlOiBTdXNwaWNpb3VzIEV4ZWN1dGlvbiBvZiBTaHV0ZG93biB0byBMb2cgT3V0CmlkOiBlYzI5MGMwNi05YjZiLTQzMzgtOGI2Yi0wOTVjMGYyODRmMTAKc3RhdHVzOiB0ZXN0CmRlc2NyaXB0aW9uOiBEZXRlY3RzIHRoZSByYXJlIHVzZSBvZiB0aGUgY29tbWFuZCBsaW5lIHRvb2wgc2h1dGRvd24gdG8gbG9nb2ZmIGEgdXNlcgpyZWZlcmVuY2VzOgotIGh0dHBzOi8vZ2l0aHViLmNvbS9yZWRjYW5hcnljby9hdG9taWMtcmVkLXRlYW0vYmxvYi85ZTViMTJjNDkxMmMwNzU2MmFlYzc1MDA0NDdiMTFmYTNlMTdlMjU0L2F0b21pY3MvVDE1MjkvVDE1MjkubWQKLSBodHRwczovL2RvY3MubWljcm9zb2Z0LmNvbS9lbi11cy93aW5kb3dzLXNlcnZlci9hZG1pbmlzdHJhdGlvbi93aW5kb3dzLWNvbW1hbmRzL3NodXRkb3duCmF1dGhvcjogZnJhY2sxMTMKZGF0ZTogMjAyMi8xMC8wMQp0YWdzOgotIGF0dGFjay5pbXBhY3QKLSBhdHRhY2sudDE1MjkKbG9nc291cmNlOgogIGNhdGVnb3J5OiBwcm9jZXNzX2NyZWF0aW9uCiAgcHJvZHVjdDogd2luZG93cwpkZXRlY3Rpb246CiAgc2VsZWN0aW9uOgogICAgSW1hZ2V8ZW5kc3dpdGg6IFxzaHV0ZG93bi5leGUKICAgIENvbW1hbmRMaW5lfGNvbnRhaW5zOiAvbAogIGNvbmRpdGlvbjogc2VsZWN0aW9uCmZhbHNlcG9zaXRpdmVzOgotIFVua25vd24KbGV2ZWw6IG1lZGl1bQo="
+            }
+        },
+        {
+            "source_ref": "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+            "target_ref": "x-oca-behavior--AD531DAB-6915-4701-9CC9-CD70027F3AE4",
+            "relationship_type": "detects",
+            "type": "relationship",
+            "created": "2024-02-20T12:57:30.221Z",
+            "modified": "2024-02-20T12:57:30.222Z",
+            "id": "relationship--da0d3a40-50cc-44a4-a250-0d4eda23b588"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--39972fd6-e13c-400e-88a6-916e2f04cd2d",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:58:38.252Z",
+            "modified": "2024-02-20T12:58:38.252Z",
+            "id": "relationship--c13f931a-6a5c-4c3f-a05e-223bd0dad4a4"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--9d1b12f4-b1e4-401c-bda4-5e472ef9a76f",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:59:07.041Z",
+            "modified": "2024-02-20T12:59:07.042Z",
+            "id": "relationship--8494c5fa-ad3d-4b4b-a609-e404a4fea623"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--4b9e12a4-5d54-4374-ba92-9e15731511f2",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:59:17.542Z",
+            "modified": "2024-02-20T12:59:17.542Z",
+            "id": "relationship--872d9959-b709-4369-b9f3-bde747b0879f"
+        },
+        {
+            "source_ref": "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+            "target_ref": "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+            "relationship_type": "uses",
+            "type": "relationship",
+            "created": "2024-02-20T12:59:27.504Z",
+            "modified": "2024-02-20T12:59:27.504Z",
+            "id": "relationship--faf53536-af25-4b7e-945f-527de4a42020"
+        },
+        {
+            "id": "grouping--e3cefc1b-f736-42d1-b137-56c7f4740da2",
+            "type": "grouping",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2024-02-20T07:42:44.000Z",
+            "modified": "2024-02-20T07:42:44.000Z",
+            "revoked": false,
+            "confidence": 0,
+            "lang": "en",
+            "name": "CASP 2024 Olympic Destroyer Example",
+            "description": "",
+            "context": "",
+            "object_refs": [
+                "attack-pattern--2b742742-28c3-4e1b-bab7-8350d6300fa7",
+                "attack-pattern--3731fbcd-0e43-47ae-ae6c-d15e510f0d42",
+                "attack-pattern--3d333250-30e4-4a82-9edc-756c68afc529",
+                "attack-pattern--86850eff-2729-40c3-b85e-c4af26da4a2d",
+                "attack-pattern--92d7da27-2d91-488e-a00c-059dc162766d",
+                "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736",
+                "attack-pattern--d45a3d09-b3cf-48f4-9f0f-f521ee5cb05c",
+                "attack-pattern--ff73aa03-0090-4464-83ac-f89e233c02bc",
+                "course-of-action--6c3cfc11-efa3-48c4-ae91-0c63fd4a4914",
+                "course-of-action--6df8c715-0c34-4c62-9a33-0629e2458cef",
+                "identity--b085a68a-bf48-4316-9667-37af78cba894",
+                "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+                "relationship--2991e212-1fd1-4937-ad5f-68222018b20d",
+                "relationship--2bdef53a-5994-4065-8d65-3a98d9bed089",
+                "relationship--428decf3-bade-48b1-98e1-36dc41f80409",
+                "relationship--486301e1-9e3d-4614-86ec-86e8d1603b10",
+                "relationship--6ac9369b-6824-4c06-8427-cce2bc63ade6",
+                "relationship--6add22e3-5a04-4759-9e0b-8bf03a8a8595",
+                "relationship--7a512974-f1d2-40c8-b71c-30866c58b96f",
+                "relationship--912fc532-450a-47a5-ab33-a825c43380bd",
+                "relationship--ab530baa-00cc-49eb-9670-bea6b2f93b3c",
+                "relationship--f0f6aa7e-e120-41f4-b5aa-3ae33be3f64d",
+                "relationship--f2acc023-3b91-4137-8954-4dbfc8a4a8f3",
+                "relationship--feb81f55-9731-4294-badb-0cd0eee000df",
+                "x-oca-behavior--955168E0-9D15-4D35-88CA-9E9B9BFD220E",
+                "x-oca-behavior--AD531DAB-6915-4701-9CC9-CD70027F3AE4",
+                "x-oca-behavior--B9AB3189-EB58-4E6A-9E7F-7364C4BF5762",
+                "x-oca-behavior--C4CE1F80-F2B7-4F79-A4FA-C9CC419E01B7",
+                "x-oca-behavior--DE81EF18-55E6-4754-A761-6B929BF22395",
+                "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890aa",
+                "x-oca-behavior--edc99806-f8e9-4ee3-b2d4-1234567890dd",
+                "x-oca-detection--58834c29-4ceb-42a1-a218-336103021000",
+                "x-oca-detection--66aa9c25-8b56-4121-8630-dbe457393b27",
+                "x-oca-detection--f27cb358-d747-47ba-a6c4-e5b8debab157",
+                "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+                "x-oca-detection--39972fd6-e13c-400e-88a6-916e2f04cd2d",
+                "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+                "x-oca-detection--4b9e12a4-5d54-4374-ba92-9e15731511f2",
+                "x-oca-detection--9d1b12f4-b1e4-401c-bda4-5e472ef9a76f",
+                "x-oca-playbook--1fcf7c76-87b9-4ee4-a33e-95e4d580bbcb",
+                "x-oca-playbook--f3700517-14c4-485e-8469-788c27e7264d"
+            ]
+        },
+        {
+            "id": "grouping--af0155e3-f7a9-41bc-b118-3bc836e978bc",
+            "type": "grouping",
+            "spec_version": "2.1",
+            "created_by_ref": "identity--0989d55c-64a1-44fd-9aee-73c50176b1af",
+            "created": "2024-02-20T07:42:44.000Z",
+            "modified": "2024-02-20T07:42:44.000Z",
+            "revoked": false,
+            "confidence": 0,
+            "lang": "en",
+            "name": "CASP2024 OD Detections",
+            "description": "",
+            "context": "",
+            "object_refs": [
+                "x-oca-detection--58834c29-4ceb-42a1-a218-336103021000",
+                "x-oca-detection--66aa9c25-8b56-4121-8630-dbe457393b27",
+                "x-oca-detection--f27cb358-d747-47ba-a6c4-e5b8debab157",
+                "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+                "x-oca-detection--39972fd6-e13c-400e-88a6-916e2f04cd2d",
+                "x-oca-detection--a1afab78-e96f-4613-bb79-f1336cb76e8c",
+                "x-oca-detection--4b9e12a4-5d54-4374-ba92-9e15731511f2",
+                "x-oca-detection--9d1b12f4-b1e4-401c-bda4-5e472ef9a76f"
+            ]
+        }
+    ]
+}
