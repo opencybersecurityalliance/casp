@@ -63,7 +63,7 @@ ProCap360™-alone or ProCap360™ in collaboration with others
 
 #### 7.1 ProCap360™ Scenario 1 is:
 - Participants (ie ProCap360™)
-- Architecture (ie ProCap360™ 1 is ![Ingested Data 2](https://github.com/ProCap360/Cyber-Village/assets/135875251/cc47ee8e-13e2-46dd-b465-0e7ec2b963a5)
+- Architecture (ie ProCap360™ 1 
  
 - See Section   for the architectures to be used
 - Flow (ie ProCap360™ 1.1 is  .See ...
@@ -92,7 +92,7 @@ The ProCap360™ cloud based architecture (collaborations shown later) exists on
 
 ### 8.2 - ProCap360™ Alternate Architectures - SaaS
 
-ProCap360™ can also be used in a software as a service module for SBOM analysis and scoring to existing and newly released CVEs, VEX or CSAF advisories.  **JC_ discuss RBOM here.**
+ProCap360™ can also be used in a software as a service module for SBOM analysis and scoring to existing and newly released CVEs, VEX or CSAF advisories.  **JC_ discuss ProCapAPI.**
 #several dimensions:
 #- 1.2 ProCap360™ is connecting to internal DevSecOps Pipeline and will display current application flows and  vulnerabilities via application and priority plane dashboards.
 #-1.3 ProCap360™ will combine multiple applications and SBOMs that support a department business process
@@ -114,7 +114,7 @@ ProCap360™ has Code and User Requirement/Environment/Compliance modules.  The 
 The Requirement/Environment/Compliance modules are additional entity architects that are added into the knowledge graph to support released applications.  Here is graphic of the module pillars and their connections in ProCap360™
 
 
-![PillarView](https://github.com/ProCap360/Cyber-Village/assets/135875251/456b3af2-4e36-45c9-8d1e-bce7bddc7122)
+
 
 
 
