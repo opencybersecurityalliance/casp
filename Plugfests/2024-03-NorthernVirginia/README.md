@@ -10,7 +10,7 @@
   - [Registration](https://www.eventbrite.com/e/cybersecurity-automation-village-registration-796037719247)
   - Agenda on registration page in previous bullet (will reproduce here eventually)
 * [Prep1](Prep1/README.md) was held virtually on December 6, 2023 as part of getting ready
-* [Prep2](Prep2/README.md) was held virtually 5-April-2024 as part of getting ready. Two sessions to accomadate timezones around the world.
+* [Prep2](Prep2/README.md) was held virtually 5-March-2024 as part of getting ready. Two sessions were held to accomadate timezones around the world.
 
 # Projects Participating
 Make new version of 
