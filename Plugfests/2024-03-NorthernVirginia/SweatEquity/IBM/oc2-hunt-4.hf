@@ -13,9 +13,9 @@ hosts = LOAD "targethosts.json" AS x-oca-asset
 ps = GET process FROM stixshifter://casp2024-edr
      WHERE x_unique_id = psc.x_unique_id
        AND x-oca-asset:device_id = hosts.device_id 
-     LAST 30 DAYS
+     LAST 90 DAYS
 
-nt = FIND network-traffic CREATED BY ps LAST 30 DAYS
+nt = FIND network-traffic CREATED BY ps LAST 90 DAYS
 
 nt_fw = GET network-traffic
         FROM stixshifter://casp2024-netflow

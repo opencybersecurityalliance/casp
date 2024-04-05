@@ -14,16 +14,16 @@ hosts = LOAD "targethosts.json" AS x-oca-asset
 ps = GET process FROM stixshifter://casp2024-edr
      WHERE x_unique_id = psc.x_unique_id
        AND x-oca-asset:device_id = hosts.device_id 
-     LAST 30 DAYS
+     LAST 90 DAYS
 
-p2s = FIND process CREATED ps LAST 30 DAYS
-p3s = FIND process CREATED p2s LAST 30 DAYS
-p4s = FIND process CREATED p3s LAST 30 DAYS
-p5s = FIND process CREATED p4s LAST 30 DAYS
+p2s = FIND process CREATED ps LAST 90 DAYS
+p3s = FIND process CREATED p2s LAST 90 DAYS
+p4s = FIND process CREATED p3s LAST 90 DAYS
+p5s = FIND process CREATED p4s LAST 90 DAYS
 
 ancestors = p2s + p3s + p4s + p5s
 
-siblings = FIND process CREATED BY ancestors LAST 30 DAYS
+siblings = FIND process CREATED BY ancestors LAST 90 DAYS
 binaries = FIND file LOADED BY siblings
 
 SAVE siblings TO siblings.json
