@@ -21,7 +21,7 @@ but may create specifications/standards if necessary.
 
 ## When will be the next Cybersecurity Automation Village?
 The next Cybersecurity Automation Village will be
-a two-day plugfest/workshop/hackathon/contest on March 14-15, 2024.
+a two-day plugfest/workshop/hackathon/contest on April 11-12, 2024.
 It will be hosted by Peraton at their office at:
 * 1875 Explorer St, Reston, VA 20190
 

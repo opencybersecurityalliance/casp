@@ -5,7 +5,7 @@
 # Announcement
 
 The next CASP event will be 
-a 2-day Cybersecurity Automation Village in Virginia in March,2024.
+a 2-day Cybersecurity Automation Village in Virginia in April,2024.
 For more info, see [Next Village](Plugfests/2024-03-NorthernVirginia/README.md)
 and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
 
