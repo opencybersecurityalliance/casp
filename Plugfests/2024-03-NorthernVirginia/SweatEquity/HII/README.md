@@ -1,5 +1,23 @@
 # HII Sweat Equity
 
+<<<<<<< main
+## Use Case Support
+HII will participate in a demonstration session with Kestrel to illustrate the
+use of OpenC2 to invoke Kestrel capabilities in a hunting operation. This
+demonstration will employ the Olympic Destroyer data set developed by the
+Indicators of Behavior project, the Kestrel hunting engine, OpenC2 Consumers
+provided by IBM and HII supporting the Threat Hunting AP, and an OpenC2 Producer
+provided by HII.
+
+## CACAO Playbook
+HII has developer a [CACAO
+playbook](./playbook--b3682304-868d-4cf0-a315-2db02e8c8f37__2024-04-03T14_50_14.504Z.json)
+that captures the flow of the hunting operation from this demonstration. This
+playbook aligns with the hunting process described in Kestrel's 
+[Jupyter Notebook](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/complete_hunt.ipynb)
+for the demonstration.
+
+
 ## Producers
 HII plans to bring the following OpenC2 producer (mock a message from a CACAO playbook):
 * [OIF-Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator), supporting
