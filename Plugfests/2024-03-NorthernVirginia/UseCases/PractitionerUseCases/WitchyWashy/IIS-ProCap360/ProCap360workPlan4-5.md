@@ -56,7 +56,25 @@ Displays one or all of the process application(s) vulnerabilities in a selected 
 ![ProCap 360 Priority Plane View ](./images/PriorityPlaneView-vuln-assign.png)
 
 ### 7 Scenarios have many dimensions:
-ProCap360™-alone or ProCap360™ in collaboration with others
+ProCap360™-alone 
+User role based access 
+1)SBOM creation from provided application URL
+   Add application SBOM from Github using applicaiton URL
+   example  https://github.com/airlift/discovery.git 
+      (java, 119 components, 6 vulnerabilities)
+2) Build envirnoment twill be selected for this SBOM example Dev
+3) Vulnerability identification for each component will be first checked against the OSV and optional NexusIQ to visualize vulnerabilites against component CPE
+4) Component Upgrade path options will be calculated and shown as green if there are any.
+    If there is no upgrade path it will show red
+5) If supplier VEX information is availible it can be (manually at this time) added to each vulnerability which can change the security score.
+    If there is no VEX information then the security score calculation will remain
+6) Each component license will be checked and grouped by type.  Copyright infomation is under research and will be added in a new column.
+    If there are missiing license information or shift left types they will be shown in red.
+7) SBOM completeness will use the NTIA minimum elements and checked against each component and any missing elements and noted in Known Unknowns
+8) SBOM export can be selected for immediate download or can be scheduled to a named email account with a user specifed expire period.  
+    User selection can create SBOM or SBOM with vulnerabilites.
+
+or ProCap360™ in collaboration with others
 - component architecture
 - flow (ie operational concept to be proved)
 - configuration ---- JC Add graphic
@@ -86,9 +104,7 @@ ProCap360™ can grouped this data as nodes and edges in the graph database and 
 
 The ProCap360™ cloud based architecture (collaborations shown later) exists on AWS, Azure and Google licensed for client deployments:
 
-<p align="center">
 
-</p>
 
 ### 8.2 - ProCap360™ Alternate Architectures - SaaS
 
@@ -101,10 +117,9 @@ ProCap360™ can also be used in a software as a service module for SBOM analysi
 
 ### 8.3 - Flow
 
-<p align="center">
+Demo will be setup with apps and SBOMs in ProCap 360.   one or more SBOMs can be removed and generated again.
 
-**JC- Add flow ideas**
-</p>
+Will look for other demo team members SBOMs and test ingestion prior to 4-10.
 
 ### 8.4 - Configuration
 ProCap360™ will combine multiple divisions of processes that support multiple sectors (finance, electric, healthcare)
@@ -134,23 +149,22 @@ add concept of portfolio views & sharing/communication across multiple projects 
 
 ### 9.1 - Status
 
-4/1 - complete draft workplan
+4/1 - complete draft workplan - In Process 4-5
 
-4/2 add workplan to Cybervillage page - gather CACAO example 
+4/2 add workplan to Cybervillage page - gather CACAO example - stretch goal 
 
-4/2 gather apps and SBOMs into a process project 
+4/2 gather apps and SBOMs into a process project -Done 4-5.   
 
-4/3 finalize complete draft workplan
+4/3 finalize complete draft workplan In Process 4-5
 
-4/4 add workplan to Cybervillage page - gather CACAO example 
+4/4 add workplan to Cybervillage page - gather CACAO example In Process 4-5
 
-4/4 gather apps and SBOMs into a process project 
+4/5 Upload Logos to github 
 
-4/4 finalize priority plane and reports
 
 
 ### 9.2 - Next Steps and Schedule
-Attend review meeting April 5
+Attend review meeting April 5  Done
 Prep materials for 4/10 arrival and setup
 Attend onsite Village 4/11 and 4/12
 
