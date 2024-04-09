@@ -17,27 +17,28 @@ Comprehensive SBOM Generation: As each application is compiled, ProCap360™ gen
 
 By adopting NeuStratos® ProCap360™, organizations can proactively address security risks, enhance compliance, and contribute to the broader industry efforts aimed at securing software supply chains.
 
- ![ProCap 360 Proactive Secure by Design](https://github.com/ProCap360/Cyber-Village/assets/135875251/24ea1f88-7095-48a0-8505-9f964aa7ffee)
-
+![ProCap 360 Proactive Secure by Design](./images/VulnerabilityManagement.png)
 
 ### 2 SBOM Description:
 - The SBOM components are written on the ProCap360™ Knowledge Graph and measured against NVD Common Vulnerability Exposure (CVE) supporting the Continuous Integration (CI)pipeline. CVE CVSS scores are used in user selectable formulas to calculate the application security score.
   
 - Each Application (version, date stamp, score and hash value) will be displayed. ProCap360™ is packaged with the Open Source Vulnerability (OSV) database and can optionally add other databases such as Sonatype NexusIQ for additional vulnerability enrichment.
   
-![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/ffeeca27-ae92-4e75-a2f1-3884d49a0470)
+![ProCap 360 SBOM](./images/SBOM.png)
+
 
  
 ### 3 RBOM Description:  
 As each application meets or exceeds user defined vulnerability thresholds, the application release candidate (RC) will be built into the designated environment. Using Infrastructure as Code (IaC) designs the build provisioning completes and then adds the RC application code onto the build components. ProCap360™ then captures all the release components as each application is built in a Continuous Integration (CI) pipeline. ProCap360™ has a patent pending Release Bill of Materials (RBOM) that follows the OWASP format.  Terraform and Ansible Scripts, network, compute and storage components are captured in each application environment release. Cloud (AWS, Azure and Google) components resource identifiers, services, and status date stamped and hashed. On Premise components can also be captured.
-![RBOMView](https://github.com/Johncavanaugh-IIS/casp-IIS/assets/135875251/b7480b91-1afd-433b-93bb-f79ef8d839f6)
+
+![ProCap 360 RBOM](./images/RBOMView.png)
 
 
 ### 4 Compliance Description:
 Compliance Scoring (Blue Circle) is performed with user selected risk management frameworks such as:
 - Cloud native (Azure Defender, AWS Security Hub) plus user selected RMF such as NIST 800-53 Rev5 low, moderate or high control levels.
   
- ![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/edb3aee4-6e42-413e-ba94-4e65153bc2c3)
+![ProCap 360 Compliance Score](./images/ComplianceScore.png)
 
 ### 5 Business Process Multiple Application SBOM and RBOM Scoring:
 
@@ -45,25 +46,42 @@ Compliance Scoring (Blue Circle) is performed with user selected risk management
   
 - The Business Process multiple application portfolio will have a Security Score automatically calculated as the sum of all 16 applications.
   
- ![image](https://github.com/ProCap360/Cyber-Village/assets/135875251/ad66eb34-7e38-46cf-bc9e-a2d5d18a7978)
 
+![ProCap 360 Process Score with 16 Applications](./images/Process16Apps.png)
 
 ### 6 Vulnerability Priority Plane View:
 
 Displays one or all of the process application(s) vulnerabilities in a selected environment by all or selected criticality. In this example, a single application is selected and when hovering over a specific vulnerability the details are displayed.  With a second mouse click actions can be assigned to a work queue or work group or individual.
 
-![PriorityPlaneView-vuln-assign](https://github.com/ProCap360/Cyber-Village/assets/135875251/490bbba0-58b3-4887-85f1-b66e5343bbb8)
-
+![ProCap 360 Priority Plane View ](./images/PriorityPlaneView-vuln-assign.png)
 
 ### 7 Scenarios have many dimensions:
-ProCap360™-alone or ProCap360™ in collaboration with others
+ProCap360™-alone 
+User role based access 
+1)SBOM creation from provided application URL
+   Add application SBOM from Github using applicaiton URL
+   example  https://github.com/airlift/discovery.git 
+      (java, 119 components, 6 vulnerabilities)
+2) Build envirnoment twill be selected for this SBOM example Dev
+3) Vulnerability identification for each component will be first checked against the OSV and optional NexusIQ to visualize vulnerabilites against component CPE
+4) Component Upgrade path options will be calculated and shown as green if there are any.
+    If there is no upgrade path it will show red
+5) If supplier VEX information is availible it can be (manually at this time) added to each vulnerability which can change the security score.
+    If there is no VEX information then the security score calculation will remain
+6) Each component license will be checked and grouped by type.  Copyright infomation is under research and will be added in a new column.
+    If there are missiing license information or shift left types they will be shown in red.
+7) SBOM completeness will use the NTIA minimum elements and checked against each component and any missing elements and noted in Known Unknowns
+8) SBOM export can be selected for immediate download or can be scheduled to a named email account with a user specifed expire period.  
+    User selection can create SBOM or SBOM with vulnerabilites.
+
+or ProCap360™ in collaboration with others
 - component architecture
 - flow (ie operational concept to be proved)
 - configuration ---- JC Add graphic
 
 #### 7.1 ProCap360™ Scenario 1 is:
 - Participants (ie ProCap360™)
-- Architecture (ie ProCap360™ 1 is ![Ingested Data 2](https://github.com/ProCap360/Cyber-Village/assets/135875251/cc47ee8e-13e2-46dd-b465-0e7ec2b963a5)
+- Architecture (ie ProCap360™ 1 
  
 - See Section   for the architectures to be used
 - Flow (ie ProCap360™ 1.1 is  .See ...
@@ -86,13 +104,11 @@ ProCap360™ can grouped this data as nodes and edges in the graph database and 
 
 The ProCap360™ cloud based architecture (collaborations shown later) exists on AWS, Azure and Google licensed for client deployments:
 
-<p align="center">
 
-</p>
 
 ### 8.2 - ProCap360™ Alternate Architectures - SaaS
 
-ProCap360™ can also be used in a software as a service module for SBOM analysis and scoring to existing and newly released CVEs, VEX or CSAF advisories.  **JC_ discuss RBOM here.**
+ProCap360™ can also be used in a software as a service module for SBOM analysis and scoring to existing and newly released CVEs, VEX or CSAF advisories.  **JC_ discuss ProCapAPI.**
 #several dimensions:
 #- 1.2 ProCap360™ is connecting to internal DevSecOps Pipeline and will display current application flows and  vulnerabilities via application and priority plane dashboards.
 #-1.3 ProCap360™ will combine multiple applications and SBOMs that support a department business process
@@ -101,10 +117,9 @@ ProCap360™ can also be used in a software as a service module for SBOM analysi
 
 ### 8.3 - Flow
 
-<p align="center">
+Demo will be setup with apps and SBOMs in ProCap 360.   one or more SBOMs can be removed and generated again.
 
-**JC- Add flow ideas**
-</p>
+Will look for other demo team members SBOMs and test ingestion prior to 4-10.
 
 ### 8.4 - Configuration
 ProCap360™ will combine multiple divisions of processes that support multiple sectors (finance, electric, healthcare)
@@ -114,7 +129,7 @@ ProCap360™ has Code and User Requirement/Environment/Compliance modules.  The 
 The Requirement/Environment/Compliance modules are additional entity architects that are added into the knowledge graph to support released applications.  Here is graphic of the module pillars and their connections in ProCap360™
 
 
-![PillarView](https://github.com/ProCap360/Cyber-Village/assets/135875251/456b3af2-4e36-45c9-8d1e-bce7bddc7122)
+
 
 
 
@@ -134,26 +149,26 @@ add concept of portfolio views & sharing/communication across multiple projects 
 
 ### 9.1 - Status
 
-4/1 - complete draft workplan
+4/1 - complete draft workplan - In Process 4-5
 
-4/2 add workplan to Cybervillage page - gather CACAO example 
+4/2 add workplan to Cybervillage page - gather CACAO example - stretch goal 
 
-4/2 gather apps and SBOMs into a process project 
+4/2 gather apps and SBOMs into a process project -Done 4-5.   
 
-4/3 finalize complete draft workplan
+4/3 finalize complete draft workplan In Process 4-5
 
-4/4 add workplan to Cybervillage page - gather CACAO example 
+4/4 add workplan to Cybervillage page - gather CACAO example In Process 4-5
 
-4/4 gather apps and SBOMs into a process project 
+4/5 Upload Logos to github 
 
-4/4 finalize priority plane and reports
 
 
 ### 9.2 - Next Steps and Schedule
-Attend review meeting April 5
+Attend review meeting April 5  Done
 Prep materials for 4/10 arrival and setup
 Attend onsite Village 4/11 and 4/12
 
 ## 10 - Results
 
 None yet
+
