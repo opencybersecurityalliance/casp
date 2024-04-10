@@ -2,27 +2,6 @@
 
 ---
 
-# Announcement
-
-The next CASP event will be 
-a 2-day Cybersecurity Automation Village in Virginia in April,2024.
-For more info, see [Next Village](Plugfests/2024-03-NorthernVirginia/README.md)
-and participate in the [CASP mailing list](https://lists.oasis-open-projects.org/g/oca-casp).
-
-The most recent plugfest was held at USC in June, 2023. 
-See [USC Plugfest](Plugfests/2023-06-13-USC/README.md)
-for more details.
-
-### Test Planning
-
-Because plugfests exercise interworking among independent implementations, it's helpful for
-participants to register interest in testing specific protocols with other participants.
-If you are considering participating, please use the CASP mailing list or GitHub issue to request
-to be added to the [test matrix](Plugfests/2024-03-NorthernVirginia/test-matrix-2024-03.md),
-or edit it directly and submit a GitHub pull request.
-
----
-
 # OCA CASP Sub-project
 The [Open Cybersecurity Alliance (OCA)](https://opencybersecurityalliance.org/) 
 Cybersecurity Automation SubProject (CASP) is composed of like-minded global cybersecurity vendors, end users, thought leaders and individuals who are interested in cybersecurity automation.
@@ -36,7 +15,7 @@ see [https://opencybersecurityalliance.org/](https://opencybersecurityalliance.o
 For more information on CASP, see:
 - CASP's OCA page at [https://opencybersecurityalliance.org/CASP](https://opencybersecurityalliance.org/CASP),
 - CASP's [Cybersecurity Automation Village](https://www.cybersecurityautomationvillage.org/),
-- CASP's organizational page at https://lists.oasis-open-projects.org/g/oca-casp which includes mailing list archives and how to join the mailing list.
+- CASP's organizational page at https://lists.oasis-open-projects.org/g/oca-casp which includes mailing list archives and how to join the mailing list and a calendar of meetings.
 
 For more information on the goals of this effort, see the [project charter](./CHARTER.md). 
 

@@ -1,0 +1,26 @@
+# path: /entity/process/network/005
+# uuid: 117c0c6a-51a8-442c-8dfd-bd2207eebcee
+# tags: process, networking, firewall, gateway, cross-source
+# params:
+#   - targetprocs.json: process
+#   - targethosts.json: x-oca-asset
+# returns:
+#   - remoteip (ipv4-addr)
+
+psc = LOAD "targetprocs.json" AS process
+hosts = LOAD "targethosts.json" AS x-oca-asset
+
+ps = GET process FROM stixshifter://casp2024-edr
+     WHERE x_unique_id = psc.x_unique_id
+       AND x-oca-asset:device_id = hosts.device_id 
+     LAST 90 DAYS
+
+nt = FIND network-traffic CREATED BY ps LAST 90 DAYS
+
+nt_fw = GET network-traffic
+        FROM stixshifter://casp2024-netflow
+        WHERE src_port = nt.src_port
+
+remoteip = FIND ipv4-addr ACCEPTED nt_fw
+
+SAVE remoteip TO remoteip.json

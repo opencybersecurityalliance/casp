@@ -1,0 +1,30 @@
+# path: /entity/process/related/001
+# uuid: 5410df80-1801-4b36-b875-4047a472478b
+# tags: process, siblings
+# params:
+#   - targetprocs.json: process
+#   - targethosts.json: x-oca-asset
+# returns:
+#   - siblings (process)
+#   - binaries (file)
+
+psc = LOAD "targetprocs.json" AS process
+hosts = LOAD "targethosts.json" AS x-oca-asset
+
+ps = GET process FROM stixshifter://casp2024-edr
+     WHERE x_unique_id = psc.x_unique_id
+       AND x-oca-asset:device_id = hosts.device_id 
+     LAST 90 DAYS
+
+p2s = FIND process CREATED ps LAST 90 DAYS
+p3s = FIND process CREATED p2s LAST 90 DAYS
+p4s = FIND process CREATED p3s LAST 90 DAYS
+p5s = FIND process CREATED p4s LAST 90 DAYS
+
+ancestors = p2s + p3s + p4s + p5s
+
+siblings = FIND process CREATED BY ancestors LAST 90 DAYS
+binaries = FIND file LOADED BY siblings
+
+SAVE siblings TO siblings.json
+SAVE binaries TO binaries.json
