@@ -10,8 +10,7 @@ provided by IBM and HII supporting the Threat Hunting AP, and an OpenC2 Producer
 provided by HII.
 
 ## CACAO Playbook
-HII has developer a [CACAO
-playbook](./playbook--b3682304-868d-4cf0-a315-2db02e8c8f37__2024-04-03T14_50_14.504Z.json)
+HII has developer a [CACAO playbook](./playbook--OpenC2-Kestrel-Hunting-Demo_2024-04-10T14_57_42.134Z.json)
 that captures the flow of the hunting operation from this demonstration. This
 playbook aligns with the hunting process described in Kestrel's 
 [Jupyter Notebook](https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/complete_hunt.ipynb)
