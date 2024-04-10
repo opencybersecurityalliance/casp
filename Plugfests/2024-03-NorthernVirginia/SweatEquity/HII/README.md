@@ -1,5 +1,24 @@
 # HII Sweat Equity
 
+## Table of Contents
+1.  [Use Case Support](#use-case-support)
+2.  [CACAO Playbook](#cacao-playbook)
+3.  [OC2 Producers](#producers)
+4.  [OC2 Consumers](#consumers)
+5.  [MQTT Connection](#mqtt-connection-info)
+6.  [Example TH Command](#threat-hunt-command-message-example)
+7.  [Example TH Response](#threat-hunt-response-message-example)
+8.  [Setting Up OIF](#further-oif-assistance)
+9.  [Interfaces](#project-centric-interfaces)
+10. [High-level UC](#high-level-use-case-illustration)
+11. [Demo Commands](#demo-with-ibm-kestrel-team)
+    * [Command 1](#command-1)
+    * [Command 2](#command-2)
+    * [Command 3](#command-3)
+    * [Command 4](#command-4)
+    * [Command 5](#command-5)
+12. [SBOMs](#sboms)
+
 ## Use Case Support
 HII will participate in a demonstration session with Kestrel to illustrate the
 use of OpenC2 to invoke Kestrel capabilities in a hunting operation. This
@@ -19,7 +38,7 @@ for the demonstration.
 
 ## Producers
 HII plans to bring the following OpenC2 producer (mock a message from a CACAO playbook):
-* [OIF-Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator), supporting
+* [OIF-Orchestrator](https://github.com/ScreamBun/openc2-oif-orchestrator-2), supporting
   - OpenC2 Language [required queries](https://docs.oasis-open.org/openc2/oc2ls/v1.0/cs02/oc2ls-v1.0-cs02.html#4-mandatory-commandsresponses)
   - OpenC2 Threat Hunting Actuator Profile (Schema) ([working version](https://github.com/dlemire60/openc2-ap-hunt/blob/working/ap-hunt-v1.0.md))
   - [MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#appendix-e-examples) (v5.0)
@@ -63,7 +82,7 @@ resp_topics = ["oc2/rsp"]
 ### Notes about message creation
 * The OpenC2 Integration Framework is schema-driven, and uses this JSON conversion of the 
  [Threathunting Profile draft](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/schemas/resolved%20schemas/resolved-hunt.json).
- ## Threat Hunt Command Message Example
+## Threat Hunt Command Message Example
 
 ```
 {
@@ -127,7 +146,7 @@ resp_topics = ["oc2/rsp"]
 }
 ```
 
-## Further Assistance
+## Further OIF Assistance
 Need help setting up a device and connecting an MQTT or HTTP endpoint?  No problem, check out our OIF Device code.
 * [openc2-oif-device](https://github.com/ScreamBun/openc2-oif-device)
   * The mqtt_test.py provides a small example of connecting to an MQTT Broker
