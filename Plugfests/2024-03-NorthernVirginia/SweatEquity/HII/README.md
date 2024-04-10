@@ -1,6 +1,24 @@
 # HII Sweat Equity
 
-<<<<<<< main
+## Table of Contents
+1.  [Use Case Support](#use-case-support)
+2.  [CACAO Playbook](#cacao-playbook)
+3.  [OC2 Producers](#producers)
+4.  [OC2 Consumers](#consumers)
+5.  [MQTT Connection](#mqtt-connection-info)
+6.  [Example TH Command](#threat-hunt-command-message-example)
+7.  [Example TH Response](#threat-hunt-response-message-example)
+8.  [Setting Up OIF](#further-oif-assistance)
+9.  [Interfaces](#project-centric-interfaces)
+10. [High-level UC](#high-level-use-case-illustration)
+11. [Demo Commands](#demo-with-ibm-kestrel-team)
+    * [Command 1](#command-1)
+    * [Command 2](#command-2)
+    * [Command 3](#command-3)
+    * [Command 4](#command-4)
+    * [Command 5](#command-5)
+12. [SBOMs](#sboms)
+
 ## Use Case Support
 HII will participate in a demonstration session with Kestrel to illustrate the
 use of OpenC2 to invoke Kestrel capabilities in a hunting operation. This
@@ -20,7 +38,7 @@ for the demonstration.
 
 ## Producers
 HII plans to bring the following OpenC2 producer (mock a message from a CACAO playbook):
-* [OIF-Orchestrator](https://github.com/oasis-open/openc2-oif-orchestrator), supporting
+* [OIF-Orchestrator](https://github.com/ScreamBun/openc2-oif-orchestrator-2), supporting
   - OpenC2 Language [required queries](https://docs.oasis-open.org/openc2/oc2ls/v1.0/cs02/oc2ls-v1.0-cs02.html#4-mandatory-commandsresponses)
   - OpenC2 Threat Hunting Actuator Profile (Schema) ([working version](https://github.com/dlemire60/openc2-ap-hunt/blob/working/ap-hunt-v1.0.md))
   - [MQTT Transfer Specification](https://docs.oasis-open.org/openc2/transf-mqtt/v1.0/cs01/transf-mqtt-v1.0-cs01.html#appendix-e-examples) (v5.0)
@@ -64,9 +82,7 @@ resp_topics = ["oc2/rsp"]
 ### Notes about message creation
 * The OpenC2 Integration Framework is schema-driven, and uses this JSON conversion of the 
  [Threathunting Profile draft](https://github.com/oasis-tcs/openc2-ap-hunt/blob/working/schemas/resolved%20schemas/resolved-hunt.json).
-
-* Message Property Actuator_id is optional.  Only needed internally for the OIF Orchestrator.
- ## Threat Hunt Command Message Example
+## Threat Hunt Command Message Example
 
 ```
 {
@@ -74,8 +90,7 @@ resp_topics = ["oc2/rsp"]
         'request_id': '40eac796-43c2-4f3e-8ab1-a51e37380e0e',
         'from': 'oif-orch',
         'to': 'oc2/cmd/ap/hunt',
-        'created' : 1709671071578,
-        'actuator_id' : '8144acd3-f5d6-4bda-b1bd-a964f4a19677'
+        'created' : 1709671071578
     },
     'body': {
         'openc2': {
@@ -100,20 +115,30 @@ resp_topics = ["oc2/rsp"]
     "created": 1709671082933,
     "from": "oif-device-9baf5863-fe55-4bc5-9537-eb9282a08a50",
     "to": "oc2/rsp"
-    "actuator_id": "8144acd3-f5d6-4bda-b1bd-a964f4a19677"
   },
   "body": {
     "openc2": {
       "response": {
         "status": 200,
         "results": {
-          "x_unique_id": "MYORGIDX-01aac66c-00000820-00000000-1d70c280e79cd04",
-          "name": "compattelrunner.exe",
-          "pid": 2080,
-          "id": "process--69e78267-5a16-513a-b4e5-ecd8577dae1b",
-          "command_line": null,
-          "created": null,
-          "binary_ref.name": "compattelrunner.exe"
+          "th": {
+            "inv_returns": [{
+                "stix_sco": [{
+                    "Process": {
+                      "type": "process",
+                      "id": "process-one",
+                      "pid": 11111
+                    }
+                  }, {
+                    "Process": {
+                      "type": "process",
+                      "id": "process-two",
+                      "pid": 2222222
+                    }
+                  }, ""],
+                "string_returns": ["so foul and fair a day i have not seen", "now is the winter of our discontent"]
+              }]
+          }
         }
       }
     }
@@ -121,7 +146,7 @@ resp_topics = ["oc2/rsp"]
 }
 ```
 
-## Further Assistance
+## Further OIF Assistance
 Need help setting up a device and connecting an MQTT or HTTP endpoint?  No problem, check out our OIF Device code.
 * [openc2-oif-device](https://github.com/ScreamBun/openc2-oif-device)
   * The mqtt_test.py provides a small example of connecting to an MQTT Broker
@@ -136,3 +161,94 @@ Need help setting up a device and connecting an MQTT or HTTP endpoint?  No probl
 
 ![OC2 & Kestrel HL UC](https://github.com/ScreamBun/openc2-oif-device/blob/master/assets/oc2_kestrel_use_case.png)
 
+## Demo with IBM Kestrel Team
+* Our team plans to send the following OC2 Commands over MQTT to multiple devices to trigger Kestrel Huntflows on data provided by the IOB team from the OlympicDestroyer dataset. Each command will include a brief description and a link to the Kestrel team's huntflows (in their Sweat Equity).
+
+### Command 1
+This command does not perform a kestrel hunt, but requests a list of huntflows stored in the hunt directory.
+```
+{
+    "action": "query",
+    "target": {
+        "th": {
+            "huntflows": {
+                "path": "./"
+            }
+        }
+    }
+}
+``` 
+### Command 2
+This command triggers a [huntflow to detect IoB T1562.004 'Disable or Modify System Firewall'](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-1.hf) and returns the matching process.
+```
+{
+  "action": "investigate",
+  "target": {
+      "th": {
+      "hunt": "./hunts/jinja/oc2-hunt-1.jhf"
+      }
+  }
+}
+```
+### Command 3
+This command triggers a Kestrel hunt to [Discover Parent Processes](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-2.hf) of the process discovered in Command 2.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-2.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+        "string_args": ["filename_1:disablefw.json", "filename_2:hosts.json"]
+        }
+        }
+    }
+}
+```
+### Command 4
+This command triggers a Kestrel hunt to [Discover Sibling Processes](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-3.hf) of the process discovered in Command 2.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-3.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+        "string_args": ["filename_1:disablefw.json", "filename_2:hosts.json"]
+        }
+        }
+    }
+}
+```
+### Command 5
+This command triggers a Kestrel hunt to [Correlate Networking](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-4.hf) to find the impact of this process.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-4.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+            "string_args": ["filename_1:siblings.json", "filename_2:hosts.json"]
+            }
+        }
+    }
+}
+```
+
+## SBOMs
+SPDX SBOMs created through GitHub for OpenC2 Integration Framework (OIF) components.
+* [OIF Orchestrator SBOM](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/HII/openc2-oif-orchestrator-2_ScreamBun_a39c6cdf0582bd59dd0e156d224e61b777c87718.json)
+* [OIF Consumer Device SBOM](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/HII/openc2-oif-device_ScreamBun_d7b24a8056b5e4410af192e0f1811025375f7b5d.json)
