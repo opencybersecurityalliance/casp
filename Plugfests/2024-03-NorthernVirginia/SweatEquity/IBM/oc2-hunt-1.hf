@@ -10,9 +10,9 @@ disablefw = GET process FROM stixshifter://casp2024-edr
             WHERE (name = 'ufw' AND command_line LIKE '%disable%')
                OR (name = 'sudo' AND command_line LIKE '%ufw disable%')
                OR (name IN ('netsh', 'netsh.exe') AND command_line LIKE '%advfirewall%off%')
-            LAST 30 DAYS
+            LAST 90 DAYS
             
-hosts = FIND x-oca-asset LINKED disablefw LAST 30 DAYS
+hosts = FIND x-oca-asset LINKED disablefw LAST 90 DAYS
 
 SAVE disablefw TO disablefw.json
 SAVE hosts TO hosts.json
