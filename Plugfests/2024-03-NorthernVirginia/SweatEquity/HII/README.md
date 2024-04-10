@@ -1,6 +1,5 @@
 # HII Sweat Equity
 
-<<<<<<< main
 ## Use Case Support
 HII will participate in a demonstration session with Kestrel to illustrate the
 use of OpenC2 to invoke Kestrel capabilities in a hunting operation. This
@@ -143,3 +142,94 @@ Need help setting up a device and connecting an MQTT or HTTP endpoint?  No probl
 
 ![OC2 & Kestrel HL UC](https://github.com/ScreamBun/openc2-oif-device/blob/master/assets/oc2_kestrel_use_case.png)
 
+## Demo with IBM Kestrel Team
+* Our team plans to send the following OC2 Commands over MQTT to multiple devices to trigger Kestrel Huntflows on data provided by the IOB team from the OlympicDestroyer dataset. Each command will include a brief description and a link to the Kestrel team's huntflows (in their Sweat Equity).
+
+### Command 1
+This command does not perform a kestrel hunt, but requests a list of huntflows stored in the hunt directory.
+```
+{
+    "action": "query",
+    "target": {
+        "th": {
+            "huntflows": {
+                "path": "./"
+            }
+        }
+    }
+}
+``` 
+### Command 2
+This command triggers a [huntflow to detect IoB T1562.004 'Disable or Modify System Firewall'](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-1.hf) and returns the matching process.
+```
+{
+  "action": "investigate",
+  "target": {
+      "th": {
+      "hunt": "./hunts/jinja/oc2-hunt-1.jhf"
+      }
+  }
+}
+```
+### Command 3
+This command triggers a Kestrel hunt to [Discover Parent Processes](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-2.hf) of the process discovered in Command 2.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-2.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+        "string_args": ["filename_1:disablefw.json", "filename_2:hosts.json"]
+        }
+        }
+    }
+}
+```
+### Command 4
+This command triggers a Kestrel hunt to [Discover Sibling Processes](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-3.hf) of the process discovered in Command 2.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-3.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+        "string_args": ["filename_1:disablefw.json", "filename_2:hosts.json"]
+        }
+        }
+    }
+}
+```
+### Command 5
+This command triggers a Kestrel hunt to [Correlate Networking](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/oc2-hunt-4.hf) to find the impact of this process.
+```
+{
+    "action": "investigate",
+    "target": {
+        "th": {
+        "hunt": "./hunts/jinja/oc2-hunt-4.jhf"
+        }
+    },
+    "args": {
+        "th": {
+        "huntargs": {
+            "string_args": ["filename_1:siblings.json", "filename_2:hosts.json"]
+            }
+        }
+    }
+}
+```
+
+## SBOMs
+SPDX SBOMs created through GitHub for OpenC2 Integration Framework (OIF) components.
+* [OIF Orchestrator SBOM](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/HII/openc2-oif-orchestrator-2_ScreamBun_a39c6cdf0582bd59dd0e156d224e61b777c87718.json)
+* [OIF Consumer Device SBOM](https://github.com/ScreamBun/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/HII/openc2-oif-device_ScreamBun_d7b24a8056b5e4410af192e0f1811025375f7b5d.json)
