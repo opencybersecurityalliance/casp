@@ -1,19 +1,20 @@
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
-  "id": "playbook--b3682304-868d-4cf0-a315-2db02e8c8f37",
+  "id": "playbook--c3a14b9e-cf8b-42de-a45c-d37caf3181ec",
   "name": "Kestrel / OpenC2 hunting playbook. Implements the equivalent of the Jupyter notebook for the April 2024 plugfest; see: ",
   "description": "Kestrel / OpenC2 hunt playbook for the April 2024 CASP Village plugfest; implements the equivalent of the Jupyter notebook posted by Kestrel. See:\n https://github.com/opencybersecurityalliance/casp/blob/main/Plugfests/2024-03-NorthernVirginia/SweatEquity/IBM/complete_hunt.ipynb",
-  "created_by": "identity--a33cedc7-44cd-4287-843f-fd7300029c7c",
-  "created": "2024-04-03T14:33:27.373Z",
-  "modified": "2024-04-03T14:50:14.504Z",
+  "created_by": "identity--1b0d2776-8329-4707-8dc3-231e854b55b4",
+  "created": "2024-04-10T14:57:42.134Z",
+  "modified": "2024-04-10T14:57:42.134Z",
   "revoked": false,
   "valid_from": "2024-03-29T18:04:00.000Z",
   "derived_from": [
     "playbook--8e2d132d-c9db-41fd-958b-d108f9e78638",
     "playbook--6f02886e-7256-4020-9c3c-70b5e724d792",
     "playbook--ff652503-c986-4c4b-bb70-b5513176a7c2",
-    "playbook--55b54ac9-b1b5-41b3-a878-aca6af481e7c"
+    "playbook--55b54ac9-b1b5-41b3-a878-aca6af481e7c",
+    "playbook--b3682304-868d-4cf0-a315-2db02e8c8f37"
   ],
   "workflow_start": "start--5f4dffe6-4892-4fb7-a47b-af95dc234bd6",
   "workflow": {
@@ -23,20 +24,20 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 535,
-          "y": 440,
+          "x": 560,
+          "y": 570,
           "width": 60,
           "height": 40,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                565,
-                565
+                590,
+                590
               ],
               "y": [
-                480,
-                510
+                610,
+                640
               ]
             }
           ]
@@ -52,20 +53,20 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 490,
-          "y": 510,
+          "x": 515,
+          "y": 640,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                640,
-                755
+                665,
+                745
               ],
               "y": [
-                540,
-                540
+                670,
+                670
               ]
             }
           ]
@@ -91,31 +92,31 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1000,
-          "y": 510,
+          "x": 990,
+          "y": 640,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1120,
-                1250
+                1110,
+                1240
               ],
               "y": [
-                540,
-                540
+                670,
+                670
               ]
             },
             {
               "type": "on-true",
               "x": [
-                1060,
-                1060
+                1050,
+                1050
               ],
               "y": [
-                510,
-                470
+                640,
+                600
               ]
             }
           ]
@@ -126,27 +127,27 @@
       "on_true": "end--2b155111-041d-4487-8d3b-ac3330ba31bd"
     },
     "action--ea148823-dde1-4744-a794-6edbbf8d508d": {
-      "name": "Identify Available Hunt Flows",
+      "name": "OC2/Hunt: Identify Available Hunt Flows",
       "description": "Query Hunt consumer to identify available hunt flows.",
       "on_completion": "while-condition--14d5afba-d4cb-41cb-87e0-02a27bbefe84",
       "step_extensions": {
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 755,
-          "y": 510,
+          "x": 745,
+          "y": 640,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                905,
-                1000
+                895,
+                990
               ],
               "y": [
-                540,
-                540
+                670,
+                670
               ]
             }
           ]
@@ -156,7 +157,7 @@
       "commands": [
         {
           "type": "openc2-http",
-          "command": "  \"msg\": {\n    \"headers\": {\n      \"request_id\": <generate>,\n      \"created\": <generate>,\n      \"from\": \"STORK\"\n      \"to\": \"oc2/cmd/hunt\"\n    },\n'body': {\n        'openc2': {\n            'request': {\n                'action': 'query,\n                'target': {\n                    'th': { 'huntflows'' }}}}}\n"
+          "command": "{\n    \"headers\": {\n      \"request_id\": <generate>,\n      \"created\": <generate>,\n      \"from\": \"STORK\"\n      \"to\": \"oc2/cmd/hunt\"\n    },\n'body': {\n        'openc2': {\n            'request': {\n                'action': 'query,\n                'target': {\n                    'th': { 'huntflows'' }}}}}"
         }
       ],
       "agent": "agent-target--dbb71902-11e4-4925-8408-8007906678e7",
@@ -169,41 +170,38 @@
       "description": "Hold until ready to execute next demonstration step",
       "on_completion": "action--498b4bdc-3f7f-4a60-921b-21f1dc61bfe2",
       "step_extensions": {
-        "0": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1510,
-          "y": 510,
+          "x": 1500,
+          "y": 640,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1570,
-                1570,
+                1560,
+                1560,
                 590,
                 590
               ],
               "y": [
-                570,
-                850,
-                850,
-                910
+                700,
+                910,
+                910,
+                940
               ]
             },
             {
               "type": "on-true",
               "x": [
-                1570,
-                1570
+                1620,
+                1680
               ],
               "y": [
-                510,
-                470
+                670,
+                670
               ]
             }
           ]
@@ -221,7 +219,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 515,
-          "y": 910,
+          "y": 940,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -229,11 +227,11 @@
               "type": "on-completion",
               "x": [
                 665,
-                755
+                765
               ],
               "y": [
-                940,
-                940
+                970,
+                970
               ]
             }
           ]
@@ -252,27 +250,27 @@
       ]
     },
     "action--4e1038a7-eecd-4d81-9fe5-c01266da00de": {
-      "name": "Execute \"Firewall Disabled\" Hunt Flow",
-      "description": "Executes a hunt flow to look for actions corresponding to the \"disable firewall\" IoB",
+      "name": "OpenC2/Hunt AP: Search for IoB",
+      "description": "Executes a hunt flow to look for actions corresponding to the \"disable firewall\" IoB; this invokes huntflow \"oc2-hunt-1.jhf\" and returns the identity of a suspicious process",
       "on_completion": "while-condition--3e1fdca7-3fdc-4be1-9a44-d47584e3f9dd",
       "step_extensions": {
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 755,
-          "y": 910,
+          "x": 765,
+          "y": 940,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                905,
+                915,
                 1000
               ],
               "y": [
-                940,
-                940
+                970,
+                970
               ]
             }
           ]
@@ -283,7 +281,7 @@
         {
           "type": "openc2-http",
           "description": "Trigger \"Disable Firewall IoB\" huntflow.",
-          "command": "{\n  \"headers\": {\n    \"request_id\": \"ae2ca7fcaa0e4e739f2e22a55b170396\",\n    \"created\": 1712063787321,\n    \"from\": \"OIF Orchestrator 2\n},\n  \"body\": {\n    \"openc2\": {\n      \"request\": {\n        \"action\": \"investigate\",\n        \"target\": { \"th\": { \"hunt\": \"./hunts/jinja/oc2-hunt-1.jhf\" } }\n      }\n    }\n  }\n}"
+          "command": "{\n  \"headers\": {\n    \"request_id\": \"ae2ca7fcaa0e4e739f2e22a55b170396\",\n    \"created\": 1712063787321,\n    \"from\": \"OIF Orchestrator 2\n},\n  \"body\": {\n    \"openc2\": {\n      \"request\": {\n        \"action\": \"investigate\",\n        \"target\": { \"th\": { \"hunt\": \"./hunts/jinja/oc2-hunt-1.jhf\" }\n      }\n    }\n  }\n}"
         }
       ],
       "agent": "agent-target--dbb71902-11e4-4925-8408-8007906678e7",
@@ -300,7 +298,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1000,
-          "y": 910,
+          "y": 940,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
@@ -311,8 +309,8 @@
                 1250
               ],
               "y": [
-                940,
-                940
+                970,
+                970
               ]
             },
             {
@@ -322,8 +320,8 @@
                 1060
               ],
               "y": [
-                970,
-                1000
+                1000,
+                1030
               ]
             }
           ]
@@ -338,14 +336,11 @@
       "description": "Command TwMH green or red depending on response result",
       "on_completion": "end--080fa817-c717-4e79-b881-e596612aab47",
       "step_extensions": {
-        "0": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1345,
-          "y": 1030,
+          "y": 1060,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -356,8 +351,8 @@
                 1420
               ],
               "y": [
-                1090,
-                1120
+                1120,
+                1150
               ]
             }
           ]
@@ -380,7 +375,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1390,
-          "y": 1120,
+          "y": 1150,
           "width": 60,
           "height": 40
         }
@@ -391,8 +386,8 @@
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1030,
-          "y": 430,
+          "x": 1020,
+          "y": 560,
           "width": 60,
           "height": 40
         }
@@ -401,13 +396,11 @@
     },
     "end--145281b0-0d7b-41b9-8d24-277d34abb6b3": {
       "step_extensions": {
-        "": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1030,
-          "y": 1000,
+          "y": 1030,
           "width": 60,
           "height": 40
         }
@@ -416,10 +409,13 @@
     },
     "end--7e9716c9-0b70-4cb4-88c4-cbd749bbe1bb": {
       "step_extensions": {
+        "": [
+          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
+        ],
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1540,
-          "y": 430,
+          "x": 1680,
+          "y": 650,
           "width": 60,
           "height": 40
         }
@@ -434,46 +430,46 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1250,
-          "y": 510,
+          "x": 1240,
+          "y": 640,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1370,
-                1510
+                1360,
+                1500
               ],
               "y": [
-                540,
-                540
+                670,
+                670
               ]
             },
             {
               "type": "on-true",
               "x": [
-                1250,
-                1210,
-                1210
+                1240,
+                1200,
+                1200
               ],
               "y": [
-                540,
-                540,
-                620
+                670,
+                670,
+                750
               ]
             },
             {
               "type": "on-false",
               "x": [
-                1310,
-                1310,
-                1355
+                1300,
+                1300,
+                1345
               ],
               "y": [
-                570,
-                650,
-                650
+                700,
+                780,
+                780
               ]
             }
           ]
@@ -488,26 +484,23 @@
       "name": "Command: Display Success",
       "on_completion": "end--dc4907a0-0778-49e4-a482-279315a869f3",
       "step_extensions": {
-        "0": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1135,
-          "y": 620,
+          "x": 1125,
+          "y": 750,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1210,
-                1210
+                1200,
+                1200
               ],
               "y": [
-                680,
-                710
+                810,
+                830
               ]
             }
           ]
@@ -529,8 +522,8 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1180,
-          "y": 710,
+          "x": 1170,
+          "y": 830,
           "width": 60,
           "height": 40
         }
@@ -544,20 +537,20 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1355,
-          "y": 620,
+          "x": 1345,
+          "y": 750,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1430,
-                1430
+                1420,
+                1420
               ],
               "y": [
-                680,
-                710
+                810,
+                830
               ]
             }
           ]
@@ -580,8 +573,8 @@
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1400,
-          "y": 710,
+          "x": 1390,
+          "y": 830,
           "width": 60,
           "height": 40
         }
@@ -597,7 +590,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1250,
-          "y": 910,
+          "y": 940,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
@@ -608,8 +601,8 @@
                 1500
               ],
               "y": [
-                940,
-                940
+                970,
+                970
               ]
             },
             {
@@ -619,8 +612,8 @@
                 1280
               ],
               "y": [
-                970,
-                1030
+                1000,
+                1060
               ]
             },
             {
@@ -630,8 +623,8 @@
                 1360
               ],
               "y": [
-                970,
-                1030
+                1000,
+                1060
               ]
             }
           ]
@@ -646,14 +639,11 @@
       "name": "Command: Display Success",
       "on_completion": "end--9249bfbe-a64b-4bbe-ab91-12509e643cb8",
       "step_extensions": {
-        "0": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1145,
-          "y": 1030,
+          "y": 1060,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -664,8 +654,8 @@
                 1220
               ],
               "y": [
-                1090,
-                1120
+                1120,
+                1150
               ]
             }
           ]
@@ -687,7 +677,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1190,
-          "y": 1120,
+          "y": 1150,
           "width": 60,
           "height": 40
         }
@@ -697,13 +687,13 @@
     "while-condition--bc6b619c-2352-4d5d-b1bd-c0973d0b7075": {
       "name": "Await Next Step",
       "description": "Hold until ready to execute next demonstration step",
-      "on_completion": "action--8b1f069b-f2bd-464a-9ebe-49c2de0281bf",
+      "on_completion": "action--9c940e0a-c226-41dd-9049-978e6b318935",
       "step_extensions": {
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1500,
-          "y": 910,
+          "y": 940,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
@@ -714,8 +704,8 @@
                 1680
               ],
               "y": [
-                940,
-                940
+                970,
+                970
               ]
             },
             {
@@ -727,10 +717,10 @@
                 590
               ],
               "y": [
-                970,
-                1210,
-                1210,
-                1280
+                1000,
+                1220,
+                1220,
+                1270
               ]
             }
           ]
@@ -745,7 +735,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1680,
-          "y": 920,
+          "y": 950,
           "width": 60,
           "height": 40
         }
@@ -756,13 +746,11 @@
       "name": "Command Pending Display",
       "on_completion": "action--a1af285b-b987-47ff-91c3-5e91f3fe55ea",
       "step_extensions": {
-        "": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 515,
-          "y": 1580,
+          "y": 1270,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -773,8 +761,8 @@
                 755
               ],
               "y": [
-                1610,
-                1610
+                1300,
+                1300
               ]
             }
           ]
@@ -792,15 +780,15 @@
       ]
     },
     "action--a1af285b-b987-47ff-91c3-5e91f3fe55ea": {
-      "name": "Execute: \"Find Parent Processes\" huntflow",
-      "description": "Executes a hunt to look for parent processes of the one that disabled the firewall.",
+      "name": "OC2/Hunt: Backtrack Ancestry",
+      "description": "Executes a hunt to look for parent processes of the one that disabled the firewall. This corresponds to \"oc2-hunt-1.hf\", and returns several generations of parent processes.",
       "on_completion": "while-condition--4e3f27ad-d15f-4494-bbad-e4c392da0517",
       "step_extensions": {
         "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 755,
-          "y": 1580,
+          "y": 1270,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -811,8 +799,8 @@
                 1000
               ],
               "y": [
-                1610,
-                1610
+                1300,
+                1300
               ]
             }
           ]
@@ -839,21 +827,10 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1000,
-          "y": 1580,
+          "y": 1270,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
-            {
-              "type": "on-true",
-              "x": [
-                1060,
-                1060
-              ],
-              "y": [
-                1640,
-                1670
-              ]
-            },
             {
               "type": "on-completion",
               "x": [
@@ -861,8 +838,19 @@
                 1250
               ],
               "y": [
-                1610,
-                1610
+                1300,
+                1300
+              ]
+            },
+            {
+              "type": "on-true",
+              "x": [
+                1060,
+                1060
+              ],
+              "y": [
+                1330,
+                1360
               ]
             }
           ]
@@ -877,7 +865,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1030,
-          "y": 1670,
+          "y": 1360,
           "width": 60,
           "height": 40
         }
@@ -889,16 +877,25 @@
       "description": "Check if the response to the hunting command is success or failure",
       "on_completion": "while-condition--80b8ade8-1bc8-4165-be11-523fc4caa800",
       "step_extensions": {
-        "": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1250,
-          "y": 1580,
+          "y": 1270,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
+            {
+              "type": "on-completion",
+              "x": [
+                1370,
+                1500
+              ],
+              "y": [
+                1300,
+                1300
+              ]
+            },
             {
               "type": "on-true",
               "x": [
@@ -907,9 +904,9 @@
                 1220
               ],
               "y": [
-                1610,
-                1610,
-                1700
+                1300,
+                1300,
+                1390
               ]
             },
             {
@@ -920,20 +917,9 @@
                 1345
               ],
               "y": [
-                1640,
-                1730,
-                1730
-              ]
-            },
-            {
-              "type": "on-completion",
-              "x": [
-                1370,
-                1500
-              ],
-              "y": [
-                1610,
-                1610
+                1330,
+                1420,
+                1420
               ]
             }
           ]
@@ -948,13 +934,13 @@
       "name": "Command: Display Success",
       "on_completion": "end--5a722851-1519-49f9-b3f8-b5f96d077f54",
       "step_extensions": {
-        "0": [
+        "": [
           "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
         ],
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1145,
-          "y": 1700,
+          "y": 1390,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -965,8 +951,8 @@
                 1220
               ],
               "y": [
-                1760,
-                1790
+                1450,
+                1480
               ]
             }
           ]
@@ -988,7 +974,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1190,
-          "y": 1790,
+          "y": 1480,
           "width": 60,
           "height": 40
         }
@@ -1002,7 +988,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1345,
-          "y": 1700,
+          "y": 1390,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1013,8 +999,8 @@
                 1420
               ],
               "y": [
-                1760,
-                1790
+                1450,
+                1480
               ]
             }
           ]
@@ -1036,7 +1022,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1390,
-          "y": 1790,
+          "y": 1480,
           "width": 60,
           "height": 40
         }
@@ -1048,27 +1034,14 @@
       "description": "Hold until ready to execute next demonstration step",
       "on_completion": "action--353c3821-9425-4a00-b44e-779e025b987f",
       "step_extensions": {
-        "0": [
-          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
-        ],
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1500,
-          "y": 1580,
+          "y": 1270,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
-            {
-              "type": "on-true",
-              "x": [
-                1620,
-                1680
-              ],
-              "y": [
-                1610,
-                1610
-              ]
-            },
             {
               "type": "on-completion",
               "x": [
@@ -1078,10 +1051,21 @@
                 590
               ],
               "y": [
-                1640,
-                1850,
-                1850,
-                1880
+                1330,
+                1540,
+                1540,
+                1570
+              ]
+            },
+            {
+              "type": "on-true",
+              "x": [
+                1620,
+                1680
+              ],
+              "y": [
+                1300,
+                1300
               ]
             }
           ]
@@ -1096,7 +1080,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1680,
-          "y": 1590,
+          "y": 1280,
           "width": 60,
           "height": 40
         }
@@ -1107,10 +1091,13 @@
       "name": " \"Command Pending\" Display",
       "on_completion": "action--cb1af24d-d214-4036-99d4-6feb12d27e41",
       "step_extensions": {
+        "0": [
+          "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f"
+        ],
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 515,
-          "y": 1880,
+          "y": 1570,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1121,8 +1108,8 @@
                 755
               ],
               "y": [
-                1910,
-                1910
+                1600,
+                1600
               ]
             }
           ]
@@ -1140,14 +1127,15 @@
       ]
     },
     "action--cb1af24d-d214-4036-99d4-6feb12d27e41": {
-      "name": "Execute: \"Find Sibling Processes\" huntflow",
-      "description": "Executes a hunt to look for sibling processes of the one that disabled the firewall.",
+      "name": "OC2/Hunt: Discover Siblings",
+      "description": "Executes a hunt to look for sibling processes of the one that disabled the firewall. This corresponds to \"oc2-hunt-3.hf\", and returns a list of processes spawned by the ancestor processes identified in the previous stage.",
       "on_completion": "while-condition--38c41a08-7f06-4310-88c9-91302fd46b81",
       "step_extensions": {
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 755,
-          "y": 1880,
+          "y": 1570,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1158,8 +1146,8 @@
                 1000
               ],
               "y": [
-                1910,
-                1910
+                1600,
+                1600
               ]
             }
           ]
@@ -1169,7 +1157,7 @@
       "commands": [
         {
           "type": "openc2-http",
-          "command": "{\n    \"action\": \"investigate\",\n    \"target\": {\n        \"th\": {\n        \"hunt\": \"./hunts/jinja/oc2-hunt-4.jhf\"\n        }\n    },\n    \"args\": {\n        \"th\": {\n        \"huntargs\": {\n            \"string_args\": [\"filename_1:siblings.json\", \"filename_2:hosts.json\"]\n            }\n        }\n    }\n}"
+          "command": "{\n    \"action\": \"investigate\",\n    \"target\": {\n        \"th\": {\n        \"hunt\": \"./hunts/jinja/oc2-hunt-3.jhf\"\n        }\n    },\n    \"args\": {\n        \"th\": {\n        \"huntargs\": {\n            \"string_args\": [\"filename_1:siblings.json\", \"filename_2:hosts.json\"]\n            }\n        }\n    }\n}"
         }
       ],
       "agent": "agent-target--dbb71902-11e4-4925-8408-8007906678e7",
@@ -1182,24 +1170,14 @@
       "description": "Hold pending response message from specified OpenC2 Consumer(s)",
       "on_completion": "if-condition--ae189b06-ceb4-447f-86ae-c79e543736ae",
       "step_extensions": {
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1000,
-          "y": 1880,
+          "y": 1570,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
-            {
-              "type": "on-true",
-              "x": [
-                1060,
-                1060
-              ],
-              "y": [
-                1940,
-                1960
-              ]
-            },
             {
               "type": "on-completion",
               "x": [
@@ -1207,8 +1185,19 @@
                 1250
               ],
               "y": [
-                1910,
-                1910
+                1600,
+                1600
+              ]
+            },
+            {
+              "type": "on-true",
+              "x": [
+                1060,
+                1060
+              ],
+              "y": [
+                1630,
+                1650
               ]
             }
           ]
@@ -1223,7 +1212,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1030,
-          "y": 1960,
+          "y": 1650,
           "width": 60,
           "height": 40
         }
@@ -1233,12 +1222,13 @@
     "if-condition--ae189b06-ceb4-447f-86ae-c79e543736ae": {
       "name": "Response = Successful?",
       "description": "Check if the response to the hunting command is success or failure",
-      "on_completion": "end--fed4741e-86bc-463c-b186-6111f0642c77",
+      "on_completion": "if-condition--c64f1bf0-8b74-46db-84d3-deefc67b03ae",
       "step_extensions": {
+        "": "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f",
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1250,
-          "y": 1880,
+          "y": 1570,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
@@ -1250,9 +1240,9 @@
                 1220
               ],
               "y": [
-                1910,
-                1910,
-                1970
+                1600,
+                1600,
+                1660
               ]
             },
             {
@@ -1263,20 +1253,20 @@
                 1345
               ],
               "y": [
-                1940,
-                2000,
-                2000
+                1630,
+                1690,
+                1690
               ]
             },
             {
               "type": "on-completion",
               "x": [
                 1370,
-                1680
+                1510
               ],
               "y": [
-                1910,
-                1910
+                1600,
+                1600
               ]
             }
           ]
@@ -1294,7 +1284,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1145,
-          "y": 1970,
+          "y": 1660,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1305,8 +1295,8 @@
                 1220
               ],
               "y": [
-                2030,
-                2060
+                1720,
+                1750
               ]
             }
           ]
@@ -1328,7 +1318,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1190,
-          "y": 2060,
+          "y": 1750,
           "width": 60,
           "height": 40
         }
@@ -1342,7 +1332,7 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1345,
-          "y": 1970,
+          "y": 1660,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1353,8 +1343,8 @@
                 1420
               ],
               "y": [
-                2030,
-                2060
+                1720,
+                1750
               ]
             }
           ]
@@ -1376,33 +1366,78 @@
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1390,
-          "y": 2060,
+          "y": 1750,
           "width": 60,
           "height": 40
         }
       },
       "type": "end"
     },
-    "end--fed4741e-86bc-463c-b186-6111f0642c77": {
+    "if-condition--c64f1bf0-8b74-46db-84d3-deefc67b03ae": {
+      "name": "Await Next Step",
+      "description": "Hold until ready to execute next demonstration step",
+      "on_completion": "action--8d7342a1-918d-4947-92cb-3b63c699e1d0",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "coordinates",
+          "x": 1510,
+          "y": 1570,
+          "width": 120,
+          "height": 60,
+          "outgoing_connections": [
+            {
+              "type": "on-true",
+              "x": [
+                1630,
+                1680
+              ],
+              "y": [
+                1600,
+                1600
+              ]
+            },
+            {
+              "type": "on-completion",
+              "x": [
+                1570,
+                1570,
+                590,
+                590
+              ],
+              "y": [
+                1630,
+                1840,
+                1840,
+                1870
+              ]
+            }
+          ]
+        }
+      },
+      "type": "if-condition",
+      "condition": "Operator input to proceed",
+      "on_true": "end--347549e5-d9e0-4360-947c-8e89660b388c"
+    },
+    "end--347549e5-d9e0-4360-947c-8e89660b388c": {
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1680,
-          "y": 1890,
+          "y": 1580,
           "width": 60,
           "height": 40
         }
       },
       "type": "end"
     },
-    "action--8b1f069b-f2bd-464a-9ebe-49c2de0281bf": {
-      "name": "Command Pending Display",
-      "on_completion": "action--a1a07951-e1c1-4e93-8f73-9cb561786de7",
+    "action--8d7342a1-918d-4947-92cb-3b63c699e1d0": {
+      "name": "\"Command Pending\" Display",
+      "on_completion": "action--ee4348de-66e6-4cfa-9a1c-78f4edcdf1bb",
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 515,
-          "y": 1280,
+          "y": 1870,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1413,8 +1448,8 @@
                 755
               ],
               "y": [
-                1310,
-                1310
+                1900,
+                1900
               ]
             }
           ]
@@ -1431,15 +1466,15 @@
         "agent-target--c03ba26c-3e05-4405-b35a-98b3c2003521"
       ]
     },
-    "action--a1a07951-e1c1-4e93-8f73-9cb561786de7": {
-      "name": "Command: Find Suspect Process",
-      "description": "Execute a hunt to identify the process that disabled the firewall",
-      "on_completion": "while-condition--41e1aa52-c133-4bde-a63d-1b3d588ff4db",
+    "action--ee4348de-66e6-4cfa-9a1c-78f4edcdf1bb": {
+      "name": "OC2/Hunt: Correlate Networking",
+      "description": "Executes a hunt to look for network traffic associated with the processes identified in previous hunting steps. This corresponds to \"oc2-hunt-4.hf\", and returns remote IP addresses contacted by the processes identified.",
+      "on_completion": "while-condition--0f189468-a9a8-4c3b-b992-8288d6a3eb54",
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 755,
-          "y": 1280,
+          "y": 1870,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1450,8 +1485,8 @@
                 1000
               ],
               "y": [
-                1310,
-                1310
+                1900,
+                1900
               ]
             }
           ]
@@ -1461,7 +1496,7 @@
       "commands": [
         {
           "type": "openc2-http",
-          "command": "{\n    \"headers\": {\n        \"request_id\": \"ae2ca7fcaa0e4e739f2e22a55b170491\",\n        \"created\": 1712063788821,\n        \"from\": \"OIF Orchestrator 2\"\n    },\n    \"body\": {\n        \"openc2\": {\n            \"request\": {\n                \"action\": \"investigate\",\n                \"target\": {\n                    \"th\": {\n                    \"hunt\": \"./hunts/jinja/oc2-hunt-2.jhf\"\n                    }\n                },\n                \"args\": {\n                    \"th\": {\n                    \"huntargs\": {\n                        \"string_args\": [\"filename_1:disablefw.json\", \"filename_2:hosts.json\"]\n                        }\n                    }\n                }\n            }\n        }\n    }\n}"
+          "command": "{\n    \"action\": \"investigate\",\n    \"target\": {\n        \"th\": {\n        \"hunt\": \"./hunts/jinja/oc2-hunt-4.jhf\"\n        }\n    },\n    \"args\": {\n        \"th\": {\n        \"huntargs\": {\n            \"string_args\": [\"filename_1:siblings.json\", \"filename_2:hosts.json\"]\n            }\n        }\n    }\n}"
         }
       ],
       "agent": "agent-target--dbb71902-11e4-4925-8408-8007906678e7",
@@ -1469,26 +1504,38 @@
         "agent-target--92aad838-a75c-4102-804e-b25d5e7e9234"
       ]
     },
-    "while-condition--41e1aa52-c133-4bde-a63d-1b3d588ff4db": {
+    "while-condition--0f189468-a9a8-4c3b-b992-8288d6a3eb54": {
       "name": "Await OpenC2 Response",
       "description": "Hold pending response message from specified OpenC2 Consumer(s)",
+      "on_completion": "if-condition--ade4f580-c9ac-48af-8f54-48369b1cb8b8",
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1000,
-          "y": 1280,
+          "y": 1870,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
             {
-              "type": "on-true",
+              "type": "on-completion",
               "x": [
                 1120,
                 1250
               ],
               "y": [
-                1310,
-                1310
+                1900,
+                1900
+              ]
+            },
+            {
+              "type": "on-true",
+              "x": [
+                1060,
+                1060
+              ],
+              "y": [
+                1930,
+                1950
               ]
             }
           ]
@@ -1496,31 +1543,42 @@
       },
       "type": "while-condition",
       "condition": "Response received from TH-AP Consumer",
-      "on_true": "if-condition--673f5ad6-51e7-45fd-a019-26872c141f95"
+      "on_true": "end--bf403c73-9238-401e-b467-9d41dc5e9058"
     },
-    "if-condition--673f5ad6-51e7-45fd-a019-26872c141f95": {
+    "if-condition--ade4f580-c9ac-48af-8f54-48369b1cb8b8": {
       "name": "Response = Successful?",
       "description": "Check if the response to the hunting command is success or failure",
-      "on_completion": "while-condition--9670208c-a36e-4c95-8b97-13a721417438",
+      "on_completion": "end--ac313fa1-5c68-491b-a723-008418b664ea",
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1250,
-          "y": 1280,
+          "y": 1870,
           "width": 120,
           "height": 60,
           "outgoing_connections": [
             {
+              "type": "on-completion",
+              "x": [
+                1370,
+                1500
+              ],
+              "y": [
+                1900,
+                1900
+              ]
+            },
+            {
               "type": "on-true",
               "x": [
                 1250,
-                1220,
-                1220
+                1230,
+                1230
               ],
               "y": [
-                1310,
-                1310,
-                1380
+                1900,
+                1900,
+                2000
               ]
             },
             {
@@ -1531,20 +1589,9 @@
                 1345
               ],
               "y": [
-                1340,
-                1410,
-                1410
-              ]
-            },
-            {
-              "type": "on-completion",
-              "x": [
-                1370,
-                1500
-              ],
-              "y": [
-                1310,
-                1310
+                1930,
+                2030,
+                2030
               ]
             }
           ]
@@ -1552,29 +1599,53 @@
       },
       "type": "if-condition",
       "condition": "\"response:status\" == 200",
-      "on_true": "action--9b89bf33-d9ec-47fe-bc78-dfd7c538d40a",
-      "on_false": "action--2e1630a9-1566-4648-ae1e-ad9336be96ed"
+      "on_true": "action--98322e6b-191c-463f-b25c-b6de04af9c8e",
+      "on_false": "action--8f826cbe-81ea-411b-b96f-bc6b1f213a92"
     },
-    "action--9b89bf33-d9ec-47fe-bc78-dfd7c538d40a": {
-      "name": "Command: Display Success",
-      "on_completion": "end--f3e4f866-c01b-4f77-8ed1-834459b57f20",
+    "end--bf403c73-9238-401e-b467-9d41dc5e9058": {
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1145,
-          "y": 1380,
+          "x": 1030,
+          "y": 1950,
+          "width": 60,
+          "height": 40
+        }
+      },
+      "type": "end"
+    },
+    "end--ac313fa1-5c68-491b-a723-008418b664ea": {
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "coordinates",
+          "x": 1500,
+          "y": 1880,
+          "width": 60,
+          "height": 40
+        }
+      },
+      "type": "end"
+    },
+    "action--98322e6b-191c-463f-b25c-b6de04af9c8e": {
+      "name": "Command: Display Success",
+      "on_completion": "end--89612546-3039-48da-8265-f2d0909540b0",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "coordinates",
+          "x": 1155,
+          "y": 2000,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
             {
               "type": "on-completion",
               "x": [
-                1220,
-                1220
+                1230,
+                1230
               ],
               "y": [
-                1440,
-                1480
+                2060,
+                2080
               ]
             }
           ]
@@ -1591,26 +1662,14 @@
         "agent-target--c03ba26c-3e05-4405-b35a-98b3c2003521"
       ]
     },
-    "end--f3e4f866-c01b-4f77-8ed1-834459b57f20": {
-      "step_extensions": {
-        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
-          "type": "coordinates",
-          "x": 1190,
-          "y": 1480,
-          "width": 60,
-          "height": 40
-        }
-      },
-      "type": "end"
-    },
-    "action--2e1630a9-1566-4648-ae1e-ad9336be96ed": {
-      "name": "Command: Display Failure",
-      "on_completion": "end--f1dfe1ed-cd80-45c4-9b09-fa4726b01681",
+    "action--8f826cbe-81ea-411b-b96f-bc6b1f213a92": {
+      "name": "Command: Display Fialure",
+      "on_completion": "end--f6a0cb45-db54-4219-a9b0-41bae8b9da19",
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
           "x": 1345,
-          "y": 1380,
+          "y": 2000,
           "width": 150,
           "height": 60,
           "outgoing_connections": [
@@ -1621,8 +1680,8 @@
                 1420
               ],
               "y": [
-                1440,
-                1480
+                2060,
+                2080
               ]
             }
           ]
@@ -1639,69 +1698,24 @@
         "agent-target--c03ba26c-3e05-4405-b35a-98b3c2003521"
       ]
     },
-    "end--f1dfe1ed-cd80-45c4-9b09-fa4726b01681": {
+    "end--89612546-3039-48da-8265-f2d0909540b0": {
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1390,
-          "y": 1480,
+          "x": 1200,
+          "y": 2080,
           "width": 60,
           "height": 40
         }
       },
       "type": "end"
     },
-    "while-condition--9670208c-a36e-4c95-8b97-13a721417438": {
-      "name": "Await Next Step",
-      "description": "Hold until ready to execute next demonstration step",
-      "on_completion": "action--9c940e0a-c226-41dd-9049-978e6b318935",
+    "end--f6a0cb45-db54-4219-a9b0-41bae8b9da19": {
       "step_extensions": {
         "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
           "type": "coordinates",
-          "x": 1500,
-          "y": 1280,
-          "width": 240,
-          "height": 60,
-          "outgoing_connections": [
-            {
-              "type": "on-true",
-              "x": [
-                1620,
-                1680
-              ],
-              "y": [
-                1310,
-                1310
-              ]
-            },
-            {
-              "type": "on-completion",
-              "x": [
-                1560,
-                1560,
-                590,
-                590
-              ],
-              "y": [
-                1340,
-                1550,
-                1550,
-                1580
-              ]
-            }
-          ]
-        }
-      },
-      "type": "while-condition",
-      "condition": "Operator input to proceed",
-      "on_true": "end--27613d67-25d7-4890-b852-6b6d909a126c"
-    },
-    "end--27613d67-25d7-4890-b852-6b6d909a126c": {
-      "step_extensions": {
-        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
-          "type": "coordinates",
-          "x": 1680,
-          "y": 1290,
+          "x": 1390,
+          "y": 2080,
           "width": 60,
           "height": 40
         }
