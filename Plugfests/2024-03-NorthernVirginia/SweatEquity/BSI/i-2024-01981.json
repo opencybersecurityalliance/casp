@@ -1,0 +1,132 @@
+{
+  "document": {
+    "category": "csaf_vex",
+    "csaf_version": "2.0",
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Investigators Inc. VEX document. Unofficial content for demonstration purposes only.",
+        "title": "Author comment"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "This content is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). If you distribute this content, or a modified version of it, you must provide attribution to Investigators Inc. and provide a link to the original.",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "name": "Investigators Inc.",
+      "namespace": "https://investigators.example"
+    },
+    "title": "WitchWashy investigate by Investigators Inc.",
+    "tracking": {
+      "current_release_date": "2024-04-11T12:00:00.000Z",
+      "generator": {
+        "date": "2024-04-11T17:13:27.808Z",
+        "engine": {
+          "name": "Secvisogram",
+          "version": "2.5.2"
+        }
+      },
+      "id": "I-2024-01981",
+      "initial_release_date": "2024-04-11T10:00:00.000Z",
+      "revision_history": [
+        {
+          "date": "2024-04-11T10:00:00.000Z",
+          "number": "1",
+          "summary": "Initial version."
+        },
+        {
+          "date": "2024-04-11T11:00:00.000Z",
+          "number": "2",
+          "summary": "Add additional supported versions into the investigation."
+        },
+        {
+          "date": "2024-04-11T12:00:00.000Z",
+          "number": "3",
+          "summary": "Add cloud service 'Mozart'"
+        }
+      ],
+      "status": "interim",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "17.4",
+                "product": {
+                  "name": "Investigators GHI 17.4",
+                  "product_id": "CSAFPID-0001"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "17.3",
+                "product": {
+                  "name": "Investigators GHI 17.3",
+                  "product_id": "CSAFPID-0002"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "17.2",
+                "product": {
+                  "name": "Investigators GHI 17.2",
+                  "product_id": "CSAFPID-0003"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "GHI"
+          },
+          {
+            "category": "product_name",
+            "name": "Mozart",
+            "product": {
+              "name": "Investigators Mozart",
+              "product_id": "CSAFPID-0004"
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Investigators"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "ids": [
+        {
+          "system_name": "Murphy’s Law LLP",
+          "text": "WitchyWashy OSS-vuln 01"
+        },
+        {
+          "system_name": "Investigators' Bugtracking",
+          "text": "198100"
+        }
+      ],
+      "notes": [
+        {
+          "category": "summary",
+          "text": "An open source vulnerability exists that an attacker might use to execute arbitrary code unauthenticated.",
+          "title": "Vulnerability summary"
+        }
+      ],
+      "product_status": {
+        "under_investigation": [
+          "CSAFPID-0001",
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004"
+        ]
+      }
+    }
+  ]
+}
