@@ -1,0 +1,445 @@
+{
+  "document": {
+    "acknowledgments": [
+      {
+        "organization": "Murphy's Law LLP",
+        "summary": "prompt sharing of exploit findings"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "CRITICAL"
+    },
+    "category": "csaf_vex",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE"
+      }
+    },
+    "notes": [
+      {
+        "category": "summary",
+        "text": "Example Company VEX document. Unofficial content for demonstration purposes only.",
+        "title": "Author comment"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "THIS DOCUMENT IS PROVIDED ON AN 'AS IS' BASIS AND DOES NOT IMPLY ANY KIND OF GUARANTEE OR WARRANTY, INCLUDING THE WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE. YOUR USE OF THE INFORMATION ON THE DOCUMENT OR MATERIALS LINKED FROM THE DOCUMENT IS AT YOUR OWN RISK. ",
+        "title": "Terms of Use"
+      }
+    ],
+    "publisher": {
+      "category": "vendor",
+      "issuing_authority": "Example Company ProductCERT is responsible for vulnerability handling regarding any services and products of Example Company.",
+      "name": "Example Company ProductCERT",
+      "namespace": "https://psirt.example.com"
+    },
+    "references": [
+      {
+        "category": "external",
+        "summary": "WitchyWashy Incident",
+        "url": "https://murphyslaw.example/security/WitchyWashy"
+      }
+    ],
+    "title": "VEX status of Example Company Product regarding WitchyWashy Exploits",
+    "tracking": {
+      "current_release_date": "2024-04-11T16:00:00.000Z",
+      "generator": {
+        "date": "2024-04-11T15:38:47.373Z",
+        "engine": {
+          "name": "Secvisogram",
+          "version": "2.5.2"
+        }
+      },
+      "id": "ECV-2024-0001",
+      "initial_release_date": "2024-04-11T16:00:00.000Z",
+      "revision_history": [
+        {
+          "date": "2024-04-11T16:00:00.000Z",
+          "number": "1",
+          "summary": "Initial version."
+        }
+      ],
+      "status": "interim",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "4.2",
+                "product": {
+                  "name": "Example Company ABC 4.2",
+                  "product_id": "CSAFPID-0001"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.4",
+                "product": {
+                  "name": "Example Company ABC 2.4",
+                  "product_id": "CSAFPID-0002"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.6",
+                "product": {
+                  "name": "Example Company ABC 2.6",
+                  "product_id": "CSAFPID-0003"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vers:generic/>=2.9|<=4.1",
+                "product": {
+                  "name": "Example Company ABC >=2.9|<=4.1",
+                  "product_id": "CSAFPID-0004"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vers:generic/>=1.0|<=2.3",
+                "product": {
+                  "name": "Example Company ABC >=1.0|<=2.3",
+                  "product_id": "CSAFPID-0005"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.5",
+                "product": {
+                  "name": "Example Company ABC 2.5",
+                  "product_id": "CSAFPID-0006"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vers:generic/>=2.7|<=2.8",
+                "product": {
+                  "name": "Example Company ABC >=2.7|<=2.8",
+                  "product_id": "CSAFPID-0007"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "ABC"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:generic/>=4.5|<=5.0",
+                "product": {
+                  "name": "Example Company JKL >=4.5|<=5.0",
+                  "product_id": "CSAFPID-0008"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vers:generic/>=1.0|<=4.4",
+                "product": {
+                  "name": "Example Company JKL >=1.0|<=4.4",
+                  "product_id": "CSAFPID-0009"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.1",
+                "product": {
+                  "name": "Example Company JKL 5.1",
+                  "product_id": "CSAFPID-0010"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.2",
+                "product": {
+                  "name": "Example Company JKL 5.2",
+                  "product_id": "CSAFPID-0011"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "JKL"
+          }
+        ],
+        "category": "vendor",
+        "name": "Example Company"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "ids": [
+        {
+          "system_name": "Murphy’s Law LLP",
+          "text": "WitchyWashy OSS-vuln 01"
+        },
+        {
+          "system_name": "Example Company PSIRT",
+          "text": "WitchyWashy OSS-vuln 01"
+        }
+      ],
+      "notes": [
+        {
+          "category": "summary",
+          "text": "An open source vulnerability exists that an attacker might use to execute arbitrary code unauthenticated.",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "Currently, there has no CVE been assigned for the vulnerability. Therefore, we used our own system to assign one and included the counting regarding the original report from Murphy’s Law LLP. The CVE will be added as soon as we become aware of it.",
+          "title": "Note on CVE and Vulnerability ID"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "CSAFPID-0010",
+          "CSAFPID-0011"
+        ],
+        "known_affected": [
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004",
+          "CSAFPID-0008"
+        ],
+        "known_not_affected": [
+          "CSAFPID-0001",
+          "CSAFPID-0005",
+          "CSAFPID-0006",
+          "CSAFPID-0007",
+          "CSAFPID-0009"
+        ],
+        "recommended": [
+          "CSAFPID-0011"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Update to version 4.2 or later.",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to the new version 5.2 or later.",
+          "product_ids": [
+            "CSAFPID-0008"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 10,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "CHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0008"
+          ]
+        },
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 10,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "modifiedAvailabilityImpact": "NONE",
+            "modifiedConfidentialityImpact": "NONE",
+            "modifiedIntegrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "CHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/MC:N/MI:N/MA:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0009"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Class with vulnerable code was removed before shipping.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "The open source component was not included in those versions at all.",
+          "product_ids": [
+            "CSAFPID-0009"
+          ]
+        }
+      ],
+      "title": "Open source software vulnerability 01"
+    },
+    {
+      "ids": [
+        {
+          "system_name": "Murphy’s Law LLP",
+          "text": "WitchyWashy CS-vuln 01"
+        },
+        {
+          "system_name": "Example Company PSIRT",
+          "text": "WitchyWashy CS-vuln 01"
+        }
+      ],
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A commercial software vulnerability exists that an attacker might use to execute arbitrary code unauthenticated.",
+          "title": "Vulnerability summary"
+        },
+        {
+          "category": "general",
+          "text": "Currently, there has no CVE been assigned for the vulnerability. Therefore, we used our own system to assign one and included the counting regarding the original report from Murphy’s Law LLP. The CVE will be added as soon as we become aware of it.",
+          "title": "Note on CVE and Vulnerability ID"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "CSAFPID-0011"
+        ],
+        "known_affected": [
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004",
+          "CSAFPID-0010"
+        ],
+        "known_not_affected": [
+          "CSAFPID-0001",
+          "CSAFPID-0005",
+          "CSAFPID-0006",
+          "CSAFPID-0007",
+          "CSAFPID-0009"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Update to version 4.2 or later.",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to the new version 5.2 or later.",
+          "product_ids": [
+            "CSAFPID-0008",
+            "CSAFPID-0010"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 10,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "privilegesRequired": "NONE",
+            "scope": "CHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0008",
+            "CSAFPID-0010"
+          ]
+        },
+        {
+          "cvss_v3": {
+            "attackComplexity": "LOW",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "HIGH",
+            "baseScore": 10,
+            "baseSeverity": "CRITICAL",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "HIGH",
+            "modifiedAvailabilityImpact": "NONE",
+            "modifiedConfidentialityImpact": "NONE",
+            "modifiedIntegrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "CHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/MC:N/MI:N/MA:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0009"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "details": "Class with vulnerable code was removed before shipping.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007"
+          ]
+        },
+        {
+          "category": "impact",
+          "details": "The commercial software component was not included in those versions at all.",
+          "product_ids": [
+            "CSAFPID-0009"
+          ]
+        }
+      ],
+      "title": "Commercial software vulnerability 01"
+    }
+  ]
+}
