@@ -1,0 +1,1602 @@
+{
+    "type": "bundle",
+    "id": "bundle--05805fb9-cf62-4184-b772-e0c2754012ca",
+    "objects": [
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:AMBER",
+            "definition": {
+                "tlp": "amber"
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--7aa7d283-5fdd-436c-9d82-3d42e3f2ab2c",
+            "created": "2024-01-25T01:00:59.515Z",
+            "modified": "2024-01-25T01:01:00.515Z",
+            "name": "Olympic Destroyer",
+            "report_types": [
+                "indicator"
+            ],
+            "published": "2024-01-25T01:00:59.297Z",
+            "object_refs": [
+                "indicator--eee280f7-7968-4c2c-bc28-e4b7b46d1f4f",
+                "indicator--a45d3c69-e4e3-423d-b8f4-ad6fc0889725",
+                "indicator--801816f3-2b72-4288-9cb1-f4c1e8b0d6aa",
+                "indicator--87d6a235-efd1-4a50-a841-3f70f575733a",
+                "indicator--caaea2c6-ac02-4cee-8203-d103a83ac2ec",
+                "indicator--48f969d6-c985-48c6-98d6-d1b9bad6372b",
+                "indicator--6235de70-e27b-4c69-951a-f0bc39c5686e",
+                "indicator--d7695116-9ecb-4c99-a339-555d1e404b24",
+                "indicator--47dc021f-eb73-41ad-ac5f-fba8ab18c508",
+                "indicator--178dee42-6f33-4c00-8e31-2d33f9707d64",
+                "indicator--f54358cd-c501-48ce-b25a-604ce1b4c87d",
+                "indicator--eb2b315a-b088-44b4-9707-7ce3e14709fe",
+                "indicator--5105ac2c-a38b-4f5e-b05f-b830e7a777d1",
+                "indicator--8dc0d654-40a7-49ee-a62a-fc925c2ad0f2",
+                "indicator--72956081-696a-400f-af7e-0a050b27a3ee",
+                "indicator--1883682f-f099-481d-b24b-fbfcbb3d4708",
+                "indicator--c36bd77b-d4c2-4e56-98b6-bb13bf9ba914",
+                "indicator--e7c6fe26-cd6c-4d5b-bfd2-6f82b280dded",
+                "indicator--334c8fb7-1f1d-4d94-b4ff-bc622fdb084f",
+                "indicator--13ae5344-4741-40d6-a4c7-19ce9d7f1ace",
+                "indicator--ac2598e3-8c08-4d3e-bb5e-d3f60afec67a",
+                "indicator--69bd7494-b5e8-44c3-ae9a-a84555313188",
+                "indicator--7b1b379c-6e95-428a-9f0e-7f336c4c82f5",
+                "indicator--3a42c92d-b2a3-46d0-9a3a-38b19cc7db00",
+                "indicator--8298d0f1-8cc4-4593-92b0-94b5c0761d40",
+                "indicator--c45c8367-27dd-403c-923d-0e2725c308c1",
+                "indicator--96bc832c-f2f5-4900-9eec-d44583fa8e76",
+                "indicator--c7141f02-67b4-406f-8396-bfe45efe3313",
+                "indicator--feaf02f0-f37c-4c1b-b618-0e0893f0be2a",
+                "indicator--bb4c23ff-3b04-45a6-8581-8d9cc019e79e",
+                "indicator--c458ec66-3bcd-4032-b795-1f566482f387",
+                "indicator--39ecff86-f20d-4914-b57c-c69927ab92e3",
+                "indicator--1e32a152-c2f1-4761-8f3b-677c1d039ca3",
+                "indicator--aa5b9b58-679d-401c-9405-0f5696480077",
+                "indicator--0525035f-4754-4378-aabb-aef7caaa10b5",
+                "indicator--ab907cd6-7941-49c5-9151-6746f3f2a092",
+                "indicator--12750fa6-077a-4129-9558-1eedf1c22aba",
+                "indicator--bc9e5911-46cd-46b0-9f31-46692a0f1073",
+                "indicator--b0980f14-66b1-46d9-acec-6c14094f8dec",
+                "indicator--37c80593-5327-4bcf-bd47-0ba4e1c12bc2",
+                "indicator--00234643-f641-435e-bddb-7bf0b0c0bc64",
+                "indicator--c71ef209-0eae-4afc-bae7-9cc088bf3c06",
+                "indicator--830507f5-be73-435b-b1ca-2df805ac0ea5",
+                "indicator--1497a8b8-8950-4e12-96d5-4d82f2d6ba2e",
+                "indicator--f544b3e3-09dd-4e4b-aa0b-c68fcd44cacb",
+                "indicator--ce5821eb-e1ba-47b5-af69-0dd6ec201cd4",
+                "indicator--24dad3be-deaa-41ae-aef9-25f46495086f",
+                "indicator--70f15efe-76b1-4736-9919-e42e5cdc637f",
+                "indicator--948eb161-5bc1-41c1-9a5d-c6cb81e5e291",
+                "indicator--10e5077a-bd99-46b2-bb52-5f12bfb37e3c",
+                "indicator--cfe1f2e3-cfa6-4c27-981f-1f19b39c8d99",
+                "indicator--2a3298c8-ffc1-47ec-8766-81accd0fc2a3",
+                "indicator--ca49fd64-fdb6-48f9-b598-ed1c62cad827",
+                "indicator--13cc0507-08f2-4186-958b-6294e09022aa",
+                "indicator--ad0e8e31-fc6f-4293-898f-745ede8529a0",
+                "indicator--8a1dcb19-fb57-48ac-8932-c1da9c3de31e",
+                "indicator--f2b47e49-a0dc-431d-a790-22f500c15ebb",
+                "indicator--fc31050c-26de-4ac3-b798-b0d8474e4dbc",
+                "indicator--a9e24de9-3b84-4c22-a7bb-b65a136d37be",
+                "indicator--8c4fb1d6-6faf-4e32-9949-0656e5387aba",
+                "indicator--a21531f5-7003-4974-aedb-cc23f3acc741",
+                "indicator--d983fc0a-336f-4cd8-b372-8e45cf9947d6",
+                "indicator--572b2860-d40f-48de-9553-5d5bb2c452c3",
+                "indicator--fc2e5a08-1c98-460b-bb01-67b77b30e704",
+                "indicator--655874cd-d922-43ad-bd04-a775b4104583",
+                "indicator--d33c448b-3244-4154-8b66-bb7e9b324188",
+                "indicator--5bdddfe1-23d1-4bf8-b117-deebc48d42bf",
+                "indicator--8a95d347-5ef1-4c4d-bcfd-ef1266143816",
+                "indicator--eaa917fc-252e-4189-8f67-39a33eafe11f",
+                "indicator--b755fbbb-c815-45fb-94f2-d98bb4d3f4cc",
+                "indicator--5254ccf8-cfbd-400f-afbe-d514445f5e04",
+                "indicator--bf91780a-d6a8-4487-bd8a-aabdbf8ccddf",
+                "indicator--1d2ed931-15a5-4bde-989f-2a1bbc240e73",
+                "indicator--0d664905-6378-4a1e-aea7-f6420197c682"
+            ],
+            "confidence": 100,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0525035f-4754-4378-aabb-aef7caaa10b5",
+            "created": "2024-01-25T01:00:59.186Z",
+            "modified": "2024-01-25T01:01:00.186Z",
+            "name": "8.8.8.8",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '8.8.8.8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.186Z",
+            "labels": [
+                "Security Updates",
+                "remote code execution (RCE)",
+                "Atlassian Bamboo",
+                "CVE-2023-22512",
+                "Atlassian Jira",
+                "Bitbucket",
+                "Atlassian",
+                "CVE-2023-22513",
+                "Atlassian Confluence Data Center",
+                "Atlassian Confluence Server",
+                "Atlassian Confluence",
+                "Denial of Service (DoS)"
+            ],
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--87d6a235-efd1-4a50-a841-3f70f575733a",
+            "created": "2024-01-25T01:00:59.282Z",
+            "modified": "2024-01-25T01:01:00.282Z",
+            "name": "141b2190f51397dbd0dfde0e3904b264c91b6f81febc823ff0c33da980b69944",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '141b2190f51397dbd0dfde0e3904b264c91b6f81febc823ff0c33da980b69944']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.282Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--f88d31f6-486f-44da-b317-01333bde0b82"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:WHITE",
+            "definition": {
+                "tlp": "white"
+            }
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ce5821eb-e1ba-47b5-af69-0dd6ec201cd4",
+            "created": "2024-01-25T01:00:59.211Z",
+            "modified": "2024-01-25T01:01:00.211Z",
+            "name": "www.microsoft.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'www.microsoft.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.211Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 0
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bc9e5911-46cd-46b0-9f31-46692a0f1073",
+            "created": "2024-01-25T01:00:59.209Z",
+            "modified": "2024-01-25T01:01:00.209Z",
+            "name": "rc7fgq07icj8c9dm2gi34a4cckv235v1@developer.gserviceaccount.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[email-addr:value = 'rc7fgq07icj8c9dm2gi34a4cckv235v1@developer.gserviceaccount.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.209Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0d664905-6378-4a1e-aea7-f6420197c682",
+            "created": "2024-01-25T01:00:59.214Z",
+            "modified": "2024-01-25T01:01:00.214Z",
+            "name": "securitywap.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'securitywap.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.214Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c458ec66-3bcd-4032-b795-1f566482f387",
+            "created": "2024-01-25T01:00:59.260Z",
+            "modified": "2024-01-25T01:01:00.260Z",
+            "name": "3337e3875b05e0bfba69ab926532e3f179e8cfbf162ebb60ce58a0281437a7ef",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '3337e3875b05e0bfba69ab926532e3f179e8cfbf162ebb60ce58a0281437a7ef']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.26Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--72956081-696a-400f-af7e-0a050b27a3ee",
+            "created": "2024-01-25T01:00:59.235Z",
+            "modified": "2024-01-25T01:01:00.235Z",
+            "name": "7103c7e2924c3f4261d538662fa27266ba535bccefd16dc74f61219660a22b2d",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '7103c7e2924c3f4261d538662fa27266ba535bccefd16dc74f61219660a22b2d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.235Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fc31050c-26de-4ac3-b798-b0d8474e4dbc",
+            "created": "2024-01-25T01:00:59.280Z",
+            "modified": "2024-01-25T01:01:00.280Z",
+            "name": "ab5bf79274b6583a00be203256a4eacfa30a37bc889b5493da9456e2d5885c7f",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'ab5bf79274b6583a00be203256a4eacfa30a37bc889b5493da9456e2d5885c7f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.28Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--830507f5-be73-435b-b1ca-2df805ac0ea5",
+            "created": "2024-01-25T01:00:59.237Z",
+            "modified": "2024-01-25T01:01:00.237Z",
+            "name": "46e73ecd52fba5fa0c92ec6ddd90993e972eaa1303bd3c415a99ac628598564f",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '46e73ecd52fba5fa0c92ec6ddd90993e972eaa1303bd3c415a99ac628598564f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.237Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--00234643-f641-435e-bddb-7bf0b0c0bc64",
+            "created": "2024-01-25T01:00:59.265Z",
+            "modified": "2024-01-25T01:01:00.265Z",
+            "name": "dcbe0e625e122f93b53d8d78766dd77ce5618182bdf1c037e32bccb6ebc172b0",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'dcbe0e625e122f93b53d8d78766dd77ce5618182bdf1c037e32bccb6ebc172b0']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.265Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--801816f3-2b72-4288-9cb1-f4c1e8b0d6aa",
+            "created": "2024-01-25T01:00:59.251Z",
+            "modified": "2024-01-25T01:01:00.251Z",
+            "name": "6dd7965edf6d94a53cb8309b2a4f091a6d42c87cd8da92d7ba784dd5170511a2",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '6dd7965edf6d94a53cb8309b2a4f091a6d42c87cd8da92d7ba784dd5170511a2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.251Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 80
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8a1dcb19-fb57-48ac-8932-c1da9c3de31e",
+            "created": "2024-01-25T01:00:59.200Z",
+            "modified": "2024-01-25T01:01:00.200Z",
+            "name": "210.109.99.64",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '210.109.99.64']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.2Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--37c80593-5327-4bcf-bd47-0ba4e1c12bc2",
+            "created": "2024-01-25T01:00:59.191Z",
+            "modified": "2024-01-25T01:01:00.191Z",
+            "name": "192.229.211.108",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '192.229.211.108']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.191Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--24dad3be-deaa-41ae-aef9-25f46495086f",
+            "created": "2024-01-25T01:00:59.201Z",
+            "modified": "2024-01-25T01:01:00.201Z",
+            "name": "20.99.133.109",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '20.99.133.109']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.201Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3a42c92d-b2a3-46d0-9a3a-38b19cc7db00",
+            "created": "2024-01-25T01:00:59.199Z",
+            "modified": "2024-01-25T01:01:00.199Z",
+            "name": "20.99.186.246",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '20.99.186.246']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.199Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7b1b379c-6e95-428a-9f0e-7f336c4c82f5",
+            "created": "2024-01-25T01:00:59.190Z",
+            "modified": "2024-01-25T01:01:00.190Z",
+            "name": "192.184.60.229",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '192.184.60.229']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.19Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--aa5b9b58-679d-401c-9405-0f5696480077",
+            "created": "2024-01-25T01:00:59.195Z",
+            "modified": "2024-01-25T01:01:00.195Z",
+            "name": "20.99.185.48",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '20.99.185.48']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.195Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--eee280f7-7968-4c2c-bc28-e4b7b46d1f4f",
+            "created": "2024-01-25T01:00:59.188Z",
+            "modified": "2024-01-25T01:01:00.188Z",
+            "name": "224.0.0.252",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '224.0.0.252']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.188Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--96bc832c-f2f5-4900-9eec-d44583fa8e76",
+            "created": "2024-01-25T01:00:59.198Z",
+            "modified": "2024-01-25T01:01:00.198Z",
+            "name": "104.151.248.173",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.151.248.173']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.198Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c36bd77b-d4c2-4e56-98b6-bb13bf9ba914",
+            "created": "2024-01-25T01:00:59.206Z",
+            "modified": "2024-01-25T01:01:00.206Z",
+            "name": "239.255.255.250",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '239.255.255.250']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.206Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--13cc0507-08f2-4186-958b-6294e09022aa",
+            "created": "2024-01-25T01:00:59.207Z",
+            "modified": "2024-01-25T01:01:00.207Z",
+            "name": "23.216.147.64",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.216.147.64']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.207Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--70f15efe-76b1-4736-9919-e42e5cdc637f",
+            "created": "2024-01-25T01:00:59.180Z",
+            "modified": "2024-01-25T01:01:00.180Z",
+            "name": "http://239.255.255.250/",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'http://239.255.255.250/']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.18Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--69bd7494-b5e8-44c3-ae9a-a84555313188",
+            "created": "2024-01-25T01:00:59.182Z",
+            "modified": "2024-01-25T01:01:00.182Z",
+            "name": "http://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/7036048/21bade7d-455f-435a-b39e-",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'http://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/7036048/21bade7d-455f-435a-b39e-']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.182Z",
+            "confidence": 0,
+            "x_ctix_confidence_score": 20
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f54358cd-c501-48ce-b25a-604ce1b4c87d",
+            "created": "2024-01-25T01:00:59.216Z",
+            "modified": "2024-01-25T01:01:00.216Z",
+            "name": "developer.gserviceaccount.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'developer.gserviceaccount.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.216Z",
+            "confidence": 0,
+            "x_ctix_confidence_score": 20
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--39ecff86-f20d-4914-b57c-c69927ab92e3",
+            "created": "2024-01-25T01:00:59.185Z",
+            "modified": "2024-01-25T01:01:00.185Z",
+            "name": "http://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/7036048/8763b58d-2c90-40f2-aede-",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'http://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/7036048/8763b58d-2c90-40f2-aede-']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.185Z",
+            "confidence": 0,
+            "x_ctix_confidence_score": 20
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ab907cd6-7941-49c5-9151-6746f3f2a092",
+            "created": "2024-01-25T01:00:59.270Z",
+            "modified": "2024-01-25T01:01:00.270Z",
+            "name": "2bdfae9b20ddf14e7efea4d8ea8a01a8051dfea62fc9d26c5cf8c608cd92669b",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '2bdfae9b20ddf14e7efea4d8ea8a01a8051dfea62fc9d26c5cf8c608cd92669b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.27Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--eb2b315a-b088-44b4-9707-7ce3e14709fe",
+            "created": "2024-01-25T01:00:59.228Z",
+            "modified": "2024-01-25T01:01:00.228Z",
+            "name": "3e00106071db3951b3af536f7c339125f7747aad4521c2111a8b1930625196c8",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '3e00106071db3951b3af536f7c339125f7747aad4521c2111a8b1930625196c8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.228Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f544b3e3-09dd-4e4b-aa0b-c68fcd44cacb",
+            "created": "2024-01-25T01:00:59.272Z",
+            "modified": "2024-01-25T01:01:00.272Z",
+            "name": "8630f98587c5db9fc80bed19fdeb5052f42fbba240d176f8b63b793e7bd61e88",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '8630f98587c5db9fc80bed19fdeb5052f42fbba240d176f8b63b793e7bd61e88']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.272Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b755fbbb-c815-45fb-94f2-d98bb4d3f4cc",
+            "created": "2024-01-25T01:00:59.247Z",
+            "modified": "2024-01-25T01:01:00.247Z",
+            "name": "a7d6dcdf5ca2c426cc6c447cff76834d97bc1fdff2cd14bad0b7c2817408c334",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'a7d6dcdf5ca2c426cc6c447cff76834d97bc1fdff2cd14bad0b7c2817408c334']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.247Z",
+            "confidence": 0,
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1e32a152-c2f1-4761-8f3b-677c1d039ca3",
+            "created": "2024-01-25T01:00:59.210Z",
+            "modified": "2024-01-25T01:01:00.210Z",
+            "name": "microsoft.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'microsoft.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.21Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 0
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--caaea2c6-ac02-4cee-8203-d103a83ac2ec",
+            "created": "2024-01-25T01:00:59.193Z",
+            "modified": "2024-01-25T01:01:00.193Z",
+            "name": "20.99.184.37",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '20.99.184.37']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.193Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c7141f02-67b4-406f-8396-bfe45efe3313",
+            "created": "2024-01-25T01:00:59.215Z",
+            "modified": "2024-01-25T01:01:00.215Z",
+            "name": "igmp.mcast.net",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'igmp.mcast.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.215Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c71ef209-0eae-4afc-bae7-9cc088bf3c06",
+            "created": "2024-01-25T01:00:59.220Z",
+            "modified": "2024-01-25T01:01:00.220Z",
+            "name": "25089ec24167f3caa413a9e1965c7dfc661219f45305187070a1e360b03f869c",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '25089ec24167f3caa413a9e1965c7dfc661219f45305187070a1e360b03f869c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.22Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2a3298c8-ffc1-47ec-8766-81accd0fc2a3",
+            "created": "2024-01-25T01:00:59.229Z",
+            "modified": "2024-01-25T01:01:00.229Z",
+            "name": "5e9a61086a03ce7854bb3dd44cf337d8d141ca9bc50250c1d33224fdd5da1e18",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '5e9a61086a03ce7854bb3dd44cf337d8d141ca9bc50250c1d33224fdd5da1e18']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.229Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1497a8b8-8950-4e12-96d5-4d82f2d6ba2e",
+            "created": "2024-01-25T01:00:59.285Z",
+            "modified": "2024-01-25T01:01:00.285Z",
+            "name": "8d3bac3aebe69004468f46899523b7a373f65eb1cb8f3c39ddea6c7d5d52e85f",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '8d3bac3aebe69004468f46899523b7a373f65eb1cb8f3c39ddea6c7d5d52e85f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.285Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8dc0d654-40a7-49ee-a62a-fc925c2ad0f2",
+            "created": "2024-01-25T01:00:59.287Z",
+            "modified": "2024-01-25T01:01:00.287Z",
+            "name": "594b0319405da051fd0ea5ef360e346ac6831f1563c82f965a8fbe9315f383f1",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '594b0319405da051fd0ea5ef360e346ac6831f1563c82f965a8fbe9315f383f1']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.287Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6235de70-e27b-4c69-951a-f0bc39c5686e",
+            "created": "2024-01-25T01:00:59.278Z",
+            "modified": "2024-01-25T01:01:00.278Z",
+            "name": "6d7d35b4ce45fae4a048f7e371f23d1edc4c3b6998ab49febfd7d33f13b030a5",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '6d7d35b4ce45fae4a048f7e371f23d1edc4c3b6998ab49febfd7d33f13b030a5']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.278Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a21531f5-7003-4974-aedb-cc23f3acc741",
+            "created": "2024-01-25T01:00:59.219Z",
+            "modified": "2024-01-25T01:01:00.219Z",
+            "name": "ctldl.windowsupdate.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'ctldl.windowsupdate.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.219Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8c4fb1d6-6faf-4e32-9949-0656e5387aba",
+            "created": "2024-01-25T01:00:59.184Z",
+            "modified": "2024-01-25T01:01:00.184Z",
+            "name": "http://224.0.0.252/",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[url:value = 'http://224.0.0.252/']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.184Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5bdddfe1-23d1-4bf8-b117-deebc48d42bf",
+            "created": "2024-01-25T01:00:59.217Z",
+            "modified": "2024-01-25T01:01:00.217Z",
+            "name": "walterclean.com",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = 'walterclean.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.217Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d7695116-9ecb-4c99-a339-555d1e404b24",
+            "created": "2024-01-25T01:00:59.289Z",
+            "modified": "2024-01-25T01:01:00.289Z",
+            "name": "ae9a4e244a9b3c77d489dee8aeaf35a7c3ba31b210e76d81ef2e91790f052c85",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'ae9a4e244a9b3c77d489dee8aeaf35a7c3ba31b210e76d81ef2e91790f052c85']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.289Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bf91780a-d6a8-4487-bd8a-aabdbf8ccddf",
+            "created": "2024-01-25T01:00:59.257Z",
+            "modified": "2024-01-25T01:01:00.257Z",
+            "name": "d934cb8d0eadb93f8a57a9b8853c5db218d5db78c16a35f374e413884d915016",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'd934cb8d0eadb93f8a57a9b8853c5db218d5db78c16a35f374e413884d915016']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.257Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8a95d347-5ef1-4c4d-bcfd-ef1266143816",
+            "created": "2024-01-25T01:00:59.245Z",
+            "modified": "2024-01-25T01:01:00.245Z",
+            "name": "3e27b6b287f0b9f7e85bfe18901d961110ae969d58b44af15b1d75be749022c2",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '3e27b6b287f0b9f7e85bfe18901d961110ae969d58b44af15b1d75be749022c2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.245Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ca49fd64-fdb6-48f9-b598-ed1c62cad827",
+            "created": "2024-01-25T01:00:59.231Z",
+            "modified": "2024-01-25T01:01:00.231Z",
+            "name": "41a6d6f1dca75abc924960ee701b0df0e7adc8b7501ac4e2c00743d7266df7d3",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '41a6d6f1dca75abc924960ee701b0df0e7adc8b7501ac4e2c00743d7266df7d3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.231Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cfe1f2e3-cfa6-4c27-981f-1f19b39c8d99",
+            "created": "2024-01-25T01:00:59.273Z",
+            "modified": "2024-01-25T01:01:00.273Z",
+            "name": "32efb1eb360cda726f0eb7647d1963adf37dada4b1a4b5ec486c88bfa1f21471",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '32efb1eb360cda726f0eb7647d1963adf37dada4b1a4b5ec486c88bfa1f21471']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.273Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5105ac2c-a38b-4f5e-b05f-b830e7a777d1",
+            "created": "2024-01-25T01:00:59.249Z",
+            "modified": "2024-01-25T01:01:00.249Z",
+            "name": "e4e1e3c44e01c60fd433c6283bd8cd15a9941e1cbaad72e6409cc92e2e91263e",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'e4e1e3c44e01c60fd433c6283bd8cd15a9941e1cbaad72e6409cc92e2e91263e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.249Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--655874cd-d922-43ad-bd04-a775b4104583",
+            "created": "2024-01-25T01:00:59.224Z",
+            "modified": "2024-01-25T01:01:00.224Z",
+            "name": "1942f14326f8ffa3afc83946ba9ec06abe983a211939f0e58362f85dd2a6b96a",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '1942f14326f8ffa3afc83946ba9ec06abe983a211939f0e58362f85dd2a6b96a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.224Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c45c8367-27dd-403c-923d-0e2725c308c1",
+            "created": "2024-01-25T01:00:59.268Z",
+            "modified": "2024-01-25T01:01:00.268Z",
+            "name": "58a99f78c14b67d43dc2c50357a56d1bea355287f0054bedeaccb1c1112f7537",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '58a99f78c14b67d43dc2c50357a56d1bea355287f0054bedeaccb1c1112f7537']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.268Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bb4c23ff-3b04-45a6-8581-8d9cc019e79e",
+            "created": "2024-01-25T01:00:59.222Z",
+            "modified": "2024-01-25T01:01:00.222Z",
+            "name": "62900bb488fb9ba74b73bf1dd633350f0077be5129f083f33f62da39e012a2c1",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '62900bb488fb9ba74b73bf1dd633350f0077be5129f083f33f62da39e012a2c1']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.222Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--48f969d6-c985-48c6-98d6-d1b9bad6372b",
+            "created": "2024-01-25T01:00:59.234Z",
+            "modified": "2024-01-25T01:01:00.234Z",
+            "name": "07fa3c608f775b680e525ba2d3f16bbc8bfe2ca45a3b738f53a9152304e15481",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '07fa3c608f775b680e525ba2d3f16bbc8bfe2ca45a3b738f53a9152304e15481']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.234Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8298d0f1-8cc4-4593-92b0-94b5c0761d40",
+            "created": "2024-01-25T01:00:59.293Z",
+            "modified": "2024-01-25T01:01:00.293Z",
+            "name": "36f417a8a308b5fecdb86069d4db89910b24ac93714035d9a18ac901d024969a",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '36f417a8a308b5fecdb86069d4db89910b24ac93714035d9a18ac901d024969a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.293Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5254ccf8-cfbd-400f-afbe-d514445f5e04",
+            "created": "2024-01-25T01:00:59.243Z",
+            "modified": "2024-01-25T01:01:00.243Z",
+            "name": "36d9e49ec5e3ec9231950ab0197f072eb251f7471ce07bb35990336f6414b48b",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '36d9e49ec5e3ec9231950ab0197f072eb251f7471ce07bb35990336f6414b48b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.243Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d983fc0a-336f-4cd8-b372-8e45cf9947d6",
+            "created": "2024-01-25T01:00:59.275Z",
+            "modified": "2024-01-25T01:01:00.275Z",
+            "name": "51c2656d519d20a4fbe11959f9eb0b71cea528b8229409f9472d85cb413d7acb",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '51c2656d519d20a4fbe11959f9eb0b71cea528b8229409f9472d85cb413d7acb']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.275Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ac2598e3-8c08-4d3e-bb5e-d3f60afec67a",
+            "created": "2024-01-25T01:00:59.189Z",
+            "modified": "2024-01-25T01:01:00.189Z",
+            "name": "224.0.0.22",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '224.0.0.22']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.189Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--10e5077a-bd99-46b2-bb52-5f12bfb37e3c",
+            "created": "2024-01-25T01:00:59.213Z",
+            "modified": "2024-01-25T01:01:00.213Z",
+            "name": "2.2.0.10.in-addr.arpa",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[domain-name:value = '2.2.0.10.in-addr.arpa']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.213Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--334c8fb7-1f1d-4d94-b4ff-bc622fdb084f",
+            "created": "2024-01-25T01:00:59.203Z",
+            "modified": "2024-01-25T01:01:00.203Z",
+            "name": "23.216.147.76",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.216.147.76']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.203Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fc2e5a08-1c98-460b-bb01-67b77b30e704",
+            "created": "2024-01-25T01:00:59.204Z",
+            "modified": "2024-01-25T01:01:00.204Z",
+            "name": "114.114.114.114",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '114.114.114.114']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.204Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--572b2860-d40f-48de-9553-5d5bb2c452c3",
+            "created": "2024-01-25T01:00:59.232Z",
+            "modified": "2024-01-25T01:01:00.232Z",
+            "name": "60fae5d55dbce0dc78bcb384ccff6ac52e2889824cfc33a5534f7bad9d917875",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '60fae5d55dbce0dc78bcb384ccff6ac52e2889824cfc33a5534f7bad9d917875']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.232Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ad0e8e31-fc6f-4293-898f-745ede8529a0",
+            "created": "2024-01-25T01:00:59.255Z",
+            "modified": "2024-01-25T01:01:00.255Z",
+            "name": "2c28f3b297a990b9d7a7163bac57ab68228c66109bb7a593702e556cdd455cce",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '2c28f3b297a990b9d7a7163bac57ab68228c66109bb7a593702e556cdd455cce']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.255Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d33c448b-3244-4154-8b66-bb7e9b324188",
+            "created": "2024-01-25T01:00:59.277Z",
+            "modified": "2024-01-25T01:01:00.277Z",
+            "name": "08cc6b8c73cb94af33efbcb74a58d7d0fc08e4d4f799d9b2da82170b38cbb7a8",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '08cc6b8c73cb94af33efbcb74a58d7d0fc08e4d4f799d9b2da82170b38cbb7a8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.277Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--948eb161-5bc1-41c1-9a5d-c6cb81e5e291",
+            "created": "2024-01-25T01:00:59.263Z",
+            "modified": "2024-01-25T01:01:00.263Z",
+            "name": "28858cc6e05225f7d156d1c6a21ed11188777fa0a752cb7b56038d79a88627cc",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '28858cc6e05225f7d156d1c6a21ed11188777fa0a752cb7b56038d79a88627cc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.263Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--12750fa6-077a-4129-9558-1eedf1c22aba",
+            "created": "2024-01-25T01:00:59.242Z",
+            "modified": "2024-01-25T01:01:00.242Z",
+            "name": "edb1ff2521fb4bf748111f92786d260d40407a2e8463dcd24bb09f908ee13eb9",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'edb1ff2521fb4bf748111f92786d260d40407a2e8463dcd24bb09f908ee13eb9']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.242Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--eaa917fc-252e-4189-8f67-39a33eafe11f",
+            "created": "2024-01-25T01:00:59.240Z",
+            "modified": "2024-01-25T01:01:00.240Z",
+            "name": "f188abc33d351c2254d794b525c5a8b79ea78acd3050cd8d27d3ecfc568c2936",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'f188abc33d351c2254d794b525c5a8b79ea78acd3050cd8d27d3ecfc568c2936']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.24Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1883682f-f099-481d-b24b-fbfcbb3d4708",
+            "created": "2024-01-25T01:00:59.253Z",
+            "modified": "2024-01-25T01:01:00.253Z",
+            "name": "c070563e583a92e86785775691e79ae80dba1a7294fb5ab07d9811385b2faebc",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'c070563e583a92e86785775691e79ae80dba1a7294fb5ab07d9811385b2faebc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.253Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--feaf02f0-f37c-4c1b-b618-0e0893f0be2a",
+            "created": "2024-01-25T01:00:59.267Z",
+            "modified": "2024-01-25T01:01:00.267Z",
+            "name": "dc35a3a71525a6f9d0d85827cd3899d592c1eb4edb48f13d984e62884d569387",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'dc35a3a71525a6f9d0d85827cd3899d592c1eb4edb48f13d984e62884d569387']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.267Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b0980f14-66b1-46d9-acec-6c14094f8dec",
+            "created": "2024-01-25T01:00:59.258Z",
+            "modified": "2024-01-25T01:01:00.258Z",
+            "name": "6b881320ecba206d63c06733cd28caf97e612d6cfafb2a91b2a6a5823dde56c4",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '6b881320ecba206d63c06733cd28caf97e612d6cfafb2a91b2a6a5823dde56c4']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.258Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f2b47e49-a0dc-431d-a790-22f500c15ebb",
+            "created": "2024-01-25T01:00:59.262Z",
+            "modified": "2024-01-25T01:01:00.262Z",
+            "name": "5e9ac31aa40018123e2b2b3251e81fcde98daf95fa74b40ffd7d8aaa00e77cd3",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '5e9ac31aa40018123e2b2b3251e81fcde98daf95fa74b40ffd7d8aaa00e77cd3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.262Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a9e24de9-3b84-4c22-a7bb-b65a136d37be",
+            "created": "2024-01-25T01:00:59.225Z",
+            "modified": "2024-01-25T01:01:00.225Z",
+            "name": "4c59c75bada89fc40a9d02b6aee381beea92222b4b1cbac9e224aa8f972e12de",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '4c59c75bada89fc40a9d02b6aee381beea92222b4b1cbac9e224aa8f972e12de']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.225Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 75
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a45d3c69-e4e3-423d-b8f4-ad6fc0889725",
+            "created": "2024-01-25T01:00:59.196Z",
+            "modified": "2024-01-25T01:01:00.196Z",
+            "name": "13.107.4.52",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '13.107.4.52']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.196Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 40
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--13ae5344-4741-40d6-a4c7-19ce9d7f1ace",
+            "created": "2024-01-25T01:00:59.290Z",
+            "modified": "2024-01-25T01:01:00.290Z",
+            "name": "eb766983a8a05ad16b15e356df43f4e00f36092b8c6effdff3a580c2de2bba8f",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'eb766983a8a05ad16b15e356df43f4e00f36092b8c6effdff3a580c2de2bba8f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.29Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1d2ed931-15a5-4bde-989f-2a1bbc240e73",
+            "created": "2024-01-25T01:00:59.239Z",
+            "modified": "2024-01-25T01:01:00.239Z",
+            "name": "6995e912d4fad7e2c4bc0559f6baa79745f7da9dca8d376b76c4775a4cd62745",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '6995e912d4fad7e2c4bc0559f6baa79745f7da9dca8d376b76c4775a4cd62745']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.239Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--178dee42-6f33-4c00-8e31-2d33f9707d64",
+            "created": "2024-01-25T01:00:59.226Z",
+            "modified": "2024-01-25T01:01:00.226Z",
+            "name": "c380c605c9ef31aabde5537186ea0bdd44dd0390fd5cc8d0cf61ee7d7a5afa95",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'c380c605c9ef31aabde5537186ea0bdd44dd0390fd5cc8d0cf61ee7d7a5afa95']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.226Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e7c6fe26-cd6c-4d5b-bfd2-6f82b280dded",
+            "created": "2024-01-25T01:00:59.291Z",
+            "modified": "2024-01-25T01:01:00.292Z",
+            "name": "e96c18da90cc2646769502488b067ccdbbe398e5c565f463404fbbb464e0ef20",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'e96c18da90cc2646769502488b067ccdbbe398e5c565f463404fbbb464e0ef20']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.291Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 100
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--47dc021f-eb73-41ad-ac5f-fba8ab18c508",
+            "created": "2024-01-25T01:00:59.294Z",
+            "modified": "2024-01-25T01:01:00.294Z",
+            "name": "af62eccbbc5c625eafbc39370b2276f3abda574428981f293a82f940bdfc4b48",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'af62eccbbc5c625eafbc39370b2276f3abda574428981f293a82f940bdfc4b48']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-01-25T01:00:59.294Z",
+            "confidence": 0,
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ],
+            "x_ctix_confidence_score": 90
+        }
+    ]
+}
