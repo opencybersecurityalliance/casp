@@ -86,59 +86,74 @@
 * add link to presentation
 * add link to video
 
-#### 
-* 
-* add link to presentation
-* add link to video
-
-#### 
-* 
-* add link to presentation
-* add link to video
-
-#### 
-* 
-* add link to presentation
-* add link to video
-
-#### 
-* 
-* add link to presentation
-* add link to video
-
-
 ### Friday 12-April-2023
 
-#### 
-* 
+#### 9:00 AM - 9:15 AM _Morning Remarks_
+ç* add link to presentation
+* add link to video
+
+#### 9:15 AM - 10:00 AM _Advancing CTI and Automation: A Federal Outlook for 2024_
+* J. Jeremiah Glenn, Chief, CTI Services, CISA
 * add link to presentation
 * add link to video
 
-#### 
-* 
+#### 10:00 AM - 10:40 AM _Cyber Fusion Unleashed: Seamless Integration with CACAO, STIX, and TAXII_
+* A demonstration showcasing how Cyware's native playbooks seamlessly export into CACAO, enabling collaboration with Roaster and other industry partners to extend the narrative. Dive deeper into the world of threat intelligence with a live demo of STIX via Peraton's TAXII server, automating enrichment and filtering processes, and effortlessly republishing enriched data back into the ecosystem.
+* Participating organizations: Cyware and Peraton
 * add link to presentation
 * add link to video
 
-#### 
-* 
+#### 10:50 AM - 11:30 AM _CSAF-VEX Demo by CISA: Enhancing Cyber Resilience_
+* Justin Murphy
+* A live demonstration showcasing CSAF-VEX by CISA, focusing on its capabilities for improving cyber resilience. Witness how CSAF-VEX facilitates threat intelligence sharing and analysis to strengthen defense strategies against evolving cyber threats 
 * add link to presentation
 * add link to video
 
-#### 
-* 
+#### 11:30 AM - 12:30 PM _Unveiling Practical Applications: PACE, SBOM, and VEX Use Cases_
+* Delve into this session to explore real-world examples demonstrating the effective utilization of PACE, SBOM, and VEX, showcasing their versatility and impact across various industries and contexts. Discover how these innovative frameworks are revolutionizing processes and driving efficiency in today's rapidly evolving landscape.
+   - Intro Duncan Sparrell CASP Cochair
+   - sFractal Duncan Sparrell
+   - BSI Thomas Schmidt
+   - Signal.fyi Kyle Crane
+   - Internet Infrastructure Services Corp. John Cavanaugh
+   - Interlynk Ritesh Noronha
+   - Netrise Dereck McCarthy
+   - Manifest Daniel Bardenstein
+   - Tidelift Ricardo Reyes
+   - Anchore Sean Fazenbaker
+   - Cybeats Dmitry Raidman
+   - Q&A
 * add link to presentation
 * add link to video
 
-#### 
-* 
+#### 1:15 PM - 1:35 PM _OXA : How To Glue OASIS Standards for Better Detection & Response_
+* David Bizeul, Co-founder & CSO, Sekoia.io
+* In this session, we will present the initial basic blocks of OXA. What exists, what still needs to be done, and provide a demonstration for each basic block, illustrating how it could be used in the future.
 * add link to presentation
 * add link to video
 
-#### 
-* 
+#### 1:35 PM - 1:55 PM _Defending Against Disinformation Common Data Model (DAD-CDM) Introduction_
+* Max Lesser, Senior Analyst, Emerging Threats, FDD_
+* DAD-CDM introduction will provide an overview of the framework, emphasizing its pivotal role in combating disinformation campaigns. Additionally, the discussion on how STIX plays a significant role, in enabling effective information sharing and analysis among cybersecurity professionals.
 * add link to presentation
 * add link to video
 
+#### 2:05 PM - 2:25 PM _Launching the Interoperability Village for Enhanced Connectivity_
+* Patrick Maroney, Principal, Cybersecurity, AT&T Services
+* The unveiling of a groundbreaking cloud-based platform designed to facilitate seamless interoperability testing within OASIS Open Projects' tools and frameworks, thereby enhancing the capabilities of the Open Cybersecurity Alliance ([OCA(https://opencybersecurityalliance.org/)]).
+* add link to presentation
+* add link to video
+
+#### 2:25 PM - 2:40 PM _NIEMOpen Cyber Domain - The New Front for Proactive Cyber Protections_
+* Michael Phillips, VP-Integrated Solutions, SLG Innovatio
+* The immediate sharing of ever-evolving Cybersecurity threats requires real-time communication of threat profiles and remediations. The NIEMOpen Cyber Domain will lead the way to set standards to exchange this critical information between organizations and tools. Attendees will gain fresh insights into the latest developments on the Cybersecurity front.
+* add link to presentation
+* add link to video
+
+#### 2:40 PM - 3:20 PM _Summary, Feedback, Next Steps_
+* Duncan Sparrell, Co-Chair, [OCA](https://opencybersecurityalliance.org/) [CASP](https://opencybersecurityalliance.org/casp/)
+* add link to presentation
+* add link to video
 
 
 ## Participants
