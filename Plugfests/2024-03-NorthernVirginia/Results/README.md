@@ -4,12 +4,12 @@
 #### 9:00 AM - 9:05 AM _Welcome to Cybersecurity Automation Village_
 * Duncan Sparrell, Co-Chair, [OCA](https://opencybersecurityalliance.org/) [CASP](https://opencybersecurityalliance.org/casp/)
 * add link to presentation
-* add link to video
+* [Video](https://youtu.be/MiMvC6DgH30?si=yzlXhF8VdRwZ3H0-&t=39)
 
 #### 9:05 AM - 9:15 AM _Welcome from Host Peraton_
 * Damian Wackerman, VP and GM, National Aerospace, Peraton
 * add link to presentation
-* add link to video
+* [Video](https://youtu.be/MiMvC6DgH30?si=QbWVlFmJ0_BCuZX1&t=238)
 
 #### 9:15 AM - 10:00 AM _Guest Speaker: Cyber Data Automation Challenges and Opportunities_
 * Dr. Paul Lieber, Chief Data Scientist, Peraton
