@@ -95,7 +95,7 @@
 #### 9:15 AM - 10:00 AM _Advancing CTI and Automation: A Federal Outlook for 2024_
 * J. Jeremiah Glenn, Chief, CTI Services, CISA
 * add link to presentation
-* add link to video
+* [video](https://youtu.be/1LhWAkaMo-8?si=rmpVIYeBlZjeqIqF)
 
 #### 10:00 AM - 10:40 AM _Cyber Fusion Unleashed: Seamless Integration with CACAO, STIX, and TAXII_
 * A demonstration showcasing how Cyware's native playbooks seamlessly export into CACAO, enabling collaboration with Roaster and other industry partners to extend the narrative. Dive deeper into the world of threat intelligence with a live demo of STIX via Peraton's TAXII server, automating enrichment and filtering processes, and effortlessly republishing enriched data back into the ecosystem.
@@ -107,7 +107,7 @@
 * Justin Murphy
 * A live demonstration showcasing CSAF-VEX by CISA, focusing on its capabilities for improving cyber resilience. Witness how CSAF-VEX facilitates threat intelligence sharing and analysis to strengthen defense strategies against evolving cyber threats 
 * add link to presentation
-* add link to video
+* [video](https://youtu.be/ciFtVcCxSk4?si=yC0UVgq5da3fs9rg)
 
 #### 11:30 AM - 12:30 PM _Unveiling Practical Applications: PACE, SBOM, and VEX Use Cases_
 * Delve into this session to explore real-world examples demonstrating the effective utilization of PACE, SBOM, and VEX, showcasing their versatility and impact across various industries and contexts. Discover how these innovative frameworks are revolutionizing processes and driving efficiency in today's rapidly evolving landscape.
@@ -129,8 +129,8 @@
 #### 1:15 PM - 1:35 PM _OXA : How To Glue OASIS Standards for Better Detection & Response_
 * David Bizeul, Co-founder & CSO, Sekoia.io
 * In this session, we will present the initial basic blocks of OXA. What exists, what still needs to be done, and provide a demonstration for each basic block, illustrating how it could be used in the future.
+* [video](https://youtu.be/jsRTN3igqRs?si=Q5fmrhHXQojBJU0c)
 * add link to presentation
-* add link to video
 
 #### 1:35 PM - 1:55 PM _Defending Against Disinformation Common Data Model (DAD-CDM) Introduction_
 * Max Lesser, Senior Analyst, Emerging Threats, FDD_
@@ -158,5 +158,16 @@
 
 ## Participants
 put in some info on number of participants from number of orgs and number of places
+
 ## Acknowledgments
 put in some thank yous to host and sponsors
+
+thanks to Peraton
+
+thanks to Cyware
+
+thanks to OCA
+
+thanks to OASIS
+
+thanks to CASP, speakers, participants
