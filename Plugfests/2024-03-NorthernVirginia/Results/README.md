@@ -19,7 +19,7 @@
 #### 10:00 AM - 10:30 AM _Village Value Propositions, Infrastructure, Format, and Goals_
 * Duncan Sparrell, Co-Chair, [OCA](https://opencybersecurityalliance.org/) [CASP](https://opencybersecurityalliance.org/casp/)
 * An informative session delving into the foundational elements of our event infrastructure, format, mission, and goals. Also explored will be the value propositions of our village projects, showcasing how initiatives like Wishywashy Ransomware and OlympicDestroyer demonstrate tangible benefits for business stakeholders.
-* add link to presentation
+* [presentation](./Presentations/UseCases.pdf)
 * add link to video
 
 #### 10:30 AM - 10:45 AM _Unveiling Olympic Destroyer: Impact and Implications_
@@ -48,12 +48,12 @@
     - OpenCTI by Samuel Hassine
     - MQTT by Ian Cragg
     - SOARCA by Luca Morgese
-* add link to presentation
+* [presentation](./Presentations/StandardsSprint.pdf)
 * add link to video
 
 #### 1:30 PM - 2:15 PM _Guest Speaker: Unlocking the Future: Exploring the Synergy of Gen AI and Know_
 * Jans Aasman, CEO, Franz
-* add link to presentation
+* add link to [presentation](./Presentations/2024%20Knowledge%20Graphs%20ans%20LLMs%20Jans%20Aasman.pdf)
 * add link to video
 
 #### 2:15 PM - 2:55 PM _Discovering the Indicators of Behavior (IOB)_
@@ -66,7 +66,7 @@
 #### 3:05 PM - 3:45 PM _Enhancing Cybersecurity through OpenC2 and Kestrel, STIX Shifter Collaboration_
 * Dive into a dynamic demonstration highlighting the seamless collaboration between OpenC2 and Kestrel STIX Shifter, showcasing their combined power to enhance threat response and streamline cybersecurity operations, paving the way for more effective and efficient defense strategies.
 * Participating organizations: Huntington Ingalls Industries (HII), National Security Agency (NSA), sFractal, IBM Security
-* add link to presentation
+* [presentation](./Presentations/April%202024_%20Hunting%20With%20Kestrel%20and%20OpenC2.pdf)
 * add link to video
 
 #### 3:45 PM - 4:20 PM _TAC Demonstrates STIX Transformation into Knowledge Graphs_
@@ -89,7 +89,8 @@
 ### Friday 12-April-2023
 
 #### 9:00 AM - 9:15 AM _Morning Remarks_
-ç* add link to presentation
+* Duncan Sparrell, Co-Chair, [OCA](https://opencybersecurityalliance.org/) [CASP](https://opencybersecurityalliance.org/casp/)
+* add link to presentation
 * add link to video
 
 #### 9:15 AM - 10:00 AM _Advancing CTI and Automation: A Federal Outlook for 2024_
@@ -106,25 +107,47 @@
 #### 10:50 AM - 11:30 AM _CSAF-VEX Demo by CISA: Enhancing Cyber Resilience_
 * Justin Murphy
 * A live demonstration showcasing CSAF-VEX by CISA, focusing on its capabilities for improving cyber resilience. Witness how CSAF-VEX facilitates threat intelligence sharing and analysis to strengthen defense strategies against evolving cyber threats 
-* add link to presentation
+* [Presentation](./Presentations/Murphy_CSAF_VEX_OCA_CASP.pdf)
 * [video](https://youtu.be/ciFtVcCxSk4?si=yC0UVgq5da3fs9rg)
 
 #### 11:30 AM - 12:30 PM _Unveiling Practical Applications: PACE, SBOM, and VEX Use Cases_
 * Delve into this session to explore real-world examples demonstrating the effective utilization of PACE, SBOM, and VEX, showcasing their versatility and impact across various industries and contexts. Discover how these innovative frameworks are revolutionizing processes and driving efficiency in today's rapidly evolving landscape.
    - Intro Duncan Sparrell CASP Cochair
+      * [Presentation](./Presentations/Sbom-Intro.pdf)
+      * Video
    - sFractal Duncan Sparrell
+      * [Presentation](./Presentations/Sbom-sFractal.pdf)
+      * Video
    - BSI Thomas Schmidt
+      * Presentation
+      * Video
    - Signal.fyi Kyle Crane
+      * Presentation
+      * Video
    - Internet Infrastructure Services Corp. John Cavanaugh
+      * Presentation
+      * Video
    - Interlynk Ritesh Noronha
+      * [Presentation](./Presentations/Interlynk-OCA.pdf)
+      * Video
    - Netrise Dereck McCarthy
+      * Presentation
+      * Video
    - Manifest Daniel Bardenstein
+      * Presentation
+      * Video
    - Tidelift Ricardo Reyes
+      * Presentation
+      * Video
    - Anchore Sean Fazenbaker
+      * Presentation
+      * Video
    - Cybeats Dmitry Raidman
+      * [Presentation](./Presentations/Cybeats%20-%20Cybersecurity%20Automation%20Village.pdf)
+      * Video
    - Q&A
-* add link to presentation
-* add link to video
+      * Presentation
+      * Video
 
 #### 1:15 PM - 1:35 PM _OXA : How To Glue OASIS Standards for Better Detection & Response_
 * David Bizeul, Co-founder & CSO, Sekoia.io
@@ -141,19 +164,19 @@
 #### 2:05 PM - 2:25 PM _Launching the Interoperability Village for Enhanced Connectivity_
 * Patrick Maroney, Principal, Cybersecurity, AT&T Services
 * The unveiling of a groundbreaking cloud-based platform designed to facilitate seamless interoperability testing within OASIS Open Projects' tools and frameworks, thereby enhancing the capabilities of the Open Cybersecurity Alliance ([OCA(https://opencybersecurityalliance.org/)]).
-* add link to presentation
+* [Presentation](./Presentations/Interoperability%20Village%20240412%20ATT.pdf)
 * add link to video
 
 #### 2:25 PM - 2:40 PM _NIEMOpen Cyber Domain - The New Front for Proactive Cyber Protections_
 * Michael Phillips, VP-Integrated Solutions, SLG Innovatio
 * The immediate sharing of ever-evolving Cybersecurity threats requires real-time communication of threat profiles and remediations. The NIEMOpen Cyber Domain will lead the way to set standards to exchange this critical information between organizations and tools. Attendees will gain fresh insights into the latest developments on the Cybersecurity front.
-* add link to presentation
-* add link to video
+* Presentation
+* [Video](https://youtu.be/jsRTN3igqRs?si=kE1c3_8yFvRIvxew&t=3716)
 
 #### 2:40 PM - 3:20 PM _Summary, Feedback, Next Steps_
 * Duncan Sparrell, Co-Chair, [OCA](https://opencybersecurityalliance.org/) [CASP](https://opencybersecurityalliance.org/casp/)
-* add link to presentation
-* add link to video
+* [Presentation](./Presentations/WrapUp.pdf)
+* [Video](https://youtu.be/jsRTN3igqRs?si=Hq3mZ1yrxXgo4RRz)
 
 
 ## Participants
