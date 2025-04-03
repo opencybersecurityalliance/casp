@@ -1,3 +1,9 @@
+[Archive 3.zip](https://github.com/user-attachments/files/19592646/Archive.3.zip)
+
+[ElevationOfPriv.pdf](https://github.com/user-attachments/files/19592631/ElevationOfPriv.pdf)
+[VoltTyphoonOverview1.pdf](https://github.com/user-attachments/files/19592586/VoltTyphoonOverview1.pdf)
+[volttyphoon.json.zip](https://github.com/user-attachments/files/19592577/volttyphoon.json.zip)
+[volttyphoon.json](https://github.com/user-attachments/files/19592575/volttyphoon.json)
 
 # Use Cases for Cybersecurity Automation Village April-2025
 Plugfest content is divided between three layers.
