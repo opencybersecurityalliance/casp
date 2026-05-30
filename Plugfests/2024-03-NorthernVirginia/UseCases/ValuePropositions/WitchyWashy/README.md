@@ -9,6 +9,26 @@ Cybersecurity Automation Village.
 Eventually we'll add links to show where specific parts of this
 tie in practioner use cases, which in turn tie into the demos/interfaces/data.
 
+## Ransomware Context
+
+Ransomware is a type of malicious software that encrypts a victim's data and demands
+payment in exchange for the decryption key. It has become one of the most costly and
+disruptive forms of cybercrime, targeting organizations across every sector — from
+hospitals and schools to financial institutions and critical infrastructure.
+
+The WitchyWashy scenario demonstrates how cybersecurity automation can dramatically
+reduce the impact of a ransomware-style zero-day attack. Organizations that have
+adopted automated detection, response, and information-sharing protocols — using
+technologies such as Kestrel, CACAO, OpenC2, STIX, and PACE — are able to identify
+the threat, expel the attackers, and share intelligence with peers, all with minimal
+human delay. Organizations that have not adopted automation (see Day 3 - Cheap-O
+Umbrella Company) suffer the full consequences: ransomware bricks their IT systems
+and a material cybersecurity incident occurs.
+
+This use case illustrates that the question is not *if* a ransomware attack will occur,
+but *whether* an organization has the automation in place to stop it before it causes
+catastrophic damage.
+
 ## The WitchyWashy Zero Day
 ### Day 1 - Murphy’s Law LLP
 During the vows at a daughter’s wedding, midway through an
